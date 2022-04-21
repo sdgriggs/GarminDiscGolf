@@ -31,3 +31,4 @@ class DiscGolfTrackerView extends WatchUi.View {
     }
 
 }
+
