@@ -3,6 +3,8 @@ import Toybox.Lang;
 import Toybox.WatchUi;
 using Toybox.Position;
 
+var lastLocation = null;
+
 
 class DiscGolfTrackerApp extends Application.AppBase {
 
@@ -28,8 +30,7 @@ class DiscGolfTrackerApp extends Application.AppBase {
 
     // Method to handle the position calls
     function onPosition(info) {
-        var loc = info.position.toDegrees();
-        System.println("Latitude:" + loc[0] + "Longatude:" + loc[1]);
+        lastLocation = info.position;      
        
     }
 
