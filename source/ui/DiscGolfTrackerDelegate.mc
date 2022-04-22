@@ -56,7 +56,7 @@ class PinMenuDelegate extends WatchUi.MenuInputDelegate {
             System.println("TEE WAS PRESSED: " + teeLocation.toDegrees()[0]);
         } else if (item == :Disc) {
             var discLocation = lastLocation;
-            var distance = distanceBeteweenLocations(teeLocation, discLocation);
+            var distance = Throw.measureDistanceBetweenLocations(teeLocation, discLocation);//distanceBeteweenLocations(teeLocation, discLocation);
             System.println("DISC FLEW" + distance + "m");
         }
         else {
