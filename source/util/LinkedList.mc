@@ -2,8 +2,8 @@ import Toybox.Lang;
 
 class LinkedList{
 
-    private var front;
-    private var back;
+    protected var front;
+    protected var back;
     private var size;
 
     public function initialize() {
