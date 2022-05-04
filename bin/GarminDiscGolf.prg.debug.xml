@@ -522,7 +522,7 @@
         <entry endPc="268439701" name="i" stackId="2" startPc="268439656"/>
         <entry endPc="268439722" name="sum" stackId="1" startPc="268439619"/>
         <entry arg="true" endPc="268439821" name="item" stackId="1" startPc="268439747"/>
-        <entry endPc="268440164" name="rez_cmp_local_text_2020962691" stackId="2" startPc="268439834"/>
+        <entry endPc="268440164" name="rez_cmp_local_text_1756823301" stackId="2" startPc="268439834"/>
         <entry endPc="268440164" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268439834"/>
         <entry arg="true" endPc="268440165" name="dc" stackId="1" startPc="268439822"/>
     </localVars>
