@@ -27,7 +27,7 @@ var throwTwo = new Position.Location(
     //Tests constructor
     (:test)
     function testConstructor(logger){
-        var fw = new FieldWork(stPos); //This should work but doesn't
+        var fw = new FieldWork(stPos, true); //This should work but doesn't
         //var fw = new FieldWork(); //This works but shouldn't
         Test.assertEqual(0, fw.getThrows().getSize());
         //Test.assertEqual(stPos, fw.getStart());
@@ -37,13 +37,13 @@ var throwTwo = new Position.Location(
     //Tests add Method
 (:test)
 function testFWAdd(logger){
-    var fw = new FieldWork(stPos);
+    var fw = new FieldWork(stPos, false);
     fw.addEndPoint(throwOne);
     fw.addEndPoint(throwTwo);
     Test.assertEqual(2, fw.getThrows().getSize());
     var thr = fw.getThrows();
-    Test.assertEqual(Stats.measureDistanceBetweenLocations(stPos, throwOne), thr.get(0).getDistance());
-    Test.assertEqual(Stats.measureDistanceBetweenLocations(stPos, throwTwo), thr.get(1).getDistance());
+    Test.assertEqual(Stats.measureDistanceBetweenLocations(stPos, throwOne, false), thr.get(0).getDistance());
+    Test.assertEqual(Stats.measureDistanceBetweenLocations(stPos, throwTwo, false), thr.get(1).getDistance());
     return true;
 
 }

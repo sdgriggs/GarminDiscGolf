@@ -9,14 +9,22 @@ class FieldWork {
     //current start location for the throws
     private var start = null;
 
+    private var isMetric = false;
 
-    public function initialize(st) {
+
+    public function initialize(st, isMetric) {
         setStart(st);
+        if (isMetric){
+            setMetric();
+        }
+        else {
+            setImperial();
+        }
     }
 
     //adds a throw location to the list of throws (This doesn't work)
     public function addEndPoint(loc) {        
-        throws.add(new Throw(start, loc, null));
+        throws.add(new Throw(start, loc, null, isMetric));
     }
 
     //gets the linked list of throws
@@ -40,4 +48,13 @@ class FieldWork {
         return self.start;
     }
 
+    public function setMetric(){
+        isMetric = true;
+    }
+
+    public function setImperial(){
+        isMetric = false;
+
+        
+    }
 }

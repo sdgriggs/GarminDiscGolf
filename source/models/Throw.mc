@@ -11,12 +11,14 @@ class Throw{
 
     private var outcome;
 
+    private var isMetric;
 
-    public function initialize(startPos, endPos, outcome){
+    public function initialize(startPos, endPos, outcome, isMetric){
         self.startPos = startPos;
         self.endPos = endPos;
-        self.distance = Stats.measureDistanceBetweenLocations(startPos, endPos);
+        self.distance = Stats.measureDistanceBetweenLocations(startPos, endPos, isMetric);
         self.outcome = outcome;
+        self.isMetric = isMetric;
     }
 
     public function getDistance(){

@@ -1,7 +1,7 @@
 using Toybox.Math;
 
 module Stats{
-    public function totalDist(throws){
+      public function totalDist(throws){
         var sum = 0;
         for (var i = 0; i < throws.size(); i++){
             sum += throws[i].getDistance();
@@ -44,7 +44,7 @@ module Stats{
 
     //Measures the distance between two points
     // modified from https://www.geeksforgeeks.org/program-distance-two-points-earth/#:~:text=For%20this%20divide%20the%20values,is%20the%20radius%20of%20Earth.
-    public function measureDistanceBetweenLocations(startPos, endPos){
+    public function measureDistanceBetweenLocations(startPos, endPos, isMetric){
         var lon1 = startPos.toRadians()[1];
         var lon2 = endPos.toRadians()[1];
         var lat1 = startPos.toRadians()[0];
@@ -61,9 +61,13 @@ module Stats{
  
         // Radius of earth in kilometers. Use 3956
         // for miles
-        var r = 6371;
- 
+        var r_metric = 6371;
+        var r_imperial = 3956;
+
+        if( isMetric == true) {
+            return (c * r_metric) * 1000;
+        }
         // calculate the result
-        return(c * r) * 1000;
+        return (c * r_imperial) * 5280;
     }
 }
