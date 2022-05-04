@@ -94,6 +94,16 @@ class LinkedList{
         return self.size;
     }
 
+    public function toArray() {
+        var array = new [self.size];
+        var current = front;
+        for (var i = 0; i < size; i++){
+            array[i] = current.data;
+            current = current.next;
+        }
+        return array;
+    }
+
 
 
     class ListNode{

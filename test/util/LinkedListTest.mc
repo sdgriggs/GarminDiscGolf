@@ -75,3 +75,25 @@ function testRemove(logger){
 
     return true;
 }
+
+//Tests LinkedList's toArray() method
+(:test)
+function testToArray(logger){
+    var ll = new LinkedList();
+
+
+    Test.assertEqual(0, ll.toArray().size());
+
+    ll.add("jeff");
+    ll.add("geoff");
+    ll.add("jeef");
+
+    var arr = ll.toArray();
+
+    Test.assertEqual(3, arr.size());
+    Test.assertEqual("jeff", arr[0]);
+    Test.assertEqual("geoff", arr[1]);
+    Test.assertEqual("jeef", arr[2]);
+
+    return true;
+}
