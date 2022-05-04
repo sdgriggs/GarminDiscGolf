@@ -1,5 +1,6 @@
 using Toybox.Test;
 using Toybox.Position;
+using Stats;
 
 module FieldWorkTest{
 
@@ -40,7 +41,9 @@ function testFWAdd(logger){
     fw.addEndPoint(throwOne);
     fw.addEndPoint(throwTwo);
     Test.assertEqual(2, fw.getThrows().getSize());
-
+    var thr = fw.getThrows();
+    Test.assertEqual(Stats.measureDistanceBetweenLocations(stPos, throwOne), thr.get(0).getDistance());
+    Test.assertEqual(Stats.measureDistanceBetweenLocations(stPos, throwTwo), thr.get(1).getDistance());
     return true;
 
 }
