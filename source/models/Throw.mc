@@ -12,7 +12,7 @@ class Throw{
     private var outcome;
 
 
-    public function initalize(startPos, endPos, outcome){
+    public function initialize(startPos, endPos, outcome){
         self.startPos = startPos;
         self.endPos = endPos;
         self.distance = Stats.measureDistanceBetweenLocations(startPos, endPos);

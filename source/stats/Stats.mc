@@ -1,3 +1,5 @@
+using Toybox.Math;
+
 module Stats{
     //Takes an array of throws and returns the average distance
     public function getAvgDist(throws){
