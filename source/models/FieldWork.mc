@@ -15,8 +15,8 @@ class FieldWork {
     }
 
     //adds a throw location to the list of throws (This doesn't work)
-    public function add(loc) {        
-        throws.add(new Throw(start, loc));
+    public function addEndPoint(loc) {        
+        throws.add(new Throw(start, loc, null));
     }
 
     //gets the linked list of throws
@@ -26,7 +26,7 @@ class FieldWork {
 
     //sets the start location
     public function setStart(st) {
-        if (st instanceof Location) {
+        if (st instanceof Position.Location) {
             self.start = st;
         }
         else {

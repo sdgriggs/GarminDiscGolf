@@ -9,6 +9,19 @@ module FieldWorkTest{
             :longitude => -94.800953,
             :format => :degrees
         });
+var throwOne = new Position.Location(
+    {
+        :latitude => 38.856190,
+        :longitude => -94.800960,
+        :format => :degrees
+    });
+var throwTwo = new Position.Location(
+    {
+        :latitude => 38.856196,
+        :longitude => -94.800957,
+        :format => :degrees
+    });
+
 
     //Tests constructor
     (:test)
@@ -20,4 +33,15 @@ module FieldWorkTest{
         return true;
     }
 
+    //Tests add Method
+(:test)
+function testFWAdd(logger){
+    var fw = new FieldWork(stPos);
+    fw.addEndPoint(throwOne);
+    fw.addEndPoint(throwTwo);
+    Test.assertEqual(2, fw.getThrows().getSize());
+
+    return true;
+
+}
 }
