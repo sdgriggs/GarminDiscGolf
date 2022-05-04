@@ -1,5 +1,4 @@
 using Toybox.Position;
-using Throw;
 import Toybox.Lang;
 
 

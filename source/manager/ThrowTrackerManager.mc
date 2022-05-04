@@ -16,7 +16,7 @@ class ThrowTrackerManager{
     }
 
     public function getDistanceOfLastThrow(){
-        return throws.get(throws.getSize() - 1).measureThrowDistance(); // currently runs in linear time, but can be made constant
+        return throws.get(throws.getSize() - 1).getDistance(); // currently runs in linear time, but can be made constant
     }
 
     public function getMaxDistance(){
@@ -25,7 +25,7 @@ class ThrowTrackerManager{
         //get much better performance
         var distance = 0;
         for (var i = 0; i < throws.size(); i++){
-            var throwDistance = throws.get(i).measureThrowDistance();
+            var throwDistance = throws.get(i).getDistance();
             if (throwDistance > distance){
                 distance = throwDistance;
             }
@@ -42,7 +42,7 @@ class ThrowTrackerManager{
 
         var distance = throws.get(0);
         for (var i = 1; i < throws.size(); i++){
-            var throwDistance = throws.get(i).measureThrowDistance();
+            var throwDistance = throws.get(i).getDistance();
             if (throwDistance < distance){
                 distance = throwDistance;
             }
@@ -56,7 +56,7 @@ class ThrowTrackerManager{
         var sum = 0;
 
         for (var i = 0; i < throws.getSize(); i++){
-            sum += throws.get(i).measureThrowDistance();
+            sum += throws.get(i).getDistance();
         }
 
         return sum / throws.getSize();

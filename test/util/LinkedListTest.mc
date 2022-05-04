@@ -1,5 +1,6 @@
 using Toybox.Test;
 
+module LinkedListTest{
 //Tests LinkedList's constructor
 (:test)
 function testConstructor(logger){
@@ -96,4 +97,5 @@ function testToArray(logger){
     Test.assertEqual("jeef", arr[2]);
 
     return true;
+}
 }

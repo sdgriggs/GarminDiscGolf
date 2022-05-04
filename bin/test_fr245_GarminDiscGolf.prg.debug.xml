@@ -21,558 +21,588 @@
         <entry filename="UnitTests" id="4" lineNum="30" parent="globals/RunNoEvil" pc="268435712" symbol="getTestName"/>
         <entry filename="UnitTests" id="5" lineNum="32" parent="globals/RunNoEvil" pc="268435725" symbol="getNumberOfTests"/>
         <entry filename="UnitTests" id="5" lineNum="33" parent="globals/RunNoEvil" pc="268435729" symbol="getNumberOfTests"/>
-        <entry filename="UnitTests" id="6" lineNum="35" parent="globals/RunNoEvil" pc="268435748" symbol="populate_test_entries_0_to_4"/>
-        <entry filename="UnitTests" id="6" lineNum="36" parent="globals/RunNoEvil" pc="268435752" symbol="populate_test_entries_0_to_4"/>
-        <entry filename="UnitTests" id="6" lineNum="37" parent="globals/RunNoEvil" pc="268435771" symbol="populate_test_entries_0_to_4"/>
-        <entry filename="UnitTests" id="6" lineNum="38" parent="globals/RunNoEvil" pc="268435790" symbol="populate_test_entries_0_to_4"/>
-        <entry filename="UnitTests" id="6" lineNum="39" parent="globals/RunNoEvil" pc="268435809" symbol="populate_test_entries_0_to_4"/>
-        <entry filename="UnitTests" id="7" lineNum="41" parent="globals/RunNoEvil" pc="268435829" symbol="evaluate_test_entries_0_to_4"/>
-        <entry filename="UnitTests" id="7" lineNum="42" parent="globals/RunNoEvil" pc="268435833" symbol="evaluate_test_entries_0_to_4"/>
-        <entry filename="UnitTests" id="7" lineNum="43" parent="globals/RunNoEvil" pc="268435837" symbol="evaluate_test_entries_0_to_4"/>
-        <entry filename="UnitTests" id="7" lineNum="44" parent="globals/RunNoEvil" pc="268435848" symbol="evaluate_test_entries_0_to_4"/>
-        <entry filename="UnitTests" id="7" lineNum="46" parent="globals/RunNoEvil" pc="268435870" symbol="evaluate_test_entries_0_to_4"/>
-        <entry filename="UnitTests" id="7" lineNum="47" parent="globals/RunNoEvil" pc="268435881" symbol="evaluate_test_entries_0_to_4"/>
-        <entry filename="UnitTests" id="7" lineNum="49" parent="globals/RunNoEvil" pc="268435903" symbol="evaluate_test_entries_0_to_4"/>
-        <entry filename="UnitTests" id="7" lineNum="50" parent="globals/RunNoEvil" pc="268435914" symbol="evaluate_test_entries_0_to_4"/>
-        <entry filename="UnitTests" id="7" lineNum="52" parent="globals/RunNoEvil" pc="268435936" symbol="evaluate_test_entries_0_to_4"/>
-        <entry filename="UnitTests" id="7" lineNum="53" parent="globals/RunNoEvil" pc="268435947" symbol="evaluate_test_entries_0_to_4"/>
-        <entry filename="UnitTests" id="7" lineNum="55" parent="globals/RunNoEvil" pc="268435969" symbol="evaluate_test_entries_0_to_4"/>
-        <entry filename="UnitTests" id="8" lineNum="57" parent="globals/RunNoEvil" pc="268435973" symbol="runTest"/>
-        <entry filename="UnitTests" id="8" lineNum="58" parent="globals/RunNoEvil" pc="268435977" symbol="runTest"/>
-        <entry filename="UnitTests" id="8" lineNum="59" parent="globals/RunNoEvil" pc="268435981" symbol="runTest"/>
-        <entry filename="UnitTests" id="8" lineNum="60" parent="globals/RunNoEvil" pc="268435999" symbol="runTest"/>
-        <entry filename="UnitTests" id="8" lineNum="62" parent="globals/RunNoEvil" pc="268436017" symbol="runTest"/>
-        <entry filename="UnitTests" id="8" lineNum="63" parent="globals/RunNoEvil" pc="268436051" symbol="runTest"/>
-        <entry filename="UnitTests" id="8" lineNum="64" parent="globals/RunNoEvil" pc="268436055" symbol="runTest"/>
-        <entry filename="UnitTests" id="8" lineNum="65" parent="globals/RunNoEvil" pc="268436066" symbol="runTest"/>
-        <entry filename="UnitTests" id="8" lineNum="67" parent="globals/RunNoEvil" pc="268436092" symbol="runTest"/>
-        <entry filename="UnitTests" id="8" lineNum="68" parent="globals/RunNoEvil" pc="268436106" symbol="runTest"/>
-        <entry filename="UnitTests" id="8" lineNum="70" parent="globals/RunNoEvil" pc="268436112" symbol="runTest"/>
-        <entry filename="UnitTests" id="9" lineNum="8" parent="globals/RunNoEvil" pc="268441444" symbol="&lt;init&gt;"/>
-        <entry filename="UnitTests" id="9" lineNum="8" parent="globals/RunNoEvil" pc="268441444" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\throw\\Throw.mc" id="11" lineNum="10" parent="globals/Throw" pc="268436116" symbol="initalize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\throw\\Throw.mc" id="11" lineNum="11" parent="globals/Throw" pc="268436120" symbol="initalize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\throw\\Throw.mc" id="11" lineNum="12" parent="globals/Throw" pc="268436130" symbol="initalize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\throw\\Throw.mc" id="12" lineNum="15" parent="globals/Throw" pc="268436141" symbol="measureThrowDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\throw\\Throw.mc" id="12" lineNum="16" parent="globals/Throw" pc="268436145" symbol="measureThrowDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\throw\\Throw.mc" id="13" lineNum="21" parent="globals/Throw" pc="268436174" symbol="measureDistanceBetweenLocations"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\throw\\Throw.mc" id="13" lineNum="22" parent="globals/Throw" pc="268436178" symbol="measureDistanceBetweenLocations"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\throw\\Throw.mc" id="13" lineNum="23" parent="globals/Throw" pc="268436197" symbol="measureDistanceBetweenLocations"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\throw\\Throw.mc" id="13" lineNum="24" parent="globals/Throw" pc="268436216" symbol="measureDistanceBetweenLocations"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\throw\\Throw.mc" id="13" lineNum="25" parent="globals/Throw" pc="268436235" symbol="measureDistanceBetweenLocations"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\throw\\Throw.mc" id="13" lineNum="28" parent="globals/Throw" pc="268436254" symbol="measureDistanceBetweenLocations"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\throw\\Throw.mc" id="13" lineNum="29" parent="globals/Throw" pc="268436261" symbol="measureDistanceBetweenLocations"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\throw\\Throw.mc" id="13" lineNum="30" parent="globals/Throw" pc="268436268" symbol="measureDistanceBetweenLocations"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\throw\\Throw.mc" id="13" lineNum="34" parent="globals/Throw" pc="268436393" symbol="measureDistanceBetweenLocations"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\throw\\Throw.mc" id="13" lineNum="38" parent="globals/Throw" pc="268436433" symbol="measureDistanceBetweenLocations"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\throw\\Throw.mc" id="13" lineNum="41" parent="globals/Throw" pc="268436440" symbol="measureDistanceBetweenLocations"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\throw\\Throw.mc" id="14" lineNum="44" parent="globals/Throw" pc="268436453" symbol="getStartPos"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\throw\\Throw.mc" id="14" lineNum="45" parent="globals/Throw" pc="268436457" symbol="getStartPos"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\throw\\Throw.mc" id="15" lineNum="48" parent="globals/Throw" pc="268436467" symbol="getEndPos"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\throw\\Throw.mc" id="15" lineNum="49" parent="globals/Throw" pc="268436471" symbol="getEndPos"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\throw\\Throw.mc" id="17" lineNum="3" parent="globals/Throw/statics" pc="268441367" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\throw\\Throw.mc" id="17" lineNum="3" parent="globals/Throw" pc="268441366" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\throw\\Throw.mc" id="18" lineNum="3" parent="globals/Throw" pc="268436481" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="20" lineNum="8" parent="globals" pc="268436484" symbol="distanceBeteweenLocations"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="20" lineNum="9" parent="globals" pc="268436496" symbol="distanceBeteweenLocations"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="20" lineNum="10" parent="globals" pc="268436515" symbol="distanceBeteweenLocations"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="20" lineNum="11" parent="globals" pc="268436534" symbol="distanceBeteweenLocations"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="20" lineNum="12" parent="globals" pc="268436553" symbol="distanceBeteweenLocations"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="20" lineNum="15" parent="globals" pc="268436572" symbol="distanceBeteweenLocations"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="20" lineNum="16" parent="globals" pc="268436579" symbol="distanceBeteweenLocations"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="20" lineNum="17" parent="globals" pc="268436586" symbol="distanceBeteweenLocations"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="20" lineNum="21" parent="globals" pc="268436711" symbol="distanceBeteweenLocations"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="20" lineNum="25" parent="globals" pc="268436751" symbol="distanceBeteweenLocations"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="20" lineNum="28" parent="globals" pc="268436758" symbol="distanceBeteweenLocations"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="21" lineNum="34" parent="globals/DiscGolfTrackerDelegate" pc="268436771" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="21" lineNum="35" parent="globals/DiscGolfTrackerDelegate" pc="268436775" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="22" lineNum="38" parent="globals/DiscGolfTrackerDelegate" pc="268436794" symbol="onBack"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="22" lineNum="39" parent="globals/DiscGolfTrackerDelegate" pc="268436798" symbol="onBack"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="22" lineNum="40" parent="globals/DiscGolfTrackerDelegate" pc="268436882" symbol="onBack"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="23" lineNum="32" parent="globals/DiscGolfTrackerDelegate" pc="268441406" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="23" lineNum="32" parent="globals/DiscGolfTrackerDelegate" pc="268441406" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="24" lineNum="48" parent="globals/PinMenuDelegate" pc="268436886" symbol="initalize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="24" lineNum="49" parent="globals/PinMenuDelegate" pc="268436890" symbol="initalize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="25" lineNum="52" parent="globals/PinMenuDelegate" pc="268436909" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="25" lineNum="53" parent="globals/PinMenuDelegate" pc="268436913" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="25" lineNum="55" parent="globals/PinMenuDelegate" pc="268436924" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="25" lineNum="56" parent="globals/PinMenuDelegate" pc="268436940" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="25" lineNum="57" parent="globals/PinMenuDelegate" pc="268436990" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="25" lineNum="58" parent="globals/PinMenuDelegate" pc="268437001" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="25" lineNum="59" parent="globals/PinMenuDelegate" pc="268437011" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="25" lineNum="60" parent="globals/PinMenuDelegate" pc="268437040" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="25" lineNum="63" parent="globals/PinMenuDelegate" pc="268437075" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="26" lineNum="45" parent="globals/PinMenuDelegate" pc="268441464" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="26" lineNum="45" parent="globals/PinMenuDelegate" pc="268441464" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="27" lineNum="45" parent="globals/PinMenuDelegate" pc="268437099" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerView.mc" id="29" lineNum="6" parent="globals/DiscGolfTrackerView" pc="268437102" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerView.mc" id="29" lineNum="7" parent="globals/DiscGolfTrackerView" pc="268437106" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerView.mc" id="30" lineNum="11" parent="globals/DiscGolfTrackerView" pc="268437125" symbol="onLayout"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerView.mc" id="30" lineNum="12" parent="globals/DiscGolfTrackerView" pc="268437129" symbol="onLayout"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerView.mc" id="31" lineNum="18" parent="globals/DiscGolfTrackerView" pc="268437167" symbol="onShow"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerView.mc" id="32" lineNum="22" parent="globals/DiscGolfTrackerView" pc="268437172" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerView.mc" id="32" lineNum="24" parent="globals/DiscGolfTrackerView" pc="268437176" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerView.mc" id="33" lineNum="30" parent="globals/DiscGolfTrackerView" pc="268437197" symbol="onHide"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerView.mc" id="34" lineNum="4" parent="globals/DiscGolfTrackerView" pc="268441425" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerView.mc" id="34" lineNum="4" parent="globals/DiscGolfTrackerView" pc="268441425" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="36" lineNum="6" parent="globals/ThrowTrackerThrowList" pc="268437202" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="36" lineNum="7" parent="globals/ThrowTrackerThrowList" pc="268437206" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="37" lineNum="10" parent="globals/ThrowTrackerThrowList" pc="268437225" symbol="add"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="37" lineNum="11" parent="globals/ThrowTrackerThrowList" pc="268437229" symbol="add"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="37" lineNum="12" parent="globals/ThrowTrackerThrowList" pc="268437244" symbol="add"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="37" lineNum="15" parent="globals/ThrowTrackerThrowList" pc="268437274" symbol="add"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="38" lineNum="18" parent="globals/ThrowTrackerThrowList" pc="268437295" symbol="addThrow"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="38" lineNum="19" parent="globals/ThrowTrackerThrowList" pc="268437299" symbol="addThrow"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="39" lineNum="22" parent="globals/ThrowTrackerThrowList" pc="268437344" symbol="getDistanceOfLastThrow"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="39" lineNum="23" parent="globals/ThrowTrackerThrowList" pc="268437348" symbol="getDistanceOfLastThrow"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="39" lineNum="24" parent="globals/ThrowTrackerThrowList" pc="268437374" symbol="getDistanceOfLastThrow"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="39" lineNum="26" parent="globals/ThrowTrackerThrowList" pc="268437383" symbol="getDistanceOfLastThrow"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="40" lineNum="29" parent="globals/ThrowTrackerThrowList" pc="268437408" symbol="getMaxDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="40" lineNum="30" parent="globals/ThrowTrackerThrowList" pc="268437412" symbol="getMaxDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="40" lineNum="31" parent="globals/ThrowTrackerThrowList" pc="268437428" symbol="getMaxDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="40" lineNum="33" parent="globals/ThrowTrackerThrowList" pc="268437435" symbol="getMaxDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="40" lineNum="34" parent="globals/ThrowTrackerThrowList" pc="268437442" symbol="getMaxDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="40" lineNum="35" parent="globals/ThrowTrackerThrowList" pc="268437461" symbol="getMaxDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="40" lineNum="36" parent="globals/ThrowTrackerThrowList" pc="268437469" symbol="getMaxDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="40" lineNum="38" parent="globals/ThrowTrackerThrowList" pc="268437476" symbol="getMaxDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="40" lineNum="41" parent="globals/ThrowTrackerThrowList" pc="268437489" symbol="getMaxDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="41" lineNum="44" parent="globals/ThrowTrackerThrowList" pc="268437493" symbol="getMinDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="41" lineNum="45" parent="globals/ThrowTrackerThrowList" pc="268437497" symbol="getMinDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="41" lineNum="47" parent="globals/ThrowTrackerThrowList" pc="268437513" symbol="getMinDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="41" lineNum="48" parent="globals/ThrowTrackerThrowList" pc="268437520" symbol="getMinDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="41" lineNum="51" parent="globals/ThrowTrackerThrowList" pc="268437529" symbol="getMinDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="41" lineNum="52" parent="globals/ThrowTrackerThrowList" pc="268437548" symbol="getMinDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="41" lineNum="54" parent="globals/ThrowTrackerThrowList" pc="268437558" symbol="getMinDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="41" lineNum="55" parent="globals/ThrowTrackerThrowList" pc="268437565" symbol="getMinDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="41" lineNum="56" parent="globals/ThrowTrackerThrowList" pc="268437584" symbol="getMinDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="41" lineNum="57" parent="globals/ThrowTrackerThrowList" pc="268437592" symbol="getMinDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="41" lineNum="59" parent="globals/ThrowTrackerThrowList" pc="268437599" symbol="getMinDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="41" lineNum="62" parent="globals/ThrowTrackerThrowList" pc="268437612" symbol="getMinDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="42" lineNum="65" parent="globals/ThrowTrackerThrowList" pc="268437616" symbol="getAverageDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="42" lineNum="66" parent="globals/ThrowTrackerThrowList" pc="268437620" symbol="getAverageDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="42" lineNum="67" parent="globals/ThrowTrackerThrowList" pc="268437636" symbol="getAverageDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="42" lineNum="69" parent="globals/ThrowTrackerThrowList" pc="268437643" symbol="getAverageDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="42" lineNum="70" parent="globals/ThrowTrackerThrowList" pc="268437650" symbol="getAverageDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="42" lineNum="71" parent="globals/ThrowTrackerThrowList" pc="268437672" symbol="getAverageDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="42" lineNum="74" parent="globals/ThrowTrackerThrowList" pc="268437685" symbol="getAverageDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="43" lineNum="5" parent="globals/ThrowTrackerThrowList" pc="268441368" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\ThrowTrackerThrowList.mc" id="43" lineNum="5" parent="globals/ThrowTrackerThrowList" pc="268441368" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="46" lineNum="11" parent="globals/DiscGolfTrackerApp" pc="268437707" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="46" lineNum="12" parent="globals/DiscGolfTrackerApp" pc="268437711" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="47" lineNum="16" parent="globals/DiscGolfTrackerApp" pc="268437730" symbol="onStart"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="47" lineNum="17" parent="globals/DiscGolfTrackerApp" pc="268437734" symbol="onStart"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="47" lineNum="18" parent="globals/DiscGolfTrackerApp" pc="268437757" symbol="onStart"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="47" lineNum="19" parent="globals/DiscGolfTrackerApp" pc="268437801" symbol="onStart"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="48" lineNum="23" parent="globals/DiscGolfTrackerApp" pc="268437825" symbol="onStop"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="49" lineNum="27" parent="globals/DiscGolfTrackerApp" pc="268437830" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="49" lineNum="28" parent="globals/DiscGolfTrackerApp" pc="268437834" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="50" lineNum="32" parent="globals/DiscGolfTrackerApp" pc="268437902" symbol="onPosition"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="50" lineNum="33" parent="globals/DiscGolfTrackerApp" pc="268437906" symbol="onPosition"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="51" lineNum="9" parent="globals/DiscGolfTrackerApp" pc="268441387" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="51" lineNum="9" parent="globals/DiscGolfTrackerApp" pc="268441387" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="52" lineNum="39" parent="globals" pc="268437923" symbol="getApp"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="52" lineNum="40" parent="globals" pc="268437935" symbol="getApp"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="54" lineNum="9" parent="globals/LinkedList" pc="268437952" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="54" lineNum="10" parent="globals/LinkedList" pc="268437956" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="54" lineNum="11" parent="globals/LinkedList" pc="268437965" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="54" lineNum="12" parent="globals/LinkedList" pc="268437974" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="55" lineNum="15" parent="globals/LinkedList" pc="268437988" symbol="add"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="55" lineNum="17" parent="globals/LinkedList" pc="268437992" symbol="add"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="55" lineNum="18" parent="globals/LinkedList" pc="268438009" symbol="add"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="55" lineNum="19" parent="globals/LinkedList" pc="268438037" symbol="add"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="55" lineNum="20" parent="globals/LinkedList" pc="268438047" symbol="add"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="55" lineNum="21" parent="globals/LinkedList" pc="268438057" symbol="add"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="55" lineNum="22" parent="globals/LinkedList" pc="268438076" symbol="add"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="55" lineNum="25" parent="globals/LinkedList" pc="268438080" symbol="add"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="55" lineNum="26" parent="globals/LinkedList" pc="268438127" symbol="add"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="55" lineNum="27" parent="globals/LinkedList" pc="268438149" symbol="add"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="32" parent="globals/LinkedList" pc="268438169" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="33" parent="globals/LinkedList" pc="268438173" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="34" parent="globals/LinkedList" pc="268438201" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="37" parent="globals/LinkedList" pc="268438231" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="38" parent="globals/LinkedList" pc="268438248" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="39" parent="globals/LinkedList" pc="268438264" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="40" parent="globals/LinkedList" pc="268438273" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="41" parent="globals/LinkedList" pc="268438282" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="42" parent="globals/LinkedList" pc="268438301" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="45" parent="globals/LinkedList" pc="268438307" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="46" parent="globals/LinkedList" pc="268438318" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="47" parent="globals/LinkedList" pc="268438334" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="48" parent="globals/LinkedList" pc="268438356" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="49" parent="globals/LinkedList" pc="268438377" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="50" parent="globals/LinkedList" pc="268438392" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="51" parent="globals/LinkedList" pc="268438411" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="54" parent="globals/LinkedList" pc="268438417" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="55" parent="globals/LinkedList" pc="268438437" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="56" parent="globals/LinkedList" pc="268438453" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="57" parent="globals/LinkedList" pc="268438475" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="58" parent="globals/LinkedList" pc="268438496" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="59" parent="globals/LinkedList" pc="268438511" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="60" parent="globals/LinkedList" pc="268438530" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="63" parent="globals/LinkedList" pc="268438536" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="65" parent="globals/LinkedList" pc="268438546" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="66" parent="globals/LinkedList" pc="268438561" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="68" parent="globals/LinkedList" pc="268438584" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="70" parent="globals/LinkedList" pc="268438600" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="71" parent="globals/LinkedList" pc="268438622" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="72" parent="globals/LinkedList" pc="268438643" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="73" parent="globals/LinkedList" pc="268438664" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="74" parent="globals/LinkedList" pc="268438680" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="56" lineNum="75" parent="globals/LinkedList" pc="268438699" symbol="remove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="57" lineNum="79" parent="globals/LinkedList" pc="268438703" symbol="get"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="57" lineNum="80" parent="globals/LinkedList" pc="268438707" symbol="get"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="57" lineNum="81" parent="globals/LinkedList" pc="268438735" symbol="get"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="57" lineNum="84" parent="globals/LinkedList" pc="268438765" symbol="get"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="57" lineNum="86" parent="globals/LinkedList" pc="268438775" symbol="get"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="57" lineNum="87" parent="globals/LinkedList" pc="268438790" symbol="get"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="57" lineNum="90" parent="globals/LinkedList" pc="268438813" symbol="get"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="58" lineNum="93" parent="globals/LinkedList" pc="268438823" symbol="getSize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="58" lineNum="94" parent="globals/LinkedList" pc="268438827" symbol="getSize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="59" lineNum="97" parent="globals/LinkedList" pc="268438837" symbol="toArray"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="59" lineNum="98" parent="globals/LinkedList" pc="268438841" symbol="toArray"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="59" lineNum="99" parent="globals/LinkedList" pc="268438852" symbol="toArray"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="59" lineNum="100" parent="globals/LinkedList" pc="268438862" symbol="toArray"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="59" lineNum="101" parent="globals/LinkedList" pc="268438883" symbol="toArray"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="59" lineNum="102" parent="globals/LinkedList" pc="268438896" symbol="toArray"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="59" lineNum="104" parent="globals/LinkedList" pc="268438919" symbol="toArray"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="60" lineNum="113" parent="globals/LinkedList/ListNode" pc="268438923" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="60" lineNum="114" parent="globals/LinkedList/ListNode" pc="268438927" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="60" lineNum="115" parent="globals/LinkedList/ListNode" pc="268438934" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="60" lineNum="117" parent="globals/LinkedList/ListNode" pc="268438964" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="60" lineNum="118" parent="globals/LinkedList/ListNode" pc="268438974" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="60" lineNum="119" parent="globals/LinkedList/ListNode" pc="268438984" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="61" lineNum="109" parent="globals/LinkedList/ListNode" pc="268441297" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="62" lineNum="3" parent="globals/LinkedList" pc="268441296" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="64" lineNum="5" parent="globals" pc="268438995" symbol="testConstructor"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="64" lineNum="6" parent="globals" pc="268439007" symbol="testConstructor"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="64" lineNum="7" parent="globals" pc="268439031" symbol="testConstructor"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="64" lineNum="8" parent="globals" pc="268439063" symbol="testConstructor"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="65" lineNum="13" parent="globals" pc="268439067" symbol="testAdd"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="65" lineNum="14" parent="globals" pc="268439079" symbol="testAdd"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="65" lineNum="15" parent="globals" pc="268439103" symbol="testAdd"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="65" lineNum="24" parent="globals" pc="268439135" symbol="testAdd"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="65" lineNum="25" parent="globals" pc="268439152" symbol="testAdd"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="65" lineNum="26" parent="globals" pc="268439169" symbol="testAdd"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="65" lineNum="28" parent="globals" pc="268439186" symbol="testAdd"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="65" lineNum="33" parent="globals" pc="268439218" symbol="testAdd"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="65" lineNum="34" parent="globals" pc="268439218" symbol="testAdd"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="65" lineNum="35" parent="globals" pc="268439255" symbol="testAdd"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="65" lineNum="36" parent="globals" pc="268439292" symbol="testAdd"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="65" lineNum="38" parent="globals" pc="268439339" symbol="testAdd"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="65" lineNum="39" parent="globals" pc="268439356" symbol="testAdd"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="65" lineNum="42" parent="globals" pc="268439371" symbol="testAdd"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="66" lineNum="47" parent="globals" pc="268439375" symbol="testRemove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="66" lineNum="48" parent="globals" pc="268439387" symbol="testRemove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="66" lineNum="49" parent="globals" pc="268439411" symbol="testRemove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="66" lineNum="50" parent="globals" pc="268439428" symbol="testRemove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="66" lineNum="51" parent="globals" pc="268439445" symbol="testRemove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="66" lineNum="52" parent="globals" pc="268439462" symbol="testRemove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="66" lineNum="53" parent="globals" pc="268439479" symbol="testRemove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="66" lineNum="54" parent="globals" pc="268439496" symbol="testRemove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="66" lineNum="56" parent="globals" pc="268439513" symbol="testRemove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="66" lineNum="57" parent="globals" pc="268439545" symbol="testRemove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="66" lineNum="59" parent="globals" pc="268439545" symbol="testRemove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="66" lineNum="60" parent="globals" pc="268439582" symbol="testRemove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="66" lineNum="62" parent="globals" pc="268439614" symbol="testRemove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="66" lineNum="63" parent="globals" pc="268439651" symbol="testRemove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="66" lineNum="65" parent="globals" pc="268439683" symbol="testRemove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="66" lineNum="66" parent="globals" pc="268439720" symbol="testRemove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="66" lineNum="67" parent="globals" pc="268439757" symbol="testRemove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="66" lineNum="68" parent="globals" pc="268439794" symbol="testRemove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="66" lineNum="69" parent="globals" pc="268439831" symbol="testRemove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="66" lineNum="71" parent="globals" pc="268439873" symbol="testRemove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="66" lineNum="72" parent="globals" pc="268439890" symbol="testRemove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="66" lineNum="76" parent="globals" pc="268439905" symbol="testRemove"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="67" lineNum="81" parent="globals" pc="268439909" symbol="testToArray"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="67" lineNum="82" parent="globals" pc="268439921" symbol="testToArray"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="67" lineNum="85" parent="globals" pc="268439945" symbol="testToArray"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="67" lineNum="87" parent="globals" pc="268439986" symbol="testToArray"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="67" lineNum="88" parent="globals" pc="268440003" symbol="testToArray"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="67" lineNum="89" parent="globals" pc="268440020" symbol="testToArray"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="67" lineNum="91" parent="globals" pc="268440037" symbol="testToArray"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="67" lineNum="93" parent="globals" pc="268440050" symbol="testToArray"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="67" lineNum="94" parent="globals" pc="268440082" symbol="testToArray"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="67" lineNum="95" parent="globals" pc="268440111" symbol="testToArray"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="67" lineNum="96" parent="globals" pc="268440140" symbol="testToArray"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="67" lineNum="98" parent="globals" pc="268440169" symbol="testToArray"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="69" lineNum="5" parent="globals/ThrowTrackerManager" pc="268440173" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="69" lineNum="6" parent="globals/ThrowTrackerManager" pc="268440177" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="69" lineNum="7" parent="globals/ThrowTrackerManager" pc="268440207" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="70" lineNum="10" parent="globals/ThrowTrackerManager" pc="268440218" symbol="addThrow"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="70" lineNum="11" parent="globals/ThrowTrackerManager" pc="268440222" symbol="addThrow"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="71" lineNum="14" parent="globals/ThrowTrackerManager" pc="268440273" symbol="getNumberOfThrows"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="71" lineNum="15" parent="globals/ThrowTrackerManager" pc="268440277" symbol="getNumberOfThrows"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="72" lineNum="18" parent="globals/ThrowTrackerManager" pc="268440296" symbol="getDistanceOfLastThrow"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="72" lineNum="19" parent="globals/ThrowTrackerManager" pc="268440300" symbol="getDistanceOfLastThrow"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="73" lineNum="22" parent="globals/ThrowTrackerManager" pc="268440351" symbol="getMaxDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="73" lineNum="26" parent="globals/ThrowTrackerManager" pc="268440355" symbol="getMaxDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="73" lineNum="27" parent="globals/ThrowTrackerManager" pc="268440362" symbol="getMaxDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="73" lineNum="28" parent="globals/ThrowTrackerManager" pc="268440392" symbol="getMaxDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="73" lineNum="29" parent="globals/ThrowTrackerManager" pc="268440422" symbol="getMaxDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="73" lineNum="30" parent="globals/ThrowTrackerManager" pc="268440430" symbol="getMaxDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="73" lineNum="34" parent="globals/ThrowTrackerManager" pc="268440450" symbol="getMaxDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="74" lineNum="37" parent="globals/ThrowTrackerManager" pc="268440454" symbol="getMinDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="74" lineNum="39" parent="globals/ThrowTrackerManager" pc="268440458" symbol="getMinDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="74" lineNum="40" parent="globals/ThrowTrackerManager" pc="268440484" symbol="getMinDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="74" lineNum="43" parent="globals/ThrowTrackerManager" pc="268440493" symbol="getMinDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="74" lineNum="44" parent="globals/ThrowTrackerManager" pc="268440517" symbol="getMinDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="74" lineNum="45" parent="globals/ThrowTrackerManager" pc="268440547" symbol="getMinDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="74" lineNum="46" parent="globals/ThrowTrackerManager" pc="268440577" symbol="getMinDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="74" lineNum="47" parent="globals/ThrowTrackerManager" pc="268440585" symbol="getMinDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="74" lineNum="51" parent="globals/ThrowTrackerManager" pc="268440605" symbol="getMinDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="75" lineNum="55" parent="globals/ThrowTrackerManager" pc="268440609" symbol="getAverageDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="75" lineNum="56" parent="globals/ThrowTrackerManager" pc="268440613" symbol="getAverageDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="75" lineNum="58" parent="globals/ThrowTrackerManager" pc="268440620" symbol="getAverageDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="75" lineNum="59" parent="globals/ThrowTrackerManager" pc="268440650" symbol="getAverageDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="75" lineNum="62" parent="globals/ThrowTrackerManager" pc="268440696" symbol="getAverageDistance"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="76" lineNum="1" parent="globals/ThrowTrackerManager" pc="268441463" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerMenuDelegate.mc" id="78" lineNum="7" parent="globals/DiscGolfTrackerMenuDelegate" pc="268440718" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerMenuDelegate.mc" id="78" lineNum="8" parent="globals/DiscGolfTrackerMenuDelegate" pc="268440722" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerMenuDelegate.mc" id="79" lineNum="11" parent="globals/DiscGolfTrackerMenuDelegate" pc="268440741" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerMenuDelegate.mc" id="79" lineNum="12" parent="globals/DiscGolfTrackerMenuDelegate" pc="268440745" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerMenuDelegate.mc" id="79" lineNum="13" parent="globals/DiscGolfTrackerMenuDelegate" pc="268440756" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerMenuDelegate.mc" id="79" lineNum="14" parent="globals/DiscGolfTrackerMenuDelegate" pc="268440780" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerMenuDelegate.mc" id="79" lineNum="15" parent="globals/DiscGolfTrackerMenuDelegate" pc="268440791" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerMenuDelegate.mc" id="80" lineNum="5" parent="globals/DiscGolfTrackerMenuDelegate" pc="268441347" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerMenuDelegate.mc" id="80" lineNum="5" parent="globals/DiscGolfTrackerMenuDelegate" pc="268441347" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="82" lineNum="2" parent="globals/Rez/Drawables" pc="268441322" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="83" lineNum="7" parent="globals/Rez/Fonts" pc="268441343" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="84" lineNum="9" parent="globals/Rez/JsonData" pc="268441345" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="85" lineNum="18" parent="globals/Rez/Layouts" pc="268440816" symbol="MainLayout"/>
-        <entry filename="Rez" id="85" lineNum="20" parent="globals/Rez/Layouts" pc="268440828" symbol="MainLayout"/>
-        <entry filename="Rez" id="85" lineNum="21" parent="globals/Rez/Layouts" pc="268440980" symbol="MainLayout"/>
-        <entry filename="Rez" id="85" lineNum="22" parent="globals/Rez/Layouts" pc="268441092" symbol="MainLayout"/>
-        <entry filename="Rez" id="85" lineNum="24" parent="globals/Rez/Layouts" pc="268441132" symbol="MainLayout"/>
-        <entry filename="Rez" id="86" lineNum="11" parent="globals/Rez/Layouts" pc="268441344" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="87" lineNum="38" parent="globals/Rez/Menus/PinMenu" pc="268441160" symbol="initialize"/>
-        <entry filename="Rez" id="87" lineNum="39" parent="globals/Rez/Menus/PinMenu" pc="268441164" symbol="initialize"/>
-        <entry filename="Rez" id="87" lineNum="40" parent="globals/Rez/Menus/PinMenu" pc="268441182" symbol="initialize"/>
-        <entry filename="Rez" id="87" lineNum="41" parent="globals/Rez/Menus/PinMenu" pc="268441238" symbol="initialize"/>
-        <entry filename="Rez" id="88" lineNum="36" parent="globals/Rez/Menus/PinMenu" pc="268441324" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="88" lineNum="36" parent="globals/Rez/Menus/PinMenu" pc="268441324" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="89" lineNum="29" parent="globals/Rez/Menus" pc="268441323" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="90" lineNum="47" parent="globals/Rez/Strings" pc="268441346" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="91" lineNum="1" parent="globals/Rez" pc="268441298" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="91" lineNum="1" parent="globals/Rez" pc="268441298" symbol="&lt;init&gt;"/>
+        <entry filename="UnitTests" id="6" lineNum="35" parent="globals/RunNoEvil" pc="268435748" symbol="populate_test_entries_0_to_5"/>
+        <entry filename="UnitTests" id="6" lineNum="36" parent="globals/RunNoEvil" pc="268435752" symbol="populate_test_entries_0_to_5"/>
+        <entry filename="UnitTests" id="6" lineNum="37" parent="globals/RunNoEvil" pc="268435771" symbol="populate_test_entries_0_to_5"/>
+        <entry filename="UnitTests" id="6" lineNum="38" parent="globals/RunNoEvil" pc="268435790" symbol="populate_test_entries_0_to_5"/>
+        <entry filename="UnitTests" id="6" lineNum="39" parent="globals/RunNoEvil" pc="268435809" symbol="populate_test_entries_0_to_5"/>
+        <entry filename="UnitTests" id="6" lineNum="40" parent="globals/RunNoEvil" pc="268435828" symbol="populate_test_entries_0_to_5"/>
+        <entry filename="UnitTests" id="7" lineNum="42" parent="globals/RunNoEvil" pc="268435848" symbol="evaluate_test_entries_0_to_5"/>
+        <entry filename="UnitTests" id="7" lineNum="43" parent="globals/RunNoEvil" pc="268435852" symbol="evaluate_test_entries_0_to_5"/>
+        <entry filename="UnitTests" id="7" lineNum="44" parent="globals/RunNoEvil" pc="268435856" symbol="evaluate_test_entries_0_to_5"/>
+        <entry filename="UnitTests" id="7" lineNum="45" parent="globals/RunNoEvil" pc="268435867" symbol="evaluate_test_entries_0_to_5"/>
+        <entry filename="UnitTests" id="7" lineNum="47" parent="globals/RunNoEvil" pc="268435889" symbol="evaluate_test_entries_0_to_5"/>
+        <entry filename="UnitTests" id="7" lineNum="48" parent="globals/RunNoEvil" pc="268435900" symbol="evaluate_test_entries_0_to_5"/>
+        <entry filename="UnitTests" id="7" lineNum="50" parent="globals/RunNoEvil" pc="268435928" symbol="evaluate_test_entries_0_to_5"/>
+        <entry filename="UnitTests" id="7" lineNum="51" parent="globals/RunNoEvil" pc="268435939" symbol="evaluate_test_entries_0_to_5"/>
+        <entry filename="UnitTests" id="7" lineNum="53" parent="globals/RunNoEvil" pc="268435967" symbol="evaluate_test_entries_0_to_5"/>
+        <entry filename="UnitTests" id="7" lineNum="54" parent="globals/RunNoEvil" pc="268435978" symbol="evaluate_test_entries_0_to_5"/>
+        <entry filename="UnitTests" id="7" lineNum="56" parent="globals/RunNoEvil" pc="268436006" symbol="evaluate_test_entries_0_to_5"/>
+        <entry filename="UnitTests" id="7" lineNum="57" parent="globals/RunNoEvil" pc="268436017" symbol="evaluate_test_entries_0_to_5"/>
+        <entry filename="UnitTests" id="7" lineNum="59" parent="globals/RunNoEvil" pc="268436045" symbol="evaluate_test_entries_0_to_5"/>
+        <entry filename="UnitTests" id="8" lineNum="61" parent="globals/RunNoEvil" pc="268436049" symbol="runTest"/>
+        <entry filename="UnitTests" id="8" lineNum="62" parent="globals/RunNoEvil" pc="268436053" symbol="runTest"/>
+        <entry filename="UnitTests" id="8" lineNum="63" parent="globals/RunNoEvil" pc="268436057" symbol="runTest"/>
+        <entry filename="UnitTests" id="8" lineNum="64" parent="globals/RunNoEvil" pc="268436075" symbol="runTest"/>
+        <entry filename="UnitTests" id="8" lineNum="66" parent="globals/RunNoEvil" pc="268436093" symbol="runTest"/>
+        <entry filename="UnitTests" id="8" lineNum="67" parent="globals/RunNoEvil" pc="268436127" symbol="runTest"/>
+        <entry filename="UnitTests" id="8" lineNum="68" parent="globals/RunNoEvil" pc="268436131" symbol="runTest"/>
+        <entry filename="UnitTests" id="8" lineNum="69" parent="globals/RunNoEvil" pc="268436142" symbol="runTest"/>
+        <entry filename="UnitTests" id="8" lineNum="71" parent="globals/RunNoEvil" pc="268436168" symbol="runTest"/>
+        <entry filename="UnitTests" id="8" lineNum="72" parent="globals/RunNoEvil" pc="268436182" symbol="runTest"/>
+        <entry filename="UnitTests" id="8" lineNum="74" parent="globals/RunNoEvil" pc="268436188" symbol="runTest"/>
+        <entry filename="UnitTests" id="9" lineNum="8" parent="globals/RunNoEvil" pc="268441745" symbol="&lt;init&gt;"/>
+        <entry filename="UnitTests" id="9" lineNum="8" parent="globals/RunNoEvil" pc="268441745" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\Throw.mc" id="11" lineNum="13" parent="globals/Throw" pc="268436192" symbol="initalize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\Throw.mc" id="11" lineNum="14" parent="globals/Throw" pc="268436196" symbol="initalize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\Throw.mc" id="11" lineNum="15" parent="globals/Throw" pc="268436206" symbol="initalize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\Throw.mc" id="11" lineNum="16" parent="globals/Throw" pc="268436216" symbol="initalize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\Throw.mc" id="12" lineNum="19" parent="globals/Throw" pc="268436244" symbol="getDistance"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\Throw.mc" id="12" lineNum="20" parent="globals/Throw" pc="268436248" symbol="getDistance"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\Throw.mc" id="13" lineNum="23" parent="globals/Throw" pc="268436258" symbol="getStartPos"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\Throw.mc" id="13" lineNum="24" parent="globals/Throw" pc="268436262" symbol="getStartPos"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\Throw.mc" id="14" lineNum="27" parent="globals/Throw" pc="268436272" symbol="getEndPos"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\Throw.mc" id="14" lineNum="28" parent="globals/Throw" pc="268436276" symbol="getEndPos"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\Throw.mc" id="15" lineNum="4" parent="globals/Throw" pc="268441656" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\Throw.mc" id="16" lineNum="4" parent="globals/Throw" pc="268436286" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\FieldWork.mc" id="18" lineNum="13" parent="globals/FieldWork" pc="268436289" symbol="initalize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\FieldWork.mc" id="18" lineNum="14" parent="globals/FieldWork" pc="268436293" symbol="initalize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\FieldWork.mc" id="19" lineNum="18" parent="globals/FieldWork" pc="268436308" symbol="add"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\FieldWork.mc" id="19" lineNum="19" parent="globals/FieldWork" pc="268436312" symbol="add"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\FieldWork.mc" id="20" lineNum="23" parent="globals/FieldWork" pc="268436363" symbol="getThrows"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\FieldWork.mc" id="20" lineNum="24" parent="globals/FieldWork" pc="268436367" symbol="getThrows"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\FieldWork.mc" id="21" lineNum="28" parent="globals/FieldWork" pc="268436377" symbol="setStart"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\FieldWork.mc" id="21" lineNum="29" parent="globals/FieldWork" pc="268436381" symbol="setStart"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\FieldWork.mc" id="21" lineNum="30" parent="globals/FieldWork" pc="268436395" symbol="setStart"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\FieldWork.mc" id="21" lineNum="33" parent="globals/FieldWork" pc="268436408" symbol="setStart"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\FieldWork.mc" id="22" lineNum="39" parent="globals/FieldWork" pc="268436436" symbol="getStart"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\FieldWork.mc" id="22" lineNum="40" parent="globals/FieldWork" pc="268436440" symbol="getStart"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\FieldWork.mc" id="23" lineNum="7" parent="globals/FieldWork" pc="268441657" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\FieldWork.mc" id="23" lineNum="5" parent="globals/FieldWork" pc="268441657" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\models\\FieldWork.mc" id="24" lineNum="5" parent="globals/FieldWork" pc="268436450" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="26" lineNum="3" parent="globals/Stats" pc="268436453" symbol="getAvgDist"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="26" lineNum="4" parent="globals/Stats" pc="268436465" symbol="getAvgDist"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="26" lineNum="5" parent="globals/Stats" pc="268436472" symbol="getAvgDist"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="26" lineNum="6" parent="globals/Stats" pc="268436496" symbol="getAvgDist"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="26" lineNum="8" parent="globals/Stats" pc="268436528" symbol="getAvgDist"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="27" lineNum="11" parent="globals/Stats" pc="268436550" symbol="getMinDist"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="27" lineNum="12" parent="globals/Stats" pc="268436562" symbol="getMinDist"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="27" lineNum="13" parent="globals/Stats" pc="268436582" symbol="getMinDist"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="27" lineNum="15" parent="globals/Stats" pc="268436591" symbol="getMinDist"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="27" lineNum="16" parent="globals/Stats" pc="268436610" symbol="getMinDist"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="27" lineNum="17" parent="globals/Stats" pc="268436634" symbol="getMinDist"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="27" lineNum="18" parent="globals/Stats" pc="268436650" symbol="getMinDist"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="27" lineNum="19" parent="globals/Stats" pc="268436658" symbol="getMinDist"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="27" lineNum="22" parent="globals/Stats" pc="268436678" symbol="getMinDist"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="28" lineNum="25" parent="globals/Stats" pc="268436682" symbol="getMaxDist"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="28" lineNum="26" parent="globals/Stats" pc="268436694" symbol="getMaxDist"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="28" lineNum="27" parent="globals/Stats" pc="268436714" symbol="getMaxDist"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="28" lineNum="29" parent="globals/Stats" pc="268436723" symbol="getMaxDist"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="28" lineNum="30" parent="globals/Stats" pc="268436742" symbol="getMaxDist"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="28" lineNum="31" parent="globals/Stats" pc="268436766" symbol="getMaxDist"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="28" lineNum="32" parent="globals/Stats" pc="268436782" symbol="getMaxDist"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="28" lineNum="33" parent="globals/Stats" pc="268436790" symbol="getMaxDist"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="28" lineNum="36" parent="globals/Stats" pc="268436810" symbol="getMaxDist"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="29" lineNum="41" parent="globals/Stats" pc="268436814" symbol="measureDistanceBetweenLocations"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="29" lineNum="42" parent="globals/Stats" pc="268436826" symbol="measureDistanceBetweenLocations"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="29" lineNum="43" parent="globals/Stats" pc="268436845" symbol="measureDistanceBetweenLocations"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="29" lineNum="44" parent="globals/Stats" pc="268436864" symbol="measureDistanceBetweenLocations"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="29" lineNum="45" parent="globals/Stats" pc="268436883" symbol="measureDistanceBetweenLocations"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="29" lineNum="48" parent="globals/Stats" pc="268436902" symbol="measureDistanceBetweenLocations"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="29" lineNum="49" parent="globals/Stats" pc="268436909" symbol="measureDistanceBetweenLocations"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="29" lineNum="50" parent="globals/Stats" pc="268436916" symbol="measureDistanceBetweenLocations"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="29" lineNum="54" parent="globals/Stats" pc="268437053" symbol="measureDistanceBetweenLocations"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="29" lineNum="58" parent="globals/Stats" pc="268437097" symbol="measureDistanceBetweenLocations"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="29" lineNum="61" parent="globals/Stats" pc="268437104" symbol="measureDistanceBetweenLocations"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\stats\\Stats.mc" id="30" lineNum="1" parent="globals/Stats" pc="268441587" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="32" lineNum="8" parent="globals" pc="268437117" symbol="distanceBeteweenLocations"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="32" lineNum="9" parent="globals" pc="268437129" symbol="distanceBeteweenLocations"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="32" lineNum="10" parent="globals" pc="268437148" symbol="distanceBeteweenLocations"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="32" lineNum="11" parent="globals" pc="268437167" symbol="distanceBeteweenLocations"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="32" lineNum="12" parent="globals" pc="268437186" symbol="distanceBeteweenLocations"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="32" lineNum="15" parent="globals" pc="268437205" symbol="distanceBeteweenLocations"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="32" lineNum="16" parent="globals" pc="268437212" symbol="distanceBeteweenLocations"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="32" lineNum="17" parent="globals" pc="268437219" symbol="distanceBeteweenLocations"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="32" lineNum="21" parent="globals" pc="268437344" symbol="distanceBeteweenLocations"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="32" lineNum="25" parent="globals" pc="268437384" symbol="distanceBeteweenLocations"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="32" lineNum="28" parent="globals" pc="268437391" symbol="distanceBeteweenLocations"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="33" lineNum="34" parent="globals/DiscGolfTrackerDelegate" pc="268437404" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="33" lineNum="35" parent="globals/DiscGolfTrackerDelegate" pc="268437408" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="34" lineNum="38" parent="globals/DiscGolfTrackerDelegate" pc="268437427" symbol="onBack"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="34" lineNum="39" parent="globals/DiscGolfTrackerDelegate" pc="268437431" symbol="onBack"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="34" lineNum="40" parent="globals/DiscGolfTrackerDelegate" pc="268437515" symbol="onBack"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="35" lineNum="32" parent="globals/DiscGolfTrackerDelegate" pc="268441707" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="35" lineNum="32" parent="globals/DiscGolfTrackerDelegate" pc="268441707" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="36" lineNum="48" parent="globals/PinMenuDelegate" pc="268437519" symbol="initalize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="36" lineNum="49" parent="globals/PinMenuDelegate" pc="268437523" symbol="initalize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="37" lineNum="52" parent="globals/PinMenuDelegate" pc="268437542" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="37" lineNum="53" parent="globals/PinMenuDelegate" pc="268437546" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="37" lineNum="55" parent="globals/PinMenuDelegate" pc="268437557" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="37" lineNum="56" parent="globals/PinMenuDelegate" pc="268437573" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="37" lineNum="57" parent="globals/PinMenuDelegate" pc="268437623" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="37" lineNum="58" parent="globals/PinMenuDelegate" pc="268437634" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="37" lineNum="59" parent="globals/PinMenuDelegate" pc="268437644" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="37" lineNum="60" parent="globals/PinMenuDelegate" pc="268437673" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="37" lineNum="63" parent="globals/PinMenuDelegate" pc="268437708" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="38" lineNum="45" parent="globals/PinMenuDelegate" pc="268441765" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="38" lineNum="45" parent="globals/PinMenuDelegate" pc="268441765" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerDelegate.mc" id="39" lineNum="45" parent="globals/PinMenuDelegate" pc="268437732" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerView.mc" id="41" lineNum="6" parent="globals/DiscGolfTrackerView" pc="268437735" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerView.mc" id="41" lineNum="7" parent="globals/DiscGolfTrackerView" pc="268437739" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerView.mc" id="42" lineNum="11" parent="globals/DiscGolfTrackerView" pc="268437758" symbol="onLayout"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerView.mc" id="42" lineNum="12" parent="globals/DiscGolfTrackerView" pc="268437762" symbol="onLayout"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerView.mc" id="43" lineNum="18" parent="globals/DiscGolfTrackerView" pc="268437800" symbol="onShow"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerView.mc" id="44" lineNum="22" parent="globals/DiscGolfTrackerView" pc="268437805" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerView.mc" id="44" lineNum="24" parent="globals/DiscGolfTrackerView" pc="268437809" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerView.mc" id="45" lineNum="30" parent="globals/DiscGolfTrackerView" pc="268437830" symbol="onHide"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerView.mc" id="46" lineNum="4" parent="globals/DiscGolfTrackerView" pc="268441726" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerView.mc" id="46" lineNum="4" parent="globals/DiscGolfTrackerView" pc="268441726" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\FieldWorkTest.mc" id="50" lineNum="13" parent="globals" pc="268437835" symbol="testFWConstructor"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\FieldWorkTest.mc" id="50" lineNum="15" parent="globals" pc="268437847" symbol="testFWConstructor"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\FieldWorkTest.mc" id="50" lineNum="16" parent="globals" pc="268437871" symbol="testFWConstructor"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\FieldWorkTest.mc" id="50" lineNum="18" parent="globals" pc="268437912" symbol="testFWConstructor"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\FieldWorkTest.mc" id="51" lineNum="4" parent="globals" pc="268441504" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="53" lineNum="11" parent="globals/DiscGolfTrackerApp" pc="268437916" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="53" lineNum="12" parent="globals/DiscGolfTrackerApp" pc="268437920" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="54" lineNum="16" parent="globals/DiscGolfTrackerApp" pc="268437939" symbol="onStart"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="54" lineNum="17" parent="globals/DiscGolfTrackerApp" pc="268437943" symbol="onStart"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="54" lineNum="18" parent="globals/DiscGolfTrackerApp" pc="268437966" symbol="onStart"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="54" lineNum="19" parent="globals/DiscGolfTrackerApp" pc="268438010" symbol="onStart"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="55" lineNum="23" parent="globals/DiscGolfTrackerApp" pc="268438034" symbol="onStop"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="56" lineNum="27" parent="globals/DiscGolfTrackerApp" pc="268438039" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="56" lineNum="28" parent="globals/DiscGolfTrackerApp" pc="268438043" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="57" lineNum="32" parent="globals/DiscGolfTrackerApp" pc="268438111" symbol="onPosition"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="57" lineNum="33" parent="globals/DiscGolfTrackerApp" pc="268438115" symbol="onPosition"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="58" lineNum="9" parent="globals/DiscGolfTrackerApp" pc="268441688" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="58" lineNum="9" parent="globals/DiscGolfTrackerApp" pc="268441688" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="59" lineNum="39" parent="globals" pc="268438132" symbol="getApp"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerApp.mc" id="59" lineNum="40" parent="globals" pc="268438144" symbol="getApp"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="61" lineNum="9" parent="globals/LinkedList" pc="268438161" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="61" lineNum="10" parent="globals/LinkedList" pc="268438165" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="61" lineNum="11" parent="globals/LinkedList" pc="268438174" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="61" lineNum="12" parent="globals/LinkedList" pc="268438183" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="62" lineNum="15" parent="globals/LinkedList" pc="268438197" symbol="add"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="62" lineNum="17" parent="globals/LinkedList" pc="268438201" symbol="add"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="62" lineNum="18" parent="globals/LinkedList" pc="268438218" symbol="add"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="62" lineNum="19" parent="globals/LinkedList" pc="268438246" symbol="add"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="62" lineNum="20" parent="globals/LinkedList" pc="268438256" symbol="add"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="62" lineNum="21" parent="globals/LinkedList" pc="268438266" symbol="add"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="62" lineNum="22" parent="globals/LinkedList" pc="268438285" symbol="add"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="62" lineNum="25" parent="globals/LinkedList" pc="268438289" symbol="add"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="62" lineNum="26" parent="globals/LinkedList" pc="268438336" symbol="add"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="62" lineNum="27" parent="globals/LinkedList" pc="268438358" symbol="add"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="32" parent="globals/LinkedList" pc="268438378" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="33" parent="globals/LinkedList" pc="268438382" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="34" parent="globals/LinkedList" pc="268438410" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="37" parent="globals/LinkedList" pc="268438440" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="38" parent="globals/LinkedList" pc="268438457" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="39" parent="globals/LinkedList" pc="268438473" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="40" parent="globals/LinkedList" pc="268438482" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="41" parent="globals/LinkedList" pc="268438491" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="42" parent="globals/LinkedList" pc="268438510" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="45" parent="globals/LinkedList" pc="268438516" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="46" parent="globals/LinkedList" pc="268438527" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="47" parent="globals/LinkedList" pc="268438543" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="48" parent="globals/LinkedList" pc="268438565" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="49" parent="globals/LinkedList" pc="268438586" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="50" parent="globals/LinkedList" pc="268438601" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="51" parent="globals/LinkedList" pc="268438620" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="54" parent="globals/LinkedList" pc="268438626" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="55" parent="globals/LinkedList" pc="268438646" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="56" parent="globals/LinkedList" pc="268438662" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="57" parent="globals/LinkedList" pc="268438684" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="58" parent="globals/LinkedList" pc="268438705" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="59" parent="globals/LinkedList" pc="268438720" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="60" parent="globals/LinkedList" pc="268438739" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="63" parent="globals/LinkedList" pc="268438745" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="65" parent="globals/LinkedList" pc="268438755" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="66" parent="globals/LinkedList" pc="268438770" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="68" parent="globals/LinkedList" pc="268438793" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="70" parent="globals/LinkedList" pc="268438809" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="71" parent="globals/LinkedList" pc="268438831" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="72" parent="globals/LinkedList" pc="268438852" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="73" parent="globals/LinkedList" pc="268438873" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="74" parent="globals/LinkedList" pc="268438889" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="63" lineNum="75" parent="globals/LinkedList" pc="268438908" symbol="remove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="64" lineNum="79" parent="globals/LinkedList" pc="268438912" symbol="get"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="64" lineNum="80" parent="globals/LinkedList" pc="268438916" symbol="get"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="64" lineNum="81" parent="globals/LinkedList" pc="268438944" symbol="get"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="64" lineNum="84" parent="globals/LinkedList" pc="268438974" symbol="get"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="64" lineNum="86" parent="globals/LinkedList" pc="268438984" symbol="get"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="64" lineNum="87" parent="globals/LinkedList" pc="268438999" symbol="get"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="64" lineNum="90" parent="globals/LinkedList" pc="268439022" symbol="get"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="65" lineNum="93" parent="globals/LinkedList" pc="268439032" symbol="getSize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="65" lineNum="94" parent="globals/LinkedList" pc="268439036" symbol="getSize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="66" lineNum="97" parent="globals/LinkedList" pc="268439046" symbol="toArray"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="66" lineNum="98" parent="globals/LinkedList" pc="268439050" symbol="toArray"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="66" lineNum="99" parent="globals/LinkedList" pc="268439061" symbol="toArray"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="66" lineNum="100" parent="globals/LinkedList" pc="268439071" symbol="toArray"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="66" lineNum="101" parent="globals/LinkedList" pc="268439092" symbol="toArray"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="66" lineNum="102" parent="globals/LinkedList" pc="268439105" symbol="toArray"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="66" lineNum="104" parent="globals/LinkedList" pc="268439128" symbol="toArray"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="67" lineNum="113" parent="globals/LinkedList/ListNode" pc="268439132" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="67" lineNum="114" parent="globals/LinkedList/ListNode" pc="268439136" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="67" lineNum="115" parent="globals/LinkedList/ListNode" pc="268439143" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="67" lineNum="117" parent="globals/LinkedList/ListNode" pc="268439173" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="67" lineNum="118" parent="globals/LinkedList/ListNode" pc="268439183" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="67" lineNum="119" parent="globals/LinkedList/ListNode" pc="268439193" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="68" lineNum="109" parent="globals/LinkedList/ListNode" pc="268441586" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\LinkedList.mc" id="69" lineNum="3" parent="globals/LinkedList" pc="268441585" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="71" lineNum="6" parent="globals/LinkedListTest" pc="268439204" symbol="testConstructor"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="71" lineNum="7" parent="globals/LinkedListTest" pc="268439216" symbol="testConstructor"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="71" lineNum="8" parent="globals/LinkedListTest" pc="268439240" symbol="testConstructor"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="71" lineNum="9" parent="globals/LinkedListTest" pc="268439272" symbol="testConstructor"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="72" lineNum="14" parent="globals/LinkedListTest" pc="268439276" symbol="testAdd"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="72" lineNum="15" parent="globals/LinkedListTest" pc="268439288" symbol="testAdd"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="72" lineNum="16" parent="globals/LinkedListTest" pc="268439312" symbol="testAdd"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="72" lineNum="25" parent="globals/LinkedListTest" pc="268439344" symbol="testAdd"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="72" lineNum="26" parent="globals/LinkedListTest" pc="268439361" symbol="testAdd"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="72" lineNum="27" parent="globals/LinkedListTest" pc="268439378" symbol="testAdd"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="72" lineNum="29" parent="globals/LinkedListTest" pc="268439395" symbol="testAdd"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="72" lineNum="34" parent="globals/LinkedListTest" pc="268439427" symbol="testAdd"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="72" lineNum="35" parent="globals/LinkedListTest" pc="268439427" symbol="testAdd"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="72" lineNum="36" parent="globals/LinkedListTest" pc="268439464" symbol="testAdd"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="72" lineNum="37" parent="globals/LinkedListTest" pc="268439501" symbol="testAdd"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="72" lineNum="39" parent="globals/LinkedListTest" pc="268439548" symbol="testAdd"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="72" lineNum="40" parent="globals/LinkedListTest" pc="268439565" symbol="testAdd"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="72" lineNum="43" parent="globals/LinkedListTest" pc="268439580" symbol="testAdd"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="73" lineNum="48" parent="globals/LinkedListTest" pc="268439584" symbol="testRemove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="73" lineNum="49" parent="globals/LinkedListTest" pc="268439596" symbol="testRemove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="73" lineNum="50" parent="globals/LinkedListTest" pc="268439620" symbol="testRemove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="73" lineNum="51" parent="globals/LinkedListTest" pc="268439637" symbol="testRemove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="73" lineNum="52" parent="globals/LinkedListTest" pc="268439654" symbol="testRemove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="73" lineNum="53" parent="globals/LinkedListTest" pc="268439671" symbol="testRemove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="73" lineNum="54" parent="globals/LinkedListTest" pc="268439688" symbol="testRemove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="73" lineNum="55" parent="globals/LinkedListTest" pc="268439705" symbol="testRemove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="73" lineNum="57" parent="globals/LinkedListTest" pc="268439722" symbol="testRemove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="73" lineNum="58" parent="globals/LinkedListTest" pc="268439754" symbol="testRemove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="73" lineNum="60" parent="globals/LinkedListTest" pc="268439754" symbol="testRemove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="73" lineNum="61" parent="globals/LinkedListTest" pc="268439791" symbol="testRemove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="73" lineNum="63" parent="globals/LinkedListTest" pc="268439823" symbol="testRemove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="73" lineNum="64" parent="globals/LinkedListTest" pc="268439860" symbol="testRemove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="73" lineNum="66" parent="globals/LinkedListTest" pc="268439892" symbol="testRemove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="73" lineNum="67" parent="globals/LinkedListTest" pc="268439929" symbol="testRemove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="73" lineNum="68" parent="globals/LinkedListTest" pc="268439966" symbol="testRemove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="73" lineNum="69" parent="globals/LinkedListTest" pc="268440003" symbol="testRemove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="73" lineNum="70" parent="globals/LinkedListTest" pc="268440040" symbol="testRemove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="73" lineNum="72" parent="globals/LinkedListTest" pc="268440082" symbol="testRemove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="73" lineNum="73" parent="globals/LinkedListTest" pc="268440099" symbol="testRemove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="73" lineNum="77" parent="globals/LinkedListTest" pc="268440114" symbol="testRemove"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="74" lineNum="82" parent="globals/LinkedListTest" pc="268440118" symbol="testToArray"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="74" lineNum="83" parent="globals/LinkedListTest" pc="268440130" symbol="testToArray"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="74" lineNum="86" parent="globals/LinkedListTest" pc="268440154" symbol="testToArray"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="74" lineNum="88" parent="globals/LinkedListTest" pc="268440195" symbol="testToArray"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="74" lineNum="89" parent="globals/LinkedListTest" pc="268440212" symbol="testToArray"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="74" lineNum="90" parent="globals/LinkedListTest" pc="268440229" symbol="testToArray"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="74" lineNum="92" parent="globals/LinkedListTest" pc="268440246" symbol="testToArray"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="74" lineNum="94" parent="globals/LinkedListTest" pc="268440259" symbol="testToArray"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="74" lineNum="95" parent="globals/LinkedListTest" pc="268440291" symbol="testToArray"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="74" lineNum="96" parent="globals/LinkedListTest" pc="268440320" symbol="testToArray"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="74" lineNum="97" parent="globals/LinkedListTest" pc="268440349" symbol="testToArray"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="74" lineNum="99" parent="globals/LinkedListTest" pc="268440378" symbol="testToArray"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\test\\util\\LinkedListTest.mc" id="75" lineNum="3" parent="globals/LinkedListTest" pc="268441584" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="77" lineNum="5" parent="globals/ThrowTrackerManager" pc="268440382" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="77" lineNum="6" parent="globals/ThrowTrackerManager" pc="268440386" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="77" lineNum="7" parent="globals/ThrowTrackerManager" pc="268440416" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="78" lineNum="10" parent="globals/ThrowTrackerManager" pc="268440427" symbol="addThrow"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="78" lineNum="11" parent="globals/ThrowTrackerManager" pc="268440431" symbol="addThrow"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="79" lineNum="14" parent="globals/ThrowTrackerManager" pc="268440482" symbol="getNumberOfThrows"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="79" lineNum="15" parent="globals/ThrowTrackerManager" pc="268440486" symbol="getNumberOfThrows"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="80" lineNum="18" parent="globals/ThrowTrackerManager" pc="268440505" symbol="getDistanceOfLastThrow"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="80" lineNum="19" parent="globals/ThrowTrackerManager" pc="268440509" symbol="getDistanceOfLastThrow"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="81" lineNum="22" parent="globals/ThrowTrackerManager" pc="268440560" symbol="getMaxDistance"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="81" lineNum="26" parent="globals/ThrowTrackerManager" pc="268440564" symbol="getMaxDistance"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="81" lineNum="27" parent="globals/ThrowTrackerManager" pc="268440571" symbol="getMaxDistance"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="81" lineNum="28" parent="globals/ThrowTrackerManager" pc="268440601" symbol="getMaxDistance"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="81" lineNum="29" parent="globals/ThrowTrackerManager" pc="268440631" symbol="getMaxDistance"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="81" lineNum="30" parent="globals/ThrowTrackerManager" pc="268440639" symbol="getMaxDistance"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="81" lineNum="34" parent="globals/ThrowTrackerManager" pc="268440659" symbol="getMaxDistance"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="82" lineNum="37" parent="globals/ThrowTrackerManager" pc="268440663" symbol="getMinDistance"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="82" lineNum="39" parent="globals/ThrowTrackerManager" pc="268440667" symbol="getMinDistance"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="82" lineNum="40" parent="globals/ThrowTrackerManager" pc="268440693" symbol="getMinDistance"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="82" lineNum="43" parent="globals/ThrowTrackerManager" pc="268440702" symbol="getMinDistance"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="82" lineNum="44" parent="globals/ThrowTrackerManager" pc="268440726" symbol="getMinDistance"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="82" lineNum="45" parent="globals/ThrowTrackerManager" pc="268440756" symbol="getMinDistance"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="82" lineNum="46" parent="globals/ThrowTrackerManager" pc="268440786" symbol="getMinDistance"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="82" lineNum="47" parent="globals/ThrowTrackerManager" pc="268440794" symbol="getMinDistance"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="82" lineNum="51" parent="globals/ThrowTrackerManager" pc="268440814" symbol="getMinDistance"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="83" lineNum="55" parent="globals/ThrowTrackerManager" pc="268440818" symbol="getAverageDistance"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="83" lineNum="56" parent="globals/ThrowTrackerManager" pc="268440822" symbol="getAverageDistance"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="83" lineNum="58" parent="globals/ThrowTrackerManager" pc="268440829" symbol="getAverageDistance"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="83" lineNum="59" parent="globals/ThrowTrackerManager" pc="268440859" symbol="getAverageDistance"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="83" lineNum="62" parent="globals/ThrowTrackerManager" pc="268440905" symbol="getAverageDistance"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\manager\\ThrowTrackerManager.mc" id="84" lineNum="1" parent="globals/ThrowTrackerManager" pc="268441764" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerMenuDelegate.mc" id="86" lineNum="7" parent="globals/DiscGolfTrackerMenuDelegate" pc="268440927" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerMenuDelegate.mc" id="86" lineNum="8" parent="globals/DiscGolfTrackerMenuDelegate" pc="268440931" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerMenuDelegate.mc" id="87" lineNum="11" parent="globals/DiscGolfTrackerMenuDelegate" pc="268440950" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerMenuDelegate.mc" id="87" lineNum="12" parent="globals/DiscGolfTrackerMenuDelegate" pc="268440954" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerMenuDelegate.mc" id="87" lineNum="13" parent="globals/DiscGolfTrackerMenuDelegate" pc="268440965" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerMenuDelegate.mc" id="87" lineNum="14" parent="globals/DiscGolfTrackerMenuDelegate" pc="268440989" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerMenuDelegate.mc" id="87" lineNum="15" parent="globals/DiscGolfTrackerMenuDelegate" pc="268441000" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerMenuDelegate.mc" id="88" lineNum="5" parent="globals/DiscGolfTrackerMenuDelegate" pc="268441637" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\ui\\DiscGolfTrackerMenuDelegate.mc" id="88" lineNum="5" parent="globals/DiscGolfTrackerMenuDelegate" pc="268441637" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="90" lineNum="2" parent="globals/Rez/Drawables" pc="268441612" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="91" lineNum="7" parent="globals/Rez/Fonts" pc="268441633" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="92" lineNum="9" parent="globals/Rez/JsonData" pc="268441635" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="93" lineNum="18" parent="globals/Rez/Layouts" pc="268441025" symbol="MainLayout"/>
+        <entry filename="Rez" id="93" lineNum="20" parent="globals/Rez/Layouts" pc="268441037" symbol="MainLayout"/>
+        <entry filename="Rez" id="93" lineNum="21" parent="globals/Rez/Layouts" pc="268441189" symbol="MainLayout"/>
+        <entry filename="Rez" id="93" lineNum="22" parent="globals/Rez/Layouts" pc="268441301" symbol="MainLayout"/>
+        <entry filename="Rez" id="93" lineNum="24" parent="globals/Rez/Layouts" pc="268441341" symbol="MainLayout"/>
+        <entry filename="Rez" id="94" lineNum="11" parent="globals/Rez/Layouts" pc="268441634" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="95" lineNum="38" parent="globals/Rez/Menus/PinMenu" pc="268441369" symbol="initialize"/>
+        <entry filename="Rez" id="95" lineNum="39" parent="globals/Rez/Menus/PinMenu" pc="268441373" symbol="initialize"/>
+        <entry filename="Rez" id="95" lineNum="40" parent="globals/Rez/Menus/PinMenu" pc="268441391" symbol="initialize"/>
+        <entry filename="Rez" id="95" lineNum="41" parent="globals/Rez/Menus/PinMenu" pc="268441447" symbol="initialize"/>
+        <entry filename="Rez" id="96" lineNum="36" parent="globals/Rez/Menus/PinMenu" pc="268441614" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="96" lineNum="36" parent="globals/Rez/Menus/PinMenu" pc="268441614" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="97" lineNum="29" parent="globals/Rez/Menus" pc="268441613" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="98" lineNum="47" parent="globals/Rez/Strings" pc="268441636" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="99" lineNum="1" parent="globals/Rez" pc="268441588" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="99" lineNum="1" parent="globals/Rez" pc="268441588" symbol="&lt;init&gt;"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
-        <entry id="23" method="true" symbol="testToArray"/>
+        <entry id="29" method="true" symbol="testToArray"/>
         <entry field="true" id="8389792" method="true" symbol="getTestName"/>
-        <entry id="14" object="true" symbol="DiscGolfTrackerDelegate"/>
+        <entry id="16" object="true" symbol="DiscGolfTrackerDelegate"/>
         <entry id="8389346" symbol="text"/>
-        <entry field="true" id="27" symbol="back"/>
-        <entry id="49" method="true" symbol="measureDistanceBetweenLocations"/>
+        <entry field="true" id="53" symbol="&lt;globals/Throw/&lt;&gt;distance&gt;"/>
+        <entry field="true" id="31" symbol="back"/>
+        <entry id="40" method="true" symbol="measureDistanceBetweenLocations"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
-        <entry id="20" object="true" symbol="LinkedList"/>
-        <entry id="29" method="true" symbol="toArray"/>
-        <entry id="4" module="true" symbol="globals/Rez/Menus"/>
-        <entry id="38" method="true" symbol="MainLayout"/>
-        <entry id="63" method="true" symbol="getNumberOfThrows"/>
-        <entry field="true" id="43" symbol="&lt;globals/Throw/&lt;&gt;startPos&gt;"/>
-        <entry id="13" method="true" symbol="distanceBeteweenLocations"/>
+        <entry id="23" object="true" symbol="LinkedList"/>
+        <entry id="33" method="true" symbol="toArray"/>
+        <entry id="6" module="true" symbol="globals/Rez/Menus"/>
+        <entry id="46" method="true" symbol="MainLayout"/>
+        <entry id="71" method="true" symbol="getNumberOfThrows"/>
+        <entry field="true" id="51" symbol="&lt;globals/Throw/&lt;&gt;startPos&gt;"/>
+        <entry id="15" method="true" symbol="distanceBeteweenLocations"/>
         <entry field="true" id="8388826" method="true" symbol="next"/>
-        <entry id="60" method="true" symbol="evaluate_test_entries_0_to_4"/>
-        <entry id="10" object="true" symbol="RunNoEvil"/>
+        <entry id="39" method="true" symbol="getMaxDist"/>
+        <entry id="67" method="true" symbol="evaluate_test_entries_0_to_5"/>
+        <entry id="11" object="true" symbol="RunNoEvil"/>
         <entry id="8388791" method="true" symbol="remove"/>
-        <entry id="55" method="true" symbol="onPosition"/>
-        <entry id="65" symbol="Disc"/>
+        <entry id="59" method="true" symbol="getThrows"/>
+        <entry id="62" method="true" symbol="onPosition"/>
+        <entry id="77" symbol="Disc"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
         <entry id="8388649" module="true" object="true" symbol="Test"/>
-        <entry field="true" id="62" symbol="&lt;globals/ThrowTrackerManager/&lt;&gt;throws&gt;"/>
-        <entry id="21" method="true" symbol="testConstructor"/>
-        <entry field="true" id="42" symbol="AppName"/>
+        <entry field="true" id="69" symbol="&lt;globals/ThrowTrackerManager/&lt;&gt;throws&gt;"/>
+        <entry id="27" method="true" symbol="testConstructor"/>
+        <entry field="true" id="50" symbol="AppName"/>
         <entry field="true" id="8389807" symbol="data"/>
-        <entry id="19" object="true" symbol="DiscGolfTrackerApp"/>
-        <entry id="8" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="37" method="true" symbol="getAvgDist"/>
+        <entry id="22" object="true" symbol="DiscGolfTrackerApp"/>
+        <entry id="10" module="true" symbol="globals/Rez/Strings"/>
         <entry id="8388772" module="true" object="true" symbol="Fonts"/>
-        <entry id="47" method="true" symbol="getStartPos"/>
+        <entry id="55" method="true" symbol="getStartPos"/>
         <entry id="8389345" symbol="rezId"/>
         <entry id="8388942" method="true" symbol="add"/>
-        <entry id="25" object="true" symbol="DiscGolfTrackerMenuDelegate"/>
+        <entry id="20" method="true" symbol="testFWConstructor"/>
+        <entry id="26" object="true" symbol="DiscGolfTrackerMenuDelegate"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
         <entry id="8389081" method="true" symbol="onBack"/>
-        <entry id="2" module="true" symbol="globals/Rez"/>
-        <entry id="64" symbol="Tee"/>
-        <entry field="true" id="41" symbol="prompt"/>
-        <entry field="true" id="35" symbol="id_monkey"/>
-        <entry id="50" method="true" symbol="addThrow"/>
-        <entry id="16" object="true" symbol="DiscGolfTrackerView"/>
+        <entry field="true" id="57" symbol="&lt;globals/FieldWork/&lt;&gt;throws&gt;"/>
+        <entry id="4" module="true" symbol="globals/Rez"/>
+        <entry id="76" symbol="Tee"/>
+        <entry id="24" module="true" symbol="LinkedListTest"/>
+        <entry field="true" id="49" symbol="prompt"/>
+        <entry field="true" id="43" symbol="id_monkey"/>
+        <entry id="70" method="true" symbol="addThrow"/>
+        <entry id="18" object="true" symbol="DiscGolfTrackerView"/>
         <entry id="8388789" method="true" symbol="get"/>
         <entry id="8389568" method="true" symbol="runTest"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry field="true" id="8389065" symbol="locY"/>
         <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="8388764" method="true" symbol="format"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389314" symbol="latitude"/>
         <entry id="8389348" symbol="font"/>
         <entry id="8389630" method="true" symbol="getSize"/>
-        <entry id="67" symbol="item_2"/>
-        <entry id="66" symbol="item_1"/>
-        <entry id="34" module="true" symbol="Menus"/>
+        <entry id="79" symbol="item_2"/>
+        <entry id="78" symbol="item_1"/>
+        <entry id="42" module="true" symbol="Menus"/>
         <entry id="8389275" method="true" symbol="getApp"/>
-        <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="8" module="true" symbol="globals/Rez/Layouts"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="2" module="true" symbol="globals/LinkedListTest"/>
         <entry field="true" id="8389063" symbol="identifier"/>
         <entry id="8389349" symbol="justification"/>
-        <entry id="52" method="true" symbol="getMaxDistance"/>
-        <entry field="true" id="44" symbol="&lt;globals/Throw/&lt;&gt;endPos&gt;"/>
-        <entry field="true" id="32" symbol="prev"/>
-        <entry id="7" module="true" symbol="globals/Rez/JsonData"/>
-        <entry id="58" method="true" symbol="getIndexOf"/>
-        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
-        <entry id="31" symbol="globals/LinkedList"/>
+        <entry id="73" method="true" symbol="getMaxDistance"/>
+        <entry field="true" id="52" symbol="&lt;globals/Throw/&lt;&gt;endPos&gt;"/>
+        <entry field="true" id="36" symbol="prev"/>
+        <entry id="9" module="true" symbol="globals/Rez/JsonData"/>
+        <entry id="65" method="true" symbol="getIndexOf"/>
+        <entry id="5" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="35" symbol="globals/LinkedList"/>
+        <entry id="60" method="true" symbol="setStart"/>
         <entry id="8389823" method="true" symbol="indexOf"/>
+        <entry field="true" id="19" symbol="stPos"/>
         <entry id="8388644" module="true" symbol="System"/>
-        <entry id="53" method="true" symbol="getMinDistance"/>
-        <entry id="45" method="true" symbol="initalize"/>
+        <entry id="8389315" symbol="longitude"/>
+        <entry id="74" method="true" symbol="getMinDistance"/>
+        <entry id="54" method="true" symbol="initalize"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
-        <entry id="59" method="true" symbol="populate_test_entries_0_to_4"/>
+        <entry id="13" object="true" symbol="FieldWork"/>
+        <entry id="66" method="true" symbol="populate_test_entries_0_to_5"/>
         <entry id="8388663" method="true" symbol="testAdd"/>
         <entry id="8388640" module="true" symbol="Lang"/>
-        <entry id="46" method="true" symbol="measureThrowDistance"/>
+        <entry id="8388710" module="true" object="true" symbol="Stats"/>
         <entry id="8390088" module="true" object="true" symbol="JsonData"/>
-        <entry field="true" id="28" symbol="&lt;globals/LinkedList/&lt;&gt;size&gt;"/>
-        <entry field="true" id="36" symbol="LauncherIcon"/>
-        <entry id="48" method="true" symbol="getEndPos"/>
+        <entry id="3" module="true" symbol="globals/Stats"/>
+        <entry field="true" id="32" symbol="&lt;globals/LinkedList/&lt;&gt;size&gt;"/>
+        <entry field="true" id="44" symbol="LauncherIcon"/>
+        <entry id="56" method="true" symbol="getEndPos"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="8389123" method="true" symbol="onShow"/>
         <entry id="8389567" method="true" symbol="getNumberOfTests"/>
-        <entry id="15" object="true" symbol="PinMenuDelegate"/>
-        <entry id="54" method="true" symbol="getAverageDistance"/>
+        <entry id="17" object="true" symbol="PinMenuDelegate"/>
+        <entry id="75" method="true" symbol="getAverageDistance"/>
         <entry id="8389350" module="true" symbol="globals"/>
-        <entry field="true" id="61" symbol="&lt;globals/ThrowTrackerManager/&lt;&gt;startPos&gt;"/>
+        <entry field="true" id="68" symbol="&lt;globals/ThrowTrackerManager/&lt;&gt;startPos&gt;"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
         <entry id="8388702" method="true" symbol="initialize"/>
         <entry id="8389279" method="true" symbol="onStart"/>
-        <entry id="17" object="true" symbol="ThrowTrackerThrowList"/>
+        <entry field="true" id="58" symbol="&lt;globals/FieldWork/&lt;&gt;start&gt;"/>
         <entry id="8388641" module="true" symbol="Math"/>
-        <entry field="true" id="26" symbol="front"/>
+        <entry id="8391826" method="true" symbol="getDistance"/>
+        <entry id="61" method="true" symbol="getStart"/>
+        <entry field="true" id="30" symbol="front"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
         <entry id="8389109" method="true" symbol="onMenuItem"/>
         <entry id="8389347" symbol="color"/>
-        <entry id="24" object="true" symbol="ThrowTrackerManager"/>
-        <entry id="22" method="true" symbol="testRemove"/>
-        <entry field="true" id="18" symbol="lastLocation"/>
-        <entry field="true" id="12" symbol="teeLocation"/>
-        <entry id="33" module="true" symbol="Layouts"/>
-        <entry field="true" id="57" symbol="idToName"/>
-        <entry id="11" object="true" symbol="Throw"/>
-        <entry id="9" module="true" symbol="globals/Throw"/>
+        <entry id="25" object="true" symbol="ThrowTrackerManager"/>
+        <entry id="28" method="true" symbol="testRemove"/>
+        <entry field="true" id="21" symbol="lastLocation"/>
+        <entry field="true" id="14" symbol="teeLocation"/>
+        <entry id="41" module="true" symbol="Layouts"/>
+        <entry id="38" method="true" symbol="getMinDist"/>
+        <entry id="8389317" symbol="degrees"/>
+        <entry field="true" id="64" symbol="idToName"/>
+        <entry id="12" object="true" symbol="Throw"/>
         <entry id="8388642" module="true" symbol="Position"/>
-        <entry id="51" method="true" symbol="getDistanceOfLastThrow"/>
-        <entry id="5" module="true" symbol="globals/Rez/Fonts"/>
-        <entry field="true" id="56" symbol="logger"/>
-        <entry id="37" object="true" symbol="PinMenu"/>
+        <entry id="72" method="true" symbol="getDistanceOfLastThrow"/>
+        <entry id="7" module="true" symbol="globals/Rez/Fonts"/>
+        <entry field="true" id="63" symbol="logger"/>
+        <entry id="45" object="true" symbol="PinMenu"/>
         <entry id="8389125" method="true" symbol="onHide"/>
-        <entry id="30" object="true" symbol="ListNode"/>
+        <entry id="34" object="true" symbol="ListNode"/>
         <entry id="8388635" module="true" symbol="Application"/>
-        <entry field="true" id="40" symbol="menu_label_2"/>
+        <entry field="true" id="48" symbol="menu_label_2"/>
         <entry field="true" id="8389570" method="true" symbol="getTestObject"/>
-        <entry field="true" id="39" symbol="menu_label_1"/>
+        <entry field="true" id="47" symbol="menu_label_1"/>
     </symbolTable>
     <localVars>
         <entry endPc="268435700" name="i" stackId="3" startPc="268435657"/>
         <entry endPc="268435706" name="j" stackId="2" startPc="268435583"/>
         <entry arg="true" endPc="268435707" name="name" stackId="1" startPc="268435579"/>
         <entry arg="true" endPc="268435724" name="id" stackId="1" startPc="268435708"/>
-        <entry endPc="268435971" name="result" stackId="3" startPc="268435833"/>
-        <entry arg="true" endPc="268435972" name="logger" stackId="2" startPc="268435829"/>
-        <entry arg="true" endPc="268435972" name="id" stackId="1" startPc="268435829"/>
-        <entry endPc="268436114" name="result" stackId="3" startPc="268435977"/>
-        <entry endPc="268436114" name="id" stackId="2" startPc="268435977"/>
-        <entry arg="true" endPc="268436115" name="test" stackId="1" startPc="268435973"/>
-        <entry arg="true" endPc="268436140" name="endPos" stackId="2" startPc="268436116"/>
-        <entry arg="true" endPc="268436140" name="startPos" stackId="1" startPc="268436116"/>
-        <entry endPc="268436451" name="r" stackId="11" startPc="268436178"/>
-        <entry endPc="268436451" name="lat2" stackId="6" startPc="268436178"/>
-        <entry endPc="268436451" name="lat1" stackId="5" startPc="268436178"/>
-        <entry endPc="268436451" name="lon2" stackId="4" startPc="268436178"/>
-        <entry endPc="268436451" name="lon1" stackId="3" startPc="268436178"/>
-        <entry endPc="268436451" name="dlat" stackId="8" startPc="268436178"/>
-        <entry endPc="268436451" name="c" stackId="10" startPc="268436178"/>
-        <entry endPc="268436451" name="v" stackId="9" startPc="268436178"/>
-        <entry endPc="268436451" name="dlon" stackId="7" startPc="268436178"/>
-        <entry arg="true" endPc="268436452" name="endPos" stackId="2" startPc="268436174"/>
-        <entry arg="true" endPc="268436452" name="startPos" stackId="1" startPc="268436174"/>
-        <entry endPc="268436769" name="r" stackId="11" startPc="268436496"/>
-        <entry endPc="268436769" name="lat2" stackId="6" startPc="268436496"/>
-        <entry endPc="268436769" name="lat1" stackId="5" startPc="268436496"/>
-        <entry endPc="268436769" name="lon2" stackId="4" startPc="268436496"/>
-        <entry endPc="268436769" name="lon1" stackId="3" startPc="268436496"/>
-        <entry endPc="268436769" name="dlat" stackId="8" startPc="268436496"/>
-        <entry endPc="268436769" name="c" stackId="10" startPc="268436496"/>
-        <entry endPc="268436769" name="v" stackId="9" startPc="268436496"/>
-        <entry endPc="268436769" name="dlon" stackId="7" startPc="268436496"/>
-        <entry arg="true" endPc="268436770" name="b" stackId="2" startPc="268436484"/>
-        <entry arg="true" endPc="268436770" name="a" stackId="1" startPc="268436484"/>
-        <entry endPc="268437071" name="distance" stackId="3" startPc="268437001"/>
-        <entry endPc="268437071" name="discLocation" stackId="2" startPc="268437001"/>
-        <entry arg="true" endPc="268437098" name="item" stackId="1" startPc="268436909"/>
-        <entry arg="true" endPc="268437166" name="dc" stackId="1" startPc="268437125"/>
-        <entry arg="true" endPc="268437196" name="dc" stackId="1" startPc="268437172"/>
-        <entry arg="true" endPc="268437294" name="element" stackId="1" startPc="268437225"/>
-        <entry arg="true" endPc="268437343" name="endPos" stackId="2" startPc="268437295"/>
-        <entry arg="true" endPc="268437343" name="startPos" stackId="1" startPc="268437295"/>
-        <entry endPc="268437485" name="throwDist" stackId="3" startPc="268437442"/>
-        <entry endPc="268437491" name="max" stackId="2" startPc="268437412"/>
-        <entry endPc="268437491" name="current" stackId="1" startPc="268437412"/>
-        <entry endPc="268437608" name="throwDist" stackId="3" startPc="268437565"/>
-        <entry endPc="268437614" name="min" stackId="2" startPc="268437497"/>
-        <entry endPc="268437614" name="current" stackId="1" startPc="268437497"/>
-        <entry endPc="268437705" name="sum" stackId="2" startPc="268437620"/>
-        <entry endPc="268437705" name="current" stackId="1" startPc="268437620"/>
-        <entry arg="true" endPc="268437824" name="state" stackId="1" startPc="268437730"/>
-        <entry arg="true" endPc="268437829" name="state" stackId="1" startPc="268437825"/>
-        <entry arg="true" endPc="268437922" name="info" stackId="1" startPc="268437902"/>
-        <entry endPc="268438076" name="temp" stackId="2" startPc="268438009"/>
-        <entry arg="true" endPc="268438168" name="element" stackId="1" startPc="268437988"/>
-        <entry endPc="268438303" name="temp" stackId="2" startPc="268438248"/>
-        <entry endPc="268438413" name="temp" stackId="3" startPc="268438318"/>
-        <entry endPc="268438532" name="temp" stackId="4" startPc="268438437"/>
-        <entry endPc="268438583" name="i" stackId="6" startPc="268438561"/>
-        <entry endPc="268438701" name="temp" stackId="7" startPc="268438173"/>
-        <entry endPc="268438701" name="current" stackId="5" startPc="268438173"/>
-        <entry arg="true" endPc="268438702" name="index" stackId="1" startPc="268438169"/>
-        <entry endPc="268438812" name="i" stackId="3" startPc="268438790"/>
-        <entry endPc="268438821" name="current" stackId="2" startPc="268438707"/>
-        <entry arg="true" endPc="268438822" name="index" stackId="1" startPc="268438703"/>
-        <entry endPc="268438918" name="i" stackId="3" startPc="268438883"/>
-        <entry endPc="268438921" name="current" stackId="2" startPc="268438841"/>
-        <entry endPc="268438921" name="array" stackId="1" startPc="268438841"/>
-        <entry arg="true" endPc="268438994" name="next" stackId="3" startPc="268438923"/>
-        <entry arg="true" endPc="268438994" name="prev" stackId="2" startPc="268438923"/>
-        <entry arg="true" endPc="268438994" name="data" stackId="1" startPc="268438923"/>
-        <entry endPc="268439065" name="ll" stackId="2" startPc="268439007"/>
-        <entry arg="true" endPc="268439066" name="logger" stackId="1" startPc="268438995"/>
-        <entry endPc="268439373" name="ll" stackId="2" startPc="268439079"/>
-        <entry arg="true" endPc="268439374" name="logger" stackId="1" startPc="268439067"/>
-        <entry endPc="268439907" name="ll" stackId="2" startPc="268439387"/>
-        <entry arg="true" endPc="268439908" name="logger" stackId="1" startPc="268439375"/>
-        <entry endPc="268440171" name="arr" stackId="3" startPc="268439921"/>
-        <entry endPc="268440171" name="ll" stackId="2" startPc="268439921"/>
-        <entry arg="true" endPc="268440172" name="logger" stackId="1" startPc="268439909"/>
-        <entry arg="true" endPc="268440217" name="startPos" stackId="1" startPc="268440173"/>
-        <entry arg="true" endPc="268440272" name="endPos" stackId="1" startPc="268440218"/>
-        <entry endPc="268440436" name="throwDistance" stackId="3" startPc="268440392"/>
-        <entry endPc="268440449" name="i" stackId="2" startPc="268440392"/>
-        <entry endPc="268440452" name="distance" stackId="1" startPc="268440355"/>
-        <entry endPc="268440591" name="throwDistance" stackId="3" startPc="268440547"/>
-        <entry endPc="268440604" name="i" stackId="2" startPc="268440547"/>
-        <entry endPc="268440607" name="distance" stackId="1" startPc="268440458"/>
-        <entry endPc="268440695" name="i" stackId="2" startPc="268440650"/>
-        <entry endPc="268440716" name="sum" stackId="1" startPc="268440613"/>
-        <entry arg="true" endPc="268440815" name="item" stackId="1" startPc="268440741"/>
-        <entry endPc="268441158" name="rez_cmp_local_text_5759591312" stackId="2" startPc="268440828"/>
-        <entry endPc="268441158" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268440828"/>
-        <entry arg="true" endPc="268441159" name="dc" stackId="1" startPc="268440816"/>
+        <entry endPc="268436047" name="result" stackId="3" startPc="268435852"/>
+        <entry arg="true" endPc="268436048" name="logger" stackId="2" startPc="268435848"/>
+        <entry arg="true" endPc="268436048" name="id" stackId="1" startPc="268435848"/>
+        <entry endPc="268436190" name="result" stackId="3" startPc="268436053"/>
+        <entry endPc="268436190" name="id" stackId="2" startPc="268436053"/>
+        <entry arg="true" endPc="268436191" name="test" stackId="1" startPc="268436049"/>
+        <entry arg="true" endPc="268436243" name="endPos" stackId="2" startPc="268436192"/>
+        <entry arg="true" endPc="268436243" name="startPos" stackId="1" startPc="268436192"/>
+        <entry arg="true" endPc="268436307" name="st" stackId="1" startPc="268436289"/>
+        <entry arg="true" endPc="268436362" name="loc" stackId="1" startPc="268436308"/>
+        <entry arg="true" endPc="268436435" name="st" stackId="1" startPc="268436377"/>
+        <entry endPc="268436527" name="i" stackId="3" startPc="268436496"/>
+        <entry endPc="268436548" name="sum" stackId="2" startPc="268436465"/>
+        <entry arg="true" endPc="268436549" name="throws" stackId="1" startPc="268436453"/>
+        <entry endPc="268436664" name="dist" stackId="4" startPc="268436634"/>
+        <entry endPc="268436677" name="i" stackId="3" startPc="268436634"/>
+        <entry endPc="268436680" name="min" stackId="2" startPc="268436562"/>
+        <entry arg="true" endPc="268436681" name="throws" stackId="1" startPc="268436550"/>
+        <entry endPc="268436796" name="dist" stackId="4" startPc="268436766"/>
+        <entry endPc="268436809" name="i" stackId="3" startPc="268436766"/>
+        <entry endPc="268436812" name="max" stackId="2" startPc="268436694"/>
+        <entry arg="true" endPc="268436813" name="throws" stackId="1" startPc="268436682"/>
+        <entry endPc="268437115" name="r" stackId="11" startPc="268436826"/>
+        <entry endPc="268437115" name="lat2" stackId="6" startPc="268436826"/>
+        <entry endPc="268437115" name="lat1" stackId="5" startPc="268436826"/>
+        <entry endPc="268437115" name="lon2" stackId="4" startPc="268436826"/>
+        <entry endPc="268437115" name="lon1" stackId="3" startPc="268436826"/>
+        <entry endPc="268437115" name="dlat" stackId="8" startPc="268436826"/>
+        <entry endPc="268437115" name="c" stackId="10" startPc="268436826"/>
+        <entry endPc="268437115" name="v" stackId="9" startPc="268436826"/>
+        <entry endPc="268437115" name="dlon" stackId="7" startPc="268436826"/>
+        <entry arg="true" endPc="268437116" name="endPos" stackId="2" startPc="268436814"/>
+        <entry arg="true" endPc="268437116" name="startPos" stackId="1" startPc="268436814"/>
+        <entry endPc="268437402" name="r" stackId="11" startPc="268437129"/>
+        <entry endPc="268437402" name="lat2" stackId="6" startPc="268437129"/>
+        <entry endPc="268437402" name="lat1" stackId="5" startPc="268437129"/>
+        <entry endPc="268437402" name="lon2" stackId="4" startPc="268437129"/>
+        <entry endPc="268437402" name="lon1" stackId="3" startPc="268437129"/>
+        <entry endPc="268437402" name="dlat" stackId="8" startPc="268437129"/>
+        <entry endPc="268437402" name="c" stackId="10" startPc="268437129"/>
+        <entry endPc="268437402" name="v" stackId="9" startPc="268437129"/>
+        <entry endPc="268437402" name="dlon" stackId="7" startPc="268437129"/>
+        <entry arg="true" endPc="268437403" name="b" stackId="2" startPc="268437117"/>
+        <entry arg="true" endPc="268437403" name="a" stackId="1" startPc="268437117"/>
+        <entry endPc="268437704" name="distance" stackId="3" startPc="268437634"/>
+        <entry endPc="268437704" name="discLocation" stackId="2" startPc="268437634"/>
+        <entry arg="true" endPc="268437731" name="item" stackId="1" startPc="268437542"/>
+        <entry arg="true" endPc="268437799" name="dc" stackId="1" startPc="268437758"/>
+        <entry arg="true" endPc="268437829" name="dc" stackId="1" startPc="268437805"/>
+        <entry endPc="268437914" name="fw" stackId="2" startPc="268437847"/>
+        <entry arg="true" endPc="268437915" name="logger" stackId="1" startPc="268437835"/>
+        <entry arg="true" endPc="268438033" name="state" stackId="1" startPc="268437939"/>
+        <entry arg="true" endPc="268438038" name="state" stackId="1" startPc="268438034"/>
+        <entry arg="true" endPc="268438131" name="info" stackId="1" startPc="268438111"/>
+        <entry endPc="268438285" name="temp" stackId="2" startPc="268438218"/>
+        <entry arg="true" endPc="268438377" name="element" stackId="1" startPc="268438197"/>
+        <entry endPc="268438512" name="temp" stackId="2" startPc="268438457"/>
+        <entry endPc="268438622" name="temp" stackId="3" startPc="268438527"/>
+        <entry endPc="268438741" name="temp" stackId="4" startPc="268438646"/>
+        <entry endPc="268438792" name="i" stackId="6" startPc="268438770"/>
+        <entry endPc="268438910" name="temp" stackId="7" startPc="268438382"/>
+        <entry endPc="268438910" name="current" stackId="5" startPc="268438382"/>
+        <entry arg="true" endPc="268438911" name="index" stackId="1" startPc="268438378"/>
+        <entry endPc="268439021" name="i" stackId="3" startPc="268438999"/>
+        <entry endPc="268439030" name="current" stackId="2" startPc="268438916"/>
+        <entry arg="true" endPc="268439031" name="index" stackId="1" startPc="268438912"/>
+        <entry endPc="268439127" name="i" stackId="3" startPc="268439092"/>
+        <entry endPc="268439130" name="current" stackId="2" startPc="268439050"/>
+        <entry endPc="268439130" name="array" stackId="1" startPc="268439050"/>
+        <entry arg="true" endPc="268439203" name="next" stackId="3" startPc="268439132"/>
+        <entry arg="true" endPc="268439203" name="prev" stackId="2" startPc="268439132"/>
+        <entry arg="true" endPc="268439203" name="data" stackId="1" startPc="268439132"/>
+        <entry endPc="268439274" name="ll" stackId="2" startPc="268439216"/>
+        <entry arg="true" endPc="268439275" name="logger" stackId="1" startPc="268439204"/>
+        <entry endPc="268439582" name="ll" stackId="2" startPc="268439288"/>
+        <entry arg="true" endPc="268439583" name="logger" stackId="1" startPc="268439276"/>
+        <entry endPc="268440116" name="ll" stackId="2" startPc="268439596"/>
+        <entry arg="true" endPc="268440117" name="logger" stackId="1" startPc="268439584"/>
+        <entry endPc="268440380" name="arr" stackId="3" startPc="268440130"/>
+        <entry endPc="268440380" name="ll" stackId="2" startPc="268440130"/>
+        <entry arg="true" endPc="268440381" name="logger" stackId="1" startPc="268440118"/>
+        <entry arg="true" endPc="268440426" name="startPos" stackId="1" startPc="268440382"/>
+        <entry arg="true" endPc="268440481" name="endPos" stackId="1" startPc="268440427"/>
+        <entry endPc="268440645" name="throwDistance" stackId="3" startPc="268440601"/>
+        <entry endPc="268440658" name="i" stackId="2" startPc="268440601"/>
+        <entry endPc="268440661" name="distance" stackId="1" startPc="268440564"/>
+        <entry endPc="268440800" name="throwDistance" stackId="3" startPc="268440756"/>
+        <entry endPc="268440813" name="i" stackId="2" startPc="268440756"/>
+        <entry endPc="268440816" name="distance" stackId="1" startPc="268440667"/>
+        <entry endPc="268440904" name="i" stackId="2" startPc="268440859"/>
+        <entry endPc="268440925" name="sum" stackId="1" startPc="268440822"/>
+        <entry arg="true" endPc="268441024" name="item" stackId="1" startPc="268440950"/>
+        <entry endPc="268441367" name="rez_cmp_local_text_6202606111" stackId="2" startPc="268441037"/>
+        <entry endPc="268441367" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268441037"/>
+        <entry arg="true" endPc="268441368" name="dc" stackId="1" startPc="268441025"/>
     </localVars>
     <annotations>
         <annotationEntry annotation="typecheck(false)" class="globals" module="" symbol="getTestObject"/>
-        <annotationEntry annotation="test" class="globals" module="" symbol="testConstructor"/>
-        <annotationEntry annotation="test" class="globals" module="" symbol="testAdd"/>
-        <annotationEntry annotation="test" class="globals" module="" symbol="testRemove"/>
-        <annotationEntry annotation="test" class="globals" module="" symbol="testToArray"/>
+        <annotationEntry annotation="test" class="globals" module="" symbol="testFWConstructor"/>
+        <annotationEntry annotation="test" class="LinkedListTest" module="globals" symbol="testConstructor"/>
+        <annotationEntry annotation="test" class="LinkedListTest" module="globals" symbol="testAdd"/>
+        <annotationEntry annotation="test" class="LinkedListTest" module="globals" symbol="testRemove"/>
+        <annotationEntry annotation="test" class="LinkedListTest" module="globals" symbol="testToArray"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_monkey"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_1"/>
@@ -581,27 +611,28 @@
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
     </annotations>
     <dataEntryOffsetMappings>
-        <dataEntry label="globals" offset="95" parentId="" symbolId="globals" type="module"/>
-        <dataEntry label="globals/LinkedList" offset="294" parentId="globals" symbolId="LinkedList" type="class"/>
-        <dataEntry label="globals/LinkedList/ListNode" offset="421" parentId="LinkedList" symbolId="ListNode" type="class"/>
-        <dataEntry label="globals/Rez" offset="492" parentId="globals" symbolId="Rez" type="module"/>
-        <dataEntry label="globals/Rez/Drawables" offset="571" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Menus" offset="618" parentId="Rez" symbolId="Menus" type="module"/>
-        <dataEntry label="globals/Rez/Menus/PinMenu" offset="657" parentId="Menus" symbolId="PinMenu" type="class"/>
-        <dataEntry label="globals/Rez/Fonts" offset="704" parentId="Rez" symbolId="Fonts" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="735" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/JsonData" offset="774" parentId="Rez" symbolId="JsonData" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="805" parentId="Rez" symbolId="Strings" type="module"/>
-        <dataEntry label="globals/DiscGolfTrackerMenuDelegate" offset="868" parentId="globals" symbolId="DiscGolfTrackerMenuDelegate" type="class"/>
-        <dataEntry label="globals/Throw" offset="923" parentId="globals" symbolId="Throw" type="class"/>
-        <dataEntry label="globals/Throw/statics" offset="1018" parentId="globals" symbolId="globals/Throw" type="class"/>
-        <dataEntry label="globals/ThrowTrackerThrowList" offset="1057" parentId="globals" symbolId="ThrowTrackerThrowList" type="class"/>
-        <dataEntry label="globals/DiscGolfTrackerApp" offset="1152" parentId="globals" symbolId="DiscGolfTrackerApp" type="class"/>
-        <dataEntry label="globals/DiscGolfTrackerDelegate" offset="1231" parentId="globals" symbolId="DiscGolfTrackerDelegate" type="class"/>
-        <dataEntry label="globals/DiscGolfTrackerView" offset="1286" parentId="globals" symbolId="DiscGolfTrackerView" type="class"/>
-        <dataEntry label="globals/RunNoEvil" offset="1365" parentId="globals" symbolId="RunNoEvil" type="class"/>
-        <dataEntry label="globals/ThrowTrackerManager" offset="1476" parentId="globals" symbolId="ThrowTrackerManager" type="class"/>
-        <dataEntry label="globals/PinMenuDelegate" offset="1587" parentId="globals" symbolId="PinMenuDelegate" type="class"/>
+        <dataEntry label="globals" offset="103" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/LinkedListTest" offset="302" parentId="globals" symbolId="LinkedListTest" type="module"/>
+        <dataEntry label="globals/LinkedList" offset="365" parentId="globals" symbolId="LinkedList" type="class"/>
+        <dataEntry label="globals/LinkedList/ListNode" offset="492" parentId="LinkedList" symbolId="ListNode" type="class"/>
+        <dataEntry label="globals/Stats" offset="563" parentId="globals" symbolId="Stats" type="module"/>
+        <dataEntry label="globals/Rez" offset="626" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/Rez/Drawables" offset="705" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="752" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Menus/PinMenu" offset="791" parentId="Menus" symbolId="PinMenu" type="class"/>
+        <dataEntry label="globals/Rez/Fonts" offset="838" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="869" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="908" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="939" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/DiscGolfTrackerMenuDelegate" offset="1002" parentId="globals" symbolId="DiscGolfTrackerMenuDelegate" type="class"/>
+        <dataEntry label="globals/Throw" offset="1057" parentId="globals" symbolId="Throw" type="class"/>
+        <dataEntry label="globals/FieldWork" offset="1160" parentId="globals" symbolId="FieldWork" type="class"/>
+        <dataEntry label="globals/DiscGolfTrackerApp" offset="1263" parentId="globals" symbolId="DiscGolfTrackerApp" type="class"/>
+        <dataEntry label="globals/DiscGolfTrackerDelegate" offset="1342" parentId="globals" symbolId="DiscGolfTrackerDelegate" type="class"/>
+        <dataEntry label="globals/DiscGolfTrackerView" offset="1397" parentId="globals" symbolId="DiscGolfTrackerView" type="class"/>
+        <dataEntry label="globals/RunNoEvil" offset="1476" parentId="globals" symbolId="RunNoEvil" type="class"/>
+        <dataEntry label="globals/ThrowTrackerManager" offset="1587" parentId="globals" symbolId="ThrowTrackerManager" type="class"/>
+        <dataEntry label="globals/PinMenuDelegate" offset="1698" parentId="globals" symbolId="PinMenuDelegate" type="class"/>
     </dataEntryOffsetMappings>
     <functions>
         <functionEntry accessMode="public" endPc="268435491" name="getTestObject" startPc="268435456">
@@ -621,261 +652,277 @@
         <functionEntry accessMode="public" endPc="268435747" name="getNumberOfTests" parent="RunNoEvil" startPc="268435725">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435828" name="populate_test_entries_0_to_4" parent="RunNoEvil" startPc="268435748">
+        <functionEntry accessMode="public" endPc="268435847" name="populate_test_entries_0_to_5" parent="RunNoEvil" startPc="268435748">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435972" name="evaluate_test_entries_0_to_4" parent="RunNoEvil" startPc="268435829">
+        <functionEntry accessMode="public" endPc="268436048" name="evaluate_test_entries_0_to_5" parent="RunNoEvil" startPc="268435848">
             <param id="id"/>
             <param id="logger"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436115" name="runTest" parent="RunNoEvil" startPc="268435973">
+        <functionEntry accessMode="public" endPc="268436191" name="runTest" parent="RunNoEvil" startPc="268436049">
             <param id="test"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268441462" name="&lt;init&gt;" parent="RunNoEvil" startPc="268441444">
+        <functionEntry accessMode="protected" endPc="268441763" name="&lt;init&gt;" parent="RunNoEvil" startPc="268441745">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436140" name="initalize" parent="Throw" startPc="268436116">
+        <functionEntry accessMode="public" endPc="268436243" name="initalize" parent="Throw" startPc="268436192">
             <param id="startPos"/>
             <param id="endPos"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436173" name="measureThrowDistance" parent="Throw" startPc="268436141">
+        <functionEntry accessMode="public" endPc="268436257" name="getDistance" parent="Throw" startPc="268436244">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436452" name="measureDistanceBetweenLocations" parent="Throw" startPc="268436174">
+        <functionEntry accessMode="public" endPc="268436271" name="getStartPos" parent="Throw" startPc="268436258">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436285" name="getEndPos" parent="Throw" startPc="268436272">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268441656" name="&lt;init&gt;" parent="Throw" startPc="268441656">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436288" name="initialize" parent="Throw" startPc="268436286">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436307" name="initalize" parent="FieldWork" startPc="268436289">
+            <param id="st"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436362" name="add" parent="FieldWork" startPc="268436308">
+            <param id="loc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436376" name="getThrows" parent="FieldWork" startPc="268436363">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436435" name="setStart" parent="FieldWork" startPc="268436377">
+            <param id="st"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436449" name="getStart" parent="FieldWork" startPc="268436436">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268441687" name="&lt;init&gt;" parent="FieldWork" startPc="268441657">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436452" name="initialize" parent="FieldWork" startPc="268436450">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436549" name="getAvgDist" parent="Stats" startPc="268436453">
+            <param id="throws"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436681" name="getMinDist" parent="Stats" startPc="268436550">
+            <param id="throws"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436813" name="getMaxDist" parent="Stats" startPc="268436682">
+            <param id="throws"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437116" name="measureDistanceBetweenLocations" parent="Stats" startPc="268436814">
             <param id="startPos"/>
             <param id="endPos"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436466" name="getStartPos" parent="Throw" startPc="268436453">
+        <functionEntry accessMode="protected" endPc="268441587" name="&lt;init&gt;" parent="Stats" startPc="268441587">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436480" name="getEndPos" parent="Throw" startPc="268436467">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="protected" endPc="268441367" name="&lt;init&gt;" parent="globals/Throw" startPc="268441367">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="protected" endPc="268441366" name="&lt;init&gt;" parent="Throw" startPc="268441366">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436483" name="initialize" parent="Throw" startPc="268436481">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436770" name="distanceBeteweenLocations" startPc="268436484">
+        <functionEntry accessMode="public" endPc="268437403" name="distanceBeteweenLocations" startPc="268437117">
             <param id="a"/>
             <param id="b"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436793" name="initialize" parent="DiscGolfTrackerDelegate" startPc="268436771">
+        <functionEntry accessMode="public" endPc="268437426" name="initialize" parent="DiscGolfTrackerDelegate" startPc="268437404">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436885" name="onBack" parent="DiscGolfTrackerDelegate" startPc="268436794">
+        <functionEntry accessMode="public" endPc="268437518" name="onBack" parent="DiscGolfTrackerDelegate" startPc="268437427">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268441424" name="&lt;init&gt;" parent="DiscGolfTrackerDelegate" startPc="268441406">
+        <functionEntry accessMode="protected" endPc="268441725" name="&lt;init&gt;" parent="DiscGolfTrackerDelegate" startPc="268441707">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436908" name="initalize" parent="PinMenuDelegate" startPc="268436886">
+        <functionEntry accessMode="public" endPc="268437541" name="initalize" parent="PinMenuDelegate" startPc="268437519">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437098" name="onMenuItem" parent="PinMenuDelegate" startPc="268436909">
+        <functionEntry accessMode="public" endPc="268437731" name="onMenuItem" parent="PinMenuDelegate" startPc="268437542">
             <param id="item"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268441482" name="&lt;init&gt;" parent="PinMenuDelegate" startPc="268441464">
+        <functionEntry accessMode="protected" endPc="268441783" name="&lt;init&gt;" parent="PinMenuDelegate" startPc="268441765">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437101" name="initialize" parent="PinMenuDelegate" startPc="268437099">
+        <functionEntry accessMode="public" endPc="268437734" name="initialize" parent="PinMenuDelegate" startPc="268437732">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437124" name="initialize" parent="DiscGolfTrackerView" startPc="268437102">
+        <functionEntry accessMode="public" endPc="268437757" name="initialize" parent="DiscGolfTrackerView" startPc="268437735">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437166" name="onLayout" parent="DiscGolfTrackerView" startPc="268437125">
+        <functionEntry accessMode="public" endPc="268437799" name="onLayout" parent="DiscGolfTrackerView" startPc="268437758">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437171" name="onShow" parent="DiscGolfTrackerView" startPc="268437167">
+        <functionEntry accessMode="public" endPc="268437804" name="onShow" parent="DiscGolfTrackerView" startPc="268437800">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437196" name="onUpdate" parent="DiscGolfTrackerView" startPc="268437172">
+        <functionEntry accessMode="public" endPc="268437829" name="onUpdate" parent="DiscGolfTrackerView" startPc="268437805">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437201" name="onHide" parent="DiscGolfTrackerView" startPc="268437197">
+        <functionEntry accessMode="public" endPc="268437834" name="onHide" parent="DiscGolfTrackerView" startPc="268437830">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268441443" name="&lt;init&gt;" parent="DiscGolfTrackerView" startPc="268441425">
+        <functionEntry accessMode="protected" endPc="268441744" name="&lt;init&gt;" parent="DiscGolfTrackerView" startPc="268441726">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437224" name="initialize" parent="ThrowTrackerThrowList" startPc="268437202">
+        <functionEntry accessMode="public" endPc="268437915" name="testFWConstructor" startPc="268437835">
+            <param id="logger"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437294" name="add" parent="ThrowTrackerThrowList" startPc="268437225">
-            <param id="element"/>
+        <functionEntry accessMode="public" endPc="268437938" name="initialize" parent="DiscGolfTrackerApp" startPc="268437916">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437343" name="addThrow" parent="ThrowTrackerThrowList" startPc="268437295">
-            <param id="startPos"/>
-            <param id="endPos"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268437407" name="getDistanceOfLastThrow" parent="ThrowTrackerThrowList" startPc="268437344">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268437492" name="getMaxDistance" parent="ThrowTrackerThrowList" startPc="268437408">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268437615" name="getMinDistance" parent="ThrowTrackerThrowList" startPc="268437493">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268437706" name="getAverageDistance" parent="ThrowTrackerThrowList" startPc="268437616">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="protected" endPc="268441386" name="&lt;init&gt;" parent="ThrowTrackerThrowList" startPc="268441368">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268437729" name="initialize" parent="DiscGolfTrackerApp" startPc="268437707">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268437824" name="onStart" parent="DiscGolfTrackerApp" startPc="268437730">
+        <functionEntry accessMode="public" endPc="268438033" name="onStart" parent="DiscGolfTrackerApp" startPc="268437939">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437829" name="onStop" parent="DiscGolfTrackerApp" startPc="268437825">
+        <functionEntry accessMode="public" endPc="268438038" name="onStop" parent="DiscGolfTrackerApp" startPc="268438034">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437901" name="getInitialView" parent="DiscGolfTrackerApp" startPc="268437830">
+        <functionEntry accessMode="public" endPc="268438110" name="getInitialView" parent="DiscGolfTrackerApp" startPc="268438039">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437922" name="onPosition" parent="DiscGolfTrackerApp" startPc="268437902">
+        <functionEntry accessMode="public" endPc="268438131" name="onPosition" parent="DiscGolfTrackerApp" startPc="268438111">
             <param id="info"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268441405" name="&lt;init&gt;" parent="DiscGolfTrackerApp" startPc="268441387">
+        <functionEntry accessMode="protected" endPc="268441706" name="&lt;init&gt;" parent="DiscGolfTrackerApp" startPc="268441688">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437951" name="getApp" startPc="268437923">
+        <functionEntry accessMode="public" endPc="268438160" name="getApp" startPc="268438132">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437987" name="initialize" parent="LinkedList" startPc="268437952">
+        <functionEntry accessMode="public" endPc="268438196" name="initialize" parent="LinkedList" startPc="268438161">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438168" name="add" parent="LinkedList" startPc="268437988">
+        <functionEntry accessMode="public" endPc="268438377" name="add" parent="LinkedList" startPc="268438197">
             <param id="element"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438702" name="remove" parent="LinkedList" startPc="268438169">
+        <functionEntry accessMode="public" endPc="268438911" name="remove" parent="LinkedList" startPc="268438378">
             <param id="index"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438822" name="get" parent="LinkedList" startPc="268438703">
+        <functionEntry accessMode="public" endPc="268439031" name="get" parent="LinkedList" startPc="268438912">
             <param id="index"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438836" name="getSize" parent="LinkedList" startPc="268438823">
+        <functionEntry accessMode="public" endPc="268439045" name="getSize" parent="LinkedList" startPc="268439032">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438922" name="toArray" parent="LinkedList" startPc="268438837">
+        <functionEntry accessMode="public" endPc="268439131" name="toArray" parent="LinkedList" startPc="268439046">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438994" name="initialize" parent="ListNode" startPc="268438923">
+        <functionEntry accessMode="public" endPc="268439203" name="initialize" parent="ListNode" startPc="268439132">
             <param id="data"/>
             <param id="prev"/>
             <param id="next"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268441297" name="&lt;init&gt;" parent="ListNode" startPc="268441297">
+        <functionEntry accessMode="protected" endPc="268441586" name="&lt;init&gt;" parent="ListNode" startPc="268441586">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268441296" name="&lt;init&gt;" parent="LinkedList" startPc="268441296">
+        <functionEntry accessMode="protected" endPc="268441585" name="&lt;init&gt;" parent="LinkedList" startPc="268441585">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439066" name="testConstructor" startPc="268438995">
+        <functionEntry accessMode="public" endPc="268439275" name="testConstructor" parent="LinkedListTest" startPc="268439204">
             <param id="logger"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439374" name="testAdd" startPc="268439067">
+        <functionEntry accessMode="public" endPc="268439583" name="testAdd" parent="LinkedListTest" startPc="268439276">
             <param id="logger"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439908" name="testRemove" startPc="268439375">
+        <functionEntry accessMode="public" endPc="268440117" name="testRemove" parent="LinkedListTest" startPc="268439584">
             <param id="logger"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440172" name="testToArray" startPc="268439909">
+        <functionEntry accessMode="public" endPc="268440381" name="testToArray" parent="LinkedListTest" startPc="268440118">
             <param id="logger"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440217" name="initialize" parent="ThrowTrackerManager" startPc="268440173">
+        <functionEntry accessMode="protected" endPc="268441584" name="&lt;init&gt;" parent="LinkedListTest" startPc="268441584">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440426" name="initialize" parent="ThrowTrackerManager" startPc="268440382">
             <param id="startPos"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440272" name="addThrow" parent="ThrowTrackerManager" startPc="268440218">
+        <functionEntry accessMode="public" endPc="268440481" name="addThrow" parent="ThrowTrackerManager" startPc="268440427">
             <param id="endPos"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440295" name="getNumberOfThrows" parent="ThrowTrackerManager" startPc="268440273">
+        <functionEntry accessMode="public" endPc="268440504" name="getNumberOfThrows" parent="ThrowTrackerManager" startPc="268440482">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440350" name="getDistanceOfLastThrow" parent="ThrowTrackerManager" startPc="268440296">
+        <functionEntry accessMode="public" endPc="268440559" name="getDistanceOfLastThrow" parent="ThrowTrackerManager" startPc="268440505">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440453" name="getMaxDistance" parent="ThrowTrackerManager" startPc="268440351">
+        <functionEntry accessMode="public" endPc="268440662" name="getMaxDistance" parent="ThrowTrackerManager" startPc="268440560">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440608" name="getMinDistance" parent="ThrowTrackerManager" startPc="268440454">
+        <functionEntry accessMode="public" endPc="268440817" name="getMinDistance" parent="ThrowTrackerManager" startPc="268440663">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440717" name="getAverageDistance" parent="ThrowTrackerManager" startPc="268440609">
+        <functionEntry accessMode="public" endPc="268440926" name="getAverageDistance" parent="ThrowTrackerManager" startPc="268440818">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268441463" name="&lt;init&gt;" parent="ThrowTrackerManager" startPc="268441463">
+        <functionEntry accessMode="protected" endPc="268441764" name="&lt;init&gt;" parent="ThrowTrackerManager" startPc="268441764">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440740" name="initialize" parent="DiscGolfTrackerMenuDelegate" startPc="268440718">
+        <functionEntry accessMode="public" endPc="268440949" name="initialize" parent="DiscGolfTrackerMenuDelegate" startPc="268440927">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440815" name="onMenuItem" parent="DiscGolfTrackerMenuDelegate" startPc="268440741">
+        <functionEntry accessMode="public" endPc="268441024" name="onMenuItem" parent="DiscGolfTrackerMenuDelegate" startPc="268440950">
             <param id="item"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268441365" name="&lt;init&gt;" parent="DiscGolfTrackerMenuDelegate" startPc="268441347">
+        <functionEntry accessMode="protected" endPc="268441655" name="&lt;init&gt;" parent="DiscGolfTrackerMenuDelegate" startPc="268441637">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268441322" name="&lt;init&gt;" parent="Drawables" startPc="268441322">
+        <functionEntry accessMode="protected" endPc="268441612" name="&lt;init&gt;" parent="Drawables" startPc="268441612">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268441343" name="&lt;init&gt;" parent="Fonts" startPc="268441343">
+        <functionEntry accessMode="protected" endPc="268441633" name="&lt;init&gt;" parent="Fonts" startPc="268441633">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268441345" name="&lt;init&gt;" parent="JsonData" startPc="268441345">
+        <functionEntry accessMode="protected" endPc="268441635" name="&lt;init&gt;" parent="JsonData" startPc="268441635">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441159" name="MainLayout" parent="Layouts" startPc="268440816">
+        <functionEntry accessMode="public" endPc="268441368" name="MainLayout" parent="Layouts" startPc="268441025">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268441344" name="&lt;init&gt;" parent="Layouts" startPc="268441344">
+        <functionEntry accessMode="protected" endPc="268441634" name="&lt;init&gt;" parent="Layouts" startPc="268441634">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441294" name="initialize" parent="PinMenu" startPc="268441160">
+        <functionEntry accessMode="public" endPc="268441503" name="initialize" parent="PinMenu" startPc="268441369">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268441342" name="&lt;init&gt;" parent="PinMenu" startPc="268441324">
+        <functionEntry accessMode="protected" endPc="268441632" name="&lt;init&gt;" parent="PinMenu" startPc="268441614">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268441323" name="&lt;init&gt;" parent="Menus" startPc="268441323">
+        <functionEntry accessMode="protected" endPc="268441613" name="&lt;init&gt;" parent="Menus" startPc="268441613">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268441346" name="&lt;init&gt;" parent="Strings" startPc="268441346">
+        <functionEntry accessMode="protected" endPc="268441636" name="&lt;init&gt;" parent="Strings" startPc="268441636">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268441321" name="&lt;init&gt;" parent="Rez" startPc="268441298">
+        <functionEntry accessMode="protected" endPc="268441611" name="&lt;init&gt;" parent="Rez" startPc="268441588">
             <documentation/>
         </functionEntry>
     </functions>
