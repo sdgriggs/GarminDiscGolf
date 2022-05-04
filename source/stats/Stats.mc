@@ -1,13 +1,17 @@
 using Toybox.Math;
 
 module Stats{
-    //Takes an array of throws and returns the average distance
-    public function getAvgDist(throws){
+    public function totalDist(throws){
         var sum = 0;
         for (var i = 0; i < throws.size(); i++){
             sum += throws[i].getDistance();
         }
-        return 1.0 * sum / throws.size();
+        return sum;
+    }
+    //Takes an array of throws and returns the average distance
+    public function getAvgDist(throws){
+
+        return totalDist(throws) / throws.size();
     }
 
     public function getMinDist(throws){
