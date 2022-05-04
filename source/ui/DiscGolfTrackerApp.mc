@@ -25,7 +25,8 @@ class DiscGolfTrackerApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as Array<Views or InputDelegates>? {
-        return [ new DiscGolfTrackerView(), new DiscGolfTrackerDelegate() ] as Array<Views or InputDelegates>;
+        //return [ new DiscGolfTrackerView(), new DiscGolfTrackerDelegate() ] as Array<Views or InputDelegates>;
+        return [new MainMenuView(), new MainMenuDelegate()] as Array<Views or InputDelegates>;
     }
 
     // Method to handle the position calls
