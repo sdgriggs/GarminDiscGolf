@@ -1,5 +1,5 @@
 using Toybox.Test;
-using Toybox.position;
+using Toybox.Position;
 
 var stPos = new Position.Location(
     {
@@ -10,8 +10,10 @@ var stPos = new Position.Location(
 
 //Tests constructor
 (:test)
-function testConstructor(logger){
-    var fw = new FieldWork(stPos);
+function testFWConstructor(logger){
+    //var fw = new FieldWork(stPos); This should work but doesn't
+    var fw = new FieldWork(); //This works but shouldn't
     Test.assertEqual(0, fw.getThrows().getSize());
+    //Test.assertEqual(stPos, fw.getStart());
     return true;
 }

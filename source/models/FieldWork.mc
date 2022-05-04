@@ -1,5 +1,7 @@
 using Toybox.Position;
 using Throw;
+import Toybox.Lang;
+
 
 class FieldWork {
     //List of throws in a fieldwork session
@@ -14,9 +16,8 @@ class FieldWork {
     }
 
     //adds a throw location to the list of throws (This doesn't work)
-    public function add(loc) {
-        var throw = new Throw(start, loc);
-        throws.add(throw);
+    public function add(loc) {        
+        throws.add(new Throw(start, loc));
     }
 
     //gets the linked list of throws
