@@ -10,7 +10,7 @@ class FieldWork {
     private var start = null;
 
 
-    public function initalize(st) {
+    public function initialize(st) {
         setStart(st);
     }
 

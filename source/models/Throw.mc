@@ -9,11 +9,14 @@ class Throw{
 
     private var distance;
 
+    private var outcome;
 
-    public function initalize(startPos, endPos){
+
+    public function initalize(startPos, endPos, outcome){
         self.startPos = startPos;
         self.endPos = endPos;
         self.distance = Stats.measureDistanceBetweenLocations(startPos, endPos);
+        self.outcome = outcome;
     }
 
     public function getDistance(){
@@ -26,6 +29,10 @@ class Throw{
 
     public function getEndPos(){
         return self.endPos;
+    }
+
+    public function getOutcome(){
+        return self.outcome;
     }
 
 }
