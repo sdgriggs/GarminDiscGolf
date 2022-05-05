@@ -652,8 +652,8 @@
         <entry arg="true" endPc="268440992" name="item" stackId="1" startPc="268440939"/>
         <entry arg="true" endPc="268441090" name="item" stackId="1" startPc="268441016"/>
         <entry arg="true" endPc="268441178" name="item" stackId="1" startPc="268441118"/>
+        <entry endPc="268441521" name="rez_cmp_local_text_1911318652" stackId="2" startPc="268441191"/>
         <entry endPc="268441521" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268441191"/>
-        <entry endPc="268441521" name="rez_cmp_local_text_9315494208" stackId="2" startPc="268441191"/>
         <entry arg="true" endPc="268441522" name="dc" stackId="1" startPc="268441179"/>
     </localVars>
     <annotations>
