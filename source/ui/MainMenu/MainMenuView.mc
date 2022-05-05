@@ -6,7 +6,7 @@ class MainMenuView extends WatchUi.Menu{
         //setTitle("Garmin Disc Golf");
         addItem("Play Round", :round);
         addItem("Field Work", :fw);
-        //addItem("Settings", :settings);
+        addItem("Settings", :settings);
     }
 
 

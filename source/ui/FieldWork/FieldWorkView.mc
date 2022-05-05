@@ -11,6 +11,17 @@ class FieldWorkView extends WatchUi.View{
     
     private function initialize(){
         WatchUi.View.initialize();
+        reset();
+    }
+
+    public static function getInstance(){
+        if (instance == null){
+            instance = new FieldWorkView();
+        }
+        return instance;
+    }
+
+    public function reset(){
         self.started = false;
         tempText = new WatchUi.Text({
             :text=>"Press Lap To Mark Start",
@@ -19,13 +30,6 @@ class FieldWorkView extends WatchUi.View{
             :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
             :locY=>WatchUi.LAYOUT_VALIGN_CENTER
         });
-    }
-
-    public static function getInstance(){
-        if (instance == null){
-            instance = new FieldWorkView();
-        }
-        return instance;
     }
 
     public function wasStarted(){
