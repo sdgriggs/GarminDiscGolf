@@ -11,7 +11,7 @@ class MainMenuDelegate extends WatchUi.MenuInputDelegate {
             WatchUi.pushView(new RoundView(), new RoundDelegate(), WatchUi.SLIDE_RIGHT);
         } else if (item == :fw){
             System.println("Field Work");
-            WatchUi.pushView(new FieldWorkView(), new FieldWorkDelegate(), WatchUi.SLIDE_RIGHT);
+            WatchUi.pushView(FieldWorkView.getInstance(), new FieldWorkDelegate(), WatchUi.SLIDE_RIGHT);
         } else if (item == :settings){
             System.println("Settings");
             WatchUi.pushView(new SettingsView(), new SettingsDelegate(), WatchUi.SLIDE_RIGHT);

@@ -2,8 +2,10 @@ import Toybox.Application;
 import Toybox.Lang;
 import Toybox.WatchUi;
 using Toybox.Position;
+using Toybox.Attention;
 
 var lastLocation = null;
+var locationAcquired = false;
 
 
 class DiscGolfTrackerApp extends Application.AppBase {
@@ -31,6 +33,10 @@ class DiscGolfTrackerApp extends Application.AppBase {
 
     // Method to handle the position calls
     function onPosition(info) {
+        if (locationAcquired == false){
+            Attention.playTone(Attention.TONE_MSG);
+            locationAcquired = true;
+        }
         lastLocation = info.position;      
        
     }

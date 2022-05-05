@@ -1,8 +1,7 @@
 using Toybox.WatchUi;
 using Toybox.Graphics;
 
-class FieldWorkView extends WatchUi.View{
-
+class RoundView extends WatchUi.View{
     private var tempText;
 
     function initialize(){
