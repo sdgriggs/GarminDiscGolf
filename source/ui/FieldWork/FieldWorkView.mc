@@ -1,5 +1,6 @@
 using Toybox.WatchUi;
 using Toybox.Graphics;
+using Toybox.Application.Properties;
 
 class FieldWorkView extends WatchUi.View{
 
@@ -32,8 +33,7 @@ class FieldWorkView extends WatchUi.View{
     }
 
     public function startFieldWork(startLoc){
-        //TODO: Add settings functionality (probably another singleton class)
-        manager = new FieldWork(startLoc, false);
+        manager = new FieldWork(startLoc, Properties.getValue("isMetric"));
         started = true;
         tempText.setText("Press Lap To\nRecord A Throw");
     }
@@ -45,10 +45,17 @@ class FieldWorkView extends WatchUi.View{
     }
 
     public function addThrow(endPos){
+
         if (started){
+            //specify proper unit name
+            var unitName = "ft";
+            if (Properties.getValue("isMetric")){
+                unitName = "m";
+            }
+            //Add throw and update ui text
             manager.addEndPoint(endPos);
-                        var throwList = manager.getThrows();
-            tempText.setText("Last Throw Was:\n" + throwList.get(throwList.getSize() - 1).getDistance() +"ft"
+            var throwList = manager.getThrows();
+            tempText.setText("Last Throw Was:\n" + throwList.get(throwList.getSize() - 1).getDistance() +unitName
             + "\nPress Lap To\nRecord A Throw"
             );
         }

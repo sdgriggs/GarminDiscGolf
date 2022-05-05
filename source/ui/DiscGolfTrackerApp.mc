@@ -31,6 +31,11 @@ class DiscGolfTrackerApp extends Application.AppBase {
         return [new MainMenuView(), new MainMenuDelegate()] as Array<Views or InputDelegates>;
     }
 
+    //Return the settings view of the application
+    function getSettingsView() {
+        return [new SettingsView(), new SettingsDelegate()];
+    }
+
     // Method to handle the position calls
     function onPosition(info) {
         if (locationAcquired == false){
