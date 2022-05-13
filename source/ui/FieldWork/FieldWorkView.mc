@@ -48,6 +48,13 @@ class FieldWorkView extends WatchUi.View{
         }
     }
 
+    public function getThrowsArray(){
+        if (!started){
+            return null;
+        }
+        return manager.getThrows().toArray();
+    }
+
     public function addThrow(endPos){
 
         if (started){
