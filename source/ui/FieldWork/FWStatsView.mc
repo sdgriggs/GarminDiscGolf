@@ -11,10 +11,12 @@ class FWStatsView extends WatchUi.View{
 
     function initialize(throwArr){
         WatchUi.View.initialize();
+
         title = new WatchUi.Text({
             :text=>"Summary",
             :color=>Graphics.COLOR_WHITE,
             :font=>Graphics.FONT_SYSTEM_TINY,
+            :justification=>Graphics.TEXT_JUSTIFY_CENTER,
             :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
             :locY =>WatchUi.LAYOUT_VALIGN_TOP,
         });
@@ -34,13 +36,14 @@ class FWStatsView extends WatchUi.View{
         stats = new WatchUi.TextArea({
             :text=>statsString,
             :color=>Graphics.COLOR_WHITE,
-            :font=>[Graphics.FONT_XTINY],
+            :font=>[Graphics.FONT_SYSTEM_XTINY],
+            :justification=>Graphics.TEXT_JUSTIFY_CENTER,
             :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
             :locY=>WatchUi.LAYOUT_VALIGN_BOTTOM,
-            // :width=>System.getDeviceSettings().screenWidth - 20,
-            // :height=>System.getDeviceSettings().screenHeight - 20
-            :width=>180,
-            :height=>180
+            :width=>System.getDeviceSettings().screenWidth,
+            :height=>System.getDeviceSettings().screenHeight - Graphics.getFontHeight(Graphics.FONT_SYSTEM_TINY)
+            //:width=>180,
+            //:height=>180
         });
 
     }
