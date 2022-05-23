@@ -6,6 +6,7 @@ using Toybox.Attention;
 
 var lastLocation = null;
 var locationAcquired = false;
+var gpsQuality = null;
 
 
 class DiscGolfTrackerApp extends Application.AppBase {
@@ -42,7 +43,11 @@ class DiscGolfTrackerApp extends Application.AppBase {
             Attention.playTone(Attention.TONE_MSG);
             locationAcquired = true;
         }
-        lastLocation = info.position;      
+        lastLocation = info.position;
+        gpsQuality = info.accuracy;  
+        System.println("GPSQuality: " + gpsQuality);
+        WatchUi.requestUpdate();
+        
        
     }
 

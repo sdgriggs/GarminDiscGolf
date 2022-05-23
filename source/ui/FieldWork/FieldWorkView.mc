@@ -22,14 +22,24 @@ class FieldWorkView extends WatchUi.View{
     }
 
     public function reset(){
-        self.started = false;
-        tempText = new WatchUi.Text({
-            :text=>"Press Lap To Mark Start",
-            :color=>Graphics.COLOR_WHITE,
-            :font=>Graphics.FONT_SMALL,
-            :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
-            :locY=>WatchUi.LAYOUT_VALIGN_CENTER
+        if(locationAcquired == false) {
+            tempText = new WatchUi.Text({
+                :text=>"Wait for GPS\nto be acquiered",
+                :color=>Graphics.COLOR_WHITE,
+                :font=>Graphics.FONT_SMALL,
+                :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
+                :locY=>WatchUi.LAYOUT_VALIGN_CENTER
         });
+        } else {
+            self.started = false;
+            tempText = new WatchUi.Text({
+                :text=>"Press Lap To Mark Start",
+                :color=>Graphics.COLOR_WHITE,
+                :font=>Graphics.FONT_SMALL,
+                :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
+                :locY=>WatchUi.LAYOUT_VALIGN_CENTER
+            });
+        }
     }
 
     public function wasStarted(){
@@ -77,9 +87,15 @@ class FieldWorkView extends WatchUi.View{
     }
 
     function onUpdate(dc){
+        if(self.started != true) {
+            reset();
+        }
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        //var status = gpsQuality;
         dc.clear();
+        GraphicsUtil.showGPSStatus(dc, gpsQuality);
         tempText.draw(dc);
+        System.println("FW Update");
     }
 
 }

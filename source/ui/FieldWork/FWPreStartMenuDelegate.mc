@@ -1,13 +1,14 @@
 using Toybox.WatchUi;
 
-class FWPreStartMenuDelegate extends WatchUi.MenuInputDelegate{
+class FWPreStartMenuDelegate extends WatchUi.BehaviorDelegate{
     function initialize(){
-        WatchUi.MenuInputDelegate.initialize();
+        WatchUi.BehaviorDelegate.initialize();
     }
 
-    function onMenuItem(item){
-        if (item == :start){
-            FieldWorkView.getInstance().startFieldWork(lastLocation);
-        }
+    public function onSelect(){
+        
+        FieldWorkView.getInstance().startFieldWork(lastLocation);
+        WatchUi.pushView(FieldWorkView.getInstance(), new FieldWorkDelegate(), WatchUi.SLIDE_RIGHT);
+        
     }
 }
