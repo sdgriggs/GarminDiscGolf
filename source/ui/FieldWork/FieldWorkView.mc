@@ -1,6 +1,7 @@
 using Toybox.WatchUi;
 using Toybox.Graphics;
 using Toybox.Application.Properties;
+using Toybox.Math;
 
 class FieldWorkView extends WatchUi.View{
 
@@ -76,7 +77,7 @@ class FieldWorkView extends WatchUi.View{
             //Add throw and update ui text
             manager.addEndPoint(endPos);
             var throwList = manager.getThrows();
-            tempText.setText("Last Throw Was:\n" + throwList.get(throwList.getSize() - 1).getDistance() +unitName
+            tempText.setText("Last Throw Was:\n" + Math.round(throwList.get(throwList.getSize() - 1).getDistance()).toNumber() +unitName
             + "\nPress Lap To\nRecord A Throw"
             );
         }
