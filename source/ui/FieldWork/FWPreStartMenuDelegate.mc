@@ -8,7 +8,8 @@ class FWPreStartMenuDelegate extends WatchUi.BehaviorDelegate{
     public function onSelect(){
         
         FieldWorkView.getInstance().startFieldWork(lastLocation);
-        WatchUi.switchToView(FieldWorkView.getInstance(), new FieldWorkDelegate(), WatchUi.SLIDE_RIGHT);
+        WatchUi.popView(WatchUi.SLIDE_LEFT);
+
         
     }
 }
