@@ -8,7 +8,9 @@ class GraphicsUtil {
         var center = dc.getWidth() / 2;
         var rad = dc.getWidth() / 2 - penWidth;
         var start = 135;
-        
+        var end = 45;
+        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_BLACK);
+        dc.drawArc(center, center, rad, Graphics.ARC_CLOCKWISE, start, end);
         if(status == Position.QUALITY_NOT_AVAILABLE) {
             length = 2;
             dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_BLACK);
@@ -30,6 +32,7 @@ class GraphicsUtil {
         }
         
         dc.setPenWidth(penWidth);
+        
         dc.drawArc(center, center, rad, Graphics.ARC_CLOCKWISE, start, start - length );
         
         System.println("GPS STATUS DRAWN");
