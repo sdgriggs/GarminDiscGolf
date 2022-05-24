@@ -5,7 +5,7 @@ class MainMenuDelegate extends WatchUi.MenuInputDelegate {
         WatchUi.MenuInputDelegate.initialize();
     }
 
-    function onMenuItem(item as Symbol) as Void{
+    function onMenuItem(item){
         if (item == :round){
             System.println("Play Round");
             WatchUi.pushView(new RoundView(), new RoundDelegate(), WatchUi.SLIDE_RIGHT);

@@ -33,18 +33,30 @@ class FWStatsView extends WatchUi.View{
         statsString += "Max Distance: " + Math.round(Stats.getMaxDist(throwArr)).toNumber() + unitName + "\n";
         statsString += "Min Distance: " + Math.round(Stats.getMinDist(throwArr)).toNumber() + unitName;
 
-        stats = new WatchUi.TextArea({
-            :text=>statsString,
-            :color=>Graphics.COLOR_WHITE,
-            :font=>[Graphics.FONT_SYSTEM_XTINY],
-            :justification=>Graphics.TEXT_JUSTIFY_CENTER,
-            :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
-            :locY=>WatchUi.LAYOUT_VALIGN_BOTTOM,
-            :width=>System.getDeviceSettings().screenWidth,
-            :height=>System.getDeviceSettings().screenHeight - Graphics.getFontHeight(Graphics.FONT_SYSTEM_TINY)
-            //:width=>180,
-            //:height=>180
-        });
+        
+        if (Toybox has :WatchUi.TextArea){
+            stats = new WatchUi.TextArea({
+                :text=>statsString,
+                :color=>Graphics.COLOR_WHITE,
+                :font=>[Graphics.FONT_SYSTEM_XTINY],
+                :justification=>Graphics.TEXT_JUSTIFY_CENTER,
+                :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
+                :locY=>WatchUi.LAYOUT_VALIGN_BOTTOM,
+                :width=>System.getDeviceSettings().screenWidth,
+                :height=>System.getDeviceSettings().screenHeight - Graphics.getFontHeight(Graphics.FONT_SYSTEM_TINY)
+            });
+        } else{
+            stats = new WatchUi.Text({
+                :text=>statsString,
+                :color=>Graphics.COLOR_WHITE,
+                :font=>Graphics.FONT_SYSTEM_XTINY,
+                :justification=>Graphics.TEXT_JUSTIFY_CENTER,
+                :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
+                :locY=>WatchUi.LAYOUT_VALIGN_BOTTOM,
+                :width=>System.getDeviceSettings().screenWidth,
+                :height=>System.getDeviceSettings().screenHeight - Graphics.getFontHeight(Graphics.FONT_SYSTEM_TINY)
+            });
+        }
 
     }
 
