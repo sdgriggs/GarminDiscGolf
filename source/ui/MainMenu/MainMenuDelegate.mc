@@ -20,4 +20,5 @@ class MainMenuDelegate extends WatchUi.MenuInputDelegate {
         }
 
     }
+
 }

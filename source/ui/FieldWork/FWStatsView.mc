@@ -22,7 +22,9 @@ class FWStatsView extends WatchUi.View{
         });
 
         var unitName = "ft";
-        if (Properties.getValue("isMetric")){
+        if (Toybox.Application has :Properties && Properties.getValue("isMetric")){
+            unitName = "m";
+        } else if (getApp().getProperty("isMetric")){
             unitName = "m";
         }
 
@@ -34,7 +36,7 @@ class FWStatsView extends WatchUi.View{
         statsString += "Min Distance: " + Math.round(Stats.getMinDist(throwArr)).toNumber() + unitName;
 
         
-        if (Toybox has :WatchUi.TextArea){
+        if (Toybox.WatchUi has :TextArea){
             stats = new WatchUi.TextArea({
                 :text=>statsString,
                 :color=>Graphics.COLOR_WHITE,

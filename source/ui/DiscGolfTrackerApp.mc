@@ -33,8 +33,9 @@ class DiscGolfTrackerApp extends Application.AppBase {
     // }
     // Return the initial view of your application here
     function getInitialView(){
-        //return [ new DiscGolfTrackerView(), new DiscGolfTrackerDelegate() ] as Array<Views or InputDelegates>;
-        return [new MainMenuView(), new MainMenuDelegate()];
+        //push the discgolftracker view instead of main menu to increase device compatability
+        return [ new DiscGolfTrackerView(), new DiscGolfTrackerDelegate() ] as Array<Views or InputDelegates>;
+        //return [new MainMenuView(), new MainMenuDelegate()];
     }
 
     //Return the settings view of the application
