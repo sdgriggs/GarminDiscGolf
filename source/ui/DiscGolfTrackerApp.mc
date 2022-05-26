@@ -16,20 +16,26 @@ class DiscGolfTrackerApp extends Application.AppBase {
     }
 
     // onStart() is called on application start up
-    function onStart(state as Dictionary?) as Void {
+    function onStart(state){
         System.println("Start App");
         Position.enableLocationEvents( Position.LOCATION_CONTINUOUS, method( :onPosition ) );
         System.println("End start function");
     }
 
     // onStop() is called when your application is exiting
-    function onStop(state as Dictionary?) as Void {
+    function onStop(state){
     }
 
+    // // Return the initial view of your application here
+    // function getInitialView() as Array<Views or InputDelegates>? {
+    //     //return [ new DiscGolfTrackerView(), new DiscGolfTrackerDelegate() ] as Array<Views or InputDelegates>;
+    //     return [new MainMenuView(), new MainMenuDelegate()] as Array<Views or InputDelegates>;
+    // }
     // Return the initial view of your application here
-    function getInitialView() as Array<Views or InputDelegates>? {
-        //return [ new DiscGolfTrackerView(), new DiscGolfTrackerDelegate() ] as Array<Views or InputDelegates>;
-        return [new MainMenuView(), new MainMenuDelegate()] as Array<Views or InputDelegates>;
+    function getInitialView(){
+        //push the discgolftracker view instead of main menu to increase device compatability
+        return [ new DiscGolfTrackerView(), new DiscGolfTrackerDelegate() ] as Array<Views or InputDelegates>;
+        //return [new MainMenuView(), new MainMenuDelegate()];
     }
 
     //Return the settings view of the application
@@ -53,6 +59,6 @@ class DiscGolfTrackerApp extends Application.AppBase {
 
 }
 
-function getApp() as DiscGolfTrackerApp {
-    return Application.getApp() as DiscGolfTrackerApp;
+function getApp(){
+    return Application.getApp();
 }
