@@ -46,7 +46,9 @@ class DiscGolfTrackerApp extends Application.AppBase {
     // Method to handle the position calls
     function onPosition(info) {
         if (locationAcquired == false){
-            Attention.playTone(Attention.TONE_MSG);
+            if (Toybox.Attention has :playTone){
+                Attention.playTone(Attention.TONE_MSG);
+            }
             locationAcquired = true;
         }
         lastLocation = info.position;
