@@ -24,6 +24,7 @@ class FieldWorkView extends WatchUi.View{
     }
 
     public function reset(){
+        self.started = false;
         if(locationAcquired == false) {
             tempText = new WatchUi.Text({
                 :text=>"Wait for GPS\nto be acquired",
@@ -33,7 +34,6 @@ class FieldWorkView extends WatchUi.View{
                 :locY=>WatchUi.LAYOUT_VALIGN_CENTER
         });
         } else {
-            self.started = false;
             tempText = new WatchUi.Text({
                 :text=>"Press Lap To Mark Start",
                 :color=>Graphics.COLOR_WHITE,
