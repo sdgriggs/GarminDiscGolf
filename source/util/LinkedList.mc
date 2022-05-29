@@ -45,7 +45,6 @@ class LinkedList{
         if (index == 0){
             var temp = self.front.data;
             self.front = self.front.next;
-            self.front.prev.next = null;
             self.front.prev = null;
             self.size--;
             return temp;
@@ -53,9 +52,10 @@ class LinkedList{
         //special case of end
         if (index == self.size - 1){
             var temp = self.back.data;
-            self.back = self.back.prev;
-            self.back.next.prev = null;
-            self.back.next = null;
+            var new_back = self.back.prev.get();
+            new_back.next = null;
+            self.back = new_back;
+            
             self.size--;
             return temp;            
         }
@@ -68,19 +68,22 @@ class LinkedList{
         var temp = current.next.data;
         //remove references to the one to be removed
         current.next = current.next.next;
-        current.next.prev.next = null;
-        current.next.prev.prev = null;
-        current.next.prev = current;
+        current.next.prev = current.weak();
         self.size--;
         return temp;
 
     }
 
     public function get(index) {
+        //throw exception if invalid index
         if (index < 0 || index >= self.size){
             throw new Lang.ValueOutOfBoundsException();
         }
-
+        //special check for getting from back in constant time
+        if (index == self.size -1){
+            return back.data;
+        }
+        //get in all other cases
         var current = front;
         
         for (var i = 0; i < index; i++){
@@ -90,10 +93,11 @@ class LinkedList{
         return current.data;
     }
 
+    //returns the size of the linked list
     public function getSize() {
         return self.size;
     }
-
+    //returns an array representation of the linked list
     public function toArray() {
         var array = new [self.size];
         var current = front;
@@ -105,17 +109,21 @@ class LinkedList{
     }
 
 
-
+    //Represents one element/node in the linked list
     class ListNode{
-        public var next;
-        public var prev;
-        public var data;
+        public var next;//the next node
+        public var prev;//a weak reference to the previous node
+        public var data;//the data contained by the node
         public function initialize(data, prev, next){
             if (data == null){
                 throw new Lang.InvalidValueException();
             }
             self.data = data;
-            self.prev = prev;
+            if (prev != null){
+                self.prev = prev.weak();
+            } else {
+                self.prev = null;
+            }
             self.next = next;
         }
     }

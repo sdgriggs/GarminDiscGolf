@@ -16,6 +16,7 @@ class FWPauseMenuDelegate extends WatchUi.MenuInputDelegate{
             } else {
                 //WatchUi.popView(WatchUi.SLIDE_LEFT);
             }
+            FieldWorkView.getInstance().reset();
         } else if (item == :resume_fw){
             //macht nichts
         }
