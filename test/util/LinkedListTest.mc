@@ -55,7 +55,7 @@ function testRemove(logger){
     ll.add("...");
 
     Test.assertEqual(6, ll.getSize());
-    //try{
+    try{
         //remove front
         Test.assertEqual("Is", ll.remove(0));
         Test.assertEqual(5, ll.getSize());
@@ -68,10 +68,10 @@ function testRemove(logger){
         Test.assertEqual("life?", ll.remove(1));
         Test.assertEqual("this", ll.remove(0));
         Test.assertEqual(0, ll.getSize());
-    // } catch (exception){
-    //     logger.debug("Error Will Robinson");
-    //     return false;
-    // }
+    } catch (exception){
+        logger.debug("Error Will Robinson");
+        return false;
+    }
 
 
     return true;

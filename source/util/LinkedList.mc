@@ -52,8 +52,10 @@ class LinkedList{
         //special case of end
         if (index == self.size - 1){
             var temp = self.back.data;
-            self.back = self.back.prev;
-            self.back.next = null;
+            var new_back = self.back.prev.get();
+            new_back.next = null;
+            self.back = new_back;
+            
             self.size--;
             return temp;            
         }
@@ -66,7 +68,7 @@ class LinkedList{
         var temp = current.next.data;
         //remove references to the one to be removed
         current.next = current.next.next;
-        current.next.prev = current;
+        current.next.prev = current.weak();
         self.size--;
         return temp;
 
