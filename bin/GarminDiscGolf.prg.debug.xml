@@ -730,8 +730,8 @@
         <entry arg="true" endPc="268443357" name="item" stackId="1" startPc="268443283"/>
         <entry endPc="268443568" name="arr" stackId="2" startPc="268443400"/>
         <entry arg="true" endPc="268443586" name="item" stackId="1" startPc="268443385"/>
-        <entry endPc="268443929" name="rez_cmp_local_text_1066053281" stackId="2" startPc="268443599"/>
         <entry endPc="268443929" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268443599"/>
+        <entry endPc="268443929" name="rez_cmp_local_text_2138440147" stackId="2" startPc="268443599"/>
         <entry arg="true" endPc="268443930" name="dc" stackId="1" startPc="268443587"/>
     </localVars>
     <annotations>
