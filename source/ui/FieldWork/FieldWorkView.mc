@@ -25,6 +25,8 @@ class FieldWorkView extends WatchUi.View{
 
     public function reset(){
         self.started = false;
+        self.manager = null;
+        
         if(locationAcquired == false) {
             tempText = new WatchUi.Text({
                 :text=>"Wait for GPS\nto be acquired",
