@@ -37,7 +37,7 @@ class FieldWorkView extends WatchUi.View{
         });
         } else {
             tempText = new WatchUi.Text({
-                :text=>"Press Lap To Mark Start",
+                :text=>"Press Back To Mark Start",
                 :color=>Graphics.COLOR_WHITE,
                 :font=>Graphics.FONT_SMALL,
                 :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
@@ -57,7 +57,7 @@ class FieldWorkView extends WatchUi.View{
             manager = new FieldWork(startLoc, getApp().getProperty("isMetric"));
         }
         started = true;
-        tempText.setText("Press Lap To\nRecord A Throw");
+        tempText.setText("Press Back To\nRecord A Throw");
     }
 
     public function updateThrowStart(startLoc){
@@ -87,7 +87,7 @@ class FieldWorkView extends WatchUi.View{
             manager.addEndPoint(endPos);
             var throwList = manager.getThrows();
             tempText.setText("Last Throw Was:\n" + Math.round(throwList.get(throwList.getSize() - 1).getDistance()).toNumber() +unitName
-            + "\nPress Lap To\nRecord A Throw"
+            + "\nPress Back To\nRecord A Throw"
             );
         }
     }
