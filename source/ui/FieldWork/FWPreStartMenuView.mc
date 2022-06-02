@@ -64,7 +64,7 @@ class FWPreStartMenuView extends WatchUi.View{
         tempText = new WatchUi.Text({
             :text=>"Confirm Tee\nwith Select Button",
             :color=>Graphics.COLOR_WHITE,
-            :font=>Graphics.FONT_MEDIUM,
+            :font=>Graphics.FONT_SYSTEM_SMALL,
             :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
             :locY=>WatchUi.LAYOUT_VALIGN_CENTER
         });

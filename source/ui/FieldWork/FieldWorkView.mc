@@ -31,15 +31,15 @@ class FieldWorkView extends WatchUi.View{
             tempText = new WatchUi.Text({
                 :text=>"Wait for GPS\nto be acquired",
                 :color=>Graphics.COLOR_WHITE,
-                :font=>Graphics.FONT_SMALL,
+                :font=>Graphics.FONT_SYSTEM_SMALL,
                 :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
                 :locY=>WatchUi.LAYOUT_VALIGN_CENTER
         });
         } else {
             tempText = new WatchUi.Text({
-                :text=>"Press Back To Mark Start",
+                :text=>"Press Back To\nMark Start",
                 :color=>Graphics.COLOR_WHITE,
-                :font=>Graphics.FONT_SMALL,
+                :font=>Graphics.FONT_SYSTEM_SMALL,
                 :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
                 :locY=>WatchUi.LAYOUT_VALIGN_CENTER
             });
