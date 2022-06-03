@@ -741,7 +741,7 @@
         <entry endPc="268443926" name="throwList" stackId="3" startPc="268443582"/>
         <entry arg="true" endPc="268443930" name="endPos" stackId="1" startPc="268443567"/>
         <entry arg="true" endPc="268444086" name="dc" stackId="1" startPc="268443936"/>
-        <entry endPc="268444429" name="rez_cmp_local_text_1456983033" stackId="2" startPc="268444099"/>
+        <entry endPc="268444429" name="rez_cmp_local_text_1322664981" stackId="2" startPc="268444099"/>
         <entry endPc="268444429" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268444099"/>
         <entry arg="true" endPc="268444430" name="dc" stackId="1" startPc="268444087"/>
     </localVars>
