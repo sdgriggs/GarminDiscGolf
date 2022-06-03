@@ -61,13 +61,23 @@ class FWPreStartMenuView extends WatchUi.View{
     }
 
     function onShow(){
-        tempText = new WatchUi.Text({
-            :text=>"Confirm Tee\nwith Select Button",
-            :color=>Graphics.COLOR_WHITE,
-            :font=>Graphics.FONT_SYSTEM_SMALL,
-            :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
-            :locY=>WatchUi.LAYOUT_VALIGN_CENTER
-        });
+        if(isTS){
+            tempText = new WatchUi.Text({
+                :text=>"Tap Screen To\nConfirm Tee",
+                :color=>Graphics.COLOR_WHITE,
+                :font=>Graphics.FONT_SYSTEM_SMALL,
+                :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
+                :locY=>WatchUi.LAYOUT_VALIGN_CENTER
+            });
+        } else {
+            tempText = new WatchUi.Text({
+                :text=>"Confirm Tee\nwith Select Button",
+                :color=>Graphics.COLOR_WHITE,
+                :font=>Graphics.FONT_SYSTEM_SMALL,
+                :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
+                :locY=>WatchUi.LAYOUT_VALIGN_CENTER
+            }); 
+        }
     }
 
     function onUpdate(dc){
