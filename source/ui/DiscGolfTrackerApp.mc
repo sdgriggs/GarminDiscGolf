@@ -7,7 +7,7 @@ using Toybox.Attention;
 var lastLocation = null;
 var locationAcquired = false;
 var gpsQuality = null;
-
+var isTS = false;
 
 class DiscGolfTrackerApp extends Application.AppBase {
 
@@ -19,6 +19,8 @@ class DiscGolfTrackerApp extends Application.AppBase {
     function onStart(state){
         System.println("Start App");
         Position.enableLocationEvents( Position.LOCATION_CONTINUOUS, method( :onPosition ) );
+        isTS = System.getDeviceSettings().isTouchScreen;
+        System.println("IS TS:" + isTS);
         System.println("End start function");
     }
 

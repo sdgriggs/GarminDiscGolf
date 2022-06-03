@@ -3,6 +3,7 @@ using Toybox.Graphics;
 using Toybox.Application.Properties;
 using Toybox.Application;
 using Toybox.Math;
+using Toybox.System;
 
 class FieldWorkView extends WatchUi.View{
 
@@ -35,7 +36,16 @@ class FieldWorkView extends WatchUi.View{
                 :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
                 :locY=>WatchUi.LAYOUT_VALIGN_CENTER
         });
-        } else {
+        } else { 
+            if(isTS) {
+                tempText = new WatchUi.Text({
+                :text=>"Swipe Right To\nMark Start",
+                :color=>Graphics.COLOR_WHITE,
+                :font=>Graphics.FONT_SYSTEM_SMALL,
+                :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
+                :locY=>WatchUi.LAYOUT_VALIGN_CENTER
+            });
+            } else {
             tempText = new WatchUi.Text({
                 :text=>"Press Back To\nMark Start",
                 :color=>Graphics.COLOR_WHITE,
@@ -43,6 +53,7 @@ class FieldWorkView extends WatchUi.View{
                 :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
                 :locY=>WatchUi.LAYOUT_VALIGN_CENTER
             });
+            }
         }
     }
 
@@ -57,7 +68,12 @@ class FieldWorkView extends WatchUi.View{
             manager = new FieldWork(startLoc, getApp().getProperty("isMetric"));
         }
         started = true;
-        tempText.setText("Press Back To\nRecord A Throw");
+        if(isTS) {
+            tempText.setText("Swipe Right To\nRecord A Throw");
+        } else {
+            tempText.setText("Press Lap To\nRecord A Throw");
+        }
+
     }
 
     public function updateThrowStart(startLoc){
@@ -86,9 +102,13 @@ class FieldWorkView extends WatchUi.View{
             //Add throw and update ui text
             manager.addEndPoint(endPos);
             var throwList = manager.getThrows();
-            tempText.setText("Last Throw Was:\n" + Math.round(throwList.get(throwList.getSize() - 1).getDistance()).toNumber() +unitName
-            + "\nPress Back To\nRecord A Throw"
-            );
+            if(isTS){
+                tempText.setText("Last Throw Was:\n" + Math.round(throwList.get(throwList.getSize() - 1).getDistance()).toNumber() +unitName
+                + "\nSwipe Right To\nRecord A Throw");
+            } else {
+                tempText.setText("Last Throw Was:\n" + Math.round(throwList.get(throwList.getSize() - 1).getDistance()).toNumber() +unitName
+                + "\nPress Back To\nRecord A Throw");
+            }
         }
     }
 
