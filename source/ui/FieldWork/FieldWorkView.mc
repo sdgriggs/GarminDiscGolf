@@ -71,7 +71,7 @@ class FieldWorkView extends WatchUi.View{
         if(isTS) {
             tempText.setText("Swipe Right To\nRecord A Throw");
         } else {
-            tempText.setText("Press Lap To\nRecord A Throw");
+            tempText.setText("Press Back To\nRecord A Throw");
         }
 
     }
