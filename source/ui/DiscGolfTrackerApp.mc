@@ -7,7 +7,7 @@ using Toybox.Attention;
 var lastLocation = null;
 var locationAcquired = false;
 var gpsQuality = null;
-
+var isTS = false;
 
 class DiscGolfTrackerApp extends Application.AppBase {
 
@@ -16,20 +16,28 @@ class DiscGolfTrackerApp extends Application.AppBase {
     }
 
     // onStart() is called on application start up
-    function onStart(state as Dictionary?) as Void {
+    function onStart(state){
         System.println("Start App");
         Position.enableLocationEvents( Position.LOCATION_CONTINUOUS, method( :onPosition ) );
+        isTS = System.getDeviceSettings().isTouchScreen;
+        System.println("IS TS:" + isTS);
         System.println("End start function");
     }
 
     // onStop() is called when your application is exiting
-    function onStop(state as Dictionary?) as Void {
+    function onStop(state){
     }
 
+    // // Return the initial view of your application here
+    // function getInitialView() as Array<Views or InputDelegates>? {
+    //     //return [ new DiscGolfTrackerView(), new DiscGolfTrackerDelegate() ] as Array<Views or InputDelegates>;
+    //     return [new MainMenuView(), new MainMenuDelegate()] as Array<Views or InputDelegates>;
+    // }
     // Return the initial view of your application here
-    function getInitialView() as Array<Views or InputDelegates>? {
-        //return [ new DiscGolfTrackerView(), new DiscGolfTrackerDelegate() ] as Array<Views or InputDelegates>;
-        return [new MainMenuView(), new MainMenuDelegate()] as Array<Views or InputDelegates>;
+    function getInitialView(){
+        //push the discgolftracker view instead of main menu to increase device compatability
+        return [ new DiscGolfTrackerView(), new DiscGolfTrackerDelegate() ] as Array<Views or InputDelegates>;
+        //return [new MainMenuView(), new MainMenuDelegate()];
     }
 
     //Return the settings view of the application
@@ -40,7 +48,9 @@ class DiscGolfTrackerApp extends Application.AppBase {
     // Method to handle the position calls
     function onPosition(info) {
         if (locationAcquired == false){
-            Attention.playTone(Attention.TONE_MSG);
+            if (Toybox.Attention has :playTone){
+                Attention.playTone(Attention.TONE_MSG);
+            }
             locationAcquired = true;
         }
         lastLocation = info.position;
@@ -53,6 +63,6 @@ class DiscGolfTrackerApp extends Application.AppBase {
 
 }
 
-function getApp() as DiscGolfTrackerApp {
-    return Application.getApp() as DiscGolfTrackerApp;
+function getApp(){
+    return Application.getApp();
 }

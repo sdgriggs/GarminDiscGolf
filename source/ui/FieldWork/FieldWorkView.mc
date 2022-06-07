@@ -1,7 +1,9 @@
 using Toybox.WatchUi;
 using Toybox.Graphics;
 using Toybox.Application.Properties;
+using Toybox.Application;
 using Toybox.Math;
+using Toybox.System;
 
 class FieldWorkView extends WatchUi.View{
 
@@ -23,23 +25,35 @@ class FieldWorkView extends WatchUi.View{
     }
 
     public function reset(){
+        self.started = false;
+        self.manager = null;
+        
         if(locationAcquired == false) {
             tempText = new WatchUi.Text({
-                :text=>"Wait for GPS\nto be acquiered",
+                :text=>"Wait for GPS\nto be acquired",
                 :color=>Graphics.COLOR_WHITE,
-                :font=>Graphics.FONT_SMALL,
+                :font=>Graphics.FONT_SYSTEM_SMALL,
                 :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
                 :locY=>WatchUi.LAYOUT_VALIGN_CENTER
         });
-        } else {
-            self.started = false;
-            tempText = new WatchUi.Text({
-                :text=>"Press Lap To Mark Start",
+        } else { 
+            if(isTS) {
+                tempText = new WatchUi.Text({
+                :text=>"Swipe Right To\nMark Start",
                 :color=>Graphics.COLOR_WHITE,
-                :font=>Graphics.FONT_SMALL,
+                :font=>Graphics.FONT_SYSTEM_SMALL,
                 :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
                 :locY=>WatchUi.LAYOUT_VALIGN_CENTER
             });
+            } else {
+            tempText = new WatchUi.Text({
+                :text=>"Press Back To\nMark Start",
+                :color=>Graphics.COLOR_WHITE,
+                :font=>Graphics.FONT_SYSTEM_SMALL,
+                :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
+                :locY=>WatchUi.LAYOUT_VALIGN_CENTER
+            });
+            }
         }
     }
 
@@ -48,9 +62,18 @@ class FieldWorkView extends WatchUi.View{
     }
 
     public function startFieldWork(startLoc){
-        manager = new FieldWork(startLoc, Properties.getValue("isMetric"));
+        if (Toybox.Application has :Properties){
+            manager = new FieldWork(startLoc, Properties.getValue("isMetric"));
+        } else{
+            manager = new FieldWork(startLoc, getApp().getProperty("isMetric"));
+        }
         started = true;
-        tempText.setText("Press Lap To\nRecord A Throw");
+        if(isTS) {
+            tempText.setText("Swipe Right To\nRecord A Throw");
+        } else {
+            tempText.setText("Press Back To\nRecord A Throw");
+        }
+
     }
 
     public function updateThrowStart(startLoc){
@@ -71,15 +94,21 @@ class FieldWorkView extends WatchUi.View{
         if (started){
             //specify proper unit name
             var unitName = "ft";
-            if (Properties.getValue("isMetric")){
+            if (Toybox.Application has :Properties && Properties.getValue("isMetric")){
+                unitName = "m";
+            } else if (getApp().getProperty("isMetric")){
                 unitName = "m";
             }
             //Add throw and update ui text
             manager.addEndPoint(endPos);
             var throwList = manager.getThrows();
-            tempText.setText("Last Throw Was:\n" + Math.round(throwList.get(throwList.getSize() - 1).getDistance()).toNumber() +unitName
-            + "\nPress Lap To\nRecord A Throw"
-            );
+            if(isTS){
+                tempText.setText("Last Throw Was:\n" + Math.round(throwList.get(throwList.getSize() - 1).getDistance()).toNumber() +unitName
+                + "\nSwipe Right To\nRecord A Throw");
+            } else {
+                tempText.setText("Last Throw Was:\n" + Math.round(throwList.get(throwList.getSize() - 1).getDistance()).toNumber() +unitName
+                + "\nPress Back To\nRecord A Throw");
+            }
         }
     }
 

@@ -1,5 +1,6 @@
 using Toybox.WatchUi;
 using Toybox.Application.Properties;
+using Toybox.Application;
 
 class ChangeUnitsDelegate extends WatchUi.MenuInputDelegate{
 
@@ -9,9 +10,17 @@ class ChangeUnitsDelegate extends WatchUi.MenuInputDelegate{
 
     public function onMenuItem(item){
         if (item == :units_feet){
-            Properties.setValue("isMetric", false);
+            if (Toybox.Application has :Properties){
+                Properties.setValue("isMetric", false);
+            } else{
+                getApp().setProperty("isMetric", false);
+            }
         } else if (item == :units_meters){
-            Properties.setValue("isMetric", true);
+            if (Toybox.Application has :Properties){
+                Properties.setValue("isMetric", true);
+            } else {
+                getApp().setProperty("isMetric", true);
+            }
         }
     }
 }

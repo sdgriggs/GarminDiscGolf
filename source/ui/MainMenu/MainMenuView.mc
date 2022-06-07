@@ -9,5 +9,9 @@ class MainMenuView extends WatchUi.Menu{
         addItem("Settings", :settings);
     }
 
+    function onShow(){
+        System.println("menu");
+    }
+
 
 }
