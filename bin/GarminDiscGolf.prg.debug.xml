@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <debugInfo>
-    <manifest filename="C:\Users\sdgri\GarminDiscGolf\manifest.xml"/>
+    <manifest filename="C:\Users\Joey\Documents\GitHub\GarminDiscGolf\manifest.xml"/>
     <pcToLineNum>
         <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\GraphicsUtil.mc" id="1" lineNum="5" parent="globals/GraphicsUtil" pc="268435456" symbol="showGPSStatus"/>
         <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\GarminDiscGolf\\source\\util\\GraphicsUtil.mc" id="1" lineNum="6" parent="globals/GraphicsUtil" pc="268435460" symbol="showGPSStatus"/>
@@ -484,29 +484,29 @@
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
-        <entry id="23" object="true" symbol="FWPauseMenuDelegate"/>
-        <entry id="48" object="true" symbol="DiscGolfTrackerDelegate"/>
+        <entry id="48" object="true" symbol="FWPauseMenuDelegate"/>
+        <entry id="20" object="true" symbol="DiscGolfTrackerDelegate"/>
         <entry id="8389346" symbol="text"/>
         <entry field="true" id="95" symbol="&lt;globals/Throw/&lt;&gt;distance&gt;"/>
-        <entry id="118" symbol="set_units"/>
-        <entry field="true" id="18" symbol="gpsQuality"/>
-        <entry field="true" id="77" symbol="back"/>
+        <entry id="115" symbol="set_units"/>
+        <entry field="true" id="38" symbol="gpsQuality"/>
+        <entry field="true" id="78" symbol="back"/>
         <entry id="64" method="true" symbol="measureDistanceBetweenLocations"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
-        <entry id="45" object="true" symbol="LinkedList"/>
-        <entry id="79" method="true" symbol="toArray"/>
+        <entry id="25" object="true" symbol="LinkedList"/>
+        <entry id="80" method="true" symbol="toArray"/>
         <entry id="5" module="true" symbol="globals/Rez/Menus"/>
         <entry id="68" method="true" symbol="&lt;globals/FieldWorkView/&lt;&gt;initialize&gt;"/>
         <entry id="106" method="true" symbol="addEndPoint"/>
-        <entry id="117" symbol="units_meters"/>
-        <entry id="83" method="true" symbol="showGPSStatus"/>
+        <entry id="113" symbol="units_meters"/>
+        <entry id="76" method="true" symbol="showGPSStatus"/>
         <entry id="55" method="true" symbol="MainLayout"/>
         <entry id="110" method="true" symbol="setMetric"/>
-        <entry id="13" object="true" symbol="MainMenuDelegate"/>
+        <entry id="33" object="true" symbol="MainMenuDelegate"/>
         <entry field="true" id="93" symbol="&lt;globals/Throw/&lt;&gt;startPos&gt;"/>
         <entry field="true" id="8388826" method="true" symbol="next"/>
         <entry field="true" id="90" symbol="throwOne"/>
-        <entry id="42" object="true" symbol="FWStatsView"/>
+        <entry id="15" object="true" symbol="FWStatsView"/>
         <entry id="63" method="true" symbol="getMaxDist"/>
         <entry field="true" id="88" symbol="&lt;globals/FWStatsView/&lt;&gt;stats&gt;"/>
         <entry id="8388791" method="true" symbol="remove"/>
@@ -521,7 +521,7 @@
         <entry field="true" id="59" symbol="AppName"/>
         <entry field="true" id="8389807" symbol="data"/>
         <entry id="61" method="true" symbol="getAvgDist"/>
-        <entry id="20" object="true" symbol="DiscGolfTrackerApp"/>
+        <entry id="40" object="true" symbol="DiscGolfTrackerApp"/>
         <entry id="9" module="true" symbol="globals/Rez/Strings"/>
         <entry field="true" id="105" symbol="&lt;globals/FieldWork/&lt;&gt;isMetric&gt;"/>
         <entry id="60" method="true" symbol="totalDist"/>
@@ -530,26 +530,26 @@
         <entry id="8389345" symbol="rezId"/>
         <entry field="true" id="91" symbol="throwTwo"/>
         <entry id="8388942" method="true" symbol="add"/>
-        <entry id="46" object="true" symbol="DiscGolfTrackerMenuDelegate"/>
+        <entry id="47" object="true" symbol="DiscGolfTrackerMenuDelegate"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
         <entry id="8389081" method="true" symbol="onBack"/>
-        <entry field="true" id="31" symbol="FAIRWAY"/>
+        <entry field="true" id="41" symbol="FAIRWAY"/>
         <entry field="true" id="66" symbol="&lt;globals/FieldWorkView/&lt;&gt;tempText&gt;"/>
         <entry id="8390425" module="true" symbol="Properties"/>
         <entry field="true" id="103" symbol="&lt;globals/FieldWork/&lt;&gt;throws&gt;"/>
         <entry id="3" module="true" symbol="globals/Rez"/>
         <entry id="122" symbol="Tee"/>
-        <entry id="24" module="true" symbol="LinkedListTest"/>
+        <entry id="46" module="true" symbol="LinkedListTest"/>
         <entry field="true" id="58" symbol="prompt"/>
         <entry field="true" id="52" symbol="id_monkey"/>
-        <entry field="true" id="34" symbol="IN_BASKET"/>
+        <entry field="true" id="44" symbol="IN_BASKET"/>
         <entry id="74" method="true" symbol="addThrow"/>
         <entry field="true" id="102" symbol="&lt;globals/FWPreStartMenuView/&lt;&gt;tempText&gt;"/>
-        <entry id="25" object="true" symbol="DiscGolfTrackerView"/>
+        <entry id="32" object="true" symbol="DiscGolfTrackerView"/>
         <entry id="8388789" method="true" symbol="get"/>
-        <entry id="39" object="true" symbol="FWPostStartMenuView"/>
+        <entry id="17" object="true" symbol="FWPostStartMenuView"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
-        <entry field="true" id="19" symbol="isTS"/>
+        <entry field="true" id="39" symbol="isTS"/>
         <entry field="true" id="8389065" symbol="locY"/>
         <entry field="true" id="8389064" symbol="locX"/>
         <entry id="14" object="true" symbol="FieldWorkDelegate"/>
@@ -567,42 +567,42 @@
         <entry id="8389275" method="true" symbol="getApp"/>
         <entry id="7" module="true" symbol="globals/Rez/Layouts"/>
         <entry field="true" id="8389066" symbol="width"/>
-        <entry id="119" symbol="throw_loc"/>
+        <entry id="114" symbol="throw_loc"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
         <entry id="2" module="true" symbol="globals/LinkedListTest"/>
-        <entry id="116" symbol="units_feet"/>
+        <entry id="112" symbol="units_feet"/>
         <entry field="true" id="8389063" symbol="identifier"/>
         <entry id="11" module="true" symbol="globals/FieldWorkView"/>
         <entry id="8389349" symbol="justification"/>
-        <entry id="112" symbol="fw"/>
+        <entry id="116" symbol="fw"/>
         <entry field="true" id="94" symbol="&lt;globals/Throw/&lt;&gt;endPos&gt;"/>
         <entry field="true" id="65" symbol="&lt;globals/FieldWorkView/&lt;&gt;manager&gt;"/>
-        <entry field="true" id="17" symbol="locationAcquired"/>
-        <entry id="27" object="true" symbol="ChangeUnitsView"/>
-        <entry field="true" id="82" symbol="prev"/>
+        <entry field="true" id="37" symbol="locationAcquired"/>
+        <entry id="22" object="true" symbol="ChangeUnitsView"/>
+        <entry field="true" id="83" symbol="prev"/>
         <entry id="100" method="true" symbol="getOutcome"/>
         <entry id="71" method="true" symbol="startFieldWork"/>
-        <entry id="22" object="true" symbol="MainMenuView"/>
-        <entry id="21" object="true" symbol="FieldWorkView"/>
+        <entry id="27" object="true" symbol="MainMenuView"/>
+        <entry id="24" object="true" symbol="FieldWorkView"/>
         <entry id="8" module="true" symbol="globals/Rez/JsonData"/>
         <entry id="4" module="true" symbol="globals/Rez/Drawables"/>
-        <entry id="81" symbol="globals/LinkedList"/>
+        <entry id="82" symbol="globals/LinkedList"/>
         <entry id="73" method="true" symbol="getThrowsArray"/>
-        <entry id="35" object="true" symbol="GraphicsUtil"/>
-        <entry field="true" id="32" symbol="ROUGH"/>
+        <entry id="13" object="true" symbol="GraphicsUtil"/>
+        <entry field="true" id="42" symbol="ROUGH"/>
         <entry id="108" method="true" symbol="setStart"/>
         <entry field="true" id="89" symbol="stPos"/>
         <entry field="true" id="87" symbol="&lt;globals/FWStatsView/&lt;&gt;title&gt;"/>
-        <entry field="true" id="33" symbol="OB"/>
+        <entry field="true" id="43" symbol="OB"/>
         <entry id="8388985" method="true" symbol="playTone"/>
         <entry id="8388644" module="true" symbol="System"/>
         <entry id="8389315" symbol="longitude"/>
         <entry id="8389619" method="true" symbol="onSelect"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
-        <entry id="30" object="true" symbol="FieldWork"/>
+        <entry id="18" object="true" symbol="FieldWork"/>
         <entry field="true" id="92" symbol="&lt;globals/DiscGolfTrackerView/&lt;&gt;loaded&gt;"/>
-        <entry id="29" object="true" symbol="SettingsDelegate"/>
-        <entry id="43" object="true" symbol="RoundDelegate"/>
+        <entry id="23" object="true" symbol="SettingsDelegate"/>
+        <entry id="21" object="true" symbol="RoundDelegate"/>
         <entry field="true" id="67" symbol="&lt;globals/FieldWorkView/&lt;&gt;started&gt;"/>
         <entry id="8391277" object="true" symbol="TextArea"/>
         <entry id="8388640" module="true" symbol="Lang"/>
@@ -610,29 +610,29 @@
         <entry field="true" id="75" symbol="&lt;globals/FieldWorkView/&lt;&gt;instance&gt;"/>
         <entry id="8390088" module="true" object="true" symbol="JsonData"/>
         <entry id="10" module="true" symbol="globals/Stats"/>
-        <entry field="true" id="78" symbol="&lt;globals/LinkedList/&lt;&gt;size&gt;"/>
+        <entry field="true" id="79" symbol="&lt;globals/LinkedList/&lt;&gt;size&gt;"/>
         <entry field="true" id="53" symbol="LauncherIcon"/>
         <entry id="99" method="true" symbol="getEndPos"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="8389123" method="true" symbol="onShow"/>
-        <entry id="26" object="true" symbol="FWPreStartMenuDelegate"/>
+        <entry id="45" object="true" symbol="FWPreStartMenuDelegate"/>
         <entry id="12" module="true" symbol="globals/FieldWorkTest"/>
         <entry id="8389889" method="true" symbol="getInstance"/>
-        <entry id="38" object="true" symbol="FWPauseMenuView"/>
+        <entry id="34" object="true" symbol="FWPauseMenuView"/>
         <entry id="8389350" module="true" symbol="globals"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
-        <entry id="14" module="true" symbol="FieldWorkTest"/>
+        <entry id="26" module="true" symbol="FieldWorkTest"/>
         <entry field="true" id="101" symbol="&lt;globals/SettingsView/&lt;&gt;tempText&gt;"/>
         <entry id="8388702" method="true" symbol="initialize"/>
         <entry id="8389279" method="true" symbol="onStart"/>
         <entry field="true" id="104" symbol="&lt;globals/FieldWork/&lt;&gt;start&gt;"/>
         <entry id="8388641" module="true" symbol="Math"/>
-        <entry id="41" object="true" symbol="FWPostStartMenuDelegate"/>
+        <entry id="31" object="true" symbol="FWPostStartMenuDelegate"/>
         <entry id="8391826" method="true" symbol="getDistance"/>
         <entry id="109" method="true" symbol="getStart"/>
         <entry id="8391703" method="true" symbol="getSettingsView"/>
-        <entry id="113" symbol="settings"/>
-        <entry field="true" id="76" symbol="front"/>
+        <entry id="117" symbol="settings"/>
+        <entry field="true" id="77" symbol="front"/>
         <entry id="70" method="true" symbol="wasStarted"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry field="true" id="84" symbol="&lt;globals/RoundView/&lt;&gt;tempText&gt;"/>
@@ -640,26 +640,26 @@
         <entry id="8389109" method="true" symbol="onMenuItem"/>
         <entry id="8389347" symbol="color"/>
         <entry id="111" method="true" symbol="setImperial"/>
-        <entry field="true" id="16" symbol="lastLocation"/>
-        <entry id="44" object="true" symbol="FWPreStartMenuView"/>
+        <entry field="true" id="36" symbol="lastLocation"/>
+        <entry id="35" object="true" symbol="FWPreStartMenuView"/>
         <entry id="72" method="true" symbol="updateThrowStart"/>
-        <entry field="true" id="47" symbol="teeLocation"/>
+        <entry field="true" id="19" symbol="teeLocation"/>
         <entry id="50" module="true" symbol="Layouts"/>
         <entry id="62" method="true" symbol="getMinDist"/>
         <entry id="8389317" symbol="degrees"/>
         <entry id="8388636" module="true" symbol="Attention"/>
         <entry id="8388698" method="true" symbol="start"/>
-        <entry id="40" object="true" symbol="Throw"/>
+        <entry id="28" object="true" symbol="Throw"/>
         <entry id="8388642" module="true" symbol="Position"/>
-        <entry id="37" object="true" symbol="SettingsView"/>
-        <entry id="36" object="true" symbol="ChangeUnitsDelegate"/>
+        <entry id="29" object="true" symbol="SettingsView"/>
+        <entry id="16" object="true" symbol="ChangeUnitsDelegate"/>
         <entry id="6" module="true" symbol="globals/Rez/Fonts"/>
         <entry id="54" object="true" symbol="PinMenu"/>
         <entry field="true" id="96" symbol="&lt;globals/Throw/&lt;&gt;outcome&gt;"/>
         <entry id="8389125" method="true" symbol="onHide"/>
-        <entry id="80" object="true" symbol="ListNode"/>
+        <entry id="81" object="true" symbol="ListNode"/>
         <entry id="8388635" module="true" symbol="Application"/>
-        <entry id="28" object="true" symbol="RoundView"/>
+        <entry id="30" object="true" symbol="RoundView"/>
         <entry field="true" id="57" symbol="menu_label_2"/>
         <entry field="true" id="56" symbol="menu_label_1"/>
         <entry id="8389101" method="true" symbol="onSwipe"/>
@@ -667,93 +667,93 @@
         <entry field="true" id="86" symbol="&lt;globals/ChangeUnitsView/&lt;&gt;tempText&gt;"/>
     </symbolTable>
     <localVars>
-        <entry arg="true" endPc="268435809" name="item" stackId="1" startPc="268435483"/>
-        <entry arg="true" endPc="268436049" name="swipeEvent" stackId="1" startPc="268435980"/>
-        <entry arg="true" endPc="268436471" name="state" stackId="1" startPc="268436314"/>
-        <entry arg="true" endPc="268436476" name="state" stackId="1" startPc="268436472"/>
-        <entry arg="true" endPc="268436786" name="info" stackId="1" startPc="268436621"/>
-        <entry arg="true" endPc="268437592" name="startLoc" stackId="1" startPc="268437383"/>
-        <entry arg="true" endPc="268437631" name="startLoc" stackId="1" startPc="268437593"/>
-        <entry endPc="268438040" name="unitName" stackId="2" startPc="268437696"/>
-        <entry endPc="268438040" name="throwList" stackId="3" startPc="268437696"/>
-        <entry arg="true" endPc="268438044" name="endPos" stackId="1" startPc="268437681"/>
-        <entry arg="true" endPc="268438200" name="dc" stackId="1" startPc="268438050"/>
-        <entry endPc="268438510" name="arr" stackId="2" startPc="268438342"/>
-        <entry arg="true" endPc="268438528" name="item" stackId="1" startPc="268438327"/>
-        <entry arg="true" endPc="268438566" name="dc" stackId="1" startPc="268438562"/>
-        <entry arg="true" endPc="268438721" name="dc" stackId="1" startPc="268438697"/>
-        <entry arg="true" endPc="268439130" name="dc" stackId="1" startPc="268439058"/>
-        <entry arg="true" endPc="268439248" name="item" stackId="1" startPc="268439158"/>
-        <entry arg="true" endPc="268439299" name="isMetric" stackId="2" startPc="268439249"/>
-        <entry arg="true" endPc="268439299" name="st" stackId="1" startPc="268439249"/>
-        <entry arg="true" endPc="268439363" name="loc" stackId="1" startPc="268439300"/>
-        <entry arg="true" endPc="268439440" name="st" stackId="1" startPc="268439378"/>
-        <entry endPc="268440064" name="rad" stackId="6" startPc="268439489"/>
-        <entry endPc="268440064" name="center" stackId="5" startPc="268439489"/>
-        <entry endPc="268440064" name="end" stackId="8" startPc="268439489"/>
-        <entry endPc="268440064" name="penWidth" stackId="4" startPc="268439489"/>
-        <entry endPc="268440064" name="length" stackId="3" startPc="268439489"/>
-        <entry endPc="268440064" name="start" stackId="7" startPc="268439489"/>
-        <entry arg="true" endPc="268440065" name="status" stackId="2" startPc="268439485"/>
-        <entry arg="true" endPc="268440065" name="dc" stackId="1" startPc="268439485"/>
-        <entry arg="true" endPc="268440282" name="item" stackId="1" startPc="268440096"/>
-        <entry endPc="268440357" name="i" stackId="3" startPc="268440326"/>
-        <entry endPc="268440360" name="sum" stackId="2" startPc="268440295"/>
-        <entry arg="true" endPc="268440361" name="throws" stackId="1" startPc="268440283"/>
-        <entry arg="true" endPc="268440400" name="throws" stackId="1" startPc="268440362"/>
-        <entry endPc="268440515" name="dist" stackId="4" startPc="268440485"/>
-        <entry endPc="268440528" name="i" stackId="3" startPc="268440485"/>
-        <entry endPc="268440531" name="min" stackId="2" startPc="268440413"/>
-        <entry arg="true" endPc="268440532" name="throws" stackId="1" startPc="268440401"/>
-        <entry endPc="268440647" name="dist" stackId="4" startPc="268440617"/>
-        <entry endPc="268440660" name="i" stackId="3" startPc="268440617"/>
-        <entry endPc="268440663" name="max" stackId="2" startPc="268440545"/>
-        <entry arg="true" endPc="268440664" name="throws" stackId="1" startPc="268440533"/>
-        <entry endPc="268440980" name="lat2" stackId="7" startPc="268440677"/>
-        <entry endPc="268440980" name="lat1" stackId="6" startPc="268440677"/>
-        <entry endPc="268440980" name="r_imperial" stackId="13" startPc="268440677"/>
-        <entry endPc="268440980" name="r_metric" stackId="12" startPc="268440677"/>
-        <entry endPc="268440980" name="lon2" stackId="5" startPc="268440677"/>
-        <entry endPc="268440980" name="lon1" stackId="4" startPc="268440677"/>
-        <entry endPc="268440980" name="dlat" stackId="9" startPc="268440677"/>
-        <entry endPc="268440980" name="c" stackId="11" startPc="268440677"/>
-        <entry endPc="268440980" name="v" stackId="10" startPc="268440677"/>
-        <entry endPc="268440980" name="dlon" stackId="8" startPc="268440677"/>
-        <entry arg="true" endPc="268440981" name="isMetric" stackId="3" startPc="268440665"/>
-        <entry arg="true" endPc="268440981" name="endPos" stackId="2" startPc="268440665"/>
-        <entry arg="true" endPc="268440981" name="startPos" stackId="1" startPc="268440665"/>
-        <entry arg="true" endPc="268441246" name="isMetric" stackId="4" startPc="268441173"/>
-        <entry arg="true" endPc="268441246" name="endPos" stackId="2" startPc="268441173"/>
-        <entry arg="true" endPc="268441246" name="startPos" stackId="1" startPc="268441173"/>
-        <entry arg="true" endPc="268441246" name="outcome" stackId="3" startPc="268441173"/>
-        <entry arg="true" endPc="268441432" name="item" stackId="1" startPc="268441330"/>
-        <entry endPc="268442500" name="statsString" stackId="3" startPc="268441437"/>
-        <entry endPc="268442500" name="unitName" stackId="2" startPc="268441437"/>
-        <entry arg="true" endPc="268442501" name="throwArr" stackId="1" startPc="268441433"/>
-        <entry arg="true" endPc="268442594" name="dc" stackId="1" startPc="268442502"/>
-        <entry arg="true" endPc="268443057" name="dc" stackId="1" startPc="268442934"/>
-        <entry endPc="268443182" name="temp" stackId="2" startPc="268443115"/>
-        <entry arg="true" endPc="268443274" name="element" stackId="1" startPc="268443094"/>
-        <entry endPc="268443409" name="temp" stackId="2" startPc="268443354"/>
-        <entry endPc="268443498" name="temp" stackId="3" startPc="268443424"/>
-        <entry endPc="268443603" name="temp" stackId="4" startPc="268443522"/>
-        <entry endPc="268443603" name="new_back" stackId="5" startPc="268443522"/>
-        <entry endPc="268443654" name="i" stackId="7" startPc="268443632"/>
-        <entry endPc="268443739" name="temp" stackId="8" startPc="268443279"/>
-        <entry endPc="268443739" name="current" stackId="6" startPc="268443279"/>
-        <entry arg="true" endPc="268443740" name="index" stackId="1" startPc="268443275"/>
-        <entry endPc="268443888" name="i" stackId="3" startPc="268443866"/>
-        <entry endPc="268443897" name="current" stackId="2" startPc="268443745"/>
-        <entry arg="true" endPc="268443898" name="index" stackId="1" startPc="268443741"/>
-        <entry endPc="268443994" name="i" stackId="3" startPc="268443959"/>
-        <entry endPc="268443997" name="current" stackId="2" startPc="268443917"/>
-        <entry endPc="268443997" name="array" stackId="1" startPc="268443917"/>
-        <entry arg="true" endPc="268444098" name="next" stackId="3" startPc="268443999"/>
-        <entry arg="true" endPc="268444098" name="prev" stackId="2" startPc="268443999"/>
-        <entry arg="true" endPc="268444098" name="data" stackId="1" startPc="268443999"/>
-        <entry arg="true" endPc="268444196" name="item" stackId="1" startPc="268444122"/>
+        <entry endPc="268436035" name="rad" stackId="6" startPc="268435460"/>
+        <entry endPc="268436035" name="center" stackId="5" startPc="268435460"/>
+        <entry endPc="268436035" name="end" stackId="8" startPc="268435460"/>
+        <entry endPc="268436035" name="penWidth" stackId="4" startPc="268435460"/>
+        <entry endPc="268436035" name="length" stackId="3" startPc="268435460"/>
+        <entry endPc="268436035" name="start" stackId="7" startPc="268435460"/>
+        <entry arg="true" endPc="268436036" name="status" stackId="2" startPc="268435456"/>
+        <entry arg="true" endPc="268436036" name="dc" stackId="1" startPc="268435456"/>
+        <entry arg="true" endPc="268436279" name="swipeEvent" stackId="1" startPc="268436210"/>
+        <entry endPc="268437588" name="statsString" stackId="3" startPc="268436525"/>
+        <entry endPc="268437588" name="unitName" stackId="2" startPc="268436525"/>
+        <entry arg="true" endPc="268437589" name="throwArr" stackId="1" startPc="268436521"/>
+        <entry arg="true" endPc="268437682" name="dc" stackId="1" startPc="268437590"/>
+        <entry arg="true" endPc="268437896" name="item" stackId="1" startPc="268437710"/>
+        <entry arg="true" endPc="268438018" name="isMetric" stackId="2" startPc="268437968"/>
+        <entry arg="true" endPc="268438018" name="st" stackId="1" startPc="268437968"/>
+        <entry arg="true" endPc="268438082" name="loc" stackId="1" startPc="268438019"/>
+        <entry arg="true" endPc="268438159" name="st" stackId="1" startPc="268438097"/>
+        <entry endPc="268438278" name="i" stackId="3" startPc="268438247"/>
+        <entry endPc="268438281" name="sum" stackId="2" startPc="268438216"/>
+        <entry arg="true" endPc="268438282" name="throws" stackId="1" startPc="268438204"/>
+        <entry arg="true" endPc="268438321" name="throws" stackId="1" startPc="268438283"/>
+        <entry endPc="268438436" name="dist" stackId="4" startPc="268438406"/>
+        <entry endPc="268438449" name="i" stackId="3" startPc="268438406"/>
+        <entry endPc="268438452" name="min" stackId="2" startPc="268438334"/>
+        <entry arg="true" endPc="268438453" name="throws" stackId="1" startPc="268438322"/>
+        <entry endPc="268438568" name="dist" stackId="4" startPc="268438538"/>
+        <entry endPc="268438581" name="i" stackId="3" startPc="268438538"/>
+        <entry endPc="268438584" name="max" stackId="2" startPc="268438466"/>
+        <entry arg="true" endPc="268438585" name="throws" stackId="1" startPc="268438454"/>
+        <entry endPc="268438901" name="lat2" stackId="7" startPc="268438598"/>
+        <entry endPc="268438901" name="lat1" stackId="6" startPc="268438598"/>
+        <entry endPc="268438901" name="r_imperial" stackId="13" startPc="268438598"/>
+        <entry endPc="268438901" name="r_metric" stackId="12" startPc="268438598"/>
+        <entry endPc="268438901" name="lon2" stackId="5" startPc="268438598"/>
+        <entry endPc="268438901" name="lon1" stackId="4" startPc="268438598"/>
+        <entry endPc="268438901" name="dlat" stackId="9" startPc="268438598"/>
+        <entry endPc="268438901" name="c" stackId="11" startPc="268438598"/>
+        <entry endPc="268438901" name="v" stackId="10" startPc="268438598"/>
+        <entry endPc="268438901" name="dlon" stackId="8" startPc="268438598"/>
+        <entry arg="true" endPc="268438902" name="isMetric" stackId="3" startPc="268438586"/>
+        <entry arg="true" endPc="268438902" name="endPos" stackId="2" startPc="268438586"/>
+        <entry arg="true" endPc="268438902" name="startPos" stackId="1" startPc="268438586"/>
+        <entry arg="true" endPc="268439141" name="item" stackId="1" startPc="268439051"/>
+        <entry arg="true" endPc="268439918" name="startLoc" stackId="1" startPc="268439709"/>
+        <entry arg="true" endPc="268439957" name="startLoc" stackId="1" startPc="268439919"/>
+        <entry endPc="268440366" name="unitName" stackId="2" startPc="268440022"/>
+        <entry endPc="268440366" name="throwList" stackId="3" startPc="268440022"/>
+        <entry arg="true" endPc="268440370" name="endPos" stackId="1" startPc="268440007"/>
+        <entry arg="true" endPc="268440526" name="dc" stackId="1" startPc="268440376"/>
+        <entry endPc="268440651" name="temp" stackId="2" startPc="268440584"/>
+        <entry arg="true" endPc="268440743" name="element" stackId="1" startPc="268440563"/>
+        <entry endPc="268440878" name="temp" stackId="2" startPc="268440823"/>
+        <entry endPc="268440967" name="temp" stackId="3" startPc="268440893"/>
+        <entry endPc="268441072" name="temp" stackId="4" startPc="268440991"/>
+        <entry endPc="268441072" name="new_back" stackId="5" startPc="268440991"/>
+        <entry endPc="268441123" name="i" stackId="7" startPc="268441101"/>
+        <entry endPc="268441208" name="temp" stackId="8" startPc="268440748"/>
+        <entry endPc="268441208" name="current" stackId="6" startPc="268440748"/>
+        <entry arg="true" endPc="268441209" name="index" stackId="1" startPc="268440744"/>
+        <entry endPc="268441357" name="i" stackId="3" startPc="268441335"/>
+        <entry endPc="268441366" name="current" stackId="2" startPc="268441214"/>
+        <entry arg="true" endPc="268441367" name="index" stackId="1" startPc="268441210"/>
+        <entry endPc="268441463" name="i" stackId="3" startPc="268441428"/>
+        <entry endPc="268441466" name="current" stackId="2" startPc="268441386"/>
+        <entry endPc="268441466" name="array" stackId="1" startPc="268441386"/>
+        <entry arg="true" endPc="268441567" name="next" stackId="3" startPc="268441468"/>
+        <entry arg="true" endPc="268441567" name="prev" stackId="2" startPc="268441468"/>
+        <entry arg="true" endPc="268441567" name="data" stackId="1" startPc="268441468"/>
+        <entry arg="true" endPc="268441740" name="isMetric" stackId="4" startPc="268441667"/>
+        <entry arg="true" endPc="268441740" name="endPos" stackId="2" startPc="268441667"/>
+        <entry arg="true" endPc="268441740" name="startPos" stackId="1" startPc="268441667"/>
+        <entry arg="true" endPc="268441740" name="outcome" stackId="3" startPc="268441667"/>
+        <entry arg="true" endPc="268442083" name="dc" stackId="1" startPc="268442011"/>
+        <entry arg="true" endPc="268442213" name="item" stackId="1" startPc="268442111"/>
+        <entry arg="true" endPc="268442251" name="dc" stackId="1" startPc="268442247"/>
+        <entry arg="true" endPc="268442406" name="dc" stackId="1" startPc="268442382"/>
+        <entry arg="true" endPc="268442765" name="item" stackId="1" startPc="268442439"/>
+        <entry arg="true" endPc="268443272" name="dc" stackId="1" startPc="268443149"/>
+        <entry arg="true" endPc="268443453" name="state" stackId="1" startPc="268443296"/>
+        <entry arg="true" endPc="268443458" name="state" stackId="1" startPc="268443454"/>
+        <entry arg="true" endPc="268443768" name="info" stackId="1" startPc="268443603"/>
+        <entry arg="true" endPc="268443990" name="item" stackId="1" startPc="268443916"/>
+        <entry endPc="268444201" name="arr" stackId="2" startPc="268444033"/>
+        <entry arg="true" endPc="268444219" name="item" stackId="1" startPc="268444018"/>
+        <entry endPc="268444562" name="rez_cmp_local_text_1868914374" stackId="2" startPc="268444232"/>
         <entry endPc="268444562" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268444232"/>
-        <entry endPc="268444562" name="rez_cmp_local_text_2054397590" stackId="2" startPc="268444232"/>
         <entry arg="true" endPc="268444563" name="dc" stackId="1" startPc="268444220"/>
     </localVars>
     <annotations>
@@ -767,8 +767,8 @@
     <dataEntryOffsetMappings>
         <dataEntry label="globals" offset="119" parentId="" symbolId="globals" type="module"/>
         <dataEntry label="globals/FieldWorkDelegate" offset="470" parentId="globals" symbolId="FieldWorkDelegate" type="class"/>
-        <dataEntry label="globals/FWPauseMenuView" offset="549" parentId="globals" symbolId="FWPauseMenuView" type="class"/>
-        <dataEntry label="globals/LinkedListTest" offset="596" parentId="globals" symbolId="LinkedListTest" type="module"/>
+        <dataEntry label="globals/LinkedListTest" offset="549" parentId="globals" symbolId="LinkedListTest" type="module"/>
+        <dataEntry label="globals/FWPauseMenuView" offset="580" parentId="globals" symbolId="FWPauseMenuView" type="class"/>
         <dataEntry label="globals/FWPostStartMenuDelegate" offset="627" parentId="globals" symbolId="FWPostStartMenuDelegate" type="class"/>
         <dataEntry label="globals/FWPreStartMenuDelegate" offset="682" parentId="globals" symbolId="FWPreStartMenuDelegate" type="class"/>
         <dataEntry label="globals/Rez" offset="737" parentId="globals" symbolId="Rez" type="module"/>
@@ -782,189 +782,199 @@
         <dataEntry label="globals/Stats" offset="1113" parentId="globals" symbolId="Stats" type="module"/>
         <dataEntry label="globals/FieldWorkView" offset="1184" parentId="globals" symbolId="FieldWorkView" type="class"/>
         <dataEntry label="globals/FieldWorkView/statics" offset="1319" parentId="globals" symbolId="globals/FieldWorkView" type="class"/>
-        <dataEntry label="globals/LinkedList" offset="1366" parentId="globals" symbolId="LinkedList" type="class"/>
-        <dataEntry label="globals/LinkedList/ListNode" offset="1493" parentId="LinkedList" symbolId="ListNode" type="class"/>
-        <dataEntry label="globals/GraphicsUtil" offset="1564" parentId="globals" symbolId="GraphicsUtil" type="class"/>
+        <dataEntry label="globals/GraphicsUtil" offset="1366" parentId="globals" symbolId="GraphicsUtil" type="class"/>
+        <dataEntry label="globals/LinkedList" offset="1421" parentId="globals" symbolId="LinkedList" type="class"/>
+        <dataEntry label="globals/LinkedList/ListNode" offset="1548" parentId="LinkedList" symbolId="ListNode" type="class"/>
         <dataEntry label="globals/RoundView" offset="1619" parentId="globals" symbolId="RoundView" type="class"/>
         <dataEntry label="globals/DiscGolfTrackerMenuDelegate" offset="1690" parentId="globals" symbolId="DiscGolfTrackerMenuDelegate" type="class"/>
         <dataEntry label="globals/DiscGolfTrackerApp" offset="1745" parentId="globals" symbolId="DiscGolfTrackerApp" type="class"/>
         <dataEntry label="globals/ChangeUnitsView" offset="1832" parentId="globals" symbolId="ChangeUnitsView" type="class"/>
         <dataEntry label="globals/SettingsDelegate" offset="1887" parentId="globals" symbolId="SettingsDelegate" type="class"/>
-        <dataEntry label="globals/RoundDelegate" offset="1942" parentId="globals" symbolId="RoundDelegate" type="class"/>
-        <dataEntry label="globals/FWStatsView" offset="1989" parentId="globals" symbolId="FWStatsView" type="class"/>
+        <dataEntry label="globals/FWStatsView" offset="1942" parentId="globals" symbolId="FWStatsView" type="class"/>
+        <dataEntry label="globals/RoundDelegate" offset="2013" parentId="globals" symbolId="RoundDelegate" type="class"/>
         <dataEntry label="globals/FieldWorkTest" offset="2060" parentId="globals" symbolId="FieldWorkTest" type="module"/>
-        <dataEntry label="globals/DiscGolfTrackerDelegate" offset="2115" parentId="globals" symbolId="DiscGolfTrackerDelegate" type="class"/>
-        <dataEntry label="globals/DiscGolfTrackerView" offset="2162" parentId="globals" symbolId="DiscGolfTrackerView" type="class"/>
+        <dataEntry label="globals/DiscGolfTrackerView" offset="2115" parentId="globals" symbolId="DiscGolfTrackerView" type="class"/>
+        <dataEntry label="globals/DiscGolfTrackerDelegate" offset="2202" parentId="globals" symbolId="DiscGolfTrackerDelegate" type="class"/>
         <dataEntry label="globals/Throw" offset="2249" parentId="globals" symbolId="Throw" type="class"/>
-        <dataEntry label="globals/SettingsView" offset="2368" parentId="globals" symbolId="SettingsView" type="class"/>
-        <dataEntry label="globals/MainMenuDelegate" offset="2423" parentId="globals" symbolId="MainMenuDelegate" type="class"/>
-        <dataEntry label="globals/FWPostStartMenuView" offset="2478" parentId="globals" symbolId="FWPostStartMenuView" type="class"/>
-        <dataEntry label="globals/FWPauseMenuDelegate" offset="2525" parentId="globals" symbolId="FWPauseMenuDelegate" type="class"/>
+        <dataEntry label="globals/MainMenuDelegate" offset="2368" parentId="globals" symbolId="MainMenuDelegate" type="class"/>
+        <dataEntry label="globals/SettingsView" offset="2423" parentId="globals" symbolId="SettingsView" type="class"/>
+        <dataEntry label="globals/FWPauseMenuDelegate" offset="2478" parentId="globals" symbolId="FWPauseMenuDelegate" type="class"/>
+        <dataEntry label="globals/FWPostStartMenuView" offset="2533" parentId="globals" symbolId="FWPostStartMenuView" type="class"/>
         <dataEntry label="globals/MainMenuView" offset="2580" parentId="globals" symbolId="MainMenuView" type="class"/>
         <dataEntry label="globals/FWPreStartMenuView" offset="2635" parentId="globals" symbolId="FWPreStartMenuView" type="class"/>
         <dataEntry label="globals/FieldWork" offset="2706" parentId="globals" symbolId="FieldWork" type="class"/>
         <dataEntry label="globals/ChangeUnitsDelegate" offset="2825" parentId="globals" symbolId="ChangeUnitsDelegate" type="class"/>
     </dataEntryOffsetMappings>
     <functions>
-        <functionEntry accessMode="public" endPc="268435482" name="initialize" parent="MainMenuDelegate" startPc="268435456">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435809" name="onMenuItem" parent="MainMenuDelegate" startPc="268435483">
-            <param id="item"/>
+        <functionEntry accessMode="public" endPc="268436036" name="showGPSStatus" parent="GraphicsUtil" startPc="268435456">
+            <param id="dc"/>
+            <param id="status"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="protected" endPc="268444847" name="&lt;init&gt;" parent="GraphicsUtil" startPc="268444847">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268445220" name="&lt;init&gt;" parent="FieldWorkTest" startPc="268444983">
+        <functionEntry accessMode="public" endPc="268436039" name="initialize" parent="GraphicsUtil" startPc="268436037">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435836" name="initialize" parent="FieldWorkDelegate" startPc="268435810">
+        <functionEntry accessMode="public" endPc="268436066" name="initialize" parent="FieldWorkDelegate" startPc="268436040">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435936" name="onSelect" parent="FieldWorkDelegate" startPc="268435837">
+        <functionEntry accessMode="public" endPc="268436166" name="onSelect" parent="FieldWorkDelegate" startPc="268436067">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435979" name="onBack" parent="FieldWorkDelegate" startPc="268435937">
+        <functionEntry accessMode="public" endPc="268436209" name="onBack" parent="FieldWorkDelegate" startPc="268436167">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436049" name="onSwipe" parent="FieldWorkDelegate" startPc="268435980">
+        <functionEntry accessMode="public" endPc="268436279" name="onSwipe" parent="FieldWorkDelegate" startPc="268436210">
             <param id="swipeEvent"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268436290" name="&lt;globals/FieldWorkDelegate/&lt;&gt;lapBehavior&gt;" parent="FieldWorkDelegate" startPc="268436050">
+        <functionEntry accessMode="private" endPc="268436520" name="&lt;globals/FieldWorkDelegate/&lt;&gt;lapBehavior&gt;" parent="FieldWorkDelegate" startPc="268436280">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="protected" endPc="268444718" name="&lt;init&gt;" parent="FieldWorkDelegate" startPc="268444700">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436313" name="initialize" parent="DiscGolfTrackerApp" startPc="268436291">
+        <functionEntry accessMode="public" endPc="268437589" name="initialize" parent="FWStatsView" startPc="268436521">
+            <param id="throwArr"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436471" name="onStart" parent="DiscGolfTrackerApp" startPc="268436314">
-            <param id="state"/>
+        <functionEntry accessMode="public" endPc="268437682" name="onUpdate" parent="FWStatsView" startPc="268437590">
+            <param id="dc"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="protected" endPc="268444963" name="&lt;init&gt;" parent="FWStatsView" startPc="268444945">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436548" name="getInitialView" parent="DiscGolfTrackerApp" startPc="268436477">
+        <functionEntry accessMode="public" endPc="268437709" name="initialize" parent="ChangeUnitsDelegate" startPc="268437683">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436620" name="getSettingsView" parent="DiscGolfTrackerApp" startPc="268436549">
+        <functionEntry accessMode="public" endPc="268437896" name="onMenuItem" parent="ChangeUnitsDelegate" startPc="268437710">
+            <param id="item"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="protected" endPc="268445423" name="&lt;init&gt;" parent="ChangeUnitsDelegate" startPc="268445405">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268444906" name="&lt;init&gt;" parent="DiscGolfTrackerApp" startPc="268444888">
+        <functionEntry accessMode="public" endPc="268437967" name="initialize" parent="FWPostStartMenuView" startPc="268437897">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="protected" endPc="268445335" name="&lt;init&gt;" parent="FWPostStartMenuView" startPc="268445317">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268436854" name="&lt;globals/FieldWorkView/&lt;&gt;initialize&gt;" parent="FieldWorkView" startPc="268436816">
+        <functionEntry accessMode="public" endPc="268438018" name="initialize" parent="FieldWork" startPc="268437968">
+            <param id="st"/>
+            <param id="isMetric"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436914" name="getInstance" parent="FieldWorkView" startPc="268436855">
+        <functionEntry accessMode="public" endPc="268438082" name="addEndPoint" parent="FieldWork" startPc="268438019">
+            <param id="loc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437368" name="reset" parent="FieldWorkView" startPc="268436915">
+        <functionEntry accessMode="public" endPc="268438096" name="getThrows" parent="FieldWork" startPc="268438083">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437382" name="wasStarted" parent="FieldWorkView" startPc="268437369">
+        <functionEntry accessMode="public" endPc="268438159" name="setStart" parent="FieldWork" startPc="268438097">
+            <param id="st"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437592" name="startFieldWork" parent="FieldWorkView" startPc="268437383">
-            <param id="startLoc"/>
+        <functionEntry accessMode="public" endPc="268438173" name="getStart" parent="FieldWork" startPc="268438160">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437631" name="updateThrowStart" parent="FieldWorkView" startPc="268437593">
-            <param id="startLoc"/>
+        <functionEntry accessMode="public" endPc="268438188" name="setMetric" parent="FieldWork" startPc="268438174">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437680" name="getThrowsArray" parent="FieldWorkView" startPc="268437632">
+        <functionEntry accessMode="public" endPc="268438203" name="setImperial" parent="FieldWork" startPc="268438189">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="protected" endPc="268445404" name="&lt;init&gt;" parent="FieldWork" startPc="268445374">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438049" name="onShow" parent="FieldWorkView" startPc="268438045">
+        <functionEntry accessMode="public" endPc="268438282" name="totalDist" parent="Stats" startPc="268438204">
+            <param id="throws"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438200" name="onUpdate" parent="FieldWorkView" startPc="268438050">
-            <param id="dc"/>
+        <functionEntry accessMode="public" endPc="268438321" name="getAvgDist" parent="Stats" startPc="268438283">
+            <param id="throws"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268444846" name="&lt;init&gt;" parent="globals/FieldWorkView" startPc="268444846">
+        <functionEntry accessMode="public" endPc="268438453" name="getMinDist" parent="Stats" startPc="268438322">
+            <param id="throws"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268444845" name="&lt;init&gt;" parent="FieldWorkView" startPc="268444827">
+        <functionEntry accessMode="public" endPc="268438585" name="getMaxDist" parent="Stats" startPc="268438454">
+            <param id="throws"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438271" name="initialize" parent="MainMenuView" startPc="268438201">
+        <functionEntry accessMode="public" endPc="268438902" name="measureDistanceBetweenLocations" parent="Stats" startPc="268438586">
+            <param id="startPos"/>
+            <param id="endPos"/>
+            <param id="isMetric"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="protected" endPc="268444826" name="&lt;init&gt;" parent="Stats" startPc="268444826">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268445354" name="&lt;init&gt;" parent="MainMenuView" startPc="268445336">
+        <functionEntry accessMode="public" endPc="268438925" name="initialize" parent="DiscGolfTrackerDelegate" startPc="268438903">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="protected" endPc="268445258" name="&lt;init&gt;" parent="DiscGolfTrackerDelegate" startPc="268445240">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438528" name="onMenuItem" parent="FWPauseMenuDelegate" startPc="268438327">
-            <param id="item"/>
+        <functionEntry accessMode="public" endPc="268438952" name="initialize" parent="RoundDelegate" startPc="268438926">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="protected" endPc="268444982" name="&lt;init&gt;" parent="RoundDelegate" startPc="268444964">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268444738" name="&lt;init&gt;" parent="LinkedListTest" startPc="268444738">
+        <functionEntry accessMode="public" endPc="268439023" name="initialize" parent="ChangeUnitsView" startPc="268438953">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="protected" endPc="268444925" name="&lt;init&gt;" parent="ChangeUnitsView" startPc="268444907">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438566" name="onLayout" parent="DiscGolfTrackerView" startPc="268438562">
-            <param id="dc"/>
+        <functionEntry accessMode="public" endPc="268439050" name="initialize" parent="SettingsDelegate" startPc="268439024">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438696" name="onShow" parent="DiscGolfTrackerView" startPc="268438567">
+        <functionEntry accessMode="public" endPc="268439141" name="onMenuItem" parent="SettingsDelegate" startPc="268439051">
+            <param id="item"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="protected" endPc="268444944" name="&lt;init&gt;" parent="SettingsDelegate" startPc="268444926">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438726" name="onHide" parent="DiscGolfTrackerView" startPc="268438722">
+        <functionEntry accessMode="private" endPc="268439180" name="&lt;globals/FieldWorkView/&lt;&gt;initialize&gt;" parent="FieldWorkView" startPc="268439142">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268445258" name="&lt;init&gt;" parent="DiscGolfTrackerView" startPc="268445240">
+        <functionEntry accessMode="public" endPc="268439240" name="getInstance" parent="FieldWorkView" startPc="268439181">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438753" name="initialize" parent="FWPreStartMenuDelegate" startPc="268438727">
+        <functionEntry accessMode="public" endPc="268439694" name="reset" parent="FieldWorkView" startPc="268439241">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438821" name="onSelect" parent="FWPreStartMenuDelegate" startPc="268438754">
+        <functionEntry accessMode="public" endPc="268439708" name="wasStarted" parent="FieldWorkView" startPc="268439695">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268444776" name="&lt;init&gt;" parent="FWPreStartMenuDelegate" startPc="268444758">
+        <functionEntry accessMode="public" endPc="268439918" name="startFieldWork" parent="FieldWorkView" startPc="268439709">
+            <param id="startLoc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438892" name="initialize" parent="ChangeUnitsView" startPc="268438822">
+        <functionEntry accessMode="public" endPc="268439957" name="updateThrowStart" parent="FieldWorkView" startPc="268439919">
+            <param id="startLoc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268444925" name="&lt;init&gt;" parent="ChangeUnitsView" startPc="268444907">
+        <functionEntry accessMode="public" endPc="268440006" name="getThrowsArray" parent="FieldWorkView" startPc="268439958">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438919" name="initialize" parent="RoundView" startPc="268438893">
+        <functionEntry accessMode="public" endPc="268440370" name="addThrow" parent="FieldWorkView" startPc="268440007">
+            <param id="endPos"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439057" name="onShow" parent="RoundView" startPc="268438920">
+        <functionEntry accessMode="public" endPc="268440375" name="onShow" parent="FieldWorkView" startPc="268440371">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439130" name="onUpdate" parent="RoundView" startPc="268439058">
+        <functionEntry accessMode="public" endPc="268440526" name="onUpdate" parent="FieldWorkView" startPc="268440376">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
@@ -974,30 +984,31 @@
         <functionEntry accessMode="protected" endPc="268444845" name="&lt;init&gt;" parent="FieldWorkView" startPc="268444827">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439248" name="onMenuItem" parent="SettingsDelegate" startPc="268439158">
-            <param id="item"/>
+        <functionEntry accessMode="public" endPc="268440562" name="initialize" parent="LinkedList" startPc="268440527">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268444944" name="&lt;init&gt;" parent="SettingsDelegate" startPc="268444926">
+        <functionEntry accessMode="public" endPc="268440743" name="add" parent="LinkedList" startPc="268440563">
+            <param id="element"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439299" name="initialize" parent="FieldWork" startPc="268439249">
-            <param id="st"/>
-            <param id="isMetric"/>
+        <functionEntry accessMode="public" endPc="268441209" name="remove" parent="LinkedList" startPc="268440744">
+            <param id="index"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439363" name="addEndPoint" parent="FieldWork" startPc="268439300">
-            <param id="loc"/>
+        <functionEntry accessMode="public" endPc="268441367" name="get" parent="LinkedList" startPc="268441210">
+            <param id="index"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439377" name="getThrows" parent="FieldWork" startPc="268439364">
+        <functionEntry accessMode="public" endPc="268441381" name="getSize" parent="LinkedList" startPc="268441368">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439440" name="setStart" parent="FieldWork" startPc="268439378">
-            <param id="st"/>
+        <functionEntry accessMode="public" endPc="268441467" name="toArray" parent="LinkedList" startPc="268441382">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439454" name="getStart" parent="FieldWork" startPc="268439441">
+        <functionEntry accessMode="public" endPc="268441567" name="initialize" parent="ListNode" startPc="268441468">
+            <param id="data"/>
+            <param id="prev"/>
+            <param id="next"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="protected" endPc="268444849" name="&lt;init&gt;" parent="ListNode" startPc="268444849">
@@ -1009,171 +1020,169 @@
         <functionEntry accessMode="protected" endPc="268445220" name="&lt;init&gt;" parent="FieldWorkTest" startPc="268444983">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440065" name="showGPSStatus" parent="GraphicsUtil" startPc="268439485">
-            <param id="dc"/>
-            <param id="status"/>
+        <functionEntry accessMode="public" endPc="268441638" name="initialize" parent="MainMenuView" startPc="268441568">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268444849" name="&lt;init&gt;" parent="GraphicsUtil" startPc="268444849">
+        <functionEntry accessMode="public" endPc="268441666" name="onShow" parent="MainMenuView" startPc="268441639">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="protected" endPc="268445354" name="&lt;init&gt;" parent="MainMenuView" startPc="268445336">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440095" name="initialize" parent="ChangeUnitsDelegate" startPc="268440069">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268440282" name="onMenuItem" parent="ChangeUnitsDelegate" startPc="268440096">
-            <param id="item"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="protected" endPc="268445423" name="&lt;init&gt;" parent="ChangeUnitsDelegate" startPc="268445405">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268440361" name="totalDist" parent="Stats" startPc="268440283">
-            <param id="throws"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268440400" name="getAvgDist" parent="Stats" startPc="268440362">
-            <param id="throws"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="protected" endPc="268445259" name="&lt;init&gt;" parent="Throw" startPc="268445259">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268440664" name="getMaxDist" parent="Stats" startPc="268440533">
-            <param id="throws"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="protected" endPc="268445297" name="&lt;init&gt;" parent="SettingsView" startPc="268445279">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="protected" endPc="268444826" name="&lt;init&gt;" parent="Stats" startPc="268444826">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268441030" name="initialize" parent="SettingsView" startPc="268440982">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="protected" endPc="268445278" name="&lt;init&gt;" parent="SettingsView" startPc="268445260">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="protected" endPc="268444868" name="&lt;init&gt;" parent="RoundView" startPc="268444850">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="protected" endPc="268444737" name="&lt;init&gt;" parent="FWPauseMenuView" startPc="268444719">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268441172" name="initialize" parent="FWPostStartMenuView" startPc="268441102">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="protected" endPc="268445316" name="&lt;init&gt;" parent="FWPostStartMenuView" startPc="268445298">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268441246" name="initialize" parent="Throw" startPc="268441173">
+        <functionEntry accessMode="public" endPc="268441740" name="initialize" parent="Throw" startPc="268441667">
             <param id="startPos"/>
             <param id="endPos"/>
             <param id="outcome"/>
             <param id="isMetric"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441260" name="getDistance" parent="Throw" startPc="268441247">
+        <functionEntry accessMode="public" endPc="268441754" name="getDistance" parent="Throw" startPc="268441741">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441274" name="getStartPos" parent="Throw" startPc="268441261">
+        <functionEntry accessMode="public" endPc="268441768" name="getStartPos" parent="Throw" startPc="268441755">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441288" name="getEndPos" parent="Throw" startPc="268441275">
+        <functionEntry accessMode="public" endPc="268441782" name="getEndPos" parent="Throw" startPc="268441769">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441302" name="getOutcome" parent="Throw" startPc="268441289">
+        <functionEntry accessMode="public" endPc="268441796" name="getOutcome" parent="Throw" startPc="268441783">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268445259" name="&lt;init&gt;" parent="Throw" startPc="268445259">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441845" name="initialize" parent="SettingsView" startPc="268441797">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268445297" name="&lt;init&gt;" parent="SettingsView" startPc="268445279">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441872" name="initialize" parent="RoundView" startPc="268441846">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442010" name="onShow" parent="RoundView" startPc="268441873">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442083" name="onUpdate" parent="RoundView" startPc="268442011">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268444868" name="&lt;init&gt;" parent="RoundView" startPc="268444850">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442110" name="initialize" parent="FWPostStartMenuDelegate" startPc="268442084">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442213" name="onMenuItem" parent="FWPostStartMenuDelegate" startPc="268442111">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268444757" name="&lt;init&gt;" parent="FWPostStartMenuDelegate" startPc="268444739">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442246" name="initialize" parent="DiscGolfTrackerView" startPc="268442214">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442251" name="onLayout" parent="DiscGolfTrackerView" startPc="268442247">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442381" name="onShow" parent="DiscGolfTrackerView" startPc="268442252">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442406" name="onUpdate" parent="DiscGolfTrackerView" startPc="268442382">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442411" name="onHide" parent="DiscGolfTrackerView" startPc="268442407">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="protected" endPc="268445239" name="&lt;init&gt;" parent="DiscGolfTrackerView" startPc="268445221">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441329" name="initialize" parent="FWPostStartMenuDelegate" startPc="268441303">
+        <functionEntry accessMode="public" endPc="268442438" name="initialize" parent="MainMenuDelegate" startPc="268442412">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441432" name="onMenuItem" parent="FWPostStartMenuDelegate" startPc="268441330">
+        <functionEntry accessMode="public" endPc="268442765" name="onMenuItem" parent="MainMenuDelegate" startPc="268442439">
             <param id="item"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="protected" endPc="268445278" name="&lt;init&gt;" parent="MainMenuDelegate" startPc="268445260">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442501" name="initialize" parent="FWStatsView" startPc="268441433">
-            <param id="throwArr"/>
+        <functionEntry accessMode="public" endPc="268442836" name="initialize" parent="FWPauseMenuView" startPc="268442766">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442594" name="onUpdate" parent="FWStatsView" startPc="268442502">
-            <param id="dc"/>
+        <functionEntry accessMode="protected" endPc="268444738" name="&lt;init&gt;" parent="FWPauseMenuView" startPc="268444720">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268444982" name="&lt;init&gt;" parent="FWStatsView" startPc="268444964">
+        <functionEntry accessMode="public" endPc="268442863" name="initialize" parent="FWPreStartMenuView" startPc="268442837">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442621" name="initialize" parent="RoundDelegate" startPc="268442595">
+        <functionEntry accessMode="public" endPc="268443148" name="onShow" parent="FWPreStartMenuView" startPc="268442864">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268444963" name="&lt;init&gt;" parent="RoundDelegate" startPc="268444945">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="protected" endPc="268445373" name="&lt;init&gt;" parent="FWPreStartMenuView" startPc="268445355">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268442933" name="onShow" parent="FWPreStartMenuView" startPc="268442649">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268443057" name="onUpdate" parent="FWPreStartMenuView" startPc="268442934">
+        <functionEntry accessMode="public" endPc="268443272" name="onUpdate" parent="FWPreStartMenuView" startPc="268443149">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="protected" endPc="268445373" name="&lt;init&gt;" parent="FWPreStartMenuView" startPc="268445355">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268443093" name="initialize" parent="LinkedList" startPc="268443058">
+        <functionEntry accessMode="public" endPc="268443295" name="initialize" parent="DiscGolfTrackerApp" startPc="268443273">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268443274" name="add" parent="LinkedList" startPc="268443094">
-            <param id="element"/>
+        <functionEntry accessMode="public" endPc="268443453" name="onStart" parent="DiscGolfTrackerApp" startPc="268443296">
+            <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268443740" name="remove" parent="LinkedList" startPc="268443275">
-            <param id="index"/>
+        <functionEntry accessMode="public" endPc="268443458" name="onStop" parent="DiscGolfTrackerApp" startPc="268443454">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443530" name="getInitialView" parent="DiscGolfTrackerApp" startPc="268443459">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443602" name="getSettingsView" parent="DiscGolfTrackerApp" startPc="268443531">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443768" name="onPosition" parent="DiscGolfTrackerApp" startPc="268443603">
+            <param id="info"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="protected" endPc="268444906" name="&lt;init&gt;" parent="DiscGolfTrackerApp" startPc="268444888">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268443912" name="getSize" parent="LinkedList" startPc="268443899">
+        <functionEntry accessMode="public" endPc="268443797" name="getApp" startPc="268443769">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268443998" name="toArray" parent="LinkedList" startPc="268443913">
+        <functionEntry accessMode="public" endPc="268443824" name="initialize" parent="FWPreStartMenuDelegate" startPc="268443798">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268444098" name="initialize" parent="ListNode" startPc="268443999">
-            <param id="data"/>
-            <param id="prev"/>
-            <param id="next"/>
+        <functionEntry accessMode="public" endPc="268443892" name="onSelect" parent="FWPreStartMenuDelegate" startPc="268443825">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268444848" name="&lt;init&gt;" parent="ListNode" startPc="268444848">
+        <functionEntry accessMode="protected" endPc="268444776" name="&lt;init&gt;" parent="FWPreStartMenuDelegate" startPc="268444758">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268444847" name="&lt;init&gt;" parent="LinkedList" startPc="268444847">
+        <functionEntry accessMode="protected" endPc="268444719" name="&lt;init&gt;" parent="LinkedListTest" startPc="268444719">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268444121" name="initialize" parent="DiscGolfTrackerMenuDelegate" startPc="268444099">
+        <functionEntry accessMode="public" endPc="268443915" name="initialize" parent="DiscGolfTrackerMenuDelegate" startPc="268443893">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268444196" name="onMenuItem" parent="DiscGolfTrackerMenuDelegate" startPc="268444122">
+        <functionEntry accessMode="public" endPc="268443990" name="onMenuItem" parent="DiscGolfTrackerMenuDelegate" startPc="268443916">
             <param id="item"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="protected" endPc="268444887" name="&lt;init&gt;" parent="DiscGolfTrackerMenuDelegate" startPc="268444869">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268444219" name="initialize" parent="DiscGolfTrackerDelegate" startPc="268444197">
+        <functionEntry accessMode="public" endPc="268444017" name="initialize" parent="FWPauseMenuDelegate" startPc="268443991">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444219" name="onMenuItem" parent="FWPauseMenuDelegate" startPc="268444018">
+            <param id="item"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="protected" endPc="268445316" name="&lt;init&gt;" parent="FWPauseMenuDelegate" startPc="268445298">
