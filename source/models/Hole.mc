@@ -14,13 +14,17 @@ class Hole{
         teePos = null;
         self.isMetric = isMetric;
     }
-
+    //sets the par for the hole assuming par is greater than 0
     public function setPar(par){
         if (par > 0){
             self.par = par;
         } else{
             //throw some kind of exception
         }
+    }
+    //returns the par for the hole
+    public function getPar() {
+        return par;
     }
 
     public function markTee(pos){
@@ -30,9 +34,18 @@ class Hole{
         }
         teePos = pos;
     }
+
+    public function getTeePos() {
+        return teePos;
+    }
+    //returns whether or not the tee has been marked
+    public function isMarked(){
+        return teePos != null;
+    }
+
     //Adds a throw to the hole. Returns true if this throw was the end of the hole.
     public function addThrow(endPos, outcome){
-        if (teePos == null) {
+        if (!isMarked()) {
             //Can't add a throw before the tee is marked
             //Maybe throw exception
             return false; 
@@ -54,11 +67,17 @@ class Hole{
     }
 
     //deletes the last added hole or resets the tee position to null
+    //returns true if a change was made, false otherwise
     public function undo(){
         if (throws.getSize() > 0) {
             throws.remove(throws.getSize() - 1);
-        } else if (teePos != null) {
+            return true;
+        } else if (isMarked()) {
             teePos = null;
+            return true;
+        }
+        else {
+            return false;
         }
     }
 
@@ -66,6 +85,8 @@ class Hole{
     public function getThrows(){
         return throws;
     }
+
+
     
 
 
