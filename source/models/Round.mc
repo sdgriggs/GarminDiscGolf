@@ -37,7 +37,12 @@ class Round{
     //current distance from tee]
     public function getCurrentHoleInfo(){
         var throws = holes[currentHole].getThrows();
-        return [holes[currentHole].isMarked(), currentHole + 1, holes[currentHole].getPar(), throws.getSize(), Stats.measureDistanceBetweenLocations(holes[currentHole].getTeePos, throws.get(throws.getSize() - 1).getEndPos(), isMetric)];
+        if (holes[currentHole] != null){
+            return [holes[currentHole].isMarked(), currentHole + 1, holes[currentHole].getPar(), throws.getSize(), Stats.measureDistanceBetweenLocations(holes[currentHole].getTeePos, throws.get(throws.getSize() - 1).getEndPos(), isMetric)];
+        }
+        else {
+            return [false, currentHole + 1, null, 0, null];
+        }
     }
     //Marks the tee for the current hole assuming the tee has not been marked yet
     public function markTee(pos){
@@ -54,5 +59,15 @@ class Round{
                 currentHole++;
             }
         }
+    }
+    //Initializes the current hole with a par if it is currently null
+    public function initializeHole(par) {
+        if (needsInitializing()){
+            holes[currentHole] = new Hole(par, isMetric);
+        }
+    }
+    //returns whether or not the current hole needs to be initialized with a par
+    public function needsInitializing(){
+        return holes[currentHole] == null;
     }
 }
