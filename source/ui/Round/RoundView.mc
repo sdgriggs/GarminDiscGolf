@@ -4,13 +4,15 @@ using Toybox.Application.Properties;
 using Toybox.Application;
 
 class RoundView extends WatchUi.View{
-    private var tempText;
+    private var mainText;
 
     private static var instance;
 
     private var manager;
 
     private var started;
+
+    private var useBackText;
 
     private function initialize(){
         WatchUi.View.initialize();
@@ -31,6 +33,18 @@ class RoundView extends WatchUi.View{
     public function reset(){
         started = false;
         manager = null;
+        mainText = new WatchUi.Text({
+            :text=>"",
+            :color=>Graphics.COLOR_WHITE,
+            :font=>Graphics.FONT_SYSTEM_SMALL,
+            :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
+            :locY=>WatchUi.LAYOUT_VALIGN_CENTER
+        });
+        if(isTS){
+            useBackText = "Swipe Right";
+        } else {
+            useBackText = "Press Back";
+        }
     }
 
     public function setHoles(num) {
@@ -49,13 +63,23 @@ class RoundView extends WatchUi.View{
     }
 
     function onShow(){
-        tempText = new WatchUi.Text({
-            :text=>"Not Yet Implemented",
-            :color=>Graphics.COLOR_RED,
-            :font=>Graphics.FONT_MEDIUM,
-            :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
-            :locY=>WatchUi.LAYOUT_VALIGN_CENTER
-        });
+
+    }
+
+    private function updateText(){
+        var holeInfo = manager.getCurrentHoleInfo();
+        if (!locationAcquired) {
+            mainText.setText("Wait for GPS\nto be acquired");
+        }
+        else if (manager.needsInitializing()) {
+            mainText.setText("Hole " + holeInfo[1] + ":\n" + useBackText + " To\nSet Par");
+        }
+        else if (!holeInfo[0]) { //if the tee hasn't been marked
+            mainText.setText("Hole " + holeInfo[1] + ":\n" + useBackText + " To\nMark Tee");
+        }
+        else {
+            mainText.setText("Hole " + holeInfo[1] + ":\n" + useBackText + " To\nMark Throw");
+        }
     }
 
     function onUpdate(dc){
@@ -66,7 +90,8 @@ class RoundView extends WatchUi.View{
         //var status = gpsQuality;
         dc.clear();
         GraphicsUtil.showGPSStatus(dc, gpsQuality);
-        tempText.draw(dc);
+        updateText();
+        mainText.draw(dc);
         System.println("Round Update");
     }
 

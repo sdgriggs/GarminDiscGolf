@@ -6,16 +6,19 @@ class Round{
     //the current hole
     private var currentHole;
 
+    private var extraStrokes;
+
     public function initialize(numberOfHoles, isMetric){
         holes = new [numberOfHoles];
         self.isMetric = isMetric;
         currentHole = 0;
+        extraStrokes = 0;
     }
     //Calls undo for the current hole, or go back to the previous hole if there is no change
     //to undo on the current hole
     public function undo(){
-        //if the current hole is uninitialized or unmarked
-        if (holes[currentHole] == null || !holes[currentHole].isMarked()){
+        //if the current hole is uninitialized
+        if (holes[currentHole] == null){
             //do nothing if it's the first hole
             if (currentHole == 0){
                 return;
@@ -25,8 +28,11 @@ class Round{
                 currentHole--;
                 return;
             }
+        } //otherwise if the hole is unmarked
+        else if (!holes[currentHole].isMarked()) {
+            holes[currentHole] = null;
         }
-        //otherwise call undo
+        //even more otherwise call undo
         else {
             holes[currentHole].undo();
         }
@@ -36,9 +42,14 @@ class Round{
     //In the format [if the tee has been marked, hole number (1 indexed), par, number of throws, 
     //current distance from tee]
     public function getCurrentHoleInfo(){
-        var throws = holes[currentHole].getThrows();
+        
         if (holes[currentHole] != null){
-            return [holes[currentHole].isMarked(), currentHole + 1, holes[currentHole].getPar(), throws.getSize(), Stats.measureDistanceBetweenLocations(holes[currentHole].getTeePos, throws.get(throws.getSize() - 1).getEndPos(), isMetric)];
+            var throws = holes[currentHole].getThrows();
+            if (throws.getSize() > 0){
+                return [holes[currentHole].isMarked(), currentHole + 1, holes[currentHole].getPar(), throws.getSize() + extraStrokes, Stats.measureDistanceBetweenLocations(holes[currentHole].getTeePos(), throws.get(throws.getSize() - 1).getEndPos(), isMetric)];
+            } else {
+                return [holes[currentHole].isMarked(), currentHole + 1, holes[currentHole].getPar(), throws.getSize() + extraStrokes, 0];
+            }
         }
         else {
             return [false, currentHole + 1, null, 0, null];
@@ -58,12 +69,19 @@ class Round{
             if (holes[currentHole].addThrow(endPos, outcome)) {//error handling occurs in Hole
                 currentHole++;
             }
+
+            if (outcome == OB) {
+                extraStrokes++;
+            }
         }
     }
-    //Initializes the current hole with a par if it is currently null
-    public function initializeHole(par) {
-        if (needsInitializing()){
+
+    public function setPar(hole, par) {
+        if (holes[hole] == null) {
             holes[currentHole] = new Hole(par, isMetric);
+        }
+        else {
+            holes[hole].setPar(par);
         }
     }
     //returns whether or not the current hole needs to be initialized with a par
