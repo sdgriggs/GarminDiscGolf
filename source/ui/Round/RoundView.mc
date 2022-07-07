@@ -90,6 +90,7 @@ class RoundView extends WatchUi.View{
         //var status = gpsQuality;
         dc.clear();
         GraphicsUtil.showGPSStatus(dc, gpsQuality);
+        GraphicsUtil.showPageBar(dc, 2, 1);
         updateText();
         mainText.draw(dc);
         System.println("Round Update");

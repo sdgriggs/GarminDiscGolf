@@ -7,7 +7,16 @@ class RoundDelegate extends WatchUi.BehaviorDelegate{
     }
 
     public function onSelect(){
+        var pauseMenu = new WatchUi.Menu();
+        pauseMenu.addItem("Resume", :resume);
+        pauseMenu.addItem("Save", :save);
+        pauseMenu.addItem("Discard", :discard);
 
+        WatchUi.pushView(pauseMenu, new RoundPauseDelegate(), WatchUi.SLIDE_RIGHT);
+    }
+
+    public function onPreviousPage () {
+        WatchUi.pushView(new ScoreCardView(), new ScoreCardDelegate(), WatchUi.SLIDE_UP);
     }
 
     public function onBack(){
