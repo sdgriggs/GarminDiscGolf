@@ -6,7 +6,7 @@ class ScoreCardDelegate extends WatchUi.BehaviorDelegate{
     }
 
     function onNextPage() {
-        WatchUi.popView(WatchUi.SLIDE_DOWN);
+        WatchUi.popView(WatchUi.SLIDE_UP);
     }
     function onBack(){
         return true;

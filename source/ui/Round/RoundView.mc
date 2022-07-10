@@ -2,6 +2,7 @@ using Toybox.WatchUi;
 using Toybox.Graphics;
 using Toybox.Application.Properties;
 using Toybox.Application;
+using Toybox.ActivityRecording;
 
 class RoundView extends WatchUi.View{
     private var mainText;
@@ -13,6 +14,8 @@ class RoundView extends WatchUi.View{
     private var started;
 
     private var useBackText;
+
+    private var session;
 
     private function initialize(){
         WatchUi.View.initialize();
@@ -30,7 +33,12 @@ class RoundView extends WatchUi.View{
         return manager;
     }
 
+    public function getSession(){
+        return session;
+    }
+
     public function reset(){
+        session = null;
         started = false;
         manager = null;
         mainText = new WatchUi.Text({
@@ -55,6 +63,16 @@ class RoundView extends WatchUi.View{
                 manager = new Round(num, getApp().getProperty("isMetric"));
             }
             started = true;
+
+            if (Toybox has :ActivityRecording) {
+                session = ActivityRecording.createSession({
+                    :sport=>ActivityRecording.SPORT_GENERIC,
+                    :subSport=>ActivityRecording.SUB_SPORT_GENERIC,
+                    :name=>"Disc Golf",
+
+                });
+                session.start();
+            }
         }
     }
 
@@ -63,6 +81,9 @@ class RoundView extends WatchUi.View{
     }
 
     function onShow(){
+        if(session != null && !session.isRecording()) {
+            //session.start();
+        }
 
     }
 
@@ -91,7 +112,10 @@ class RoundView extends WatchUi.View{
         dc.clear();
         GraphicsUtil.showGPSStatus(dc, gpsQuality);
         GraphicsUtil.showPageBar(dc, 2, 1);
-        updateText();
+        if (manager != null){
+            updateText();
+        }
+
         mainText.draw(dc);
         System.println("Round Update");
     }

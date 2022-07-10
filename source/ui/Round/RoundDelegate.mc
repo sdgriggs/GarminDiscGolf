@@ -16,7 +16,7 @@ class RoundDelegate extends WatchUi.BehaviorDelegate{
     }
 
     public function onPreviousPage () {
-        WatchUi.pushView(new ScoreCardView(), new ScoreCardDelegate(), WatchUi.SLIDE_UP);
+        WatchUi.pushView(new ScoreCardView(), new ScoreCardDelegate(), WatchUi.SLIDE_DOWN);
     }
 
     public function onBack(){

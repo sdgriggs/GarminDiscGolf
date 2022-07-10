@@ -2,6 +2,7 @@ using Toybox.WatchUi;
 
 class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
     public function initialize() {
+        RoundView.getInstance().getSession().stop();
         WatchUi.MenuInputDelegate.initialize();
     }
 
@@ -9,10 +10,12 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
         if (item == :resume) {
             //Don't do anything
         } else if (item == :save) {
-            //add in saving and stats view
+            //
+            RoundView.getInstance().getSession().save();
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
             RoundView.getInstance().reset();
         } else if (item == :discard) {
+            RoundView.getInstance().getSession().discard();
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
             RoundView.getInstance().reset();
         }
