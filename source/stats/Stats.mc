@@ -1,4 +1,5 @@
 using Toybox.Math;
+using Toybox.System;
 
 module Stats{
       public function totalDist(throws){
@@ -70,4 +71,61 @@ module Stats{
         // calculate the result
         return (c * r_imperial) * 5280;
     }
+
+    public function getParList(holes) {
+        var arr = new [getHolesCompleted(holes)];
+        for (var i = 0; i < getHolesCompleted(holes); i++) {
+            arr[i] = holes[i].getPar();
+        }
+        return arr;
+    }
+
+    public function getCombinedPar(holes) {
+        var parList = getParList(holes);
+        var sum = 0;
+
+        for (var i = 0; i < parList.size(); i++){
+            sum += parList[i];
+        }
+
+        return sum;
+    }
+
+    public function getHolesCompleted(holes) {
+        var size = holes.size();
+        for (var i = size - 1; i >= 0; i--) {
+            if (holes[i] == null || holes[i].getThrows().getSize() == 0 || holes[i].getThrows().get(holes[i].getThrows().getSize() - 1).getOutcome() != IN_BASKET){
+                size--;
+            }
+            else {
+                break;
+            }
+        }
+
+        return size;
+    }
+
+    public function getScoreList(holes){
+        var parList = getParList(holes);
+        var scoreList = new [getHolesCompleted(holes)];
+        for (var i = 0; i < getHolesCompleted(holes); i++) {
+            scoreList[i] = holes[i].getScore() - parList[i];
+        }
+
+        return scoreList;
+    }
+
+    public function getCombinedScore(holes){
+        var scoreList = getScoreList(holes);
+        System.println(scoreList);
+        var sum = 0;
+
+        for (var i = 0; i < scoreList.size(); i++){
+            sum += scoreList[i];
+        }
+
+        return sum;
+    }
+
+    //Add in cooler stuff like fairway hits and stuff later
 }

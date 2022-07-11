@@ -6,13 +6,12 @@ class Round{
     //the current hole
     private var currentHole;
 
-    private var extraStrokes;
+    
 
     public function initialize(numberOfHoles, isMetric){
         holes = new [numberOfHoles];
         self.isMetric = isMetric;
         currentHole = 0;
-        extraStrokes = 0;
     }
     //Calls undo for the current hole, or go back to the previous hole if there is no change
     //to undo on the current hole
@@ -46,9 +45,9 @@ class Round{
         if (holes[currentHole] != null){
             var throws = holes[currentHole].getThrows();
             if (throws.getSize() > 0){
-                return [holes[currentHole].isMarked(), currentHole + 1, holes[currentHole].getPar(), throws.getSize() + extraStrokes, Stats.measureDistanceBetweenLocations(holes[currentHole].getTeePos(), throws.get(throws.getSize() - 1).getEndPos(), isMetric)];
+                return [holes[currentHole].isMarked(), currentHole + 1, holes[currentHole].getPar(), holes[currentHole].getScore(), Stats.measureDistanceBetweenLocations(holes[currentHole].getTeePos(), throws.get(throws.getSize() - 1).getEndPos(), isMetric)];
             } else {
-                return [holes[currentHole].isMarked(), currentHole + 1, holes[currentHole].getPar(), throws.getSize() + extraStrokes, 0];
+                return [holes[currentHole].isMarked(), currentHole + 1, holes[currentHole].getPar(), holes[currentHole].getScore(), 0];
             }
         }
         else {
@@ -69,10 +68,6 @@ class Round{
             if (holes[currentHole].addThrow(endPos, outcome)) {//error handling occurs in Hole
                 currentHole++;
             }
-
-            if (outcome == OB) {
-                extraStrokes++;
-            }
         }
     }
 
@@ -87,5 +82,9 @@ class Round{
     //returns whether or not the current hole needs to be initialized with a par
     public function needsInitializing(){
         return holes[currentHole] == null;
+    }
+
+    public function getHoles(){
+        return holes;
     }
 }

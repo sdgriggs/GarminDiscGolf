@@ -6,4 +6,6 @@
     <string id="menu_label_1">Tee</string>
     <string id="menu_label_2">Disc</string>
     
+    <string id = "score_field_label">Score</string>
+    <string id = "score_field_units"> </string>
 </strings>

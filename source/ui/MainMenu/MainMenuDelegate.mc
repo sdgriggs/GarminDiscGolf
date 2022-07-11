@@ -11,7 +11,7 @@ class MainMenuDelegate extends WatchUi.MenuInputDelegate {
             System.println("Play Round");
             //WatchUi.pushView(new RoundView(), new RoundDelegate(), WatchUi.SLIDE_RIGHT);
             var title = new WatchUi.Text({
-                :text=>"How Many\nHoles?",
+                :text=>"# Of Holes?",
                 :color=>Graphics.COLOR_WHITE,
                 :font=>Graphics.FONT_SYSTEM_SMALL,
                 :locX =>WatchUi.LAYOUT_HALIGN_CENTER,

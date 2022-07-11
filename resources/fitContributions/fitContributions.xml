@@ -1,0 +1,5 @@
+<fitContributions>
+    <!--The Score Field-->
+    <fitField id="0" displayInChart="false" sortOrder = "0" precision = "0"
+    dataLabel = "@Strings.score_field_label" unitLabel="@Strings.score_field_units"/>
+</fitContributions>

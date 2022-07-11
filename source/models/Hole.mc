@@ -7,11 +7,14 @@ class Hole{
     private var teePos;
     //Whether or not distances are metric
     private var isMetric;
+    //How many OB strokes there are
+    private var extraStrokes;
 
     public function initialize(par, isMetric) {
         throws = new LinkedList();
         setPar(par);
         teePos = null;
+        extraStrokes = 0;
         self.isMetric = isMetric;
     }
     //sets the par for the hole assuming par is greater than 0
@@ -25,6 +28,10 @@ class Hole{
     //returns the par for the hole
     public function getPar() {
         return par;
+    }
+
+    public function getScore() {
+        return throws.getSize() + extraStrokes;
     }
 
     public function markTee(pos){
@@ -55,14 +62,16 @@ class Hole{
             throws.add(new Throw(teePos, endPos, outcome, isMetric));
         }
         else{
-            throws.add(new Throw(teePos, endPos, outcome, isMetric));
+            throws.add(new Throw(throws.get(throws.getSize() - 1).getEndPos(), endPos, outcome, isMetric));
         }
         if (outcome == IN_BASKET){
             return true;
+        } else if (outcome == OB) {
+            extraStrokes++;
         }
-        else {
-            return false;
-        }
+
+        return false;
+
 
     }
 
@@ -70,7 +79,9 @@ class Hole{
     //returns true if a change was made, false otherwise
     public function undo(){
         if (throws.getSize() > 0) {
-            throws.remove(throws.getSize() - 1);
+            if(throws.remove(throws.getSize() - 1).getOutcome() == OB){
+                extraStrokes--;
+            }
             return true;
         } else if (isMarked()) {
             teePos = null;
