@@ -35,13 +35,13 @@ class RoundDelegate extends WatchUi.BehaviorDelegate{
                 var manager = RoundView.getInstance().getManager();
                 var holeInfo = manager.getCurrentHoleInfo();
                 var menu = new WatchUi.Menu();
-                if (manager.needsInitializing()) {
+                if (manager.needsInitializing()) { //if the current hole doesn't have a par yet present set par
                     menu.addItem("Set Par", :setPar);
                 }
-                else if (!holeInfo[0]) { //if the tee hasn't been marked
+                else if (!holeInfo[0]) { //if the tee hasn't been marked present mark tee
                     menu.addItem("Mark Tee", :markTee);
                 }
-                else {
+                else if (!manager.isCompleted()){ //otherwise present mark throw as long as the round is still in progress
                     menu.addItem("Mark Throw", :markThrow);
                 }
 

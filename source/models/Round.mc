@@ -5,6 +5,9 @@ class Round{
     private var isMetric;
     //the current hole
     private var currentHole;
+    //Whether or not the round has been completed
+    private var completed;
+
 
     
 
@@ -12,6 +15,7 @@ class Round{
         holes = new [numberOfHoles];
         self.isMetric = isMetric;
         currentHole = 0;
+        completed = false;
     }
     //Calls undo for the current hole, or go back to the previous hole if there is no change
     //to undo on the current hole
@@ -33,6 +37,9 @@ class Round{
         }
         //even more otherwise call undo
         else {
+            if (completed) {
+                completed = false;
+            }
             holes[currentHole].undo();
         }
 
@@ -63,10 +70,15 @@ class Round{
     //Adds a throw to the current hole assuming the tee has been marked. Creates
     //the next hole when outcome is IN_BASKET
     public function addThrow(endPos, outcome){
-        if (holes[currentHole] != null){
+        if (holes[currentHole] != null && !completed){
 
             if (holes[currentHole].addThrow(endPos, outcome)) {//error handling occurs in Hole
                 currentHole++;
+            }
+            //marks completed true if the round has been completed
+            if (currentHole == holes.size()) {
+                currentHole--;
+                completed = true;
             }
         }
     }
@@ -82,6 +94,10 @@ class Round{
     //returns whether or not the current hole needs to be initialized with a par
     public function needsInitializing(){
         return holes[currentHole] == null;
+    }
+
+    public function isCompleted() {
+        return completed;
     }
 
     public function getHoles(){

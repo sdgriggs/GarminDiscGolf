@@ -14,13 +14,13 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
         if (item == :resume) {
             //Don't do anything
         } else if (item == :save) {
+            var score = Stats.getCombinedScore(RoundView.getInstance().getManager().getHoles());
             var totalScoreField = session.createField("Score", SCORE_FIELD_ID, FitContributor.DATA_TYPE_STRING, {
                 :mesgType=>FitContributor.MESG_TYPE_SESSION,
-                :count=>3,
+                :count=>("" + score).length() + 1,
                 :units=>""
             });
 
-            var score = Stats.getCombinedScore(RoundView.getInstance().getManager().getHoles());
             if (score == 0) {
                 totalScoreField.setData("E");
             } else {

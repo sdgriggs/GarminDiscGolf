@@ -34,6 +34,9 @@ class LapMenuDelegate extends WatchUi.MenuInputDelegate{
             WatchUi.switchToView(changeParMenu, new ChangeParDelegate(), WatchUi.SLIDE_RIGHT);
         } else if (item == :undo) {
             manager.undo();
+            if (holeInfo[1] > manager.getCurrentHoleInfo()[1]) {
+                RoundView.getInstance().undoneLaps++;
+            }
         }
     }
 }

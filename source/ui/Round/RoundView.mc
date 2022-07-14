@@ -15,7 +15,11 @@ class RoundView extends WatchUi.View{
 
     private var useBackText;
 
+    private var selectText;
+
     private var session;
+
+    public var undoneLaps;
 
     private function initialize(){
         WatchUi.View.initialize();
@@ -41,6 +45,7 @@ class RoundView extends WatchUi.View{
         session = null;
         started = false;
         manager = null;
+        undoneLaps = 0;
         mainText = new WatchUi.Text({
             :text=>"",
             :color=>Graphics.COLOR_WHITE,
@@ -49,8 +54,10 @@ class RoundView extends WatchUi.View{
             :locY=>WatchUi.LAYOUT_VALIGN_CENTER
         });
         if(isTS){
+            selectText = "Tap";
             useBackText = "Swipe Right";
         } else {
+            selectText = "Press Select";
             useBackText = "Press Back";
         }
     }
@@ -80,6 +87,7 @@ class RoundView extends WatchUi.View{
         return started;
     }
 
+
     function onShow(){
         if(session != null && !session.isRecording()) {
             //session.start();
@@ -89,7 +97,10 @@ class RoundView extends WatchUi.View{
 
     private function updateText(){
         var holeInfo = manager.getCurrentHoleInfo();
-        if (!locationAcquired) {
+        if (manager.isCompleted()) {
+            mainText.setText("Round Complete:\n" + selectText + " To\nSave Round");
+        }
+        else if (!locationAcquired) {
             mainText.setText("Wait for GPS\nto be acquired");
         }
         else if (manager.needsInitializing()) {
@@ -99,7 +110,8 @@ class RoundView extends WatchUi.View{
             mainText.setText("Hole " + holeInfo[1] + ":\n" + useBackText + " To\nMark Tee");
         }
         else {
-            mainText.setText("Hole " + holeInfo[1] + ":\n" + useBackText + " To\nMark Throw");
+            mainText.setText("Hole " + holeInfo[1] + ":\n" +"Throwing: " + (holeInfo[3] + 1) + "\n" 
+            + useBackText + " To\nMark Throw");
         }
     }
 
