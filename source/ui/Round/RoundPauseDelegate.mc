@@ -15,17 +15,22 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
             //Don't do anything
         } else if (item == :save) {
             var score = Stats.getCombinedScore(RoundView.getInstance().getManager().getHoles());
+                    var scoreString = "" ;
+            if(score > 0 ){
+                scoreString = "+" + score;
+            } else if (score < 0) {
+                scoreString = "" + score;
+            } else {
+                scoreString = "E";
+            } 
             var totalScoreField = session.createField("Score", SCORE_FIELD_ID, FitContributor.DATA_TYPE_STRING, {
                 :mesgType=>FitContributor.MESG_TYPE_SESSION,
-                :count=>("" + score).length() + 1,
+                :count=>scoreString.length() + 1,
                 :units=>""
             });
 
-            if (score == 0) {
-                totalScoreField.setData("E");
-            } else {
-                totalScoreField.setData("" + score);
-            }
+            totalScoreField.setData(scoreString);
+            
 
             session.save();
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
