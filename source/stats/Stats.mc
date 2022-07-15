@@ -105,6 +105,15 @@ module Stats{
         return size;
     }
 
+    public function getStrokeList(holes){
+        var strokeList = new [getHolesCompleted(holes)];
+        for (var i = 0; i < getHolesCompleted(holes); i++) {
+            strokeList[i] = holes[i].getScore();
+        }
+
+        return strokeList;
+    }
+
     public function getScoreList(holes){
         var parList = getParList(holes);
         var scoreList = new [getHolesCompleted(holes)];
