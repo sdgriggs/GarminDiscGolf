@@ -2,6 +2,9 @@ using Toybox.WatchUi;
 using Stats;
 using Toybox.FitContributor;
 
+var completedHoles;
+
+
 class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
     private static const SCORE_FIELD_ID = 0;
     public function initialize() {
@@ -14,6 +17,7 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
         if (item == :resume) {
             //Don't do anything
         } else if (item == :save) {
+            completedHoles = RoundView.getInstance().getManager().getHoles();
             var score = Stats.getCombinedScore(RoundView.getInstance().getManager().getHoles());
                     var scoreString = "" ;
             if(score > 0 ){
@@ -30,10 +34,11 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
             });
 
             totalScoreField.setData(scoreString);
-            
+            System.print(scoreString);
 
             session.save();
-            WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+           // WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+            WatchUi.switchToView(new RoundReviewView(), new RoundReviewDelegate(), WatchUi.SLIDE_IMMEDIATE);
             RoundView.getInstance().reset();
         } else if (item == :discard) {
             session.discard();
