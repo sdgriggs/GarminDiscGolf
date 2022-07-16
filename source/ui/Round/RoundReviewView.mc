@@ -22,9 +22,6 @@ class RoundReviewView extends WatchUi.View{
 
             var hole = completedHoles.size();
             var dispMax = 9 * (reviewPageNumber - 2);
-            if(dispMax > hole){
-                dispMax = hole;
-            }
             GraphicsUtil.drawScoreCard(dc, dispMax, completedHoles);
         }
 
