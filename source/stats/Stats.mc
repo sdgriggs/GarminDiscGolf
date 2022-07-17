@@ -136,5 +136,118 @@ module Stats{
         return sum;
     }
 
-    //Add in cooler stuff like fairway hits and stuff later
+    public function getCourseDistance(holeArray){
+        var dist = 0;
+        for (var i = 0; i < holeArray.size(); i++){
+            var thr = holeArray[i].getThrows().toArray();
+            for(var = j; j < thr.size(); j++){
+                dist += thr[j].distance();
+            }
+        }
+
+        return dist;
+    }
+
+    public function getCoursePar(holeArray){
+        var par = 0;
+        for( var i = 0 ; i < holeArray.size(); i++){
+            par += holeArray[i].getPar();
+        }
+
+        return par;
+    }
+
+    public function getTotalStrokes(holeArray){
+        var strokes = 0;
+        for( var i = 0; i < holeArray.size(); i++){
+            strokes += holeArray[i].getScore();
+        }
+        return strokes;
+    }
+
+    public function getBirdiePercentage(holeArray){
+        var birdieCount = 0;
+        for (var i = 0; i < holeArray.size(); i ++){
+            if(holeArray[i].getPar() - 1 == holeArray[i].getScore()){
+                birdieCount++;
+            }
+        }
+        return birdieCount / holeArray.size();
+    }
+
+    public function getFairwaysHit(holeArray){
+        var fw = 0;
+        for (var i = 0; i < holeArray.size(); i ++){
+            var thr = holeArray[i].getThrows().toArray();
+            if(holeArray[i].getPar() > 3){
+                if(thr[0].outcome == "Fairway"){
+                    fw++;
+                }
+            }
+            else{
+                if(measureDistanceBetweenLocations(thr[0].getEndPos(), thr[thr.size()-1].getEndPos(), true) < 20){
+                    fw++;
+                }
+            }
+        }
+        return fw ;
+    }
+
+    public function getC1(holeArray){
+        var make = 0;
+        var total = 0;
+        for (var i = 0; i < holeArray.size(); i ++){
+            var thr = holeArray[i].getThrows().toArray();
+            var holeLoc = thr[thr.size() - 1].getEndPos();
+            for(var j = 0; j < thr.size(); j++){
+                if(measureDistanceBetweenLocations(thr[j].startPos(), holeLoc, true) < 10){
+                    if( j = thr.size() - 1){
+                        make++;
+                    }
+                    total++;
+                }
+            }
+
+        }
+        return [make, total] ;
+    }
+
+    public function getC2(holeArray){
+        var make = 0;
+        var total = 0;
+        for (var i = 0; i < holeArray.size(); i ++){
+            var thr = holeArray[i].getThrows().toArray();
+            var holeLoc = thr[thr.size() - 1].getEndPos();
+            for(var j = 0; j < thr.size(); j++){
+                var dist = measureDistanceBetweenLocations(thr[j].startPos(), holeLoc, true)
+                if( dist > 10 && dist < 20){
+                    if( j = thr.size() - 1){
+                        make++;
+                    }
+                    total++;
+                }
+            }
+
+        }
+        return [make, total] ;
+    }
+
+    public function getScramble(holeArray){
+        var make = 0;
+        var total = 0;
+        for (var i = 0; i < holeArray.size(); i ++){
+            var thr = holeArray[i].getThrows().toArray();
+            var holeLoc = thr[thr.size() - 1].getEndPos();
+            if(holeArray[i].getPar() >= holeArray.getScore()){
+                for(int j = 0; j < thr.size(); j++){
+                    if(thr[j].getOutcome() = "Rough")
+                }
+            }
+
+        }
+        return [make, total] ;
+    }
+
+
+    //Add in cooler stuff like fairway hits and stuff later (LATER IS NOW --- SO COOL!!)
 }
