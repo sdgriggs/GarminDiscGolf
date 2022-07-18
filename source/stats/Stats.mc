@@ -117,7 +117,7 @@ module Stats{
 
     public function getTotalStrokes(holeArray){
         var strokes = 0;
-        for( var i = 0; i < holeArray.size(); i++){
+        for( var i = 0; i < getHolesCompleted(holeArray); i++){
             strokes += holeArray[i].getScore();
         }
         return strokes;
@@ -159,7 +159,7 @@ module Stats{
     //Measures the total distance thrown over an array of holes
     public function getTotalDistanceThrown(holeArray){
         var dist = 0;
-        for (var i = 0; i < holeArray.size(); i++){
+        for (var i = 0; i < getHolesCompleted(holeArray); i++){
             var thr = holeArray[i].getThrows().toArray();
             for(var j = 0; j < thr.size(); j++){
                 dist += thr[j].getDistance();
@@ -172,7 +172,7 @@ module Stats{
     //Distance is calculated as the sum of the distances between each hole's teepad and basket
     public function getCourseDistance(holeArray){
         var dist = 0;
-        for (var i = 0; i < holeArray.size(); i++){
+        for (var i = 0; i < getHolesCompleted(holeArray); i++){
             var thr = holeArray[i].getThrows().toArray();
             dist += measureDistanceBetweenLocations(thr[0].getStartPos(), thr[thr.size() - 1].getEndPos(), holeArray[i].getIsMetric());
         }
@@ -182,7 +182,7 @@ module Stats{
 
     public function getCoursePar(holeArray){
         var par = 0;
-        for( var i = 0 ; i < holeArray.size(); i++){
+        for( var i = 0 ; i < getHolesCompleted(holeArray); i++){
             par += holeArray[i].getPar();
         }
 
@@ -192,20 +192,23 @@ module Stats{
     //Returns the number of holes with a birdie or better divided by the number of holes played
     public function getBirdieRate(holeArray){
         var birdieCount = 0;
-        for (var i = 0; i < holeArray.size(); i++){
+        var numHolesCompleted = getHolesCompleted(holeArray);
+        for (var i = 0; i < numHolesCompleted; i++){
             if(holeArray[i].getPar() > holeArray[i].getScore()){
                 birdieCount++;
             }
         }
-        return birdieCount / holeArray.size();
+        return birdieCount / numHolesCompleted;
     }
 
-    public function inC2(idx, hole) {
-        var thr = hole.getThrows().toArray();
-        if (idx < 0 || idx >= thr.size()) {
-            throw new Lang.Exception();
-        }
-        return measureDistanceBetweenLocations(thr[0].getEndPos(), thr[thr.size()-1].getEndPos(), true) < 20;
+    public function inC1(pos, hole) {
+        var thr = hole.getThrows();
+        return measureDistanceBetweenLocations(pos, thr.get(thr.getSize()-1).getEndPos(), true) < 10;
+    }
+
+    public function inC2(pos, hole) {
+        var thr = hole.getThrows();
+        return measureDistanceBetweenLocations(pos, thr.get(thr.getSize()-1).getEndPos(), true) < 20;
     }
 
     //Returns the ratio of fairways hit to total applicable shots. Attempts to follow the udisc rules for
@@ -213,7 +216,7 @@ module Stats{
     public function getFairwayHits(holeArray){
         var fw = 0;//fairway hits
         var tot = 0;//total applicable shots
-        for (var i = 0; i < holeArray.size(); i ++){
+        for (var i = 0; i < getHolesCompleted(holeArray); i ++){
             var thr = holeArray[i].getThrows().toArray();
 
             if(holeArray[i].getPar() > 3){//for longer holes
@@ -224,13 +227,13 @@ module Stats{
                 tot += possibleHitCount;//add the number of shots
                 for (var j = 0; j < possibleHitCount; j++) {//iterate through all the shots
                     var outcome = thr[j].getOutcome();
-                    if (outcome == IN_BASKET || outcome == FAIRWAY || inC2(thr[j], holeArray[i])) {
+                    if (outcome == IN_BASKET || outcome == FAIRWAY || inC2(thr[j].getEndPos(), holeArray[i])) {
                         fw++;//increment fairway hits if applicable
                     }
                 }
             }
             else{//for shorter holes only care about the first throw and if it's in c2
-                if (thr[0].getOutcome() == IN_BASKET || inC2(0, holeArray[i])){
+                if (thr[0].getOutcome() == IN_BASKET || inC2(thr[0].getEndPos(), holeArray[i])){
                     fw++;
                 }
                 tot++;
@@ -239,14 +242,14 @@ module Stats{
         return fw/tot;
     }
 
-    public function getC1(holeArray){
+    public function getC1Putting(holeArray){
         var make = 0;
         var total = 0;
-        for (var i = 0; i < holeArray.size(); i ++){
+        for (var i = 0; i < getHolesCompleted(holeArray); i ++){
             var thr = holeArray[i].getThrows().toArray();
             var holeLoc = thr[thr.size() - 1].getEndPos();
             for(var j = 0; j < thr.size(); j++){
-                if(measureDistanceBetweenLocations(thr[j].getStartPos(), holeLoc, true) < 10){
+                if(inC1(thr[j].getStartPos(), holeArray)){
                     if( j == thr.size() - 1){
                         make++;
                     }
@@ -258,10 +261,10 @@ module Stats{
         return [make, total] ;
     }
 
-    public function getC2(holeArray){
+    public function getC2Putting(holeArray){
         var make = 0;
         var total = 0;
-        for (var i = 0; i < holeArray.size(); i ++){
+        for (var i = 0; i < getHolesCompleted(holeArray); i ++){
             var thr = holeArray[i].getThrows().toArray();
             var holeLoc = thr[thr.size() - 1].getEndPos();
             for(var j = 0; j < thr.size(); j++){
@@ -281,16 +284,20 @@ module Stats{
     public function getScramble(holeArray){
         var make = 0;
         var total = 0;
-        for (var i = 0; i < holeArray.size(); i ++){
+        for (var i = 0; i < getHolesCompleted(holeArray); i ++){
             var thr = holeArray[i].getThrows().toArray();
-            var holeLoc = thr[thr.size() - 1].getEndPos();
-            if(holeArray[i].getPar() >= holeArray[i].getScore()){
-                for(var j = 0; j < thr.size(); j++){
-                    if(thr[j].getOutcome() == ROUGH) {
-
+            for(var j = 0; j < thr.size(); j++){
+                    var outcome = thr[j].getOutcome();
+                    if(outcome == ROUGH || outcome == OB) {
+                        total++;
+                        if(holeArray[i].getPar() >= holeArray[i].getScore()){
+                            make++;
+                        }
+                        break;
                     }
                 }
-            }
+
+
 
         }
         return [make, total] ;
