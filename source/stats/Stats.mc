@@ -1,5 +1,6 @@
 using Toybox.Math;
 using Toybox.System;
+using Toybox.Lang;
 
 module Stats{
       public function totalDist(throws){
@@ -114,6 +115,14 @@ module Stats{
         return strokeList;
     }
 
+    public function getTotalStrokes(holeArray){
+        var strokes = 0;
+        for( var i = 0; i < holeArray.size(); i++){
+            strokes += holeArray[i].getScore();
+        }
+        return strokes;
+    }
+
     public function getScoreList(holes){
         var parList = getParList(holes);
         var scoreList = new [getHolesCompleted(holes)];
@@ -136,13 +145,36 @@ module Stats{
         return sum;
     }
 
+    public function convertScoreToString(score) {
+        if (score < 0) {
+            return "" + score;
+        } else if (score > 0) {
+            return "+" + score;
+        } 
+
+        return "E";
+    
+    }
+
+    //Measures the total distance thrown over an array of holes
+    public function getTotalDistanceThrown(holeArray){
+        var dist = 0;
+        for (var i = 0; i < holeArray.size(); i++){
+            var thr = holeArray[i].getThrows().toArray();
+            for(var j = 0; j < thr.size(); j++){
+                dist += thr[j].getDistance();
+            }
+        }
+
+        return dist;
+    }
+    //Measures the distance of a course given as an array of holes
+    //Distance is calculated as the sum of the distances between each hole's teepad and basket
     public function getCourseDistance(holeArray){
         var dist = 0;
         for (var i = 0; i < holeArray.size(); i++){
             var thr = holeArray[i].getThrows().toArray();
-            for(var = j; j < thr.size(); j++){
-                dist += thr[j].distance();
-            }
+            dist += measureDistanceBetweenLocations(thr[0].getStartPos(), thr[thr.size() - 1].getEndPos(), holeArray[i].getIsMetric());
         }
 
         return dist;
@@ -157,40 +189,54 @@ module Stats{
         return par;
     }
 
-    public function getTotalStrokes(holeArray){
-        var strokes = 0;
-        for( var i = 0; i < holeArray.size(); i++){
-            strokes += holeArray[i].getScore();
-        }
-        return strokes;
-    }
-
-    public function getBirdiePercentage(holeArray){
+    //Returns the number of holes with a birdie or better divided by the number of holes played
+    public function getBirdieRate(holeArray){
         var birdieCount = 0;
-        for (var i = 0; i < holeArray.size(); i ++){
-            if(holeArray[i].getPar() - 1 == holeArray[i].getScore()){
+        for (var i = 0; i < holeArray.size(); i++){
+            if(holeArray[i].getPar() > holeArray[i].getScore()){
                 birdieCount++;
             }
         }
         return birdieCount / holeArray.size();
     }
 
-    public function getFairwaysHit(holeArray){
-        var fw = 0;
+    public function inC2(idx, hole) {
+        var thr = hole.getThrows().toArray();
+        if (idx < 0 || idx >= thr.size()) {
+            throw new Lang.Exception();
+        }
+        return measureDistanceBetweenLocations(thr[0].getEndPos(), thr[thr.size()-1].getEndPos(), true) < 20;
+    }
+
+    //Returns the ratio of fairways hit to total applicable shots. Attempts to follow the udisc rules for
+    //what counts as a fairway hit.
+    public function getFairwayHits(holeArray){
+        var fw = 0;//fairway hits
+        var tot = 0;//total applicable shots
         for (var i = 0; i < holeArray.size(); i ++){
             var thr = holeArray[i].getThrows().toArray();
-            if(holeArray[i].getPar() > 3){
-                if(thr[0].outcome == "Fairway"){
-                    fw++;
+
+            if(holeArray[i].getPar() > 3){//for longer holes
+                var possibleHitCount = holeArray[i].getPar() - 3;
+                if (thr.size() < possibleHitCount) { //Then you're insane
+                    possibleHitCount = thr.size();
+                } 
+                tot += possibleHitCount;//add the number of shots
+                for (var j = 0; j < possibleHitCount; j++) {//iterate through all the shots
+                    var outcome = thr[j].getOutcome();
+                    if (outcome == IN_BASKET || outcome == FAIRWAY || inC2(thr[j], holeArray[i])) {
+                        fw++;//increment fairway hits if applicable
+                    }
                 }
             }
-            else{
-                if(measureDistanceBetweenLocations(thr[0].getEndPos(), thr[thr.size()-1].getEndPos(), true) < 20){
+            else{//for shorter holes only care about the first throw and if it's in c2
+                if (thr[0].getOutcome() == IN_BASKET || inC2(0, holeArray[i])){
                     fw++;
                 }
+                tot++;
             }
         }
-        return fw ;
+        return fw/tot;
     }
 
     public function getC1(holeArray){
@@ -200,8 +246,8 @@ module Stats{
             var thr = holeArray[i].getThrows().toArray();
             var holeLoc = thr[thr.size() - 1].getEndPos();
             for(var j = 0; j < thr.size(); j++){
-                if(measureDistanceBetweenLocations(thr[j].startPos(), holeLoc, true) < 10){
-                    if( j = thr.size() - 1){
+                if(measureDistanceBetweenLocations(thr[j].getStartPos(), holeLoc, true) < 10){
+                    if( j == thr.size() - 1){
                         make++;
                     }
                     total++;
@@ -219,9 +265,9 @@ module Stats{
             var thr = holeArray[i].getThrows().toArray();
             var holeLoc = thr[thr.size() - 1].getEndPos();
             for(var j = 0; j < thr.size(); j++){
-                var dist = measureDistanceBetweenLocations(thr[j].startPos(), holeLoc, true)
+                var dist = measureDistanceBetweenLocations(thr[j].getStartPos(), holeLoc, true);
                 if( dist > 10 && dist < 20){
-                    if( j = thr.size() - 1){
+                    if( j == thr.size() - 1){
                         make++;
                     }
                     total++;
@@ -238,9 +284,11 @@ module Stats{
         for (var i = 0; i < holeArray.size(); i ++){
             var thr = holeArray[i].getThrows().toArray();
             var holeLoc = thr[thr.size() - 1].getEndPos();
-            if(holeArray[i].getPar() >= holeArray.getScore()){
-                for(int j = 0; j < thr.size(); j++){
-                    if(thr[j].getOutcome() = "Rough")
+            if(holeArray[i].getPar() >= holeArray[i].getScore()){
+                for(var j = 0; j < thr.size(); j++){
+                    if(thr[j].getOutcome() == ROUGH) {
+
+                    }
                 }
             }
 

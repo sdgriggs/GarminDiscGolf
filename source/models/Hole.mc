@@ -97,6 +97,10 @@ class Hole{
         return throws;
     }
 
+    public function getIsMetric(){
+        return isMetric;
+    }
+
 
     
 
