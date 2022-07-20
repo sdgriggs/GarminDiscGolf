@@ -50,14 +50,14 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
             summaryStatsArr[7] = "Score: " + scoreString;
 
                 //Birdie Percentage
-            var birdiePerc = "" + (Math.round(Stats.getBirdieRate(holeArray)).toNumber() * 100) + "%"; //2 decimal places of precision would be cooler
+            var birdiePerc = "" + (Math.round(Stats.getBirdieRate(holeArray) * 100).toNumber()) + "%"; //2 decimal places of precision would be cooler
             summaryStatsArr[8] = "Birdie Percentage: " + birdiePerc;
             
             //Adding driving stats
 
                 //Fairway Hits
             var fairwayHits = Stats.getFairwayHits(holeArray);
-            summaryStatsArr[9] = "Fairway Hits: " + fairwayHits;
+            summaryStatsArr[9] = "Fairway Hits: " + (fairwayHits * 100).toNumber() + "%";
 
                 //C1 %
             //TODO
@@ -72,7 +72,7 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
             System.println(scrambleArr);
             var scramblePerc = "N/A";
             if (scrambleArr[1] != 0) {
-                scramblePerc = "" + (Math.round(scrambleArr[0]/scrambleArr[1]).toNumber() * 100) + "%";
+                scramblePerc = "" + (Math.round(1.0 * scrambleArr[0]/scrambleArr[1] * 100).toNumber()) + "%";
             }
             summaryStatsArr[12] = "Scramble Percentage: " + scramblePerc;
                 //# Of Ob throws

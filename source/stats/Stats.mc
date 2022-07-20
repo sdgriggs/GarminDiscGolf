@@ -198,7 +198,7 @@ module Stats{
                 birdieCount++;
             }
         }
-        return birdieCount / numHolesCompleted;
+        return 1.0 * birdieCount / numHolesCompleted;
     }
 
     public function inC1(pos, hole) {
@@ -239,7 +239,7 @@ module Stats{
                 tot++;
             }
         }
-        return fw/tot;
+        return 1.0 * fw/tot;
     }
 
     public function getC1Putting(holeArray){

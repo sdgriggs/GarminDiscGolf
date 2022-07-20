@@ -14,7 +14,7 @@ class RoundReviewView extends WatchUi.View{
         WatchUi.View.initialize();
         reviewPageNumber = 0;
         statDisplayArr = arr;
-        numPages = Math.ceil(1.0 *(statDisplayArr.size() + 1) / 5).toNumber();
+        numPages = Math.ceil((statDisplayArr.size() + 1) / 5).toNumber();
 
         
     }
@@ -22,14 +22,14 @@ class RoundReviewView extends WatchUi.View{
     public function incrementPageNumber(){
         if (reviewPageNumber < numPages - 1){
             reviewPageNumber++;
-            //WatchUi.requestUpdate();
+            WatchUi.requestUpdate();
         }
     }
 
     public function decrementPageNumber(){
         if(reviewPageNumber > 0){
             reviewPageNumber--;
-            //WatchUi.requestUpdate();
+            WatchUi.requestUpdate();
         }
     }
 
