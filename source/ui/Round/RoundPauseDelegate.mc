@@ -2,10 +2,13 @@ using Toybox.WatchUi;
 using Stats;
 using Toybox.FitContributor;
 using Toybox.Activity;
+using Toybox.System;
 
 
 class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
     private static const SCORE_FIELD_ID = 0;
+
+    private static const PAR_LAP_FIELD_ID = 14;
     public function initialize() {
         RoundView.getInstance().getSession().stop();
         WatchUi.MenuInputDelegate.initialize();
@@ -81,6 +84,23 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
             //Adding putting stats
 
 
+            //Laps stuff
+            //Par
+            var parByLap = Stats.getParList(holeArray);
+            System.println(parByLap);
+            var parLapField = session.createField("Lap", PAR_LAP_FIELD_ID, FitContributor.DATA_TYPE_STRING, {
+                :mesgType=>FitContributor.MESG_TYPE_LAP,
+                :units=>"",
+                //:count=>parByLap.size() + 1,
+                :count=>2,
+            });
+            /*
+            for (var i = 0; i < parByLap.size(); i++) {
+                parLapField.setData(5);
+            }
+            */
+            parLapField.setData("" + 5);
+            parLapField.setData("" + 6);
             session.save();
            // WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
 

@@ -7,8 +7,9 @@ class ThrowMenuDelegate extends WatchUi.MenuInputDelegate{
 
     function onMenuItem(item) {
         var roundView = RoundView.getInstance();
-        roundView.getManager().addThrow(lastLocation, item);
-        if (item == IN_BASKET) {
+        var manager = roundView.getManager();
+        manager.addThrow(lastLocation, item);
+        if (item == IN_BASKET && !manager.isCompleted()) {
             if (roundView.undoneLaps > 0) {
                 roundView.undoneLaps--;
             }

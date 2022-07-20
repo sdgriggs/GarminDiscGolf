@@ -7,5 +7,8 @@
     <string id="menu_label_2">Disc</string>
     
     <string id = "score_field_label">Score</string>
-    <string id = "score_field_units"> </string>
+    <string id = "no_units"> </string>
+
+    <string id = "par_field_label">Par</string>
+
 </strings>
