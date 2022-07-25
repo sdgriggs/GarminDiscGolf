@@ -53,7 +53,10 @@ class DiscGolfTrackerApp extends Application.AppBase {
             }
             locationAcquired = true;
         }
-        lastLocation = info.position;
+        var pos = info.position;
+        if (pos != null) {
+            lastLocation = info.position;
+        }
         gpsQuality = info.accuracy;  
         System.println("GPSQuality: " + gpsQuality);
         WatchUi.requestUpdate();
