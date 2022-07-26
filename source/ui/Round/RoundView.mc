@@ -100,9 +100,9 @@ class RoundView extends WatchUi.View{
         var holeInfo = manager.getCurrentHoleInfo();
 
         //temp memory stuff
-        var sysStats = System.getSystemStats();
+        //var sysStats = System.getSystemStats();
 
-        var memText = "\n" + sysStats.usedMemory + " / " + sysStats.totalMemory;
+        var memText = "";//"\n" + sysStats.usedMemory + " / " + sysStats.totalMemory;
 
         if (manager.isCompleted()) {
             mainText.setText("Round Complete:\n" + selectText + " To\nSave Round" + memText);
