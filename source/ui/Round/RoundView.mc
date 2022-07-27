@@ -1,4 +1,5 @@
 using Toybox.WatchUi;
+using Toybox.System;
 using Toybox.Graphics;
 using Toybox.Application.Properties;
 using Toybox.Application;
@@ -97,21 +98,27 @@ class RoundView extends WatchUi.View{
 
     private function updateText(){
         var holeInfo = manager.getCurrentHoleInfo();
+
+        //temp memory stuff
+        //var sysStats = System.getSystemStats();
+
+        var memText = "";//"\n" + sysStats.usedMemory + " / " + sysStats.totalMemory;
+
         if (manager.isCompleted()) {
-            mainText.setText("Round Complete:\n" + selectText + " To\nSave Round");
+            mainText.setText("Round Complete:\n" + selectText + " To\nSave Round" + memText);
         }
         else if (!locationAcquired) {
-            mainText.setText("Wait for GPS\nto be acquired");
+            mainText.setText("Wait for GPS\nto be acquired" + memText);
         }
         else if (manager.needsInitializing()) {
-            mainText.setText("Hole " + holeInfo[1] + ":\n" + useBackText + " To\nSet Par");
+            mainText.setText("Hole " + holeInfo[1] + ":\n" + useBackText + " To\nSet Par" + memText);
         }
         else if (!holeInfo[0]) { //if the tee hasn't been marked
-            mainText.setText("Hole " + holeInfo[1] + ":\n" + useBackText + " To\nMark Tee");
+            mainText.setText("Hole " + holeInfo[1] + ":\n" + useBackText + " To\nMark Tee" + memText);
         }
         else {
             mainText.setText("Hole " + holeInfo[1] + ":\n" +"Throwing: " + (holeInfo[3] + 1) + "\n" 
-            + useBackText + " To\nMark Throw");
+            + useBackText + " To\nMark Throw" + memText);
         }
     }
 

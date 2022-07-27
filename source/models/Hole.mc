@@ -11,7 +11,7 @@ class Hole{
     private var extraStrokes;
 
     public function initialize(par, isMetric) {
-        throws = new LinkedList();
+        throws = new ArrayList();
         setPar(par);
         teePos = null;
         extraStrokes = 0;

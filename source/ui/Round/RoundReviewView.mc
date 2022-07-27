@@ -34,6 +34,7 @@ class RoundReviewView extends WatchUi.View{
     }
 
     function onUpdate(dc){
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         dc.clear(); 
         GraphicsUtil.showPageBar(dc, numPages, reviewPageNumber);
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
