@@ -304,5 +304,120 @@ module Stats{
     }
 
 
-    //Add in cooler stuff like fairway hits and stuff later (LATER IS NOW --- SO COOL!!)
+    public function getC1(holeArray){
+        var c1 = 0;
+        var elligibleHoles = 0;
+        for( var i = 0; i < getHolesCompleted(holeArray); i++){
+            var throws = holeArray[i].getThrows();
+            var endPos = throws[throws.size() - 1].getEndPos();
+            var stPos = null;
+            if (holeArray[i].getPar() <= 2 ){
+                continue;
+            }
+            elligibleHoles++;
+            if(holeArray[i].getScore() <= holeArray[i].getPar() - 2)
+            {
+                c1++;
+            }
+            else{
+                var strokes = 0;
+                for(var v = 0; v < throws.size(); v++){
+                    strokes++;
+                    if(throws[v].getOutcome() == OB) {
+                        strokes++;
+                    }
+                    if(strokes > holeArray[i].getPar() - 2){
+                        break;
+                    } else if (strokes == holeArray[i].getPar() - 2){
+                        stPos = throws[v].getStartPos();
+                        break;
+                    }
+                }
+                if(stPos != null && measureDistanceBetweenLocations(stPos, endPos, true) <= 10){
+                    c1++;
+                }
+            }
+            if(elligibleHoles > 0){
+                return c1 / elligibleHoles;
+            } else {
+                return 0;
+            }
+            
+            
+                
+        }
+
+
+    public function getC2(holeArray){
+        var c1 = 0;
+        var elligibleHoles = 0;
+        for( var i = 0; i < getHolesCompleted(holeArray); i++){
+            var throws = holeArray[i].getThrows();
+            var endPos = throws[throws.size() - 1].getEndPos();
+            var stPos = null;
+            if (holeArray[i].getPar() <= 2 ){
+                continue;
+            }
+            elligibleHoles++;
+            if(holeArray[i].getScore() <= holeArray[i].getPar() - 2)
+            {
+                c1++;
+            }
+            else{
+                var strokes = 0;
+                for(var v = 0; v < throws.size(); v++){
+                    strokes++;
+                    if(throws[v].getOutcome() == OB) {
+                        strokes++;
+                    }
+                    if(strokes > holeArray[i].getPar() - 2){
+                        break;
+                    } else if (strokes == holeArray[i].getPar() - 2){
+                        stPos = throws[v].getStartPos();
+                        break;
+                    }
+                }
+                if(stPos != null && measureDistanceBetweenLocations(stPos, endPos, true) <= 20){
+                    c1++;
+                }
+            }
+            if(elligibleHoles > 0){
+                return c1 / elligibleHoles;
+            } else {
+                return 0;
+            }
+            
+            
+                
+        }
+
+        public function getObThrows(holeArray){
+            var ob = 0;
+            for( var i = 0; i < getHolesCompleted(holeArray); i++){
+                ob += holeArray[i].getScore() - holeArray[i].getThrows().size();                
+            }
+            return ob;
+        }
+
+        public function getLongestThrowIn(){
+            var long = 0;
+            for( var i = 0; i < getHolesCompleted(holeArray); i++){
+                var x = holeArray[i].getThrows()[holeArray[i].getThrows().size() - 1].getDistance()
+                if(long < x){
+                    long = x;
+                }
+            }
+            return long;
+        }
+
+        public function getAverageThrowIn(){
+            var sum = 0;
+            for( var i = 0; i < getHolesCompleted(holeArray); i++){
+                sum += holeArray[i].getThrows()[holeArray[i].getThrows().size() - 1].getDistance()
+                
+            }
+            return sum / getHolesCompleted(holeArray);
+        }
+    }
+    
 }
