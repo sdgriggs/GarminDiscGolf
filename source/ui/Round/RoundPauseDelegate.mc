@@ -3,6 +3,8 @@ using Stats;
 using Toybox.FitContributor;
 using Toybox.Activity;
 using Toybox.System;
+using Toybox.Application.Properties;
+using Toybox.Application;
 
 
 class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
@@ -15,6 +17,14 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
     }
 
     public function onMenuItem(item) {
+
+            var unitName = "ft";
+            if (Toybox.Application has :Properties && Properties.getValue("isMetric")){
+                unitName = "m";
+            } else if (getApp().getProperty("isMetric")){
+                unitName = "m";
+            }
+
         var session = RoundView.getInstance().getSession();
         if (item == :resume) {
             //Don't do anything
@@ -22,17 +32,17 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
             var summaryStatsArr = new [14];//The array with all the summary info
             //Get and add the generic activity data
             var activityInfo = Activity.getActivityInfo();
-            summaryStatsArr[0] = "Distance Walked: " + activityInfo.elapsedDistance;
-            summaryStatsArr[1] = "Time: " + activityInfo.elapsedTime;
+            summaryStatsArr[0] = "Distance Walked: " + activityInfo.elapsedDistance.toNumber() + " m";
+            summaryStatsArr[1] = "Time: " + activityInfo.elapsedTime / 1000 +" s";
             summaryStatsArr[2] = "Calories: " + activityInfo.calories;
-            summaryStatsArr[3] = "Avg. HR: " + activityInfo.averageHeartRate;
+            summaryStatsArr[3] = "Avg. HR: " + activityInfo.averageHeartRate +" bpm";
             //Now get the holes for the fun part
             var holeArray = RoundView.getInstance().getManager().getHoles();
 
             //Adding general round overview stats
                 //Course Distance
             var courseDistance = Stats.getCourseDistance(holeArray);
-            summaryStatsArr[4] = "Course Distance: " + courseDistance;
+            summaryStatsArr[4] = "Course Distance: " + courseDistance.toNumber() + " " + unitName;
                 //Course Par
             var coursePar = Stats.getCoursePar(holeArray);
             summaryStatsArr[5] = "Course Par: " + coursePar;

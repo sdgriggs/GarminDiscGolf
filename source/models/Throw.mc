@@ -13,10 +13,12 @@ class Throw{
 
     private var isMetric;
 
+    private var format = Position.GEO_MGRS;
+
     public function initialize(startPos, endPos, outcome, isMetric){
-        self.startPos = startPos;
-        self.endPos = endPos;
         self.distance = Stats.measureDistanceBetweenLocations(startPos, endPos, isMetric);
+        self.startPos = startPos.toGeoString(format);
+        self.endPos = endPos.toGeoString(format);
         self.outcome = outcome;
         self.isMetric = isMetric;
     }
@@ -26,11 +28,11 @@ class Throw{
     }
 
     public function getStartPos(){
-        return self.startPos;
+        return Position.parse(startPos, format);
     }
 
     public function getEndPos(){
-        return self.endPos;
+        return Position.parse(endPos, format);
     }
 
     public function getOutcome(){
