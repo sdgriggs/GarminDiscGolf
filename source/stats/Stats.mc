@@ -249,7 +249,7 @@ module Stats{
             var thr = holeArray[i].getThrows().toArray();
             var holeLoc = thr[thr.size() - 1].getEndPos();
             for(var j = 0; j < thr.size(); j++){
-                if(inC1(thr[j].getStartPos(), holeArray)){
+                if(inC1(thr[j].getStartPos(), holeArray[i])){
                     if( j == thr.size() - 1){
                         make++;
                     }
@@ -309,7 +309,7 @@ module Stats{
         var elligibleHoles = 0;
         for( var i = 0; i < getHolesCompleted(holeArray); i++){
             var throws = holeArray[i].getThrows();
-            var endPos = throws[throws.size() - 1].getEndPos();
+            var endPos = throws.get(throws.getSize() - 1).getEndPos();
             var stPos = null;
             if (holeArray[i].getPar() <= 2 ){
                 continue;
@@ -321,15 +321,15 @@ module Stats{
             }
             else{
                 var strokes = 0;
-                for(var v = 0; v < throws.size(); v++){
+                for(var v = 0; v < throws.getSize(); v++){
                     strokes++;
-                    if(throws[v].getOutcome() == OB) {
+                    if(throws.get(v).getOutcome() == OB) {
                         strokes++;
                     }
                     if(strokes > holeArray[i].getPar() - 2){
                         break;
                     } else if (strokes == holeArray[i].getPar() - 2){
-                        stPos = throws[v].getStartPos();
+                        stPos = throws.get(v).getStartPos();
                         break;
                     }
                 }
@@ -337,8 +337,9 @@ module Stats{
                     c1++;
                 }
             }
+        }
             if(elligibleHoles > 0){
-                return c1 / elligibleHoles;
+                return 1.0 * c1 / elligibleHoles;
             } else {
                 return 0;
             }
@@ -353,7 +354,7 @@ module Stats{
         var elligibleHoles = 0;
         for( var i = 0; i < getHolesCompleted(holeArray); i++){
             var throws = holeArray[i].getThrows();
-            var endPos = throws[throws.size() - 1].getEndPos();
+            var endPos = throws.get(throws.getSize() - 1).getEndPos();
             var stPos = null;
             if (holeArray[i].getPar() <= 2 ){
                 continue;
@@ -365,15 +366,15 @@ module Stats{
             }
             else{
                 var strokes = 0;
-                for(var v = 0; v < throws.size(); v++){
+                for(var v = 0; v < throws.getSize(); v++){
                     strokes++;
-                    if(throws[v].getOutcome() == OB) {
+                    if(throws.get(v).getOutcome() == OB) {
                         strokes++;
                     }
                     if(strokes > holeArray[i].getPar() - 2){
                         break;
                     } else if (strokes == holeArray[i].getPar() - 2){
-                        stPos = throws[v].getStartPos();
+                        stPos = throws.get(v).getStartPos();
                         break;
                     }
                 }
@@ -381,8 +382,12 @@ module Stats{
                     c1++;
                 }
             }
+        }
+
+            System.println(elligibleHoles);
+            System.println(c1);
             if(elligibleHoles > 0){
-                return c1 / elligibleHoles;
+                return 1.0 * c1 / elligibleHoles;
             } else {
                 return 0;
             }
@@ -394,15 +399,15 @@ module Stats{
         public function getObThrows(holeArray){
             var ob = 0;
             for( var i = 0; i < getHolesCompleted(holeArray); i++){
-                ob += holeArray[i].getScore() - holeArray[i].getThrows().size();                
+                ob += holeArray[i].getScore() - holeArray[i].getThrows().getSize();                
             }
             return ob;
         }
 
-        public function getLongestThrowIn(){
+        public function getLongestThrowIn(holeArray){
             var long = 0;
             for( var i = 0; i < getHolesCompleted(holeArray); i++){
-                var x = holeArray[i].getThrows()[holeArray[i].getThrows().size() - 1].getDistance()
+                var x = holeArray[i].getThrows().get(holeArray[i].getThrows().getSize() - 1).getDistance();
                 if(long < x){
                     long = x;
                 }
@@ -410,14 +415,13 @@ module Stats{
             return long;
         }
 
-        public function getAverageThrowIn(){
+        public function getAverageThrowIn(holeArray){
             var sum = 0;
             for( var i = 0; i < getHolesCompleted(holeArray); i++){
-                sum += holeArray[i].getThrows()[holeArray[i].getThrows().size() - 1].getDistance()
+                sum += holeArray[i].getThrows().get(holeArray[i].getThrows().getSize() - 1).getDistance();
                 
             }
-            return sum / getHolesCompleted(holeArray);
+            return 1.0 * sum / getHolesCompleted(holeArray);
         }
-    }
     
 }

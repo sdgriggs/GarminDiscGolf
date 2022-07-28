@@ -14,7 +14,7 @@ class RoundReviewView extends WatchUi.View{
         WatchUi.View.initialize();
         reviewPageNumber = 0;
         statDisplayArr = arr;
-        numPages = Math.ceil((statDisplayArr.size() + 1) / 5).toNumber();
+        numPages = Math.ceil((1.0 * statDisplayArr.size() + 1) / 5).toNumber();
 
         
     }
@@ -37,7 +37,7 @@ class RoundReviewView extends WatchUi.View{
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         dc.clear(); 
         GraphicsUtil.showPageBar(dc, numPages, reviewPageNumber);
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         
 
         var displayString = "";

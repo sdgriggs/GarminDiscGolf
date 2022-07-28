@@ -29,10 +29,10 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
         if (item == :resume) {
             //Don't do anything
         } else if (item == :save) {
-            var summaryStatsArr = new [14];//The array with all the summary info
+            var summaryStatsArr = new [18];//The array with all the summary info
             //Get and add the generic activity data
             var activityInfo = Activity.getActivityInfo();
-            summaryStatsArr[0] = "Distance Walked: " + activityInfo.elapsedDistance.toNumber() + " m";
+            summaryStatsArr[0] = "Dist Walked: " + activityInfo.elapsedDistance.toNumber() + " m";
             summaryStatsArr[1] = "Time: " + activityInfo.elapsedTime / 1000 +" s";
             summaryStatsArr[2] = "Calories: " + activityInfo.calories;
             summaryStatsArr[3] = "Avg. HR: " + activityInfo.averageHeartRate +" bpm";
@@ -42,7 +42,7 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
             //Adding general round overview stats
                 //Course Distance
             var courseDistance = Stats.getCourseDistance(holeArray);
-            summaryStatsArr[4] = "Course Distance: " + courseDistance.toNumber() + " " + unitName;
+            summaryStatsArr[4] = "Course Dist: " + courseDistance.toNumber() + " " + unitName;
                 //Course Par
             var coursePar = Stats.getCoursePar(holeArray);
             summaryStatsArr[5] = "Course Par: " + coursePar;
@@ -74,11 +74,13 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
 
                 //C1 %
             //TODO
-            summaryStatsArr[10] = "";
+            var c1InReg = Stats.getC1(holeArray);
+            summaryStatsArr[10] = "C1 in Reg: " + (c1InReg * 100).toNumber() + "%";
 
                 //C2 %
             //TODO
-            summaryStatsArr[11] = "";
+            var c2InReg = Stats.getC2(holeArray);
+            summaryStatsArr[11] = "C2 in Reg: " + (c2InReg * 100).toNumber() + "%";
 
                 //Scramble Percentage
             var scrambleArr = Stats.getScramble(holeArray);
@@ -87,11 +89,30 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
             if (scrambleArr[1] != 0) {
                 scramblePerc = "" + (Math.round(1.0 * scrambleArr[0]/scrambleArr[1] * 100).toNumber()) + "%";
             }
-            summaryStatsArr[12] = "Scramble Percentage: " + scramblePerc;
-                //# Of Ob throws
-            //TODO
-            summaryStatsArr[13] = "";
-            //Adding putting stats
+            summaryStatsArr[12] = "Scramble: " + scramblePerc;
+   
+            var oBthrows = Stats.getObThrows(holeArray);
+            summaryStatsArr[13] = "OB Throws: " + oBthrows;
+            //putting stats
+            var c1Putting  = Stats.getC1Putting(holeArray);
+            var c1PuttingPerc = "N/A";
+            if (c1Putting[1] != 0) {
+                c1PuttingPerc = "" + (Math.round(1.0 * c1Putting[0]/c1Putting[1] * 100).toNumber()) + "%";
+            }
+            summaryStatsArr[14] = "C1 Putting: " + c1PuttingPerc;
+
+            var c2Putting  = Stats.getC2Putting(holeArray);
+            var c2PuttingPerc = "N/A";
+            if (c2Putting[1] != 0) {
+                c2PuttingPerc = "" + (Math.round(1.0 * c2Putting[0]/c2Putting[1] * 100).toNumber()) + "%";
+            }
+            summaryStatsArr[15] = "C2 Putting: " + c2PuttingPerc;
+
+            var avgThrowIn = Stats.getAverageThrowIn(holeArray);
+            summaryStatsArr[16] = "Avg Throw-In: " + (100 * avgThrowIn).toNumber() + unitName;
+
+            var longestThrowIn = Stats.getLongestThrowIn(holeArray);
+            summaryStatsArr[17] = "Longest Throw-In: " + (100 * longestThrowIn).toNumber() + unitName;
 
 
             //Laps stuff
