@@ -1,50 +1,45 @@
 <fitContributions>
     <!--Summary-->
     <fitField id="0" displayInActivitySummary="true" sortOrder = "0" precision = "0"
-    dataLabel = "@Strings.score_field_label" unitLabel="@Strings.no_units"/>
+    dataLabel = "@Strings.course_d_field_label" unitLabel="@Strings.no_units"/>
 
     <fitField id="1" displayInActivitySummary="true" sortOrder = "1" precision = "0"
     dataLabel = "@Strings.par_field_label" unitLabel="@Strings.no_units"/>
 
     <fitField id="2" displayInActivitySummary="true" sortOrder = "2" precision = "0"
-    dataLabel = "@Strings.score_field_label" unitLabel="@Strings.no_units"/>
+    dataLabel = "@Strings.strokes_field_label" unitLabel="@Strings.no_units"/>
 
     <fitField id="3" displayInActivitySummary="true" sortOrder = "3" precision = "0"
     dataLabel = "@Strings.score_field_label" unitLabel="@Strings.no_units"/>
 
     <fitField id="4" displayInActivitySummary="true" sortOrder = "4" precision = "0"
-    dataLabel = "@Strings.score_field_label" unitLabel="@Strings.no_units"/>
+    dataLabel = "@Strings.bird_perc_field_label" unitLabel="@Strings.no_units"/>
 
     <fitField id="5" displayInActivitySummary="true" sortOrder = "5" precision = "0"
-    dataLabel = "@Strings.score_field_label" unitLabel="@Strings.no_units"/>
+    dataLabel = "@Strings.fairway_field_label" unitLabel="@Strings.no_units"/>
 
     <fitField id="6" displayInActivitySummary="true" sortOrder = "6" precision = "0"
-    dataLabel = "@Strings.score_field_label" unitLabel="@Strings.no_units"/>
+    dataLabel = "@Strings.c1_reg_field_label" unitLabel="@Strings.no_units"/>
 
     <fitField id="7" displayInActivitySummary="true" sortOrder = "7" precision = "0"
-    dataLabel = "@Strings.score_field_label" unitLabel="@Strings.no_units"/>
+    dataLabel = "@Strings.c2_reg_field_label" unitLabel="@Strings.no_units"/>
 
     <fitField id="8" displayInActivitySummary="true" sortOrder = "8" precision = "0"
-    dataLabel = "@Strings.score_field_label" unitLabel="@Strings.no_units"/>
+    dataLabel = "@Strings.scramble_field_label" unitLabel="@Strings.no_units"/>
 
     <fitField id="9" displayInActivitySummary="true" sortOrder = "9" precision = "0"
-    dataLabel = "@Strings.score_field_label" unitLabel="@Strings.no_units"/>
+    dataLabel = "@Strings.ob_field_label" unitLabel="@Strings.no_units"/>
 
     <fitField id="10" displayInActivitySummary="true" sortOrder = "10" precision = "0"
-    dataLabel = "@Strings.score_field_label" unitLabel="@Strings.no_units"/>
+    dataLabel = "@Strings.c1_putt_field_label" unitLabel="@Strings.no_units"/>
 
     <fitField id="11" displayInActivitySummary="true" sortOrder = "11" precision = "0"
-    dataLabel = "@Strings.score_field_label" unitLabel="@Strings.no_units"/>
+    dataLabel = "@Strings.c2_putt_field_label" unitLabel="@Strings.no_units"/>
 
     <fitField id="12" displayInActivitySummary="true" sortOrder = "12" precision = "0"
-    dataLabel = "@Strings.score_field_label" unitLabel="@Strings.no_units"/>
+    dataLabel = "@Strings.avg_throw_in_field_label" unitLabel="@Strings.no_units"/>
 
     <fitField id="13" displayInActivitySummary="true" sortOrder = "13" precision = "0"
-    dataLabel = "@Strings.score_field_label" unitLabel="@Strings.no_units"/>
-    <!--Laps-->
-    <fitField id="14" displayInActivityLaps="true" sortOrder = "14" precision = "0"
-    dataLabel = "@Strings.par_field_label" unitLabel="@Strings.no_units"/>
+    dataLabel = "@Strings.long_throw_in_field_label" unitLabel="@Strings.no_units"/>
 
-    <fitField id="15" displayInActivityLaps="true" sortOrder = "15" precision = "0"
-    dataLabel = "@Strings.score_field_label" unitLabel="@Strings.no_units"/>
 </fitContributions>
