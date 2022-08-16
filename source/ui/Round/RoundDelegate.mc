@@ -7,9 +7,14 @@ class RoundDelegate extends WatchUi.BehaviorDelegate{
     }
 
     public function onSelect(){
+        var manager = RoundView.getInstance().getManager();
+        var holeInfo = manager.getCurrentHoleInfo();
+
         var pauseMenu = new WatchUi.Menu();
         pauseMenu.addItem("Resume", :resume);
-        pauseMenu.addItem("Save", :save);
+        if (holeInfo[1] > 1){
+            pauseMenu.addItem("Save", :save);
+        }
         pauseMenu.addItem("Discard", :discard);
 
         WatchUi.pushView(pauseMenu, new RoundPauseDelegate(), WatchUi.SLIDE_RIGHT);

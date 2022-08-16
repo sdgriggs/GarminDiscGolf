@@ -1,11 +1,44 @@
 <strings>
-    <string id="AppName">DiscGolfTracker</string>
+    <string id="AppName">Disc Golf Tracker Memory</string>
 
     <string id="prompt">Click the menu button</string>
 
     <string id="menu_label_1">Tee</string>
     <string id="menu_label_2">Disc</string>
-    
+
+    <string id = "no_units"> </string>
+
+    <string id = "course_d_field_label">Course Distance</string>
+
+    <string id = "par_field_label">Par</string>
+
+    <string id = "strokes_field_label">Strokes</string>
+
     <string id = "score_field_label">Score</string>
-    <string id = "score_field_units"> </string>
+
+    <string id = "bird_perc_field_label">Birdie Percentage</string>
+
+    <string id = "fairway_field_label">Fairway Hits</string>
+
+    <string id = "c1_reg_field_label">C1 In Regulation</string>
+
+    <string id = "c2_reg_field_label">C2 In Regulation</string>
+
+    <string id = "scramble_field_label">Scramble Percentage</string>
+
+    <string id = "ob_field_label">OB Throws</string>
+
+    <string id = "c1_putt_field_label">C1 Putting</string>
+
+    <string id = "c2_putt_field_label">C2 Putting</string>
+
+    <string id = "avg_throw_in_field_label">Average Throw In Distance</string>
+
+    <string id = "long_throw_in_field_label">Longest Throw In Distance</string>
+
+
+
+    
+
+
 </strings>

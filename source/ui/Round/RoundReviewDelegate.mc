@@ -1,29 +1,23 @@
 using Toybox.WatchUi;
 
 class RoundReviewDelegate extends WatchUi.BehaviorDelegate{
-    
+    private var reviewView;
 
-    public function initialize() {
-
+    public function initialize(view) {
         WatchUi.BehaviorDelegate.initialize();
+        reviewView = view;
     }
 
     function onNextPage() {
-        if (reviewPageNumber < (1 + completedHoles.size())) {
-            reviewPageNumber++;
-        }
-        //System.print("INC");
+        reviewView.incrementPageNumber();
     }
 
     function onPreviousPage() {
-
-        if (reviewPageNumber > 0) {
-            reviewPageNumber--;
-        }
-        //System.print("DEC");
+        reviewView.decrementPageNumber();
     }
     function onBack(){
         WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+        return true;//override default
     }
 }
 

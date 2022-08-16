@@ -29,6 +29,7 @@ class Round{
             //otherwise go back a hole
             else{
                 currentHole--;
+                holes[currentHole].undo();
                 return;
             }
         } //otherwise if the hole is unmarked
