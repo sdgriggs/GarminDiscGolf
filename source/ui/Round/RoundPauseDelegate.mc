@@ -186,7 +186,7 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
             c2PuttingField.setData(c2PuttingPerc);
 
             var avgThrowIn = Stats.getAverageThrowIn(holeArray);
-            var avgThrowInStr = "" + (100 * avgThrowIn).toNumber() + unitName;
+            var avgThrowInStr = "" + avgThrowIn + unitName;
             summaryStatsArr[16] = "Avg Throw-In: " + avgThrowInStr;            
             var avgThrowInField = session.createField("Average Throw In Distance", AVG_THROW_IN_FIELD_ID, FitContributor.DATA_TYPE_STRING, {
                 :mesgType=>FitContributor.MESG_TYPE_SESSION,
@@ -197,8 +197,8 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
 
 
             var longestThrowIn = Stats.getLongestThrowIn(holeArray);
-            var longestThrowInStr = "" + (100 * longestThrowIn).toNumber() + unitName;
-            summaryStatsArr[17] = "Longest Throw-In: " + (100 * longestThrowIn).toNumber() + unitName;
+            var longestThrowInStr = "" + longestThrowIn + unitName;
+            summaryStatsArr[17] = "Longest Throw-In: " + longestThrowInStr;
             var longThrowInField = session.createField("Longest Throw In Distance", LONG_THROW_IN_FIELD_ID, FitContributor.DATA_TYPE_STRING, {
                 :mesgType=>FitContributor.MESG_TYPE_SESSION,
                 :count=>longestThrowInStr.length() + 1,

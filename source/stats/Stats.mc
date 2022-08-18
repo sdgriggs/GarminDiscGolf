@@ -329,7 +329,7 @@ module Stats{
                     if(strokes > holeArray[i].getPar() - 2){
                         break;
                     } else if (strokes == holeArray[i].getPar() - 2){
-                        stPos = throws.get(v).getStartPos();
+                        stPos = throws.get(v).getEndPos();
                         break;
                     }
                 }
@@ -374,7 +374,7 @@ module Stats{
                     if(strokes > holeArray[i].getPar() - 2){
                         break;
                     } else if (strokes == holeArray[i].getPar() - 2){
-                        stPos = throws.get(v).getStartPos();
+                        stPos = throws.get(v).getEndPos();
                         break;
                     }
                 }
