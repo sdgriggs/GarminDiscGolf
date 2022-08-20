@@ -304,8 +304,8 @@ module Stats{
     }
 
 
-    public function getC1(holeArray){
-        var c1 = 0;
+    public function getCX(holeArray, circleNum){
+        var cx = 0;
         var elligibleHoles = 0;
         for( var i = 0; i < getHolesCompleted(holeArray); i++){
             var throws = holeArray[i].getThrows();
@@ -317,7 +317,7 @@ module Stats{
             elligibleHoles++;
             if(holeArray[i].getScore() <= holeArray[i].getPar() - 2)
             {
-                c1++;
+                cx++;
             }
             else{
                 var strokes = 0;
@@ -333,61 +333,13 @@ module Stats{
                         break;
                     }
                 }
-                if(stPos != null && measureDistanceBetweenLocations(stPos, endPos, true) <= 10){
-                    c1++;
+                if(stPos != null && measureDistanceBetweenLocations(stPos, endPos, true) <= circleNum * 10){
+                    cx++;
                 }
             }
         }
             if(elligibleHoles > 0){
-                return 1.0 * c1 / elligibleHoles;
-            } else {
-                return 0;
-            }
-            
-            
-                
-        }
-
-
-    public function getC2(holeArray){
-        var c1 = 0;
-        var elligibleHoles = 0;
-        for( var i = 0; i < getHolesCompleted(holeArray); i++){
-            var throws = holeArray[i].getThrows();
-            var endPos = throws.get(throws.getSize() - 1).getEndPos();
-            var stPos = null;
-            if (holeArray[i].getPar() <= 2 ){
-                continue;
-            }
-            elligibleHoles++;
-            if(holeArray[i].getScore() <= holeArray[i].getPar() - 2)
-            {
-                c1++;
-            }
-            else{
-                var strokes = 0;
-                for(var v = 0; v < throws.getSize(); v++){
-                    strokes++;
-                    if(throws.get(v).getOutcome() == OB) {
-                        strokes++;
-                    }
-                    if(strokes > holeArray[i].getPar() - 2){
-                        break;
-                    } else if (strokes == holeArray[i].getPar() - 2){
-                        stPos = throws.get(v).getEndPos();
-                        break;
-                    }
-                }
-                if(stPos != null && measureDistanceBetweenLocations(stPos, endPos, true) <= 20){
-                    c1++;
-                }
-            }
-        }
-
-            System.println(elligibleHoles);
-            System.println(c1);
-            if(elligibleHoles > 0){
-                return 1.0 * c1 / elligibleHoles;
+                return 1.0 * cx / elligibleHoles;
             } else {
                 return 0;
             }

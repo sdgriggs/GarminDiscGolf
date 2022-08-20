@@ -5,6 +5,7 @@ using Toybox.Activity;
 using Toybox.System;
 using Toybox.Application.Properties;
 using Toybox.Application;
+using Toybox.Math;
 
 
 class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
@@ -47,8 +48,33 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
             var summaryStatsArr = new [18];//The array with all the summary info
             //Get and add the generic activity data
             var activityInfo = Activity.getActivityInfo();
-            summaryStatsArr[0] = "Dist Walked: " + activityInfo.elapsedDistance.toNumber() + " m";
-            summaryStatsArr[1] = "Time: " + activityInfo.elapsedTime / 1000 +" s";
+            var distWalkMet = activityInfo.elapsedDistance;
+            var distWalkStr = "";
+            if (unitName == "m") {
+                distWalkStr += (distWalkMet / 1000).format("%.2f") + " km";
+            } else {
+                distWalkStr += (distWalkMet / 1609.34).format("%.2f") + " miles";
+            }
+            summaryStatsArr[0] = "Dist Walked: " + distWalkStr;
+
+            var seconds = activityInfo.elapsedTime / 1000;
+            var timeStr = "";
+            for (var i = 2; i >= 0; i--) {
+                var magicNum = Math.pow(60, i).toNumber();
+                var tempStr = "" + (seconds / magicNum);
+                seconds %= magicNum;
+                if (tempStr.length() == 1) {
+                    tempStr = "0" + tempStr;
+                }
+                timeStr += tempStr;
+                
+                if (i > 0) {
+                    timeStr += ":";
+                }
+            }
+
+            summaryStatsArr[1] = "Time: " + timeStr;
+
             summaryStatsArr[2] = "Calories: " + activityInfo.calories;
             summaryStatsArr[3] = "Avg. HR: " + activityInfo.averageHeartRate +" bpm";
             //Now get the holes for the fun part
@@ -119,7 +145,7 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
             fairwayField.setData(fairwayHits * 100);
 
                 //C1 %
-            var c1InReg = Stats.getC1(holeArray);
+            var c1InReg = Stats.getCX(holeArray, 1);
             summaryStatsArr[10] = "C1 in Reg: " + (c1InReg * 100).toNumber() + "%";
             var c1InRegField = session.createField("C1 In Regulation", C1_REG_FIELD_ID, FitContributor.DATA_TYPE_FLOAT, {
                 :mesgType=>FitContributor.MESG_TYPE_SESSION,
@@ -128,7 +154,7 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
             c1InRegField.setData(c1InReg * 100);
 
                 //C2 %
-            var c2InReg = Stats.getC2(holeArray);
+            var c2InReg = Stats.getCX(holeArray, 2);
             summaryStatsArr[11] = "C2 in Reg: " + (c2InReg * 100).toNumber() + "%";
             var c2InRegField = session.createField("C2 In Regulation", C2_REG_FIELD_ID, FitContributor.DATA_TYPE_FLOAT, {
                 :mesgType=>FitContributor.MESG_TYPE_SESSION,
@@ -185,7 +211,7 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
             });
             c2PuttingField.setData(c2PuttingPerc);
 
-            var avgThrowIn = Stats.getAverageThrowIn(holeArray);
+            var avgThrowIn = Stats.getAverageThrowIn(holeArray).toNumber();
             var avgThrowInStr = "" + avgThrowIn + unitName;
             summaryStatsArr[16] = "Avg Throw-In: " + avgThrowInStr;            
             var avgThrowInField = session.createField("Average Throw In Distance", AVG_THROW_IN_FIELD_ID, FitContributor.DATA_TYPE_STRING, {
@@ -196,7 +222,7 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
             avgThrowInField.setData(avgThrowInStr);
 
 
-            var longestThrowIn = Stats.getLongestThrowIn(holeArray);
+            var longestThrowIn = Stats.getLongestThrowIn(holeArray).toNumber();
             var longestThrowInStr = "" + longestThrowIn + unitName;
             summaryStatsArr[17] = "Longest Throw-In: " + longestThrowInStr;
             var longThrowInField = session.createField("Longest Throw In Distance", LONG_THROW_IN_FIELD_ID, FitContributor.DATA_TYPE_STRING, {

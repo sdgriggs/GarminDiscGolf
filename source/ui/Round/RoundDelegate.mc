@@ -1,4 +1,5 @@
 using Toybox.WatchUi;
+using Stats;
 
 class RoundDelegate extends WatchUi.BehaviorDelegate{
 
@@ -12,7 +13,7 @@ class RoundDelegate extends WatchUi.BehaviorDelegate{
 
         var pauseMenu = new WatchUi.Menu();
         pauseMenu.addItem("Resume", :resume);
-        if (holeInfo[1] > 1){
+        if (Stats.getHolesCompleted(manager.getHoles())){
             pauseMenu.addItem("Save", :save);
         }
         pauseMenu.addItem("Discard", :discard);
