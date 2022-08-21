@@ -98,12 +98,13 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
 
             //Adding general round overview stats
             var diff = summaryStatsArr.size() - methodArrs.size();
+            var completedStatsList = new ArrayList();
             for (var i = 0; i < methodArrs.size(); i++) {
-                System.println("i: " + i);
-                summaryStatsArr[i + diff] += Stats.writeRoundStat(methodArrs[i][0], holeArray, session, i, methodArrs[i][1], methodArrs[i][2], methodArrs[i][3]) + methodArrs[i][2];
+                summaryStatsArr[i + diff] += Stats.writeRoundStat(completedStatsList, methodArrs[i][0], holeArray, session, i, methodArrs[i][1], methodArrs[i][2], methodArrs[i][3]) + " " + methodArrs[i][2];
             }
 
-            session.save();//save session
+            session.save();
+            
            //construct menu and switch to it
             var roundEndMenu = new WatchUi.Menu();
             roundEndMenu.addItem("Round Stats", :round_stats);

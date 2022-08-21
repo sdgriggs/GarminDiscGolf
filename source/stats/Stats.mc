@@ -74,7 +74,7 @@ module Stats{
         return (c * r_imperial) * 5280;
     }
     //Experimental function that will write the stat to the FIT file and return the stat
-    public function writeRoundStat(method, holeArray, session, id, type, units, isPercentage) {
+    public function writeRoundStat(completedStatsList, method, holeArray, session, id, type, units, isPercentage) {
         var data = method.invoke(holeArray);
         System.println(data);
         if (isPercentage && data != null && data instanceof Lang.Float) {
@@ -83,7 +83,6 @@ module Stats{
         if (!(data instanceof Lang.String) && data != null) {
             data = data.toNumber();
         }
-        var field;
         if (type == FitContributor.DATA_TYPE_STRING){
             var strData = "N/A";
             if (data != null) {
@@ -97,19 +96,21 @@ module Stats{
                     }
                 }
             }
-            field = session.createField("" + id, id, type, {
+            var field = session.createField("" + id, id, type, {
                 :mesgType=>FitContributor.MESG_TYPE_SESSION,
                 :count=>strData.length() + 1,
                 :units=>units
             });
             field.setData(strData);
+            completedStatsList.add(field);
             return strData;
         } else {
-            field = session.createField("" + id, id, type, {
+            var field = session.createField("" + id, id, type, {
                 :mesgType=>FitContributor.MESG_TYPE_SESSION,
                 :units=>units
             });
             field.setData(data);
+            completedStatsList.add(field);
         }
         return data;
     }
