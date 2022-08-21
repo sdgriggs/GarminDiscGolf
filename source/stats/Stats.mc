@@ -1,6 +1,7 @@
 using Toybox.Math;
 using Toybox.System;
 using Toybox.Lang;
+using Toybox.FitContributor;
 
 module Stats{
       public function totalDist(throws){
@@ -75,16 +76,25 @@ module Stats{
     //Experimental function that will write the stat to the FIT file and return the stat
     public function writeRoundStat(method, holeArray, session, id, type, units, isPercentage) {
         var data = method.invoke(holeArray);
-        if (isPercentage) {
+        System.println(data);
+        if (isPercentage && data != null && data instanceof Lang.Float) {
             data *= 100;
+        }
+        if (!(data instanceof Lang.String) && data != null) {
+            data = data.toNumber();
         }
         var field;
         if (type == FitContributor.DATA_TYPE_STRING){
             var strData = "N/A";
             if (data != null) {
-                strData = "" + data.toNumber();
-                if (isPercentage) {
-                    strData += "%";
+                if (data instanceof Lang.String) {
+                    strData = data;
+                }
+                else {
+                    strData = "" + data.toNumber();
+                    if (isPercentage) {
+                        strData += "%";
+                    }
                 }
             }
             field = session.createField("" + id, id, type, {
@@ -95,7 +105,7 @@ module Stats{
             field.setData(strData);
             return strData;
         } else {
-            var field = session.createField("" + id, id, type, {
+            field = session.createField("" + id, id, type, {
                 :mesgType=>FitContributor.MESG_TYPE_SESSION,
                 :units=>units
             });
