@@ -72,6 +72,37 @@ module Stats{
         // calculate the result
         return (c * r_imperial) * 5280;
     }
+    //Experimental function that will write the stat to the FIT file and return the stat
+    public function writeRoundStat(method, holeArray, session, id, type, units, isPercentage) {
+        var data = method.invoke(holeArray);
+        if (isPercentage) {
+            data *= 100;
+        }
+        var field;
+        if (type == FitContributor.DATA_TYPE_STRING){
+            var strData = "N/A";
+            if (data != null) {
+                strData = "" + data.toNumber();
+                if (isPercentage) {
+                    strData += "%";
+                }
+            }
+            field = session.createField("" + id, id, type, {
+                :mesgType=>FitContributor.MESG_TYPE_SESSION,
+                :count=>strData.length() + 1,
+                :units=>units
+            });
+            field.setData(strData);
+            return strData;
+        } else {
+            var field = session.createField("" + id, id, type, {
+                :mesgType=>FitContributor.MESG_TYPE_SESSION,
+                :units=>units
+            });
+            field.setData(data);
+        }
+        return data;
+    }
 
     public function getParList(holes) {
         var arr = new [getHolesCompleted(holes)];
@@ -154,6 +185,10 @@ module Stats{
 
         return "E";
     
+    }
+
+    public function getTotalScoreAsString(holes) {
+        return convertScoreToString(getCombinedScore(holes));
     }
 
     //Measures the total distance thrown over an array of holes
@@ -242,26 +277,7 @@ module Stats{
         return 1.0 * fw/tot;
     }
 
-    public function getC1Putting(holeArray){
-        var make = 0;
-        var total = 0;
-        for (var i = 0; i < getHolesCompleted(holeArray); i ++){
-            var thr = holeArray[i].getThrows().toArray();
-            var holeLoc = thr[thr.size() - 1].getEndPos();
-            for(var j = 0; j < thr.size(); j++){
-                if(inC1(thr[j].getStartPos(), holeArray[i])){
-                    if( j == thr.size() - 1){
-                        make++;
-                    }
-                    total++;
-                }
-            }
-
-        }
-        return [make, total] ;
-    }
-
-    public function getC2Putting(holeArray){
+    public function getCXPutting(holeArray, circleNum){
         var make = 0;
         var total = 0;
         for (var i = 0; i < getHolesCompleted(holeArray); i ++){
@@ -269,16 +285,26 @@ module Stats{
             var holeLoc = thr[thr.size() - 1].getEndPos();
             for(var j = 0; j < thr.size(); j++){
                 var dist = measureDistanceBetweenLocations(thr[j].getStartPos(), holeLoc, true);
-                if( dist > 10 && dist < 20){
+                if( dist >= 10 * (circleNum - 1) && dist < 10 * circleNum){
                     if( j == thr.size() - 1){
                         make++;
                     }
                     total++;
                 }
             }
-
         }
-        return [make, total] ;
+        if (total == 0) {
+            return null;
+        }
+        return 1.0 * make / total;
+    }
+
+    public function getC1Putting(holeArray){
+        return getCXPutting(holeArray, 1);
+    }
+
+    public function getC2Putting(holeArray){
+        return getCXPutting(holeArray, 1);
     }
 
     public function getScramble(holeArray){
@@ -300,7 +326,10 @@ module Stats{
 
 
         }
-        return [make, total] ;
+        if (total == 0) {
+            return null;
+        }
+        return 1.0 * make / total;
     }
 
 
@@ -341,11 +370,16 @@ module Stats{
             if(elligibleHoles > 0){
                 return 1.0 * cx / elligibleHoles;
             } else {
-                return 0;
-            }
-            
-            
-                
+                return null;
+            }    
+        }
+
+        public function getC1(holeArray) {
+            return getCX(holeArray, 1);
+        }
+
+        public function getC2(holeArray) {
+            return getCX(holeArray, 2);
         }
 
         public function getObThrows(holeArray){

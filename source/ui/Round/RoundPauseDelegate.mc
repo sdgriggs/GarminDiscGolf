@@ -9,23 +9,6 @@ using Toybox.Math;
 
 
 class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
-    private static const COURSE_D_FIELD_ID = 0;
-    private static const PAR_FIELD_ID = 1;
-    private static const STROKES_FIELD_ID = 2;
-    private static const SCORE_FIELD_ID = 3;
-    private static const BIRD_PERC_FIELD_ID = 4;
-    private static const FAIRWAY_FIELD_ID = 5;
-    private static const C1_REG_FIELD_ID = 6;
-    private static const C2_REG_FIELD_ID = 7;
-    private static const SCRAMBLE_FIELD_ID = 8;
-    private static const OB_FIELD_ID = 9;
-    private static const C1_PUTT_FIELD_ID = 10;
-    private static const C2_PUTT_FIELD_ID = 11;
-    private static const AVG_THROW_IN_FIELD_ID = 12;
-    private static const LONG_THROW_IN_FIELD_ID = 13;
-
-
-
 
     public function initialize() {
         RoundView.getInstance().getSession().stop();
@@ -45,6 +28,21 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
         if (item == :resume) {
             //Don't do anything
         } else if (item == :save) {
+            var methodArrs = [[new Lang.method(Stats, :getCourseDistance), FitContributor.DATA_TYPE_STRING, false], 
+                [new Lang.method(Stats, :getCombinedPar), FitContributor.DATA_TYPE_FLOAT, false], 
+                [new Lang.method(Stats, :getTotalStrokes), FitContributor.DATA_TYPE_FLOAT, false], 
+                [new Lang.method(Stats, :getTotalScoreAsString), FitContributor.DATA_TYPE_STRING, false], 
+                [new Lang.method(Stats, :getBirdieRate), FitContributor.DATA_TYPE_STRING, true], 
+                [new Lang.method(Stats, :getFairwayHits), FitContributor.DATA_TYPE_STRING, true], 
+                [new Lang.method(Stats, :getC1), FitContributor.DATA_TYPE_STRING, true], 
+                [new Lang.method(Stats, :getC2), FitContributor.DATA_TYPE_STRING, true], 
+                [new Lang.method(Stats, :getScramble), FitContributor.DATA_TYPE_STRING, true], 
+                [new Lang.method(Stats, :getObThrows), FitContributor.DATA_TYPE_FLOAT, false], 
+                [new Lang.method(Stats, :getC1Putting), FitContributor.DATA_TYPE_STRING, true], 
+                [new Lang.method(Stats, :getC2Putting), FitContributor.DATA_TYPE_STRING, true], 
+                [new Lang.method(Stats, :getAverageThrowIn), FitContributor.DATA_TYPE_FLOAT, true], 
+                [new Lang.method(Stats, :getLongestThrowIn), FitContributor.DATA_TYPE_FLOAT, true]];
+                
             var summaryStatsArr = new [18];//The array with all the summary info
             //Get and add the generic activity data
             var activityInfo = Activity.getActivityInfo();
