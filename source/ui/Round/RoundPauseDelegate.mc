@@ -83,7 +83,7 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
             //Now get the holes for the fun part
             holeArray = RoundView.getInstance().getManager().getHoles();
 
-            var methodArrs = [[new Lang.Method(Stats, :getCourseDistance), FitContributor.DATA_TYPE_STRING, unitName, false], 
+            var methodArrs = [[new Lang.Method(Stats, :getCourseDistance), FitContributor.DATA_TYPE_STRING, " " +unitName, false], 
                 [new Lang.Method(Stats, :getCombinedPar), FitContributor.DATA_TYPE_FLOAT, "", false], 
                 [new Lang.Method(Stats, :getTotalStrokes), FitContributor.DATA_TYPE_FLOAT, "", false], 
                 [new Lang.Method(Stats, :getTotalScoreAsString), FitContributor.DATA_TYPE_STRING, "", false], 
@@ -95,14 +95,17 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
                 [new Lang.Method(Stats, :getObThrows), FitContributor.DATA_TYPE_FLOAT, "", false], 
                 [new Lang.Method(Stats, :getC1Putting), FitContributor.DATA_TYPE_STRING, "", true], 
                 [new Lang.Method(Stats, :getC2Putting), FitContributor.DATA_TYPE_STRING, "", true], 
-                [new Lang.Method(Stats, :getAverageThrowIn), FitContributor.DATA_TYPE_FLOAT, unitName, true], 
-                [new Lang.Method(Stats, :getLongestThrowIn), FitContributor.DATA_TYPE_FLOAT, unitName, true]];
+                [new Lang.Method(Stats, :getAverageThrowIn), FitContributor.DATA_TYPE_STRING, " " + unitName, false], 
+                [new Lang.Method(Stats, :getLongestThrowIn), FitContributor.DATA_TYPE_STRING, " " + unitName, false]];
 
             //Adding general round overview stats
             var diff = summaryStatsArr.size() - methodArrs.size();
             var completedStatsList = new ArrayList();
             for (var i = 0; i < methodArrs.size(); i++) {
-                summaryStatsArr[i + diff] += Stats.writeRoundStat(completedStatsList, methodArrs[i][0], holeArray, session, i, methodArrs[i][1], methodArrs[i][2], methodArrs[i][3]) + " " + methodArrs[i][2];
+                summaryStatsArr[i + diff] += Stats.writeRoundStat(completedStatsList, methodArrs[i][0], holeArray, session, i, methodArrs[i][1], methodArrs[i][2], methodArrs[i][3]);
+                if (methodArrs[i][1] != FitContributor.DATA_TYPE_STRING) {
+                    summaryStatsArr[i + diff] += methodArrs[i][2];
+                }
             }
 
             session.save();

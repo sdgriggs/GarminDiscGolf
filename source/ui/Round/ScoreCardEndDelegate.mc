@@ -7,6 +7,7 @@ class ScoreCardEndDelegate extends WatchUi.BehaviorDelegate{
 
     function onBack() {
         WatchUi.popView(WatchUi.SLIDE_UP);
+        return true;
     }
     function onNextPage(){
         if (hole > 8 && hole -  9 >= 0){

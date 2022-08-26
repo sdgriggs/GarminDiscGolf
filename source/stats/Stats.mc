@@ -96,10 +96,11 @@ module Stats{
                     }
                 }
             }
+            strData += units;
             var field = session.createField("" + id, id, type, {
                 :mesgType=>FitContributor.MESG_TYPE_SESSION,
                 :count=>strData.length() + 1,
-                :units=>units
+                :units=>""
             });
             field.setData(strData);
             completedStatsList.add(field);
@@ -315,7 +316,7 @@ module Stats{
     }
 
     public function getC2Putting(holeArray){
-        return getCXPutting(holeArray, 1);
+        return getCXPutting(holeArray, 2);
     }
 
     public function getScramble(holeArray){
