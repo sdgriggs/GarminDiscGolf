@@ -13,10 +13,9 @@ class RoundEndScreenDelegate extends WatchUi.MenuInputDelegate{
         if(item == :round_stats){
             var view = new RoundReviewView(summaryStatsArr);
             WatchUi.pushView(view, new RoundReviewDelegate(view), WatchUi.SLIDE_RIGHT);
-        } else if (item == :holes){
-            //TODO
         } else if (item == :scorecard){
-            //TODO
+
+            WatchUi.pushView(new ScoreCardView(holeArray), new ScoreCardEndDelegate(), WatchUi.SLIDE_RIGHT);
         } else if (item == :done) {
             //Currently do nothing
         }

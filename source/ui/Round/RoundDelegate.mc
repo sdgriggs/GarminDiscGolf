@@ -1,4 +1,5 @@
 using Toybox.WatchUi;
+using Stats;
 
 class RoundDelegate extends WatchUi.BehaviorDelegate{
 
@@ -12,7 +13,7 @@ class RoundDelegate extends WatchUi.BehaviorDelegate{
 
         var pauseMenu = new WatchUi.Menu();
         pauseMenu.addItem("Resume", :resume);
-        if (holeInfo[1] > 1){
+        if (Stats.getHolesCompleted(manager.getHoles())){
             pauseMenu.addItem("Save", :save);
         }
         pauseMenu.addItem("Discard", :discard);
@@ -21,7 +22,7 @@ class RoundDelegate extends WatchUi.BehaviorDelegate{
     }
 
     public function onPreviousPage () {
-        WatchUi.pushView(new ScoreCardView(), new ScoreCardDelegate(), WatchUi.SLIDE_DOWN);
+        WatchUi.pushView(new ScoreCardView(null), new ScoreCardDelegate(), WatchUi.SLIDE_DOWN);
     }
 
     public function onBack(){
