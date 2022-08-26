@@ -8,6 +8,8 @@ using Toybox.Application;
 using Toybox.Math;
 using Toybox.Lang;
 
+var holeArray;
+
 
 class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
 
@@ -79,7 +81,7 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
             summaryStatsArr[2] += activityInfo.calories.toString();
             summaryStatsArr[3] += activityInfo.averageHeartRate + " bpm";
             //Now get the holes for the fun part
-            var holeArray = RoundView.getInstance().getManager().getHoles();
+            holeArray = RoundView.getInstance().getManager().getHoles();
 
             var methodArrs = [[new Lang.Method(Stats, :getCourseDistance), FitContributor.DATA_TYPE_STRING, unitName, false], 
                 [new Lang.Method(Stats, :getCombinedPar), FitContributor.DATA_TYPE_FLOAT, "", false], 
@@ -108,7 +110,6 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
            //construct menu and switch to it
             var roundEndMenu = new WatchUi.Menu();
             roundEndMenu.addItem("Round Stats", :round_stats);
-            roundEndMenu.addItem("Holes", :holes);
             roundEndMenu.addItem("Scorecard", :scorecard);
             roundEndMenu.addItem("Done", :done);
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
@@ -119,6 +120,6 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
             session.discard();
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
             RoundView.getInstance().reset();
-        }
+        } 
     }
 }
