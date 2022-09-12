@@ -8,6 +8,8 @@ using Toybox.ActivityRecording;
 class RoundView extends WatchUi.View{
     private var mainText;
 
+    private var mainTextLines;
+
     private static var instance;
 
     private var manager;
@@ -47,13 +49,15 @@ class RoundView extends WatchUi.View{
         started = false;
         manager = null;
         undoneLaps = 0;
-        mainText = new WatchUi.Text({
-            :text=>"",
-            :color=>Graphics.COLOR_WHITE,
-            :font=>Graphics.FONT_SYSTEM_SMALL,
-            :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
-            :locY=>WatchUi.LAYOUT_VALIGN_CENTER
-        });
+        // mainText = new WatchUi.Text({
+        //     :text=>"",
+        //     :color=>Graphics.COLOR_WHITE,
+        //     :font=>Graphics.FONT_SYSTEM_SMALL,
+        //     :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
+        //     :locY=>WatchUi.LAYOUT_VALIGN_CENTER
+        // });
+        mainText = "";
+        mainTextLines = 1;
         if(isTS){
             selectText = "Tap";
             useBackText = "Swipe Right";
@@ -105,20 +109,25 @@ class RoundView extends WatchUi.View{
         var memText = "";//"\n" + sysStats.usedMemory + " / " + sysStats.totalMemory;
 
         if (manager.isCompleted()) {
-            mainText.setText("Round Complete:\n" + selectText + " To\nSave Round" + memText);
+            mainText = "Round Complete:\n" + selectText + " To\nSave Round" + memText;
+            mainTextLines = 3;
         }
         else if (!locationAcquired) {
-            mainText.setText("Wait for GPS\nto be acquired" + memText);
+            mainText = "Wait for GPS\nto be acquired" + memText;
+            mainTextLines = 2;
         }
         else if (manager.needsInitializing()) {
-            mainText.setText("Hole " + holeInfo[1] + ":\n" + useBackText + " To\nSet Par" + memText);
+            mainText = "Hole " + holeInfo[1] + ":\n" + useBackText + " To\nSet Par" + memText;
+            mainTextLines = 3;
         }
         else if (!holeInfo[0]) { //if the tee hasn't been marked
-            mainText.setText("Hole " + holeInfo[1] + ":\n" + useBackText + " To\nMark Tee" + memText);
+            mainText = "Hole " + holeInfo[1] + ":\n" + useBackText + " To\nMark Tee" + memText;
+            mainTextLines = 3;
         }
         else {
-            mainText.setText("Hole " + holeInfo[1] + ":\n" +"Throwing: " + (holeInfo[3] + 1) + "\n" 
-            + useBackText + " To\nMark Throw" + memText);
+            mainText = "Hole " + holeInfo[1] + ":\n" +"Throwing: " + (holeInfo[3] + 1) + "\n" 
+            + useBackText + " To\nMark Throw" + memText;
+            mainTextLines = 4;
         }
     }
 
@@ -134,8 +143,8 @@ class RoundView extends WatchUi.View{
         if (manager != null){
             updateText();
         }
-
-        mainText.draw(dc);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2 - .5 * mainTextLines * dc.getFontHeight(Graphics.FONT_SYSTEM_SMALL), Graphics.FONT_SYSTEM_SMALL, mainText, Graphics.TEXT_JUSTIFY_CENTER);
         System.println("Round Update");
     }
 

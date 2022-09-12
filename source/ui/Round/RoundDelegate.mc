@@ -20,9 +20,11 @@ class RoundDelegate extends WatchUi.BehaviorDelegate{
 
         WatchUi.pushView(pauseMenu, new RoundPauseDelegate(), WatchUi.SLIDE_RIGHT);
     }
-
+    //Not for lateral swipe devices
+    (:notForLSD)
     public function onPreviousPage () {
-        WatchUi.pushView(new ScoreCardView(null), new ScoreCardDelegate(), WatchUi.SLIDE_DOWN);
+        downBehavior();
+        return true;
     }
 
     public function onBack(){
@@ -30,13 +32,19 @@ class RoundDelegate extends WatchUi.BehaviorDelegate{
             return true;//back behavior is handled, override default
     }
 
-    public function onSwipe(swipeEvent){
+    public function onSwipe(swipeEvent) {
         if (swipeEvent.getDirection() == WatchUi.SWIPE_RIGHT){
             lapBehavior();
+        } else if (swipeEvent.getDirection() == WatchUi.SWIPE_DOWN) {
+            downBehavior();
         }
     }
 
-    private function lapBehavior(){
+    private function downBehavior() {
+        WatchUi.pushView(new ScoreCardView(null), new ScoreCardDelegate(), WatchUi.SLIDE_DOWN);
+    }
+
+    private function lapBehavior() {
             if (locationAcquired) {
                 var manager = RoundView.getInstance().getManager();
                 var holeInfo = manager.getCurrentHoleInfo();

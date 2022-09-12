@@ -21,7 +21,8 @@ class LapMenuDelegate extends WatchUi.MenuInputDelegate{
             throwMenu.addItem("Rough", ROUGH);
             throwMenu.addItem("OB", OB);
             throwMenu.addItem("In Basket", IN_BASKET);
-            WatchUi.switchToView(throwMenu, new ThrowMenuDelegate(), WatchUi.SLIDE_RIGHT);
+            WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+            WatchUi.pushView(throwMenu, new ThrowMenuDelegate(), WatchUi.SLIDE_IMMEDIATE);
         } else if (item == :changePar) {
             var changeParMenu = new WatchUi.Menu();
             for (var i = 0; i < holeInfo[1] -1; i++){
@@ -31,7 +32,8 @@ class LapMenuDelegate extends WatchUi.MenuInputDelegate{
             if (holeInfo[2] != null) {
                 changeParMenu.addItem("Hole " + holeInfo[1], holeInfo[1] - 1);
             }
-            WatchUi.switchToView(changeParMenu, new ChangeParDelegate(), WatchUi.SLIDE_RIGHT);
+            WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+            WatchUi.pushView(changeParMenu, new ChangeParDelegate(), WatchUi.SLIDE_IMMEDIATE);
         } else if (item == :undo) {
             manager.undo();
             if (holeInfo[1] > manager.getCurrentHoleInfo()[1]) {

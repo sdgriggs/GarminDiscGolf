@@ -7,13 +7,31 @@ class RoundReviewDelegate extends WatchUi.BehaviorDelegate{
         WatchUi.BehaviorDelegate.initialize();
         reviewView = view;
     }
-
+    (:notForLSD)
     function onNextPage() {
-        reviewView.incrementPageNumber();
+        downBehavior();
+        return true;
+    }
+    (:notForLSD)
+    function onPreviousPage() {
+        upBehavior();
+        return true;
     }
 
-    function onPreviousPage() {
+    function onSwipe(swipeEvent) {
+        if (swipeEvent.getDirection() == WatchUi.SWIPE_UP) {
+            upBehavior();
+        } else if (swipeEvent.getDirection() == WatchUi.SWIPE_DOWN) {
+            downBehavior();
+        }
+    }
+
+    private function upBehavior() {
         reviewView.decrementPageNumber();
+    }
+
+    private function downBehavior() {
+        reviewView.incrementPageNumber();
     }
     function onBack(){
         WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);

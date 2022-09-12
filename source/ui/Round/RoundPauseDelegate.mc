@@ -116,7 +116,8 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
             roundEndMenu.addItem("Scorecard", :scorecard);
             roundEndMenu.addItem("Done", :done);
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
-            WatchUi.switchToView(roundEndMenu, new RoundEndScreenDelegate(summaryStatsArr), WatchUi.SLIDE_IMMEDIATE);
+            WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+            WatchUi.pushView(roundEndMenu, new RoundEndScreenDelegate(summaryStatsArr), WatchUi.SLIDE_IMMEDIATE);
 
             RoundView.getInstance().reset();
         } else if (item == :discard) {
