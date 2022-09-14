@@ -31,24 +31,66 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
         if (item == :resume) {
             //Don't do anything
         } else if (item == :save) {
-            var summaryStatsArr = ["Dist Walked: ",
-                "Time: ",
-                "Calories: ",
-                "Avg. HR: ",
-                "Course Dist: ",
-                "Course Par: ",
-                "Strokes: ",
-                "Score: ",
-                "Birdie Percentage: ",
-                "Fairway Hits: ",
-                "C1 in Reg: ",
-                "C2 in Reg: ",
-                "Scramble: ",
-                "OB Throws: ",
-                "C1 Putting: ",
-                "C2 Putting: ",
-                "Avg Throw-In: ",
-                "Longest Throw-In: "];//The array with all the summary info
+            var summaryStatsArr;
+            var methodArrs;
+            var manager = RoundView.getInstance().getManager();
+            if (manager instanceof Round) {
+                summaryStatsArr = ["Dist Walked: ",
+                    "Time: ",
+                    "Calories: ",
+                    "Avg. HR: ",
+                    "Course Dist: ",
+                    "Course Par: ",
+                    "Strokes: ",
+                    "Score: ",
+                    "Birdie Percentage: ",
+                    "Fairway Hits: ",
+                    "C1 in Reg: ",
+                    "C2 in Reg: ",
+                    "Scramble: ",
+                    "OB Throws: ",
+                    "C1 Putting: ",
+                    "C2 Putting: ",
+                    "Avg Throw-In: ",
+                    "Longest Throw-In: "];//The array with all the summary info
+                                //Now get the holes for the fun part
+                holeArray = RoundView.getInstance().getManager().getHoles();
+
+                methodArrs = [[new Lang.Method(Stats, :getCourseDistance), holeArray, FitContributor.DATA_TYPE_STRING, " " +unitName, false], 
+                    [new Lang.Method(Stats, :getCombinedPar), holeArray, FitContributor.DATA_TYPE_FLOAT, "", false], 
+                    [new Lang.Method(Stats, :getTotalStrokes), holeArray, FitContributor.DATA_TYPE_FLOAT, "", false], 
+                    [new Lang.Method(Stats, :getTotalScoreAsString), holeArray, FitContributor.DATA_TYPE_STRING, "", false], 
+                    [new Lang.Method(Stats, :getBirdieRate), holeArray, FitContributor.DATA_TYPE_STRING, "", true], 
+                    [new Lang.Method(Stats, :getFairwayHits), holeArray, FitContributor.DATA_TYPE_STRING, "", true], 
+                    [new Lang.Method(Stats, :getC1), holeArray, FitContributor.DATA_TYPE_STRING, "", true], 
+                    [new Lang.Method(Stats, :getC2), holeArray, FitContributor.DATA_TYPE_STRING, "", true], 
+                    [new Lang.Method(Stats, :getScramble), holeArray, FitContributor.DATA_TYPE_STRING, "", true], 
+                    [new Lang.Method(Stats, :getObThrows), holeArray, FitContributor.DATA_TYPE_FLOAT, "", false], 
+                    [new Lang.Method(Stats, :getC1Putting), holeArray, FitContributor.DATA_TYPE_STRING, "", true], 
+                    [new Lang.Method(Stats, :getC2Putting), holeArray, FitContributor.DATA_TYPE_STRING, "", true], 
+                    [new Lang.Method(Stats, :getAverageThrowIn), holeArray, FitContributor.DATA_TYPE_STRING, " " + unitName, false], 
+                    [new Lang.Method(Stats, :getLongestThrowIn), holeArray, FitContributor.DATA_TYPE_STRING, " " + unitName, false]];
+            } else {
+                var args = {
+                    :pars => manager.getPars(),
+                    :strokes => manager.getStrokes()
+                };
+                summaryStatsArr = ["Dist Walked: ",
+                    "Time: ",
+                    "Calories: ",
+                    "Avg. HR: ",
+                    "Course Par: ",
+                    "Strokes: ",
+                    "Score: ",
+                    "Birdie Percentage: "];
+
+                    
+                methodArrs = [ null,
+                    [new Lang.Method(Stats, :getCombinedPar), args, FitContributor.DATA_TYPE_FLOAT, "", false], 
+                    [new Lang.Method(Stats, :getTotalStrokes), args, FitContributor.DATA_TYPE_FLOAT, "", false], 
+                    [new Lang.Method(Stats, :getTotalScoreAsString), args, FitContributor.DATA_TYPE_STRING, "", false], 
+                    [new Lang.Method(Stats, :getBirdieRate), args, FitContributor.DATA_TYPE_STRING, "", true]];
+            }
             //Get and add the generic activity data
             var activityInfo = Activity.getActivityInfo();
             var distWalkMet = activityInfo.elapsedDistance;
@@ -80,31 +122,17 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
 
             summaryStatsArr[2] += activityInfo.calories.toString();
             summaryStatsArr[3] += activityInfo.averageHeartRate + " bpm";
-            //Now get the holes for the fun part
-            holeArray = RoundView.getInstance().getManager().getHoles();
-
-            var methodArrs = [[new Lang.Method(Stats, :getCourseDistance), FitContributor.DATA_TYPE_STRING, " " +unitName, false], 
-                [new Lang.Method(Stats, :getCombinedPar), FitContributor.DATA_TYPE_FLOAT, "", false], 
-                [new Lang.Method(Stats, :getTotalStrokes), FitContributor.DATA_TYPE_FLOAT, "", false], 
-                [new Lang.Method(Stats, :getTotalScoreAsString), FitContributor.DATA_TYPE_STRING, "", false], 
-                [new Lang.Method(Stats, :getBirdieRate), FitContributor.DATA_TYPE_STRING, "", true], 
-                [new Lang.Method(Stats, :getFairwayHits), FitContributor.DATA_TYPE_STRING, "", true], 
-                [new Lang.Method(Stats, :getC1), FitContributor.DATA_TYPE_STRING, "", true], 
-                [new Lang.Method(Stats, :getC2), FitContributor.DATA_TYPE_STRING, "", true], 
-                [new Lang.Method(Stats, :getScramble), FitContributor.DATA_TYPE_STRING, "", true], 
-                [new Lang.Method(Stats, :getObThrows), FitContributor.DATA_TYPE_FLOAT, "", false], 
-                [new Lang.Method(Stats, :getC1Putting), FitContributor.DATA_TYPE_STRING, "", true], 
-                [new Lang.Method(Stats, :getC2Putting), FitContributor.DATA_TYPE_STRING, "", true], 
-                [new Lang.Method(Stats, :getAverageThrowIn), FitContributor.DATA_TYPE_STRING, " " + unitName, false], 
-                [new Lang.Method(Stats, :getLongestThrowIn), FitContributor.DATA_TYPE_STRING, " " + unitName, false]];
 
             //Adding general round overview stats
             var diff = summaryStatsArr.size() - methodArrs.size();
             var completedStatsList = new ArrayList();
             for (var i = 0; i < methodArrs.size(); i++) {
-                summaryStatsArr[i + diff] += Stats.writeRoundStat(completedStatsList, methodArrs[i][0], holeArray, session, i, methodArrs[i][1], methodArrs[i][2], methodArrs[i][3]);
-                if (methodArrs[i][1] != FitContributor.DATA_TYPE_STRING) {
-                    summaryStatsArr[i + diff] += methodArrs[i][2];
+                if (methodArrs[i] == null) {
+                    continue;
+                }
+                summaryStatsArr[i + diff] += Stats.writeRoundStat(completedStatsList, methodArrs[i][0], methodArrs[i][1], session, i, methodArrs[i][2], methodArrs[i][3], methodArrs[i][4]);
+                if (methodArrs[i][2] != FitContributor.DATA_TYPE_STRING) {
+                    summaryStatsArr[i + diff] += methodArrs[i][3];
                 }
             }
 

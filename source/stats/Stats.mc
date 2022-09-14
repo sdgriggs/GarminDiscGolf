@@ -74,8 +74,8 @@ module Stats{
         return (c * r_imperial) * 5280;
     }
     //Experimental function that will write the stat to the FIT file and return the stat
-    public function writeRoundStat(completedStatsList, method, holeArray, session, id, type, units, isPercentage) {
-        var data = method.invoke(holeArray);
+    public function writeRoundStat(completedStatsList, method, args, session, id, type, units, isPercentage) {
+        var data = method.invoke(args);
         System.println(data);
         if (isPercentage && data != null && data instanceof Lang.Float) {
             data *= 100;
@@ -123,12 +123,17 @@ module Stats{
         }
         return arr;
     }
-
-    public function getCombinedPar(holes) {
-        var parList = getParList(holes);
+    //pass in a holeArray or a parList
+    public function getCombinedPar(args) {
+        var parList;
+        if (args[0] instanceof Hole){
+            parList = getParList(args);
+        } else {
+            parList = args.get(:pars);
+        }
         var sum = 0;
 
-        for (var i = 0; i < parList.size(); i++){
+        for (var i = 0; i < parList.size() && parList[i] != null; i++){
             sum += parList[i];
         }
 
@@ -158,12 +163,20 @@ module Stats{
         return strokeList;
     }
 
-    public function getTotalStrokes(holeArray){
-        var strokes = 0;
-        for( var i = 0; i < getHolesCompleted(holeArray); i++){
-            strokes += holeArray[i].getScore();
+    public function getTotalStrokes(args){
+        var strokesList;
+        if (args[0] instanceof Hole){
+            strokesList = getStrokeList(args);
+        } else {
+            strokesList = args.get(:strokes);
         }
-        return strokes;
+        var sum = 0;
+
+        for (var i = 0; i < strokesList.size() && strokesList[i] != null; i++){
+            sum += strokesList[i];
+        }
+
+        return sum;
     }
 
     public function getScoreList(holes){
@@ -175,9 +188,20 @@ module Stats{
 
         return scoreList;
     }
+    //pass in a whole array or a dictionary with :pars and :strokes
+    public function getCombinedScore(args){
+        if (!(args[0] instanceof Hole)){
+            var strokesList = args.get(:strokes);
+            var parList = args.get(:pars);
+            var sum = 0;
+            for (var i = 0; i < strokesList.size() && parList[i] != null && strokesList[i] != null; i++) {
+                sum += strokesList[i] - parList[i];
+            }
 
-    public function getCombinedScore(holes){
-        var scoreList = getScoreList(holes);
+            return sum;
+
+        }
+        var scoreList = getScoreList(args);
         System.println(scoreList);
         var sum = 0;
 
@@ -199,8 +223,8 @@ module Stats{
     
     }
 
-    public function getTotalScoreAsString(holes) {
-        return convertScoreToString(getCombinedScore(holes));
+    public function getTotalScoreAsString(args) {
+        return convertScoreToString(getCombinedScore(args));
     }
 
     //Measures the total distance thrown over an array of holes
@@ -227,23 +251,33 @@ module Stats{
         return dist;
     }
 
-    public function getCoursePar(holeArray){
-        var par = 0;
-        for( var i = 0 ; i < getHolesCompleted(holeArray); i++){
-            par += holeArray[i].getPar();
-        }
+    // public function getCoursePar(holeArray){
+    //     var par = 0;
+    //     for( var i = 0 ; i < getHolesCompleted(holeArray); i++){
+    //         par += holeArray[i].getPar();
+    //     }
 
-        return par;
-    }
+    //     return par;
+    // }
 
     //Returns the number of holes with a birdie or better divided by the number of holes played
-    public function getBirdieRate(holeArray){
+    public function getBirdieRate(args){
         var birdieCount = 0;
-        var numHolesCompleted = getHolesCompleted(holeArray);
-        for (var i = 0; i < numHolesCompleted; i++){
-            if(holeArray[i].getPar() > holeArray[i].getScore()){
+        var parList;
+        var strokeList;
+        if (args[0] instanceof Hole) {
+            parList = getStrokeList(args);
+            strokeList = getStrokeList(args);
+        } else {
+            parList = args.get(:pars);
+            strokeList = args.get(:strokes);
+        }
+        var numHolesCompleted = 0;
+        for (var i = 0; i < parList.size() && parList[i] != null && strokeList[i] != null; i++){
+            if(parList[i] > strokeList[i]){
                 birdieCount++;
             }
+            numHolesCompleted++;
         }
         return 1.0 * birdieCount / numHolesCompleted;
     }
@@ -334,9 +368,6 @@ module Stats{
                         break;
                     }
                 }
-
-
-
         }
         if (total == 0) {
             return null;

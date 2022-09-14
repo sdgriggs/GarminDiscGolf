@@ -8,6 +8,7 @@ class SettingsView extends WatchUi.Menu{
     function initialize(){
         WatchUi.Menu.initialize();
         addItem("Units", :set_units);
+        addItem("Round Type", :change_round_type);
     }
 
 }

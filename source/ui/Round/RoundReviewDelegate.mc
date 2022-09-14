@@ -9,12 +9,12 @@ class RoundReviewDelegate extends WatchUi.BehaviorDelegate{
     }
     (:notForLSD)
     function onNextPage() {
-        downBehavior();
+        upBehavior();
         return true;
     }
     (:notForLSD)
     function onPreviousPage() {
-        upBehavior();
+        downBehavior();
         return true;
     }
 
@@ -27,11 +27,11 @@ class RoundReviewDelegate extends WatchUi.BehaviorDelegate{
     }
 
     private function upBehavior() {
-        reviewView.decrementPageNumber();
+        reviewView.incrementPageNumber();
     }
 
     private function downBehavior() {
-        reviewView.incrementPageNumber();
+        reviewView.decrementPageNumber();
     }
     function onBack(){
         WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);

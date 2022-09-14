@@ -24,6 +24,8 @@ class RoundView extends WatchUi.View{
 
     public var undoneLaps;
 
+    private var simple;
+
     private function initialize(){
         WatchUi.View.initialize();
         reset();
@@ -69,10 +71,18 @@ class RoundView extends WatchUi.View{
 
     public function setHoles(num) {
         if (!started) {
+            var isMetric;
             if (Toybox.Application has :Properties){
-                manager = new Round(num, Properties.getValue("isMetric"));
+                isMetric = Properties.getValue("isMetric");
+                simple = Properties.getValue("roundIsSimple");
             } else{
-                manager = new Round(num, getApp().getProperty("isMetric"));
+                isMetric = getApp().getProperty("isMetric");
+                simple = getApp().getProperty("roundIsSimple");
+            }
+            if (simple) {
+                manager = new SimpleRound(num);
+            } else {
+                manager = new Round(num, isMetric);
             }
             started = true;
 
@@ -105,29 +115,31 @@ class RoundView extends WatchUi.View{
 
         //temp memory stuff
         //var sysStats = System.getSystemStats();
-
-        var memText = "";//"\n" + sysStats.usedMemory + " / " + sysStats.totalMemory;
-
         if (manager.isCompleted()) {
-            mainText = "Round Complete:\n" + selectText + " To\nSave Round" + memText;
+            mainText = "Round Complete:\n" + selectText + " To\nSave Round";
             mainTextLines = 3;
         }
         else if (!locationAcquired) {
-            mainText = "Wait for GPS\nto be acquired" + memText;
+            mainText = "Wait for GPS\nto be acquired";
             mainTextLines = 2;
         }
         else if (manager.needsInitializing()) {
-            mainText = "Hole " + holeInfo[1] + ":\n" + useBackText + " To\nSet Par" + memText;
+            mainText = "Hole " + holeInfo[1] + ":\n" + useBackText + " To\nSet Par";
             mainTextLines = 3;
         }
         else if (!holeInfo[0]) { //if the tee hasn't been marked
-            mainText = "Hole " + holeInfo[1] + ":\n" + useBackText + " To\nMark Tee" + memText;
+            mainText = "Hole " + holeInfo[1] + ":\n" + useBackText + " To\nMark Tee";
             mainTextLines = 3;
         }
         else {
-            mainText = "Hole " + holeInfo[1] + ":\n" +"Throwing: " + (holeInfo[3] + 1) + "\n" 
-            + useBackText + " To\nMark Throw" + memText;
-            mainTextLines = 4;
+            if (simple) {
+                mainText = "Hole " + holeInfo[1] + ":\n" + useBackText + " To\nSet Score";
+                mainTextLines = 4;
+            } else {
+                mainText = "Hole " + holeInfo[1] + ":\n" +"Throwing: " + (holeInfo[3] + 1) + "\n" 
+                + useBackText + " To\nMark Throw";
+                mainTextLines = 4;
+            }
         }
     }
 

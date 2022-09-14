@@ -13,7 +13,8 @@ class RoundDelegate extends WatchUi.BehaviorDelegate{
 
         var pauseMenu = new WatchUi.Menu();
         pauseMenu.addItem("Resume", :resume);
-        if (Stats.getHolesCompleted(manager.getHoles())){
+        //if (Stats.getHolesCompleted(manager.getHoles())){
+        if (holeInfo[1] > 1) {
             pauseMenu.addItem("Save", :save);
         }
         pauseMenu.addItem("Discard", :discard);
@@ -49,6 +50,7 @@ class RoundDelegate extends WatchUi.BehaviorDelegate{
                 var manager = RoundView.getInstance().getManager();
                 var holeInfo = manager.getCurrentHoleInfo();
                 var menu = new WatchUi.Menu();
+                var simple = manager instanceof SimpleRound;
                 if (manager.needsInitializing()) { //if the current hole doesn't have a par yet present set par
                     menu.addItem("Set Par", :setPar);
                 }
@@ -56,12 +58,25 @@ class RoundDelegate extends WatchUi.BehaviorDelegate{
                     menu.addItem("Mark Tee", :markTee);
                 }
                 else if (!manager.isCompleted()){ //otherwise present mark throw as long as the round is still in progress
-                    menu.addItem("Mark Throw", :markThrow);
+                    if (simple) {
+                        menu.addItem("Set Strokes", :setStrokes);
+                    } else {
+                       menu.addItem("Mark Throw", :markThrow);
+                    }
                 }
 
-                if (holeInfo[1] > 1 || !manager.needsInitializing()){//If at least hole 1 has its par marked
+                if (holeInfo[1] > 1){//If at least hole 1 has its par marked
                     menu.addItem("Change A Par", :changePar);
-                    menu.addItem("Undo", :undo);
+                    if (simple) {
+                        menu.addItem("Change A Score", :changeStrokes);
+                    } else {
+                        menu.addItem("Undo", :undo);
+                    }
+                } else if (!manager.needsInitializing()) {
+                    menu.addItem("Change A Par", :changePar);                  
+                    if (!simple) {
+                        menu.addItem("Undo", :undo);
+                    }
                 }
                 WatchUi.pushView(menu, new LapMenuDelegate(),WatchUi.SLIDE_RIGHT);
                 

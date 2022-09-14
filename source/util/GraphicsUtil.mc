@@ -67,7 +67,7 @@ class GraphicsUtil {
         
     }
 
-    public function drawScoreCard(dc, hole, holeArray){
+    public function drawScoreCard(dc, hole, parList, strokeList){
         //var manager = RoundView.getInstance().getManager();
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         dc.clear();
@@ -85,20 +85,17 @@ class GraphicsUtil {
             dc.drawLine(rectOriginX + (cellWidth * i), rectOriginY, rectOriginX + (cellWidth * i), rectOriginY + height);
         }
         
-        var parList = Stats.getParList(holeArray);
-        var strokeList = Stats.getStrokeList(holeArray);
-        
         var start = 0;
         if (hole > 9) {
             start = hole - 9;
         }
-        var upperBound = holeArray.size();
+        var upperBound = parList.size();
         System.print(upperBound);
         if (upperBound > 9) {
             upperBound = 9;
         }
         for( var i = 0; i < upperBound; i++) {
-            if (start + i < holeArray.size())
+            if (start + i < parList.size())
             {
                 dc.drawText(rectOriginX + (cellWidth * i) + (cellWidth / 2), rectOriginY + (height / 6), Graphics.FONT_SYSTEM_XTINY, "" + (start + i +1), Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER );
             
