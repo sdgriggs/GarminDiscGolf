@@ -42,7 +42,18 @@ class RoundDelegate extends WatchUi.BehaviorDelegate{
     }
 
     private function downBehavior() {
-        WatchUi.pushView(new ScoreCardView(null), new ScoreCardDelegate(), WatchUi.SLIDE_DOWN);
+        var manager = RoundView.getInstance().getManager();
+        var pars;
+        var strokes;
+        if (manager instanceof Round) {
+            var holes = manager.getHoles();
+            pars = Stats.getParList(holes);
+            strokes = Stats.getStrokeList(holes);
+        } else {
+            pars = manager.getPars();
+            strokes = manager.getStrokes();
+        }
+        WatchUi.pushView(new ScoreCardView(pars, strokes), new ScoreCardDelegate(), WatchUi.SLIDE_DOWN);
     }
 
     private function lapBehavior() {

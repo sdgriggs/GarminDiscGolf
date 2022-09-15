@@ -113,7 +113,7 @@ class GraphicsUtil {
 
         dc.drawLine(rectOriginX, rectOriginY + (2 * height / 3).toNumber(), rectOriginX + width, rectOriginY + (2 * height / 3).toNumber());
 
-        var score = Stats.getCombinedScore(holeArray);
+        var score = Stats.getCombinedScore({:pars => parList, :strokes => strokeList});
         var scoreString = "" ;
         if(score > 0 ){
             scoreString = "+" + score;

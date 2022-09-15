@@ -8,9 +8,6 @@ using Toybox.Application;
 using Toybox.Math;
 using Toybox.Lang;
 
-var holeArray;
-
-
 class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
 
     public function initialize() {
@@ -54,7 +51,7 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
                     "Avg Throw-In: ",
                     "Longest Throw-In: "];//The array with all the summary info
                                 //Now get the holes for the fun part
-                holeArray = RoundView.getInstance().getManager().getHoles();
+                var holeArray = RoundView.getInstance().getManager().getHoles();
 
                 methodArrs = [[new Lang.Method(Stats, :getCourseDistance), holeArray, FitContributor.DATA_TYPE_STRING, " " +unitName, false], 
                     [new Lang.Method(Stats, :getCombinedPar), holeArray, FitContributor.DATA_TYPE_FLOAT, "", false], 
@@ -139,13 +136,23 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
             session.save();
             
            //construct menu and switch to it
+            var pars;
+            var strokes;
+            if (manager instanceof Round) {
+                var holes = manager.getHoles();
+                pars = Stats.getParList(holes);
+                strokes = Stats.getStrokeList(holes);
+            } else {
+                pars = manager.getPars();
+                strokes = manager.getStrokes();
+            }
             var roundEndMenu = new WatchUi.Menu();
             roundEndMenu.addItem("Round Stats", :round_stats);
             roundEndMenu.addItem("Scorecard", :scorecard);
             roundEndMenu.addItem("Done", :done);
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
-            WatchUi.pushView(roundEndMenu, new RoundEndScreenDelegate(summaryStatsArr), WatchUi.SLIDE_IMMEDIATE);
+            WatchUi.pushView(roundEndMenu, new RoundEndScreenDelegate(summaryStatsArr, pars, strokes), WatchUi.SLIDE_IMMEDIATE);
 
             RoundView.getInstance().reset();
         } else if (item == :discard) {

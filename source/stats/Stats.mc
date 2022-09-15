@@ -126,24 +126,36 @@ module Stats{
     //pass in a holeArray or a parList
     public function getCombinedPar(args) {
         var parList;
+        var strokesList;
+        var size;
         if (args[0] instanceof Hole){
             parList = getParList(args);
+            strokesList = parList;
         } else {
             parList = args.get(:pars);
+            strokesList = args.get(:strokes);
         }
         var sum = 0;
 
-        for (var i = 0; i < parList.size() && parList[i] != null; i++){
+        for (var i = 0; i < parList.size() && parList[i] != null && strokesList[i] != null; i++){
             sum += parList[i];
         }
 
         return sum;
     }
+    //pass in either a hole array or a stroke array
+    public function getHolesCompleted(args) {
+        var size = args.size();
+        if (size == 0) {
+            return 0;
+        }
 
-    public function getHolesCompleted(holes) {
-        var size = holes.size();
+        var simple = false;
+        if (!(args[0] instanceof Hole)) {
+            simple = true;
+        }
         for (var i = size - 1; i >= 0; i--) {
-            if (holes[i] == null || holes[i].getThrows().getSize() == 0 || holes[i].getThrows().get(holes[i].getThrows().getSize() - 1).getOutcome() != IN_BASKET){
+            if (args[i] == null || (!simple && (args[i].getThrows().getSize() == 0 || args[i].getThrows().get(args[i].getThrows().getSize() - 1).getOutcome() != IN_BASKET))){
                 size--;
             }
             else {
@@ -164,15 +176,18 @@ module Stats{
     }
 
     public function getTotalStrokes(args){
+        var parList;
         var strokesList;
         if (args[0] instanceof Hole){
             strokesList = getStrokeList(args);
+            parList = strokesList;
         } else {
             strokesList = args.get(:strokes);
+            parList = args.get(:pars);
         }
         var sum = 0;
 
-        for (var i = 0; i < strokesList.size() && strokesList[i] != null; i++){
+        for (var i = 0; i < strokesList.size() && strokesList[i] != null && parList[i] != null; i++){
             sum += strokesList[i];
         }
 
@@ -190,6 +205,7 @@ module Stats{
     }
     //pass in a whole array or a dictionary with :pars and :strokes
     public function getCombinedScore(args){
+
         if (!(args[0] instanceof Hole)){
             var strokesList = args.get(:strokes);
             var parList = args.get(:pars);

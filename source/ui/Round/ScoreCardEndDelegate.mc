@@ -1,8 +1,10 @@
 using Toybox.WatchUi;
 
 class ScoreCardEndDelegate extends WatchUi.BehaviorDelegate{
-    function initialize(){
+    var view;
+    function initialize(view){
         WatchUi.BehaviorDelegate.initialize();
+        self.view = view;
     }
 
     function onBack() {
@@ -29,14 +31,14 @@ class ScoreCardEndDelegate extends WatchUi.BehaviorDelegate{
     }
 
     private function upBehavior() {
-        if (hole < Stats.getHolesCompleted(holeArray)){
-            hole = hole + 9;
+        if (view.getHole() < Stats.getHolesCompleted(view.getStrokes())){
+            view.setHole(view.getHole() + 9);
         } 
     }
 
     private function downBehavior() {
-        if (hole > 8 && hole -  9 >= 0){
-            hole = hole - 9;
+        if (view.getHole() > 8 && view.getHole() -  9 >= 0){
+            view.setHole(view.getHole() - 9);
         }
     }
 }
