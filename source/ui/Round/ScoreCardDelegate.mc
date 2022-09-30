@@ -1,8 +1,8 @@
 using Toybox.WatchUi;
 
-class ScoreCardDelegate extends WatchUi.BehaviorDelegate{
+class ScoreCardDelegate extends AbstractRoundDelegate{
     function initialize() {
-        WatchUi.BehaviorDelegate.initialize();
+        AbstractRoundDelegate.initialize(true);
     }
     //Not for lateral swipe devices
     (:notForLSD)
@@ -12,6 +12,7 @@ class ScoreCardDelegate extends WatchUi.BehaviorDelegate{
     }
 
     function onSwipe(swipeEvent) {
+        AbstractRoundDelegate.onSwipe(swipeEvent);
         if (swipeEvent.getDirection() == WatchUi.SWIPE_UP) {
             upBehavior();
         }
@@ -19,9 +20,5 @@ class ScoreCardDelegate extends WatchUi.BehaviorDelegate{
 
     private function upBehavior() {
         WatchUi.popView(WatchUi.SLIDE_UP);
-    }
-
-    function onBack(){
-        return true;
     }
 }

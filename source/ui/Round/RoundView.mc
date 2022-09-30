@@ -102,14 +102,6 @@ class RoundView extends WatchUi.View{
         return started;
     }
 
-
-    function onShow(){
-        if(session != null && !session.isRecording()) {
-            //session.start();
-        }
-
-    }
-
     private function updateText(){
         var holeInfo = manager.getCurrentHoleInfo();
 
@@ -134,13 +126,20 @@ class RoundView extends WatchUi.View{
         else {
             if (simple) {
                 mainText = "Hole " + holeInfo[1] + ":\n" + useBackText + " To\nSet Score";
-                mainTextLines = 4;
+                mainTextLines = 3;
             } else {
                 mainText = "Hole " + holeInfo[1] + ":\n" +"Throwing: " + (holeInfo[3] + 1) + "\n" 
                 + useBackText + " To\nMark Throw";
                 mainTextLines = 4;
             }
         }
+    }
+
+    function onShow(){
+        if(session != null && !session.isRecording()) {
+            session.start();
+        }
+
     }
 
     function onUpdate(dc){

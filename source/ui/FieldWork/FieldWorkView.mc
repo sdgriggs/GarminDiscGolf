@@ -86,7 +86,7 @@ class FieldWorkView extends WatchUi.View{
         if (!started){
             return null;
         }
-        return manager.getThrows().toArray();
+        return manager.getThrows();
     }
 
     public function addThrow(endPos){
@@ -103,17 +103,13 @@ class FieldWorkView extends WatchUi.View{
             manager.addEndPoint(endPos);
             var throwList = manager.getThrows();
             if(isTS){
-                tempText.setText("Last Throw Was:\n" + Math.round(throwList.get(throwList.getSize() - 1).getDistance()).toNumber() +unitName
+                tempText.setText("Last Throw Was:\n" + Math.round(throwList[throwList.size() - 1].getDistance()).toNumber() +unitName
                 + "\nSwipe Right To\nRecord A Throw");
             } else {
-                tempText.setText("Last Throw Was:\n" + Math.round(throwList.get(throwList.getSize() - 1).getDistance()).toNumber() +unitName
+                tempText.setText("Last Throw Was:\n" + Math.round(throwList[throwList.size() - 1].getDistance()).toNumber() +unitName
                 + "\nPress Back To\nRecord A Throw");
             }
         }
-    }
-
-    function onShow(){
-
     }
 
     function onUpdate(dc){
@@ -121,7 +117,6 @@ class FieldWorkView extends WatchUi.View{
             reset();
         }
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
-        //var status = gpsQuality;
         dc.clear();
         GraphicsUtil.showGPSStatus(dc, gpsQuality);
         tempText.draw(dc);

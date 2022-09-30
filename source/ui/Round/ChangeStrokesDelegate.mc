@@ -21,7 +21,7 @@ class ChangeStrokesDelegate extends WatchUi.MenuInputDelegate{
             });
             var strokePicker = new WatchUi.Picker({
                 :title=>title,
-                :pattern=>[new RangePickerFactory(1,10,1)],
+                :pattern=>[new RangePickerFactory(1,20,1)],
                 :defaults=>[2]
             });
             WatchUi.pushView(strokePicker, new StrokePickerDelegate(holeIdx), WatchUi.SLIDE_RIGHT);

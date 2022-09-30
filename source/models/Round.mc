@@ -52,8 +52,8 @@ class Round{
         
         if (holes[currentHole] != null){
             var throws = holes[currentHole].getThrows();
-            if (throws.getSize() > 0){
-                return [holes[currentHole].isMarked(), currentHole + 1, holes[currentHole].getPar(), holes[currentHole].getScore(), Stats.measureDistanceBetweenLocations(holes[currentHole].getTeePos(), throws.get(throws.getSize() - 1).getEndPos(), isMetric)];
+            if (throws.size() > 0){
+                return [holes[currentHole].isMarked(), currentHole + 1, holes[currentHole].getPar(), holes[currentHole].getScore(), Stats.measureDistanceBetweenLocations(holes[currentHole].getTeePos(), throws[throws.size() - 1].getEndPos(), isMetric)];
             } else {
                 return [holes[currentHole].isMarked(), currentHole + 1, holes[currentHole].getPar(), holes[currentHole].getScore(), 0];
             }

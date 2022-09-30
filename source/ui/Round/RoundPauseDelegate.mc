@@ -9,10 +9,13 @@ using Toybox.Math;
 using Toybox.Lang;
 
 class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
-
-    public function initialize() {
+    //Whether or not the base view needs an extra pop on save, useful when saving from scorecard
+    private var popOnSave;
+    public function initialize(popOnSave) {
         RoundView.getInstance().getSession().stop();
         WatchUi.MenuInputDelegate.initialize();
+        self.popOnSave = popOnSave;
+
     }
 
     public function onMenuItem(item) {
@@ -122,7 +125,7 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
 
             //Adding general round overview stats
             var diff = summaryStatsArr.size() - methodArrs.size();
-            var completedStatsList = new ArrayList();
+            var completedStatsList = [];
             for (var i = 0; i < methodArrs.size(); i++) {
                 if (methodArrs[i] == null) {
                     continue;
@@ -143,8 +146,10 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
                 pars = Stats.getParList(holes);
                 strokes = Stats.getStrokeList(holes);
             } else {
-                pars = manager.getPars();
                 strokes = manager.getStrokes();
+                var newSize = Stats.getHolesCompleted(strokes);
+                pars = manager.getPars().slice(0, newSize);
+                strokes = strokes.slice(0, newSize);
             }
             var roundEndMenu = new WatchUi.Menu();
             roundEndMenu.addItem("Round Stats", :round_stats);
@@ -152,6 +157,9 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
             roundEndMenu.addItem("Done", :done);
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+            if (popOnSave) {
+                WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+            }
             WatchUi.pushView(roundEndMenu, new RoundEndScreenDelegate(summaryStatsArr, pars, strokes), WatchUi.SLIDE_IMMEDIATE);
 
             RoundView.getInstance().reset();

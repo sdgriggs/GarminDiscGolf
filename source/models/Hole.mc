@@ -11,7 +11,7 @@ class Hole{
     private var extraStrokes;
 
     public function initialize(par, isMetric) {
-        throws = new ArrayList();
+        throws = [];
         setPar(par);
         teePos = null;
         extraStrokes = 0;
@@ -31,11 +31,11 @@ class Hole{
     }
 
     public function getScore() {
-        return throws.getSize() + extraStrokes;
+        return throws.size() + extraStrokes;
     }
 
     public function markTee(pos){
-        if (throws.getSize() > 0){
+        if (throws.size() > 0){
             //Can't mark the tee once there are throws without going back
             return;
         }
@@ -57,12 +57,12 @@ class Hole{
             //Maybe throw exception
             return false; 
         }
-        else if (throws.getSize() == 0){
+        else if (throws.size() == 0){
             //special case of first throw
             throws.add(new Throw(teePos, endPos, outcome, isMetric));
         }
         else{
-            throws.add(new Throw(throws.get(throws.getSize() - 1).getEndPos(), endPos, outcome, isMetric));
+            throws.add(new Throw(throws[throws.size() - 1].getEndPos(), endPos, outcome, isMetric));
         }
         if (outcome == IN_BASKET){
             return true;
@@ -78,8 +78,10 @@ class Hole{
     //deletes the last added hole or resets the tee position to null
     //returns true if a change was made, false otherwise
     public function undo(){
-        if (throws.getSize() > 0) {
-            if(throws.remove(throws.getSize() - 1).getOutcome() == OB){
+        if (throws.size() > 0) {
+            var lastThrow = throws[throws.size() - 1];
+            throws.remove(lastThrow);
+            if(lastThrow.getOutcome() == OB){
                 extraStrokes--;
             }
             return true;

@@ -4,7 +4,7 @@ import Toybox.Lang;
 
 class FieldWork {
     //List of throws in a fieldwork session
-    private var throws = new LinkedList();
+    private var throws = [];
 
     //current start location for the throws
     private var start = null;
