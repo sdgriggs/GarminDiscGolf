@@ -27,26 +27,27 @@ class LapMenuDelegate extends WatchUi.MenuInputDelegate{
             WatchUi.pushView(throwMenu, new ThrowMenuDelegate(), WatchUi.SLIDE_IMMEDIATE);
         } else if (item == :changePar) {
             var changeParMenu = new WatchUi.Menu();
-            for (var i = 0; i < holeInfo[1] -1; i++){
-                changeParMenu.addItem("Hole " + (i + 1), i);
-            }
-
+            var hole = holeInfo[1] -1;
             if (holeInfo[2] != null) {
-                changeParMenu.addItem("Hole " + holeInfo[1], holeInfo[1] - 1);
+                hole++;
             }
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
-            WatchUi.pushView(changeParMenu, new ChangeParDelegate(), WatchUi.SLIDE_IMMEDIATE);
+            if (hole > 9) {
+                HolesMenu.holesMenusMenu(1, hole, 9, new ChangeParDelegate());
+            } else {
+                HolesMenu.holesMenu(1, hole, new ChangeParDelegate());
+            }
         } else if (item == :changeStrokes) {
-            var changeStrokesMenu = new WatchUi.Menu();
-            for (var i = 0; i < holeInfo[1] -1; i++){
-                changeStrokesMenu.addItem("Hole " + (i + 1), i);
-            }
-
+            var hole = holeInfo[1] -1;
             if (holeInfo[2] != null) {
-                changeStrokesMenu.addItem("Hole " + holeInfo[1], holeInfo[1] - 1);
+                hole++;
             }
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
-            WatchUi.pushView(changeStrokesMenu, new ChangeStrokesDelegate(), WatchUi.SLIDE_IMMEDIATE);           
+            if (hole > 9) {
+                HolesMenu.holesMenusMenu(1, hole, 9, new ChangeStrokesDelegate());
+            } else {
+                HolesMenu.holesMenu(1, hole, new ChangeStrokesDelegate());
+            }           
         }else if (item == :undo) {
             manager.undo();
             if (holeInfo[1] > manager.getCurrentHoleInfo()[1]) {
