@@ -1,9 +1,11 @@
 using Toybox.WatchUi;
 using Toybox.System;
+using Toybox.Timer;
 
 
 
 class ScoreCardView extends WatchUi.View{
+    private static const PAGE_BAR_TIME_UP = 1000; 
     private var hole;
     private var inRound;
     private var parList;
@@ -11,10 +13,14 @@ class ScoreCardView extends WatchUi.View{
     private var manager;
     private var page;
     private var numPages;
+    private var showPageBar;
+    private var timer;
     function initialize(parList, strokesList){
         self.parList = parList;
         self.strokesList = strokesList;
         page = 0;
+        showPageBar = true;
+        timer = new Timer.Timer();
         manager = RoundView.getInstance().getManager();
         if(manager != null){
             inRound = true;
@@ -24,6 +30,7 @@ class ScoreCardView extends WatchUi.View{
             numPages = 1 + (parList.size() - 1) / 9;
         }        
         WatchUi.View.initialize();
+        timer.start(method(:timerCallback), PAGE_BAR_TIME_UP, false);
     }
     //update hole when the view returns to focus
     function onShow() {
@@ -67,7 +74,11 @@ class ScoreCardView extends WatchUi.View{
         }
         WatchUi.requestUpdate();
     }
-
+    //the method that the timer will call to hide the progress bar
+    function timerCallback() {
+        showPageBar = false;
+        WatchUi.requestUpdate();
+    }
 
     function onUpdate(dc) { 
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
@@ -81,7 +92,8 @@ class ScoreCardView extends WatchUi.View{
             GraphicsUtil.drawScoreCard(dc, hole, parList, strokesList, false);
         }
         System.println(" " + page + "/" + numPages);
-        GraphicsUtil.showPageBar(dc, numPages, page);
-        
+        if (showPageBar) {
+            GraphicsUtil.showPageBar(dc, numPages, page);
+        }        
     }
 }

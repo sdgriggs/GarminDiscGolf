@@ -44,13 +44,14 @@ class GraphicsUtil {
             throw new Lang.Exception();
         }
         var penWidth = 7;
-        var center = dc.getWidth() / 2;
+        var centerx = dc.getWidth() / 2;
+        var centery = dc.getHeight() / 2;
         var rad = dc.getWidth() / 2 - penWidth;
         var start = 150;
         var end = 210;
         dc.setPenWidth(penWidth);
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_LT_GRAY);
-        dc.drawArc(center, center, rad, Graphics.ARC_COUNTER_CLOCKWISE, start, end);
+        dc.drawArc(centerx, centery, rad, Graphics.ARC_COUNTER_CLOCKWISE, start, end);
         
         
         dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
@@ -63,7 +64,7 @@ class GraphicsUtil {
             end2 = end;
         }
 
-        dc.drawArc(center, center, rad, Graphics.ARC_COUNTER_CLOCKWISE, start2, end2);
+        dc.drawArc(centerx, centery, rad, Graphics.ARC_COUNTER_CLOCKWISE, start2, end2);
         
     }
 
