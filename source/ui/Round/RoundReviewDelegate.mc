@@ -1,5 +1,8 @@
 using Toybox.WatchUi;
 
+/*
+The Delegate for the end of Round stat Review Page
+*/
 class RoundReviewDelegate extends WatchUi.BehaviorDelegate{
     private var reviewView;
 
@@ -9,30 +12,31 @@ class RoundReviewDelegate extends WatchUi.BehaviorDelegate{
     }
     (:notForLSD)
     function onNextPage() {
-        upBehavior();
+        pageDown();
         return true;
     }
     (:notForLSD)
     function onPreviousPage() {
-        downBehavior();
+        pageUp();
         return true;
     }
 
     function onSwipe(swipeEvent) {
         if (swipeEvent.getDirection() == WatchUi.SWIPE_UP) {
-            upBehavior();
+            pageDown();
         } else if (swipeEvent.getDirection() == WatchUi.SWIPE_DOWN) {
-            downBehavior();
+            pageUp();
         }
     }
-
-    private function upBehavior() {
+    //Go down a page
+    private function pageDown() {
         reviewView.incrementPageNumber();
     }
-
-    private function downBehavior() {
+    //Go up a page
+    private function pageUp() {
         reviewView.decrementPageNumber();
     }
+    //Go back to the EndScreen Menu
     function onBack(){
         WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
         return true;//override default

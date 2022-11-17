@@ -5,8 +5,13 @@ using Toybox.Application.Properties;
 using Toybox.Math;
 using Toybox.System;
 
+/*
+The end of Field Work view that displays various stats
+*/
 class FWStatsView extends WatchUi.View{
+    //The Summary text at the top
     private var title;
+    //The text containing the stats
     private var stats;
 
     function initialize(throwArr){
@@ -27,7 +32,7 @@ class FWStatsView extends WatchUi.View{
         } else if (getApp().getProperty("isMetric")){
             unitName = "m";
         }
-
+        //compile the stats into a string
         var statsString = "";
         statsString += "Throws: " + throwArr.size() + "\n";
         statsString += "Total Distance: " + Math.round(Stats.totalDist(throwArr)).toNumber() + unitName + "\n";
@@ -35,7 +40,7 @@ class FWStatsView extends WatchUi.View{
         statsString += "Max Distance: " + Math.round(Stats.getMaxDist(throwArr)).toNumber() + unitName + "\n";
         statsString += "Min Distance: " + Math.round(Stats.getMinDist(throwArr)).toNumber() + unitName;
 
-        
+        //intialize stats with the stats string
         if (Toybox.WatchUi has :TextArea){
             stats = new WatchUi.TextArea({
                 :text=>statsString,
@@ -65,8 +70,6 @@ class FWStatsView extends WatchUi.View{
     function onUpdate(dc){
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         dc.clear();
-        //title.draw(dc);
-        //dc.drawLine(x1, y1, x2, y2);
         stats.draw(dc);
         title.draw(dc);
         

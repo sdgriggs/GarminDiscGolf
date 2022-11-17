@@ -1,5 +1,7 @@
 using Toybox.WatchUi;
-
+/*
+The Delegate for the end of Round score card 
+*/
 class ScoreCardEndDelegate extends WatchUi.BehaviorDelegate{
     private var view;
     function initialize(view){
@@ -13,30 +15,30 @@ class ScoreCardEndDelegate extends WatchUi.BehaviorDelegate{
     }
     (:notForLSD)
     function onNextPage(){
-        downBehavior();
+        pageDown();
         return true;
     }
     (:notForLSD)
     function onPreviousPage(){
-        upBehavior();
+        pageUp();
         return true;
     }
 
     function onSwipe(swipeEvent) {
         if (swipeEvent.getDirection() == WatchUi.SWIPE_UP) {
-            upBehavior();
+            pageDown();
         } else if (swipeEvent.getDirection() == WatchUi.SWIPE_DOWN) {
-            downBehavior();
+            pageUp();
         }
     }
-
-    private function upBehavior() {
+    //Go up a page
+    private function pageUp() {
         if (view.getHole() > 9){
             view.setHole(view.getHole() - 9);
         } 
     }
-
-    private function downBehavior() {       
+    //Go down a page
+    private function pageDown() {       
         if (view.getHole() < Stats.getHolesCompleted(view.getStrokes())){
             view.setHole(view.getHole() + 9);
         } 

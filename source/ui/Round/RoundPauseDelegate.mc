@@ -165,6 +165,10 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
             RoundView.getInstance().reset();
         } else if (item == :discard) {
             session.discard();
+
+            if (popOnSave) {
+                WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+            }
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
             RoundView.getInstance().reset();
         } 

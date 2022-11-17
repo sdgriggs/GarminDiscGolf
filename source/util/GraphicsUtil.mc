@@ -36,7 +36,6 @@ class GraphicsUtil {
         
         dc.drawArc(center, center, rad, Graphics.ARC_CLOCKWISE, start, start - length );
         
-        System.println("GPS STATUS DRAWN");
     }
 
     public function showPageBar (dc, numPages, pageIdx) {
@@ -83,7 +82,6 @@ class GraphicsUtil {
             start = hole - 9;
         }
         var upperBound = parList.size();
-        System.print(upperBound);
         if (upperBound > 9) {
             upperBound = 9;
         }

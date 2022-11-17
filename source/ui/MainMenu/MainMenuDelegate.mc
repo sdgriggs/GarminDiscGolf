@@ -1,15 +1,15 @@
 import Toybox.WatchUi;
 
-
+/*
+The delegate for the Main Menu
+*/
 class MainMenuDelegate extends WatchUi.MenuInputDelegate {
     function initialize(){
         WatchUi.MenuInputDelegate.initialize();
     }
 
     function onMenuItem(item){
-        if (item == :round){
-            System.println("Play Round");
-            //WatchUi.pushView(new RoundView(), new RoundDelegate(), WatchUi.SLIDE_RIGHT);
+        if (item == :round){ //Start a round
             var title = new WatchUi.Text({
                 :text=>"# Of Holes?",
                 :color=>Graphics.COLOR_WHITE,
@@ -23,12 +23,13 @@ class MainMenuDelegate extends WatchUi.MenuInputDelegate {
                 :defaults=>[17]
             });
             WatchUi.pushView(numberOfHolesPicker, new NumHolesPickerDelegate(), WatchUi.SLIDE_RIGHT);
-        } else if (item == :fw){
-            System.println("Field Work");
+        } else if (item == :fw){//Start a FieldWork Session
             WatchUi.pushView(FieldWorkView.getInstance(), new FieldWorkDelegate(), WatchUi.SLIDE_RIGHT);
-        } else if (item == :settings){
-            System.println("Settings");
-            WatchUi.pushView(new SettingsView(), new SettingsDelegate(), WatchUi.SLIDE_RIGHT);
+        } else if (item == :settings){//Goto the Settings
+            var settingsMenu = new WatchUi.Menu();
+            settingsMenu.addItem("Units", :set_units);
+            settingsMenu.addItem("Round Type", :change_round_type);
+            WatchUi.pushView(settingsMenu, new SettingsDelegate(), WatchUi.SLIDE_RIGHT);
 
         }
 

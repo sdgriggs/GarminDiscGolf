@@ -5,11 +5,17 @@ using Toybox.Application;
 using Toybox.Math;
 using Toybox.System;
 
+/*
+A singleton class that displays the information of the FieldWork manager
+*/
 class FieldWorkView extends WatchUi.View{
-
+    //An instance of FieldWork
     private var manager;
-    private var tempText;
+    //The main text that is displayed
+    private var mainText;
+    //If the FieldWork has been started
     private var started;
+    //The FieldWorkView
     private static var instance;
     
     private function initialize(){
@@ -17,19 +23,21 @@ class FieldWorkView extends WatchUi.View{
         reset();
     }
 
+    //Returns the instance of FieldWorkView
     public static function getInstance(){
         if (instance == null){
             instance = new FieldWorkView();
         }
         return instance;
     }
-
+    
+    //Resets the FieldWorkView to its defaults
     public function reset(){
         self.started = false;
         self.manager = null;
         
         if(locationAcquired == false) {
-            tempText = new WatchUi.Text({
+            mainText = new WatchUi.Text({
                 :text=>"Wait for GPS\nto be acquired",
                 :color=>Graphics.COLOR_WHITE,
                 :font=>Graphics.FONT_SYSTEM_SMALL,
@@ -38,7 +46,7 @@ class FieldWorkView extends WatchUi.View{
         });
         } else { 
             if(isTS) {
-                tempText = new WatchUi.Text({
+                mainText = new WatchUi.Text({
                 :text=>"Swipe Right To\nMark Start",
                 :color=>Graphics.COLOR_WHITE,
                 :font=>Graphics.FONT_SYSTEM_SMALL,
@@ -46,7 +54,7 @@ class FieldWorkView extends WatchUi.View{
                 :locY=>WatchUi.LAYOUT_VALIGN_CENTER
             });
             } else {
-            tempText = new WatchUi.Text({
+            mainText = new WatchUi.Text({
                 :text=>"Press Back To\nMark Start",
                 :color=>Graphics.COLOR_WHITE,
                 :font=>Graphics.FONT_SYSTEM_SMALL,
@@ -57,10 +65,12 @@ class FieldWorkView extends WatchUi.View{
         }
     }
 
+    //Returns whether or not the FieldWork has been started
     public function wasStarted(){
         return started;
     }
 
+    //Starts the FieldWork with the given start location
     public function startFieldWork(startLoc){
         if (Toybox.Application has :Properties){
             manager = new FieldWork(startLoc, Properties.getValue("isMetric"));
@@ -68,20 +78,23 @@ class FieldWorkView extends WatchUi.View{
             manager = new FieldWork(startLoc, getApp().getProperty("isMetric"));
         }
         started = true;
+        //Display the appropriate instruction text based on if the device is touch screen
         if(isTS) {
-            tempText.setText("Swipe Right To\nRecord A Throw");
+            mainText.setText("Swipe Right To\nRecord A Throw");
         } else {
-            tempText.setText("Press Back To\nRecord A Throw");
+            mainText.setText("Press Back To\nRecord A Throw");
         }
 
     }
 
+    //Changes the start location for subsequent throws
     public function updateThrowStart(startLoc){
         if (started){
             manager.setStart(startLoc);
         }
     }
 
+    //Returns the throws array
     public function getThrowsArray(){
         if (!started){
             return null;
@@ -89,6 +102,7 @@ class FieldWorkView extends WatchUi.View{
         return manager.getThrows();
     }
 
+    //adds a throw to the FieldWork
     public function addThrow(endPos){
 
         if (started){
@@ -103,24 +117,24 @@ class FieldWorkView extends WatchUi.View{
             manager.addEndPoint(endPos);
             var throwList = manager.getThrows();
             if(isTS){
-                tempText.setText("Last Throw Was:\n" + Math.round(throwList[throwList.size() - 1].getDistance()).toNumber() +unitName
+                mainText.setText("Last Throw Was:\n" + Math.round(throwList[throwList.size() - 1].getDistance()).toNumber() +unitName
                 + "\nSwipe Right To\nRecord A Throw");
             } else {
-                tempText.setText("Last Throw Was:\n" + Math.round(throwList[throwList.size() - 1].getDistance()).toNumber() +unitName
+                mainText.setText("Last Throw Was:\n" + Math.round(throwList[throwList.size() - 1].getDistance()).toNumber() +unitName
                 + "\nPress Back To\nRecord A Throw");
             }
         }
     }
 
     function onUpdate(dc){
-        if(self.started != true) {
+        //Reset if gps is acquired for the first time
+        if(self.started != true && locationAcquired) {
             reset();
         }
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         dc.clear();
         GraphicsUtil.showGPSStatus(dc, gpsQuality);
-        tempText.draw(dc);
-        System.println("FW Update");
+        mainText.draw(dc);
     }
 
 }

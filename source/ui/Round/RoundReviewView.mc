@@ -2,30 +2,31 @@ using Toybox.WatchUi;
 using Toybox.Math;
 using Toybox.System;
 
-
-
+/*
+The end of Round stats view
+*/
 class RoundReviewView extends WatchUi.View{
-
+    //The current page number
     private var reviewPageNumber;
+    //The number of pages
     private var numPages;
+    //The array of stats with display info
     private var statDisplayArr;
 
     function initialize(arr){
         WatchUi.View.initialize();
         reviewPageNumber = 0;
         statDisplayArr = arr;
-        numPages = Math.ceil((1.0 * statDisplayArr.size() + 1) / 5).toNumber();
-
-        
+        numPages = Math.ceil((1.0 * statDisplayArr.size() + 1) / 5).toNumber();      
     }
-
+    //increment the current page number
     public function incrementPageNumber(){
         if (reviewPageNumber < numPages - 1){
             reviewPageNumber++;
             WatchUi.requestUpdate();
         }
     }
-
+    //decrement the current page number
     public function decrementPageNumber(){
         if(reviewPageNumber > 0){
             reviewPageNumber--;
@@ -56,22 +57,5 @@ class RoundReviewView extends WatchUi.View{
             } 
         }
         dc.drawText(dc.getWidth() / 2 , dc.getHeight() / 2 , Graphics.FONT_SYSTEM_XTINY, displayString, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-        
-
-        /*
-        if (reviewPageNumber == 0) {
-            dc.drawText(dc.getWidth() / 2 , dc.getHeight() / 2 , Graphics.FONT_SYSTEM_SMALL, "REVIEW PAGE ZRO", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-        } else if (reviewPageNumber == 1) {
-            dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2, Graphics.FONT_SYSTEM_SMALL, "REVIEW PAGE ONE", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-        } else if (reviewPageNumber == 2) {
-            dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2, Graphics.FONT_SYSTEM_SMALL, "REVIEW PAGE TWO", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-        } else {
-
-            var hole = completedHoles.size();
-            var dispMax = 9 * (reviewPageNumber - 2);
-            GraphicsUtil.drawScoreCard(dc, dispMax, completedHoles);
-        }
-        */
-
     }
 }

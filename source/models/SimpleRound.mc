@@ -1,3 +1,7 @@
+/*
+Representing a simplified round of disc golf where only par and strokes are
+kept track of.
+*/
 class SimpleRound{
     //An array of the pars
     private var pars;
@@ -8,9 +12,10 @@ class SimpleRound{
     //Whether or not the round has been completed
     private var completed;
 
-
-    
-
+    /*
+    Initializes a new SimpleRound with the given numberOfHoles and whether or not
+    distances should be in metric
+    */
     public function initialize(numberOfHoles){
         pars = new [numberOfHoles];
         strokes = new [numberOfHoles];
@@ -25,10 +30,12 @@ class SimpleRound{
         return [true, currentHole + 1, pars[currentHole], 0, null];
     }
 
+    //Sets the given par for the given hole (0 indexed)
     public function setPar(hole, par) {
         pars[hole] = par;
     }
 
+    //Sets the given strokes for the given hole (0 indexed)
     public function setStrokes(hole, s) {
         strokes[hole] = s;
         if (hole == currentHole) {
@@ -39,19 +46,23 @@ class SimpleRound{
             }
         }
     }
-    //returns whether or not the current hole needs to be initialized with a par
+
+    //Returns whether or not the current hole needs to be initialized with a par
     public function needsInitializing(){
         return pars[currentHole] == null;
     }
 
+    //Returns whether or not the round is completed
     public function isCompleted() {
         return completed;
     }
 
+    //Returns the array of pars
     public function getPars(){
          return pars;
     }
 
+    //Returns the array of strokes
     public function getStrokes(){
         return strokes;
     }

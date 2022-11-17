@@ -1,35 +1,46 @@
 using Toybox.WatchUi;
 
+/*
+The delegate for the main FieldWorkView.
+*/
 class FieldWorkDelegate extends WatchUi.BehaviorDelegate{
 
     public function initialize(){
         WatchUi.BehaviorDelegate.initialize();
     }
 
+    //On select push the pause menu
     public function onSelect(){
-        System.println("Going to pause menu");
-        WatchUi.pushView(new FWPauseMenuView(), new FWPauseMenuDelegate(), WatchUi.SLIDE_RIGHT);
+        var menu = new WatchUi.Menu();
+        menu.addItem("Resume", :resume_fw);
+        menu.addItem("End Session", :end_fw);
+        WatchUi.pushView(menu, new FWPauseMenuDelegate(), WatchUi.SLIDE_RIGHT);
     }
 
+    //On back perform lapBehavior
     public function onBack(){
-            System.println("In On Back");
-            lapBehavior();
-            return true;//back behavior is handled, override default
+        lapBehavior();
+        return true;//back behavior is handled, override default
     }
 
+    /*
+    On swipe right perform lapBehavior (used for some touch screen devices)
+    that have non standard onBack() methods
+    */
     public function onSwipe(swipeEvent){
-        System.println("In On Swipe");
         if (swipeEvent.getDirection() == WatchUi.SWIPE_RIGHT){
             lapBehavior();
         }
     }
 
+    //Pushes the appropriate Field Work menu depending on if the FieldWork has been started
     private function lapBehavior(){
-            System.println("In Lap Behavior");
             if (locationAcquired) {
-                System.println("Hi");
                 if (FieldWorkView.getInstance().wasStarted()){
-                    WatchUi.pushView(new FWPostStartMenuView(), new FWPostStartMenuDelegate(), WatchUi.SLIDE_RIGHT);
+                    var menu = new WatchUi.Menu();
+                    menu.addItem("Mark Throw", :throw_loc);
+                    menu.addItem("Mark New Start", :start);
+                    WatchUi.pushView(menu, new FWPostStartMenuDelegate(), WatchUi.SLIDE_RIGHT);
                 } else{
                     WatchUi.pushView(new FWPreStartMenuView(), new FWPreStartMenuDelegate(), WatchUi.SLIDE_RIGHT);
                 }

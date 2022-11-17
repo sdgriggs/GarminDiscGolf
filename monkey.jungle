@@ -3,3 +3,4 @@ project.manifest = manifest.xml
 #omit appropriate method calls for devices where lateral swipes correspond
 #to page changes
 vivoactive_hr.excludeAnnotations = notForLSD
+vivoactive.excludeAnnotations = notForLSD

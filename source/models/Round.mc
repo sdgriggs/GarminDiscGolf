@@ -1,3 +1,6 @@
+/*
+Represents a full round of disc golf, including individual throws and holes.
+*/
 class Round{
     //An array of holes
     private var holes;
@@ -8,17 +11,20 @@ class Round{
     //Whether or not the round has been completed
     private var completed;
 
-
-    
-
+    /*
+    Initializes a new Round with the given numberOfHoles and whether or not
+    distances should be in metric
+    */
     public function initialize(numberOfHoles, isMetric){
         holes = new [numberOfHoles];
         self.isMetric = isMetric;
         currentHole = 0;
         completed = false;
     }
-    //Calls undo for the current hole, or go back to the previous hole if there is no change
-    //to undo on the current hole
+    /*
+    Calls undo for the current hole, or goes back to the previous hole if 
+    there is no change to undo on the current hole
+    */
     public function undo(){
         //if the current hole is uninitialized
         if (holes[currentHole] == null){
@@ -84,6 +90,7 @@ class Round{
         }
     }
 
+    //Sets the given par for the given hole (0 indexed)
     public function setPar(hole, par) {
         if (holes[hole] == null) {
             holes[currentHole] = new Hole(par, isMetric);
@@ -92,15 +99,18 @@ class Round{
             holes[hole].setPar(par);
         }
     }
-    //returns whether or not the current hole needs to be initialized with a par
+
+    //Returns whether or not the current hole needs to be initialized with a par
     public function needsInitializing(){
         return holes[currentHole] == null;
     }
 
+    //Returns whether or not the round is completed
     public function isCompleted() {
         return completed;
     }
 
+    //Returns the array of holes
     public function getHoles(){
         return holes;
     }

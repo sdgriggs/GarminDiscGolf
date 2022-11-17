@@ -1,5 +1,7 @@
 using Toybox.WatchUi;
-
+/*
+The delegate for the FieldWork pause menu
+*/
 class FWPauseMenuDelegate extends WatchUi.MenuInputDelegate{
 
     function initialize(){
@@ -8,14 +10,14 @@ class FWPauseMenuDelegate extends WatchUi.MenuInputDelegate{
 
     public function onMenuItem(item){
         if (item == :end_fw){
-
+            //Exit field work if End Session was selected
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
             var arr = FieldWorkView.getInstance().getThrowsArray();
+            //Switch to the stats view if there were throws
             if (arr != null && arr.size() > 0){
                 WatchUi.switchToView(new FWStatsView(arr), null, WatchUi.SLIDE_RIGHT);
-            } else {
-                //WatchUi.popView(WatchUi.SLIDE_LEFT);
             }
+            //Reset the FieldWorkView to save memory
             FieldWorkView.getInstance().reset();
         } else if (item == :resume_fw){
             //macht nichts

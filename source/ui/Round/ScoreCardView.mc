@@ -91,7 +91,6 @@ class ScoreCardView extends WatchUi.View{
         } else{    
             GraphicsUtil.drawScoreCard(dc, hole, parList, strokesList, false);
         }
-        System.println(" " + page + "/" + numPages);
         if (showPageBar) {
             GraphicsUtil.showPageBar(dc, numPages, page);
         }        
