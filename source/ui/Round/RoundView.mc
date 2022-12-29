@@ -29,6 +29,10 @@ class RoundView extends WatchUi.View{
     public var undoneLaps;
     //If the Round is a SimpleRound
     private var simple;
+    //Number of pages across the main round views
+    private var numPages = 3;
+    //index of page
+    private var pageIdx = 1;
 
     private function initialize(){
         WatchUi.View.initialize();
@@ -41,6 +45,11 @@ class RoundView extends WatchUi.View{
         }
         return instance;
     }
+    //return the number of pages
+    public function getPages(){
+        return numPages;
+    }
+
     //Return the Round/SimpleRound manager
     public function getManager(){
         return manager;
@@ -141,7 +150,7 @@ class RoundView extends WatchUi.View{
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         dc.clear();
         GraphicsUtil.showGPSStatus(dc, gpsQuality);
-        GraphicsUtil.showPageBar(dc, 2, 1);
+        GraphicsUtil.showPageBar(dc, numPages, pageIdx);
         if (manager != null){
             updateText();
         }

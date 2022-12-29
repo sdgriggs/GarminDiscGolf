@@ -22,7 +22,7 @@ class MainMenuDelegate extends WatchUi.MenuInputDelegate {
                 :pattern=>[new RangePickerFactory(1,100,1)],
                 :defaults=>[17]
             });
-            WatchUi.pushView(numberOfHolesPicker, new NumHolesPickerDelegate(), WatchUi.SLIDE_RIGHT);
+            WatchUi.pushView(numberOfHolesPicker, new NumHolesPickerDelegate(), WatchUi.SLIDE_IMMEDIATE);
         } else if (item == :fw){//Start a FieldWork Session
             WatchUi.pushView(FieldWorkView.getInstance(), new FieldWorkDelegate(), WatchUi.SLIDE_RIGHT);
         } else if (item == :settings){//Goto the Settings

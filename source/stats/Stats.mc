@@ -76,7 +76,6 @@ module Stats{
     //Experimental function that will write the stat to the FIT file and return the stat
     public function writeRoundStat(completedStatsList, method, args, session, id, type, units, isPercentage) {
         var data = method.invoke(args);
-        System.println(data);
         if (isPercentage && data != null && data instanceof Lang.Float) {
             data *= 100;
         }
@@ -232,7 +231,6 @@ module Stats{
 
         }
         var scoreList = getScoreList(args);
-        System.println(scoreList);
         var sum = 0;
 
         for (var i = 0; i < scoreList.size(); i++){

@@ -24,6 +24,6 @@ class ChangeParDelegate extends WatchUi.MenuInputDelegate{
                 :pattern=>[new RangePickerFactory(1,10,1)],
                 :defaults=>[2]
             });
-            WatchUi.pushView(parPicker, new ParPickerDelegate(holeIdx), WatchUi.SLIDE_RIGHT);
+            WatchUi.pushView(parPicker, new ParPickerDelegate(holeIdx), WatchUi.SLIDE_IMMEDIATE);
     }
 }

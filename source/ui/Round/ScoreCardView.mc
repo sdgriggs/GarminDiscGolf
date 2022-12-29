@@ -24,7 +24,7 @@ class ScoreCardView extends WatchUi.View{
         manager = RoundView.getInstance().getManager();
         if(manager != null){
             inRound = true;
-            numPages = 2;
+            numPages = RoundView.getInstance().getPages();
         } else {
             inRound = false;
             numPages = 1 + (parList.size() - 1) / 9;
