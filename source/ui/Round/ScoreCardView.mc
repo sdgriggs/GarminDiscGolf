@@ -30,10 +30,10 @@ class ScoreCardView extends WatchUi.View{
             numPages = 1 + (parList.size() - 1) / 9;
         }        
         WatchUi.View.initialize();
-        timer.start(method(:timerCallback), PAGE_BAR_TIME_UP, false);
     }
     //update hole when the view returns to focus
     function onShow() {
+        timer.start(method(:timerCallback), PAGE_BAR_TIME_UP, false);
         if (inRound) {
             //update the list of pars and strokes on show
             hole = manager.getCurrentHoleInfo()[1];
@@ -53,6 +53,10 @@ class ScoreCardView extends WatchUi.View{
             //start with the first 9
             hole = 9;
         }
+    }
+
+    function onHide() {
+        timer.stop();
     }
 
     function getPars() {
