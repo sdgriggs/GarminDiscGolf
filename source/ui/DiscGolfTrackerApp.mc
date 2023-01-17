@@ -4,11 +4,15 @@ import Toybox.WatchUi;
 using Toybox.Position;
 using Toybox.Attention;
 
+//global variables
 var lastLocation = null;
 var locationAcquired = false;
 var gpsQuality = null;
 var isTS = false;
 
+/*
+The DiscGolfTrackerApp
+*/
 class DiscGolfTrackerApp extends Application.AppBase {
 
     function initialize() {
@@ -17,15 +21,14 @@ class DiscGolfTrackerApp extends Application.AppBase {
 
     // onStart() is called on application start up
     function onStart(state){
-        System.println("Start App");
+        System.println("App Started");
         Position.enableLocationEvents( Position.LOCATION_CONTINUOUS, method( :onPosition ) );
         isTS = System.getDeviceSettings().isTouchScreen;
-        System.println("IS TS:" + isTS);
-        System.println("End start function");
     }
 
     // onStop() is called when your application is exiting
     function onStop(state){
+        System.println("App Stopped");
     }
 
     // // Return the initial view of your application here
@@ -36,13 +39,15 @@ class DiscGolfTrackerApp extends Application.AppBase {
     // Return the initial view of your application here
     function getInitialView(){
         //push the discgolftracker view instead of main menu to increase device compatability
-        return [ new DiscGolfTrackerView(), new DiscGolfTrackerDelegate() ] as Array<Views or InputDelegates>;
-        //return [new MainMenuView(), new MainMenuDelegate()];
+        return [ new DiscGolfTrackerView(), new WatchUi.BehaviorDelegate() ] as Array<Views or InputDelegates>;
     }
 
     //Return the settings view of the application
     function getSettingsView() {
-        return [new SettingsView(), new SettingsDelegate()];
+        var settingsMenu = new WatchUi.Menu();
+        settingsMenu.addItem("Units", :set_units);
+        settingsMenu.addItem("Round Type", :change_round_type);
+        return [settingsMenu, new SettingsDelegate()];
     }
 
     // Method to handle the position calls
@@ -53,16 +58,18 @@ class DiscGolfTrackerApp extends Application.AppBase {
             }
             locationAcquired = true;
         }
-        lastLocation = info.position;
+        var pos = info.position;
+        if (pos != null) {
+            lastLocation = info.position;
+        }
         gpsQuality = info.accuracy;  
-        System.println("GPSQuality: " + gpsQuality);
         WatchUi.requestUpdate();
         
        
     }
 
 }
-
+//Returns the app
 function getApp(){
     return Application.getApp();
 }

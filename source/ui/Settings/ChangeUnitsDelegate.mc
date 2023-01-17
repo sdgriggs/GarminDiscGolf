@@ -1,7 +1,9 @@
 using Toybox.WatchUi;
 using Toybox.Application.Properties;
 using Toybox.Application;
-
+/*
+The delegate for the Change Units Menu
+*/
 class ChangeUnitsDelegate extends WatchUi.MenuInputDelegate{
 
     public function initialize(){

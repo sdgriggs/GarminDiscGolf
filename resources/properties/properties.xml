@@ -1,3 +1,4 @@
 <properties>
     <property id="isMetric" type="boolean">false</property>
+    <property id="roundIsSimple" type="boolean">false</property>
 </properties>
