@@ -15,7 +15,7 @@ class FWPauseMenuDelegate extends WatchUi.MenuInputDelegate{
             var arr = FieldWorkView.getInstance().getThrowsArray();
             //Switch to the stats view if there were throws
             if (arr != null && arr.size() > 0){
-                WatchUi.switchToView(new FWStatsView(arr), null, WatchUi.SLIDE_RIGHT);
+                WatchUi.switchToView(new FWStatsView(arr), new FWStatsDelegate(), WatchUi.SLIDE_RIGHT);
             }
             //Reset the FieldWorkView to save memory
             FieldWorkView.getInstance().reset();

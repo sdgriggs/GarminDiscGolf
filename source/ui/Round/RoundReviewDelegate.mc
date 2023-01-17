@@ -27,6 +27,10 @@ class RoundReviewDelegate extends WatchUi.BehaviorDelegate{
         } else if (swipeEvent.getDirection() == WatchUi.SWIPE_DOWN) {
             pageUp();
         }
+        else if (swipeEvent.getDirection() == WatchUi.SWIPE_RIGHT) {
+            //go back on a right swipe if right swipe is not the default back method
+            WatchUi.popView(WatchUi.SLIDE_UP);     
+        }
     }
     //Go down a page
     private function pageDown() {
