@@ -6,7 +6,6 @@ class NumHolesPickerDelegate extends WatchUi.PickerDelegate {
     }
 
     function onAccept(values){
-        System.println(values);
         RoundView.getInstance().setHoles(values[0]);
         WatchUi.switchToView(RoundView.getInstance(), new RoundDelegate(), WatchUi.SLIDE_RIGHT);
     }

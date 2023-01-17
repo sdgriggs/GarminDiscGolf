@@ -1,10 +1,9 @@
 using Toybox.WatchUi;
-using Stats;
 
-class RoundDelegate extends AbstractRoundDelegate {
+class ClockRoundDelegate extends AbstractRoundDelegate {
 
     public function initialize(){
-        AbstractRoundDelegate.initialize(false);
+        AbstractRoundDelegate.initialize(true);
     }
 
     //Not for lateral swipe devices
@@ -32,6 +31,10 @@ class RoundDelegate extends AbstractRoundDelegate {
     }
 
     private function pageUp() {
+        popView(WatchUi.SLIDE_DOWN);
+    }
+
+    private function pageDown() {
         var manager = RoundView.getInstance().getManager();
         var pars;
         var strokes;
@@ -43,10 +46,6 @@ class RoundDelegate extends AbstractRoundDelegate {
             pars = manager.getPars();
             strokes = manager.getStrokes();
         }
-        WatchUi.pushView(new ScoreCardView(pars, strokes), new ScoreCardDelegate(), WatchUi.SLIDE_DOWN);
-    }
-
-    private function pageDown() {
-        WatchUi.pushView(new ClockView(2, RoundView.getInstance().getPages()), new ClockRoundDelegate(), WatchUi.SLIDE_UP);
+        WatchUi.switchToView(new ScoreCardView(pars, strokes), new ScoreCardDelegate(), WatchUi.SLIDE_UP);
     }
 }

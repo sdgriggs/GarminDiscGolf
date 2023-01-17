@@ -1,33 +1,34 @@
 using Toybox.Position;
 import Toybox.Lang;
 
-
+/*
+Represents a field work session
+*/
 class FieldWork {
     //List of throws in a fieldwork session
-    private var throws = new LinkedList();
+    private var throws;
 
     //current start location for the throws
-    private var start = null;
+    private var start;
+    //If the units are in metric
+    private var isMetric;
 
-    private var isMetric = false;
-
-
+    /*
+    Given a start location and if the units are metric,
+    creates a new FieldWork session
+    */
     public function initialize(st, isMetric) {
+        throws = [];
         setStart(st);
-        if (isMetric){
-            setMetric();
-        }
-        else {
-            setImperial();
-        }
+        self.isMetric = isMetric;
     }
 
-    //adds a throw location to the list of throws (This doesn't work)
+    //adds a new throw to the field work session
     public function addEndPoint(loc) {        
         throws.add(new Throw(start, loc, null, isMetric));
     }
 
-    //gets the linked list of throws
+    //gets the array of throws
     public function getThrows() {
         return throws;
     }
@@ -46,15 +47,5 @@ class FieldWork {
     //gets the start locatoin
     public function getStart() {
         return self.start;
-    }
-
-    public function setMetric(){
-        isMetric = true;
-    }
-
-    public function setImperial(){
-        isMetric = false;
-
-        
     }
 }
