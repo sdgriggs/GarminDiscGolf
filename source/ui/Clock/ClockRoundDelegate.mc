@@ -1,9 +1,9 @@
 using Toybox.WatchUi;
 
-class ClockRoundDelegate extends WatchUi.BehaviorDelegate {
+class ClockRoundDelegate extends AbstractRoundDelegate {
 
     public function initialize(){
-        WatchUi.BehaviorDelegate.initialize();
+        AbstractRoundDelegate.initialize(true);
     }
 
     //Not for lateral swipe devices
