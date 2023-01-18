@@ -95,12 +95,12 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
             var activityInfo = Activity.getActivityInfo();
             var distWalkMet = activityInfo.elapsedDistance;
             var distWalkStr = "";
-            if (unitName == "m") {
+            if (unitName.equals("m")) {
                 distWalkStr += (distWalkMet / 1000).format("%.2f") + " km";
             } else {
                 distWalkStr += (distWalkMet / 1609.34).format("%.2f") + " miles";
             }
-            summaryStatsArr[0] += + distWalkStr;
+            summaryStatsArr[0] += distWalkStr;
 
             var seconds = activityInfo.elapsedTime / 1000;
             var timeStr = "";
