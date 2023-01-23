@@ -137,13 +137,12 @@ class RoundView extends WatchUi.View{
                 var x = manager.getLastThrow();
             System.println(x);
             if(x != null) {
-                mainText = "Hole " + holeInfo[1] + ":\n" + "Last Throw: " + Math.round(x.getDistance()).toNumber() + " " + unitName + "\n" + "Throwing: " + (holeInfo[3] + 1) + "\n" 
-            + useBackText + " To\nMark Throw" ;
+                mainText = "Hole " + holeInfo[1] + ":\n"  +  "Throwing: " + (holeInfo[3] + 1) + "\n" + "Last Throw: " + Math.round(x.getDistance()).toNumber() + " " + unitName + "\n" + useBackText + " To\nMark Throw" ;
             } else {
                 mainText = "Hole " + holeInfo[1] + ":\n" + "Throwing: " + (holeInfo[3] + 1) + "\n" 
             + useBackText + " To\nMark Throw" ;
             }
-                mainTextLines = 4;
+                mainTextLines = 5;
             }
         }
     }
