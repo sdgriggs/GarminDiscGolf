@@ -33,6 +33,8 @@ class RoundView extends WatchUi.View{
     private var numPages = 3;
     //index of page
     private var pageIdx = 1;
+    //units of distance
+    private var unitName = "ft";
 
     private function initialize(){
         WatchUi.View.initialize();
@@ -132,9 +134,15 @@ class RoundView extends WatchUi.View{
                 mainText = "Hole " + holeInfo[1] + ":\n" + useBackText + " To\nSet Score";
                 mainTextLines = 3;
             } else {
-                mainText = "Hole " + holeInfo[1] + ":\n" +"Throwing: " + (holeInfo[3] + 1) + "\n" 
-                + useBackText + " To\nMark Throw";
-                mainTextLines = 4;
+                var x = manager.getLastThrow();
+                System.println(x);
+                if(x != null) {
+                    mainText = "Hole " + holeInfo[1] + ":\n"  +  "Throwing: " + (holeInfo[3] + 1) + "\n" + "Last Throw: " + Math.round(x.getDistance()).toNumber() + " " + unitName + "\n" + useBackText + " To\nMark Throw" ;
+                } else {
+                    mainText = "Hole " + holeInfo[1] + ":\n" + "Throwing: " + (holeInfo[3] + 1) + "\n" 
+            + useBackText + " To\nMark Throw" ;
+                }
+                    mainTextLines = 5;
             }
         }
     }
@@ -142,6 +150,11 @@ class RoundView extends WatchUi.View{
     function onShow(){
         if(session != null && !session.isRecording()) {
             session.start();
+        }
+        if (Toybox.Application has :Properties && Properties.getValue("isMetric")){
+            unitName = "m";
+        } else if (getApp().getProperty("isMetric")){
+            unitName = "m";
         }
 
     }
