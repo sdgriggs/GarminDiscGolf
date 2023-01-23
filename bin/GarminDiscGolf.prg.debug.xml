@@ -253,24 +253,24 @@
         <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="71" lineNum="138" parent="globals/RoundView" pc="268440087" symbol="&lt;globals/RoundView/&lt;&gt;updateText&gt;"/>
         <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="71" lineNum="139" parent="globals/RoundView" pc="268440105" symbol="&lt;globals/RoundView/&lt;&gt;updateText&gt;"/>
         <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="71" lineNum="140" parent="globals/RoundView" pc="268440112" symbol="&lt;globals/RoundView/&lt;&gt;updateText&gt;"/>
-        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="71" lineNum="143" parent="globals/RoundView" pc="268440250" symbol="&lt;globals/RoundView/&lt;&gt;updateText&gt;"/>
-        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="71" lineNum="146" parent="globals/RoundView" pc="268440320" symbol="&lt;globals/RoundView/&lt;&gt;updateText&gt;"/>
-        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="72" lineNum="151" parent="globals/RoundView" pc="268440334" symbol="onShow"/>
-        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="72" lineNum="152" parent="globals/RoundView" pc="268440338" symbol="onShow"/>
-        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="72" lineNum="153" parent="globals/RoundView" pc="268440375" symbol="onShow"/>
-        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="72" lineNum="158" parent="globals/RoundView" pc="268440396" symbol="onShow"/>
-        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="72" lineNum="159" parent="globals/RoundView" pc="268440445" symbol="onShow"/>
-        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="72" lineNum="160" parent="globals/RoundView" pc="268440461" symbol="onShow"/>
-        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="72" lineNum="161" parent="globals/RoundView" pc="268440489" symbol="onShow"/>
-        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="73" lineNum="166" parent="globals/RoundView" pc="268440506" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="73" lineNum="167" parent="globals/RoundView" pc="268440510" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="73" lineNum="168" parent="globals/RoundView" pc="268440546" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="73" lineNum="169" parent="globals/RoundView" pc="268440558" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="73" lineNum="170" parent="globals/RoundView" pc="268440586" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="73" lineNum="171" parent="globals/RoundView" pc="268440622" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="73" lineNum="172" parent="globals/RoundView" pc="268440635" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="73" lineNum="174" parent="globals/RoundView" pc="268440650" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="73" lineNum="175" parent="globals/RoundView" pc="268440686" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="71" lineNum="142" parent="globals/RoundView" pc="268440250" symbol="&lt;globals/RoundView/&lt;&gt;updateText&gt;"/>
+        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="71" lineNum="145" parent="globals/RoundView" pc="268440320" symbol="&lt;globals/RoundView/&lt;&gt;updateText&gt;"/>
+        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="72" lineNum="150" parent="globals/RoundView" pc="268440334" symbol="onShow"/>
+        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="72" lineNum="151" parent="globals/RoundView" pc="268440338" symbol="onShow"/>
+        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="72" lineNum="152" parent="globals/RoundView" pc="268440375" symbol="onShow"/>
+        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="72" lineNum="157" parent="globals/RoundView" pc="268440396" symbol="onShow"/>
+        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="72" lineNum="158" parent="globals/RoundView" pc="268440445" symbol="onShow"/>
+        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="72" lineNum="159" parent="globals/RoundView" pc="268440461" symbol="onShow"/>
+        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="72" lineNum="160" parent="globals/RoundView" pc="268440489" symbol="onShow"/>
+        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="73" lineNum="165" parent="globals/RoundView" pc="268440506" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="73" lineNum="166" parent="globals/RoundView" pc="268440510" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="73" lineNum="167" parent="globals/RoundView" pc="268440546" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="73" lineNum="168" parent="globals/RoundView" pc="268440558" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="73" lineNum="169" parent="globals/RoundView" pc="268440586" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="73" lineNum="170" parent="globals/RoundView" pc="268440622" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="73" lineNum="171" parent="globals/RoundView" pc="268440635" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="73" lineNum="173" parent="globals/RoundView" pc="268440650" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="73" lineNum="174" parent="globals/RoundView" pc="268440686" symbol="onUpdate"/>
         <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="74" lineNum="11" parent="globals/RoundView" pc="268466639" symbol="&lt;init&gt;"/>
         <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="75" lineNum="11" parent="globals/RoundView/statics" pc="268466658" symbol="&lt;init&gt;"/>
         <entry filename="C:\\Users\\sdgri\\GarminDiscGolf\\GarminDiscGolf\\source\\ui\\Round\\RoundView.mc" id="75" lineNum="11" parent="globals/RoundView" pc="268466639" symbol="&lt;init&gt;"/>
@@ -2156,8 +2156,8 @@
         <entry endPc="268465697" name="inProgress" stackId="2" startPc="268465604"/>
         <entry arg="true" endPc="268465797" name="dc" stackId="1" startPc="268465537"/>
         <entry arg="true" endPc="268465923" name="swipeEvent" stackId="1" startPc="268465861"/>
+        <entry endPc="268466266" name="rez_cmp_local_text_1631823556" stackId="2" startPc="268465936"/>
         <entry endPc="268466266" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268465936"/>
-        <entry endPc="268466266" name="rez_cmp_local_text_2097702021" stackId="2" startPc="268465936"/>
         <entry arg="true" endPc="268466267" name="dc" stackId="1" startPc="268465924"/>
     </localVars>
     <annotations>
