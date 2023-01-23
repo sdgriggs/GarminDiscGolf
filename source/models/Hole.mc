@@ -121,7 +121,13 @@ class Hole{
         return isMetric;
     }
 
-
+    public function getLastThrow(){
+        System.println(getThrows());
+        if(throws.size() < 1){
+            return null;
+        }        
+        return throws[throws.size()-1];
+    }
     
 
 
