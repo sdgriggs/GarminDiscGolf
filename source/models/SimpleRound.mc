@@ -11,7 +11,6 @@ class SimpleRound{
     private var currentHole;
     //Whether or not the round has been completed
     private var completed;
-
     /*
     Initializes a new SimpleRound with the given numberOfHoles and whether or not
     distances should be in metric
