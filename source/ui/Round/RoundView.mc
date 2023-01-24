@@ -122,12 +122,25 @@ class RoundView extends WatchUi.View{
             mainTextLines = 2;
         }
         else if (manager.needsInitializing()) {
-            mainText = "Hole " + holeInfo[1] + ":\n" + useBackText + " To\nSet Par";
-            mainTextLines = 3;
+            mainText = "Hole " + holeInfo[1] + ":\n";
+            var x = manager.getLastThrow();
+            
+            if(!simple && x != null){
+                mainText += "Last Throw: " +  Math.round(x.getDistance()).toNumber() + " " + unitName + "\n";
+            }
+            mainText += useBackText + " To\nSet Par";
+            mainTextLines = 4;
         }
         else if (!holeInfo[0]) { //if the tee hasn't been marked
-            mainText = "Hole " + holeInfo[1] + ":\n" + useBackText + " To\nMark Tee";
-            mainTextLines = 3;
+            mainText = "Hole " + holeInfo[1] + ":\n" ;
+            var x = manager.getLastThrow();
+            
+            if(!simple && x != null){
+                mainText += "Last Throw: " +  Math.round(x.getDistance()).toNumber() + " " + unitName + "\n";
+            }
+            
+            mainText += useBackText + " To\nMark Tee";
+            mainTextLines = 4;
         }
         else {
             if (simple) {
@@ -135,7 +148,7 @@ class RoundView extends WatchUi.View{
                 mainTextLines = 3;
             } else {
                 var x = manager.getLastThrow();
-                System.println(x);
+                
                 if(x != null) {
                     mainText = "Hole " + holeInfo[1] + ":\n"  +  "Throwing: " + (holeInfo[3] + 1) + "\n" + "Last Throw: " + Math.round(x.getDistance()).toNumber() + " " + unitName + "\n" + useBackText + " To\nMark Throw" ;
                 } else {
