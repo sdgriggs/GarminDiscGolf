@@ -4,3 +4,4 @@ project.manifest = manifest.xml
 #to page changes
 vivoactive_hr.excludeAnnotations = notForLSD
 vivoactive.excludeAnnotations = notForLSD
+fr630.excludeAnnotations = notForLSD
