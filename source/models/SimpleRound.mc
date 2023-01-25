@@ -16,7 +16,7 @@ class SimpleRound{
     Initializes a new SimpleRound with the given numberOfHoles and whether or not
     distances should be in metric
     */
-    public function initialize(numberOfHoles){
+    public function initialize(numberOfHoles) {
         pars = new [numberOfHoles];
         strokes = new [numberOfHoles];
         currentHole = 0;
@@ -26,7 +26,7 @@ class SimpleRound{
     //Returns an array containing information about the current hole to be used in the gui
     //In the format [if the tee has been marked, hole number (1 indexed), par, number of throws, 
     //current distance from tee]
-    public function getCurrentHoleInfo(){
+    public function getCurrentHoleInfo() {
         return [true, currentHole + 1, pars[currentHole], 0, null];
     }
 
@@ -48,7 +48,7 @@ class SimpleRound{
     }
 
     //Returns whether or not the current hole needs to be initialized with a par
-    public function needsInitializing(){
+    public function needsInitializing() {
         return pars[currentHole] == null;
     }
 
@@ -58,12 +58,16 @@ class SimpleRound{
     }
 
     //Returns the array of pars
-    public function getPars(){
+    public function getPars() {
          return pars;
     }
 
     //Returns the array of strokes
-    public function getStrokes(){
+    public function getStrokes() {
         return strokes;
+    }
+
+    public function getLastThrow() {
+        return null;
     }
 }

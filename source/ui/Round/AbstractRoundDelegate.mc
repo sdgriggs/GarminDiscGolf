@@ -14,8 +14,8 @@ class AbstractRoundDelegate extends WatchUi.BehaviorDelegate{
 
         var pauseMenu = new WatchUi.Menu();
         pauseMenu.addItem("Resume", :resume);
-        //if (Stats.getHolesCompleted(manager.getHoles())){
-        if (holeInfo[1] > 1) {
+       
+        if (holeInfo[1] > 1 || manager.isCompleted()) {
             pauseMenu.addItem("Save", :save);
         }
         pauseMenu.addItem("Discard", :discard);

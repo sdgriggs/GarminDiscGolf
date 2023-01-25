@@ -114,4 +114,18 @@ class Round{
     public function getHoles(){
         return holes;
     }
+
+    public function getLastThrow(){
+        var thr = null;
+        if(getHoles()[currentHole] != null){
+            thr = getHoles()[currentHole].getLastThrow();
+        }
+        if(thr == null && currentHole > 0){
+            System.println("GET LAST HOLE");
+            thr = getHoles()[currentHole - 1].getLastThrow();
+        }
+         return thr;
+    }
+
+    
 }
