@@ -125,7 +125,7 @@ class RoundView extends WatchUi.View{
             mainText = "Hole " + holeInfo[1] + ":\n";
             var x = manager.getLastThrow();
             
-            if(!simple && x != null){
+            if(x != null){
                 mainText += "Last Throw: " +  Math.round(x.getDistance()).toNumber() + " " + unitName + "\n";
             }
             mainText += useBackText + " To\nSet Par";
@@ -135,7 +135,7 @@ class RoundView extends WatchUi.View{
             mainText = "Hole " + holeInfo[1] + ":\n" ;
             var x = manager.getLastThrow();
             
-            if(!simple && x != null){
+            if(x != null){
                 mainText += "Last Throw: " +  Math.round(x.getDistance()).toNumber() + " " + unitName + "\n";
             }
             
@@ -151,11 +151,13 @@ class RoundView extends WatchUi.View{
                 
                 if(x != null) {
                     mainText = "Hole " + holeInfo[1] + ":\n"  +  "Throwing: " + (holeInfo[3] + 1) + "\n" + "Last Throw: " + Math.round(x.getDistance()).toNumber() + " " + unitName + "\n" + useBackText + " To\nMark Throw" ;
+                    mainTextLines = 5;
                 } else {
                     mainText = "Hole " + holeInfo[1] + ":\n" + "Throwing: " + (holeInfo[3] + 1) + "\n" 
-            + useBackText + " To\nMark Throw" ;
+                    + useBackText + " To\nMark Throw" ;
+                    mainTextLines = 4;
                 }
-                    mainTextLines = 5;
+                    
             }
         }
     }
