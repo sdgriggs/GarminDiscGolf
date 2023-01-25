@@ -121,7 +121,8 @@ class RoundPauseDelegate extends WatchUi.MenuInputDelegate {
             summaryStatsArr[1] += timeStr;
 
             summaryStatsArr[2] += activityInfo.calories.toString();
-            summaryStatsArr[3] += activityInfo.averageHeartRate + " bpm";
+            //N/A if null hr, hr if not null
+            summaryStatsArr[3] += activityInfo.averageHeartRate == null ? "N/A" : activityInfo.averageHeartRate + " bpm";
 
             //Adding general round overview stats
             var diff = summaryStatsArr.size() - methodArrs.size();
