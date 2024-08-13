@@ -1,51 +1,31 @@
 using Toybox.Math as Math;
-using DistanceUtil;
-using Toybox.Position;
-
-/*
-Represents the outcome of a throw
-*/
-enum Outcome{
-    FAIRWAY,
-    ROUGH,
-    OB,
-    IN_BASKET
-}
-
+using Stats;
 /*
 Represents a disc golf throw
 */
-class Throw {
+class Throw{
     //The location of the start of the Throw
-    private var startPos as String;
+    private var startPos;
     //The location of the end of the Throw
-    private var endPos as String;
+    private var endPos;
     //How far the throw went
-    private var distance as Float;
+    private var distance;
     //The outcome of the throw (FAIRWAY, OB, etc.)
-    private var outcome as Outcome;
+    private var outcome;
     //Whether or not the throw is measured using the metric system
-    private var isMetric as Boolean;
-
+    private var isMetric;
     //The format used for the positions (positions are saved as a formatted string
     //and converted to a position instead of being saved as positions in order to
     //preserve memory)
-    private const POSITION_STRING_FORMAT = Position.GEO_MGRS;
-
-
+    private var format = Position.GEO_MGRS;
     /*
     Creates a new Throw with the given start and end positions, outcome, and whether
     or not the throw should be measured usign the metric system.
     */
-    public function initialize(startPos as Position.Location, endPos as Position.Location, outcome as Outcome, isMetric as Boolean) as Void {
-        //calculate the distance between the points
-        self.distance = DistanceUtil.measureDistanceBetweenLocations(startPos, endPos, isMetric);
-        //save the positions as strings which can be parsed into position objects again 
-        //if needed (to sae memory)
-        self.startPos = startPos.toGeoString(POSITION_STRING_FORMAT);
-        self.endPos = endPos.toGeoString(POSITION_STRING_FORMAT);
-
-        //other stuff
+    public function initialize(startPos, endPos, outcome, isMetric){
+        self.distance = Stats.measureDistanceBetweenLocations(startPos, endPos, isMetric);
+        self.startPos = startPos.toGeoString(format);
+        self.endPos = endPos.toGeoString(format);
         self.outcome = outcome;
         self.isMetric = isMetric;
     }
@@ -57,17 +37,27 @@ class Throw {
 
     //Returns the start position of the Throw as a Position object
     public function getStartPos(){
-        return Position.parse(startPos, POSITION_STRING_FORMAT);
+        return Position.parse(startPos, format);
     }
 
     //Returns the end position of the Throw as a Position object
     public function getEndPos(){
-        return Position.parse(endPos, POSITION_STRING_FORMAT);
+        return Position.parse(endPos, format);
     }
 
     //Returns the outcome of the Throw
     public function getOutcome(){
         return self.outcome;
     }
+
 }
 
+/*
+Represents the outcome of a throw
+*/
+enum Outcome{
+    FAIRWAY,
+    ROUGH,
+    OB,
+    IN_BASKET
+}

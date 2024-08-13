@@ -1,5 +1,4 @@
-using Toybox.WatchUi;
-using UIConsts;
+import Toybox.WatchUi;
 
 /*
 The delegate for the Main Menu
@@ -13,7 +12,7 @@ class MainMenuDelegate extends WatchUi.MenuInputDelegate {
         if (item == :round){ //Start a round
             var title = new WatchUi.Text({
                 :text=>"# Of Holes?",
-                :color=>UIConsts.FG_COLOR,
+                :color=>Graphics.COLOR_WHITE,
                 :font=>Graphics.FONT_SYSTEM_SMALL,
                 :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
                 :locY=>WatchUi.LAYOUT_VALIGN_CENTER

@@ -56,6 +56,8 @@
             <iq:product id="fenix7xpro"/>
             <iq:product id="fenix7xpronowifi"/>
             <iq:product id="fenixchronos"/>
+            <iq:product id="fr165"/>
+            <iq:product id="fr165m"/>
             <iq:product id="fr230"/>
             <iq:product id="fr235"/>
             <iq:product id="fr245"/>
@@ -87,7 +89,6 @@
             <iq:product id="marqadventurer"/>
             <iq:product id="marqathlete"/>
             <iq:product id="marqaviator"/>
-            <iq:product id="marqcaptain"/>
             <iq:product id="marqcommander"/>
             <iq:product id="marqdriver"/>
             <iq:product id="marqexpedition"/>
@@ -101,7 +102,6 @@
             <iq:product id="venud"/>
             <iq:product id="venusq"/>
             <iq:product id="venusq2"/>
-            <iq:product id="venusq2m"/>
             <iq:product id="venusqm"/>
             <iq:product id="vivoactive3"/>
             <iq:product id="vivoactive3d"/>
