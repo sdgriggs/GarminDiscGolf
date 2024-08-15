@@ -1,3 +1,4 @@
 /bin/*.prg
 /bin/*.xml
 /bin/*.json
+/bin/*

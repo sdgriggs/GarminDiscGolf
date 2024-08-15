@@ -37,11 +37,7 @@ class FieldWork {
     public function setStart(st) {
         if (st instanceof Position.Location) {
             self.start = st;
-        }
-        else {
-            throw new Lang.InvalidValueException();
-        }
-        
+        }        
     }
 
     //gets the start locatoin

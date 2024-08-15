@@ -1,15 +1,16 @@
 using Toybox.WatchUi;
+using Toybox.Lang;
 
 /*
 Represents the delegate for the FieldWork lap menu for when the tee has 
 been selected
 */
 class FWPostStartMenuDelegate extends WatchUi.MenuInputDelegate{
-    function initialize(){
+    function initialize() {
         WatchUi.MenuInputDelegate.initialize();
     }
 
-    function onMenuItem(item as Symbol){
+    function onMenuItem(item) {
         if (item == :start){
             //Update the throw start when Mark New Start is selected
             FieldWorkView.getInstance().updateThrowStart(lastLocation);

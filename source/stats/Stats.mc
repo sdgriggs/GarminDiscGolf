@@ -133,7 +133,6 @@ module Stats{
     public function getCombinedPar(args) {
         var parList;
         var strokesList;
-        var size;
         if (args[0] instanceof Hole){
             parList = getParList(args);
             strokesList = parList;

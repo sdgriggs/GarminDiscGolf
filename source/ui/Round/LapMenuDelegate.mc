@@ -26,7 +26,6 @@ class LapMenuDelegate extends WatchUi.MenuInputDelegate{
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
             WatchUi.pushView(throwMenu, new ThrowMenuDelegate(), WatchUi.SLIDE_IMMEDIATE);
         } else if (item == :changePar) {
-            var changeParMenu = new WatchUi.Menu();
             var hole = holeInfo[1] -1;
             if (holeInfo[2] != null) {
                 hole++;
